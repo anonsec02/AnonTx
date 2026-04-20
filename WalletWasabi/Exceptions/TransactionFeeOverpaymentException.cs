@@ -1,4 +1,4 @@
-namespace WalletWasabi.Exceptions;
+namespace WalletAnonTx.Exceptions;
 
 public class TransactionFeeOverpaymentException : Exception
 {

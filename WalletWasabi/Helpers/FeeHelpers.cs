@@ -3,15 +3,15 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using NBitcoin;
 using NBitcoin.Policy;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 public static class FeeHelpers
 {

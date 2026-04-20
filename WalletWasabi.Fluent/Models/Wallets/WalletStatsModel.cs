@@ -2,11 +2,11 @@ using ReactiveUI;
 using System.Linq;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public partial interface IWalletStatsModel : IDisposable
 {

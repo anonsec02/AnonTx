@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 public class ByteArrayComparer : IComparer<byte[]>
 {

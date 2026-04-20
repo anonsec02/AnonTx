@@ -1,9 +1,9 @@
 using System.Linq;
-using WalletWasabi.Fluent.ViewModels.CoinJoinProfiles;
-using WalletWasabi.Helpers;
-using WalletWasabi.Models;
+using WalletAnonTx.Fluent.ViewModels.CoinJoinProfiles;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs;
 
 public partial class ManualCoinJoinSettingsViewModel : ViewModelBase
 {

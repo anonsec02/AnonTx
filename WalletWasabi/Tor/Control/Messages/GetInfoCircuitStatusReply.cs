@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Messages.CircuitStatus;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Messages.CircuitStatus;
 
-namespace WalletWasabi.Tor.Control.Messages;
+namespace WalletAnonTx.Tor.Control.Messages;
 
 public record GetInfoCircuitStatusReply
 {

@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.CoinControl.Core.Cells;
+namespace WalletAnonTx.Fluent.Views.CoinControl.Core.Cells;
 
 public class IndicatorsCellView : UserControl
 {

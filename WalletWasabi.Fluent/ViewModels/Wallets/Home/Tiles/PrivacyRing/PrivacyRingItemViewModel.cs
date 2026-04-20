@@ -1,12 +1,12 @@
 using Avalonia;
 using Avalonia.Media;
 using NBitcoin;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.Models.Wallets;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.Models.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing;
 
 public class PrivacyRingItemViewModel : IPrivacyRingPreviewItem
 {

@@ -1,7 +1,7 @@
 using NBitcoin.Scripting;
 using NBitcoin;
 
-namespace WalletWasabi.Blockchain.Keys;
+namespace WalletAnonTx.Blockchain.Keys;
 
 public class WpkhOutputDescriptorHelper
 {

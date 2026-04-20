@@ -1,7 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 /// <summary>
 /// Source: https://stackoverflow.com/a/42117130/2061103

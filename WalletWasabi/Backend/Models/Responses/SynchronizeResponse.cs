@@ -1,10 +1,10 @@
 using NBitcoin;
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
-using WalletWasabi.JsonConverters;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.JsonConverters;
 
-namespace WalletWasabi.Backend.Models.Responses;
+namespace WalletAnonTx.Backend.Models.Responses;
 
 public class SynchronizeResponse
 {

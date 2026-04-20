@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace WalletWasabi.WabiSabi.Backend.Models;
+namespace WalletAnonTx.WabiSabi.Backend.Models;
 
 public class WabiSabiProtocolException : Exception
 {

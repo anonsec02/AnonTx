@@ -2,12 +2,12 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using NBitcoin.RPC;
-using WalletWasabi.Bases;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Bases;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.BitcoinCore.Monitoring;
+namespace WalletAnonTx.BitcoinCore.Monitoring;
 
 public class RpcFeeProvider : PeriodicRunner
 {

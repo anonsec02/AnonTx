@@ -1,10 +1,10 @@
 using System.Collections.Immutable;
 using NBitcoin;
 using NBitcoin.Policy;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds;
 
 public record RoundParameters
 {

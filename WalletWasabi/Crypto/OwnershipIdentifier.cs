@@ -2,7 +2,7 @@ using NBitcoin;
 using NBitcoin.Crypto;
 using System.Linq;
 
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 public class OwnershipIdentifier : IBitcoinSerializable, IEquatable<OwnershipIdentifier>
 {

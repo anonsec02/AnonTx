@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 using DynamicData;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Blockchain.TransactionProcessing;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Blockchain.Transactions.Summary;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.ViewModels.Wallets.Send;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Blockchain.TransactionProcessing;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Blockchain.Transactions.Summary;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Send;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class WalletTransactionsModel : ReactiveObject, IDisposable

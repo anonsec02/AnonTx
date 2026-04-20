@@ -1,10 +1,10 @@
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets;
 
 [NavigationMetaData(Title = null)]
 public partial class LoadingViewModel : RoutableViewModel

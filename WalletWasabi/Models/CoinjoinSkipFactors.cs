@@ -2,7 +2,7 @@ using NBitcoin;
 using System.Collections.Generic;
 using WabiSabi.Crypto.Randomness;
 
-namespace WalletWasabi.Models;
+namespace WalletAnonTx.Models;
 
 public sealed class CoinjoinSkipFactors : IEquatable<CoinjoinSkipFactors>
 {
@@ -47,7 +47,7 @@ public sealed class CoinjoinSkipFactors : IEquatable<CoinjoinSkipFactors>
 		return factors;
 	}
 
-	public bool ShouldSkipRoundRandomly(WasabiRandom random, FeeRate roundFeeRate, IDictionary<TimeSpan, FeeRate> coinJoinFeeRateMedians, uint256? roundId = null)
+	public bool ShouldSkipRoundRandomly(AnonTxRandom random, FeeRate roundFeeRate, IDictionary<TimeSpan, FeeRate> coinJoinFeeRateMedians, uint256? roundId = null)
 	{
 		if (roundId is not null && roundId == LastJudgement.roundId)
 		{

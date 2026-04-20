@@ -1,11 +1,11 @@
 using System.Threading.Tasks;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Userfacing;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Userfacing;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class WalletAuthModel : ReactiveObject

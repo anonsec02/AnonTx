@@ -4,13 +4,13 @@ using NBitcoin.Protocol.Behaviors;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.Mempool;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Blockchain.Mempool;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.BitcoinP2p;
+namespace WalletAnonTx.BitcoinP2p;
 
 public abstract class P2pBehavior : NodeBehavior
 {

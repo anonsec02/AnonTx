@@ -2,7 +2,7 @@ using Microsoft.Extensions.Caching.Memory;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Cache;
+namespace WalletAnonTx.Cache;
 
 public class IdempotencyRequestCache
 {

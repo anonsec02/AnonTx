@@ -3,14 +3,14 @@ using System.Reactive.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.WabiSabi.Client.CoinJoinProgressEvents;
-using WalletWasabi.WabiSabi.Client.StatusChangedEvents;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.WabiSabi.Client.CoinJoinProgressEvents;
+using WalletAnonTx.WabiSabi.Client.StatusChangedEvents;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AppLifetime]
 [AutoInterface]

@@ -1,4 +1,4 @@
-namespace WalletWasabi.Blockchain.TransactionBuilding.BnB;
+namespace WalletAnonTx.Blockchain.TransactionBuilding.BnB;
 
 /// <summary>
 /// Parameters for BnB strategies.

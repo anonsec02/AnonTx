@@ -1,8 +1,8 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models;
 
-namespace WalletWasabi.WabiSabi.Backend.PostRequests;
+namespace WalletAnonTx.WabiSabi.Backend.PostRequests;
 
 public interface IWabiSabiApiRequestHandler
 {

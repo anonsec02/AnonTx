@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Socks5.Models.Interfaces;
+namespace WalletAnonTx.Tor.Socks5.Models.Interfaces;
 
 public interface IByteSerializable
 {

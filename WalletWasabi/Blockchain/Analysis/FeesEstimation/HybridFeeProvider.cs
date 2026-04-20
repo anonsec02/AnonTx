@@ -2,11 +2,11 @@ using Microsoft.Extensions.Hosting;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinCore.Monitoring;
-using WalletWasabi.Logging;
-using WalletWasabi.Nito.AsyncEx;
+using WalletAnonTx.BitcoinCore.Monitoring;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Nito.AsyncEx;
 
-namespace WalletWasabi.Blockchain.Analysis.FeesEstimation;
+namespace WalletAnonTx.Blockchain.Analysis.FeesEstimation;
 
 /// <summary>
 /// Manages multiple fee sources. Returns the best one.

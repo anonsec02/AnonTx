@@ -5,12 +5,12 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.TransactionBuilding.BnB;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
+using WalletAnonTx.Blockchain.TransactionBuilding.BnB;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding;
+namespace WalletAnonTx.Blockchain.TransactionBuilding;
 
 public static class ChangelessTransactionCoinSelector
 {

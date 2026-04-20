@@ -7,13 +7,13 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Blockchain.BlockFilters;
-using WalletWasabi.Blockchain.Blocks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Blockchain.BlockFilters;
+using WalletAnonTx.Blockchain.Blocks;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Stores;
+namespace WalletAnonTx.Stores;
 
 /// <summary>
 /// Manages to store the filters safely.

@@ -1,7 +1,7 @@
 using System.Windows.Input;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.ViewModels.OpenDirectory;
+namespace WalletAnonTx.Fluent.ViewModels.OpenDirectory;
 
 [NavigationMetaData(
 	Title = "Wallet Folder",

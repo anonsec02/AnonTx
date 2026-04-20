@@ -3,14 +3,14 @@ using NBitcoin.Protocol;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinCore.Monitoring;
-using WalletWasabi.BitcoinP2p;
-using WalletWasabi.Blockchain.Mempool;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.BitcoinCore.Monitoring;
+using WalletAnonTx.BitcoinP2p;
+using WalletAnonTx.Blockchain.Mempool;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.BitcoinCore;
+namespace WalletAnonTx.BitcoinCore;
 
 public class P2pNode
 {
@@ -64,7 +64,7 @@ public class P2pNode
 
 		if (!Node.PeerVersion.Services.HasFlag(NodeServices.Network))
 		{
-			throw new InvalidOperationException("Wasabi cannot use the local node because it does not provide blocks.");
+			throw new InvalidOperationException("AnonTx cannot use the local node because it does not provide blocks.");
 		}
 
 		if (!Node.IsConnected)

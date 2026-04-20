@@ -6,12 +6,12 @@ using System.Windows.Input;
 using DynamicData;
 using DynamicData.Binding;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Fluent.ViewModels.Wallets.Coins;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Coins;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Settings;
 
 [NavigationMetaData(Title = "Excluded Coins", NavigationTarget = NavigationTarget.DialogScreen)]
 public partial class ExcludedCoinsViewModel : DialogViewModelBase<Unit>

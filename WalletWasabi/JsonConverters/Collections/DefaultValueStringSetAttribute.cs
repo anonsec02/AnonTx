@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace WalletWasabi.JsonConverters.Collections;
+namespace WalletAnonTx.JsonConverters.Collections;
 
 public class DefaultValueStringSetAttribute : DefaultValueAttribute
 {

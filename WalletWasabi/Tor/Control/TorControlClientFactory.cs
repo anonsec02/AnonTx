@@ -6,12 +6,12 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Messages;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Messages;
 
-namespace WalletWasabi.Tor.Control;
+namespace WalletAnonTx.Tor.Control;
 
 /// <summary>
 /// Class to authenticate to Tor Control.

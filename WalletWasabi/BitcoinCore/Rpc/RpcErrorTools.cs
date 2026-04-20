@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.BitcoinCore.Rpc;
+namespace WalletAnonTx.BitcoinCore.Rpc;
 
 public static class RpcErrorTools
 {

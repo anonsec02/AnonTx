@@ -5,7 +5,7 @@ using Avalonia.Input;
 using Avalonia.Layout;
 using Avalonia.Utilities;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 /// <summary>
 /// Works like a wrap panel.. but concatenates the Items in ConcatenatedChildren.

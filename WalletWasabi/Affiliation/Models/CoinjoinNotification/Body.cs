@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.Affiliation.Models.CoinJoinNotification;
+namespace WalletAnonTx.Affiliation.Models.CoinJoinNotification;
 
 public record Body(
 	string TransactionId,

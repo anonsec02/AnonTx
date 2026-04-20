@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace WalletWasabi.BuyAnything;
+namespace WalletAnonTx.BuyAnything;
 
 public static class ConversationExtensions
 {

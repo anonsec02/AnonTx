@@ -7,34 +7,34 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Client.Banning;
-using WalletWasabi.WabiSabi.Client.CoinJoin.Client;
-using WalletWasabi.WabiSabi.Client.CoinJoinProgressEvents;
-using WalletWasabi.WabiSabi.Client.RoundStateAwaiters;
-using WalletWasabi.WabiSabi.Client.StatusChangedEvents;
-using WalletWasabi.Wallets;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Client.Banning;
+using WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
+using WalletAnonTx.WabiSabi.Client.CoinJoinProgressEvents;
+using WalletAnonTx.WabiSabi.Client.RoundStateAwaiters;
+using WalletAnonTx.WabiSabi.Client.StatusChangedEvents;
+using WalletAnonTx.Wallets;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class CoinJoinManager : BackgroundService
 {
 	public CoinJoinManager(
 		IWalletProvider walletProvider,
 		RoundStateUpdater roundStatusUpdater,
-		IWasabiHttpClientFactory coordinatorHttpClientFactory,
-		IWasabiBackendStatusProvider wasabiBackendStatusProvider,
+		IAnonTxHttpClientFactory coordinatorHttpClientFactory,
+		IAnonTxBackendStatusProvider anontxBackendStatusProvider,
 		CoinJoinConfiguration coinJoinConfiguration,
 		CoinPrison coinPrison)
 	{
-		WasabiBackendStatusProvide = wasabiBackendStatusProvider;
+		AnonTxBackendStatusProvide = anontxBackendStatusProvider;
 		WalletProvider = walletProvider;
 		HttpClientFactory = coordinatorHttpClientFactory;
 		RoundStatusUpdater = roundStatusUpdater;
@@ -44,11 +44,11 @@ public class CoinJoinManager : BackgroundService
 
 	public event EventHandler<StatusChangedEventArgs>? StatusChanged;
 
-	private IWasabiBackendStatusProvider WasabiBackendStatusProvide { get; }
+	private IAnonTxBackendStatusProvider AnonTxBackendStatusProvide { get; }
 
 	public ImmutableDictionary<WalletId, ImmutableList<SmartCoin>> CoinsInCriticalPhase { get; set; } = ImmutableDictionary<WalletId, ImmutableList<SmartCoin>>.Empty;
 	public IWalletProvider WalletProvider { get; }
-	public IWasabiHttpClientFactory HttpClientFactory { get; }
+	public IAnonTxHttpClientFactory HttpClientFactory { get; }
 	public RoundStateUpdater RoundStatusUpdater { get; }
 	public CoinPrison CoinPrison { get; }
 	private CoinRefrigerator CoinRefrigerator { get; } = new();
@@ -198,7 +198,7 @@ public class CoinJoinManager : BackgroundService
 					throw new CoinJoinClientException(CoinjoinError.NotEnoughUnprivateBalance);
 				}
 
-				if (WasabiBackendStatusProvide.LastResponse is not { } synchronizerResponse)
+				if (AnonTxBackendStatusProvide.LastResponse is not { } synchronizerResponse)
 				{
 					throw new CoinJoinClientException(CoinjoinError.BackendNotSynchronized);
 				}

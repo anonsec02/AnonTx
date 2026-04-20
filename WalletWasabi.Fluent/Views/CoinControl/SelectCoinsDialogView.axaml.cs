@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.CoinControl;
+namespace WalletAnonTx.Fluent.Views.CoinControl;
 
 public class SelectCoinsDialogView : UserControl
 {

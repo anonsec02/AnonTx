@@ -1,7 +1,7 @@
 using NBitcoin;
-using WalletWasabi.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding;
+namespace WalletAnonTx.Blockchain.TransactionBuilding;
 
 public class DestinationRequest
 {

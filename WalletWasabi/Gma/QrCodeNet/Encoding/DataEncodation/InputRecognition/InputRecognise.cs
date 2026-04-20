@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
 namespace Gma.QrCodeNet.Encoding.DataEncodation.InputRecognition;
 

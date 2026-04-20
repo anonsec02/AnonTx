@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using WalletWasabi.Logging;
-using WalletWasabi.Microservices;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Microservices;
 
-namespace WalletWasabi.Helpers.PowerSaving;
+namespace WalletAnonTx.Helpers.PowerSaving;
 
 /// <summary>
 /// Inhibitor based on <c>caffeinate</c> command.

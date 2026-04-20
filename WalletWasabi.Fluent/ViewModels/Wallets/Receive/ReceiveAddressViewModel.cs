@@ -5,13 +5,13 @@ using System.Windows.Input;
 using DynamicData;
 using DynamicData.Binding;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Receive;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Receive;
 
 [NavigationMetaData(Title = "Receive Address")]
 public partial class ReceiveAddressViewModel : RoutableViewModel

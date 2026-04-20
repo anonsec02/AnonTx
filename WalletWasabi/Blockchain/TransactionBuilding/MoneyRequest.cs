@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding;
+namespace WalletAnonTx.Blockchain.TransactionBuilding;
 
 public class MoneyRequest
 {

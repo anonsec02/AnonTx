@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.Models.ClientConfig;
+namespace WalletAnonTx.Fluent.Models.ClientConfig;
 
 public interface IClientConfig
 {

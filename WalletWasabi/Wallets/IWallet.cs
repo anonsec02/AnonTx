@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Models;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.WabiSabi.Client.Batching;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Models;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.WabiSabi.Client.Batching;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 public interface IWallet
 {

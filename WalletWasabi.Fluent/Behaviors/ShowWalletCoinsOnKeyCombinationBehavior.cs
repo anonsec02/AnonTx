@@ -5,9 +5,9 @@ using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.VisualTree;
 using Avalonia.Xaml.Interactions.Custom;
-using WalletWasabi.Fluent.ViewModels.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Wallets;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class ShowWalletCoinsOnKeyCombinationBehavior : AttachedToVisualTreeBehavior<Control>
 {

@@ -3,12 +3,12 @@ using System.Linq;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
 using DynamicData;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Patterns;
-using WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Patterns;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
 
 public class ActionsSearchSource : ISearchSource
 {

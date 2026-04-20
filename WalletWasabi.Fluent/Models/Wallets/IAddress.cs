@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 /// <summary>
 /// This interface serves the purpose of enabling Mocks for unit testing of the ViewModels that consume it.

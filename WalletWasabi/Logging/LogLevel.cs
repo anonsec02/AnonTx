@@ -1,4 +1,4 @@
-namespace WalletWasabi.Logging;
+namespace WalletAnonTx.Logging;
 
 public enum LogLevel
 {

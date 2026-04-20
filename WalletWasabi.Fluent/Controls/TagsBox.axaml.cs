@@ -14,10 +14,10 @@ using Avalonia.Metadata;
 using Avalonia.Threading;
 using Avalonia.VisualTree;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class TagsBox : TemplatedControl
 {

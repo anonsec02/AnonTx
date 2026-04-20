@@ -6,21 +6,21 @@ using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Backend.Models.Responses;
-using WalletWasabi.Bases;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
-using WalletWasabi.Blockchain.BlockFilters;
-using WalletWasabi.Blockchain.Blocks;
-using WalletWasabi.Models;
-using WalletWasabi.Stores;
-using WalletWasabi.Tor.Socks5.Exceptions;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Backend.Models.Responses;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.Blockchain.BlockFilters;
+using WalletAnonTx.Blockchain.Blocks;
+using WalletAnonTx.Models;
+using WalletAnonTx.Stores;
+using WalletAnonTx.Tor.Socks5.Exceptions;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.Services;
+namespace WalletAnonTx.Services;
 
-public class WasabiSynchronizer : PeriodicRunner, INotifyPropertyChanged, IThirdPartyFeeProvider, IWasabiBackendStatusProvider
+public class AnonTxSynchronizer : PeriodicRunner, INotifyPropertyChanged, IThirdPartyFeeProvider, IAnonTxBackendStatusProvider
 {
 	private decimal _usdExchangeRate;
 
@@ -29,7 +29,7 @@ public class WasabiSynchronizer : PeriodicRunner, INotifyPropertyChanged, IThird
 	private BackendStatus _backendStatus;
 	private bool _backendNotCompatible;
 
-	public WasabiSynchronizer(TimeSpan period, int maxFiltersToSync, BitcoinStore bitcoinStore, WasabiHttpClientFactory httpClientFactory) : base(period)
+	public AnonTxSynchronizer(TimeSpan period, int maxFiltersToSync, BitcoinStore bitcoinStore, AnonTxHttpClientFactory httpClientFactory) : base(period)
 	{
 		MaxFiltersToSync = maxFiltersToSync;
 
@@ -37,7 +37,7 @@ public class WasabiSynchronizer : PeriodicRunner, INotifyPropertyChanged, IThird
 		SmartHeaderChain = bitcoinStore.SmartHeaderChain;
 		FilterProcessor = new FilterProcessor(bitcoinStore);
 		HttpClientFactory = httpClientFactory;
-		WasabiClient = httpClientFactory.SharedWasabiClient;
+		AnonTxClient = httpClientFactory.SharedAnonTxClient;
 	}
 
 	#region EventsPropertiesMembers
@@ -54,8 +54,8 @@ public class WasabiSynchronizer : PeriodicRunner, INotifyPropertyChanged, IThird
 	public TaskCompletionSource<bool> InitialRequestTcs { get; } = new();
 
 	public SynchronizeResponse? LastResponse { get; private set; }
-	public WasabiHttpClientFactory HttpClientFactory { get; }
-	private WasabiClient WasabiClient { get; }
+	public AnonTxHttpClientFactory HttpClientFactory { get; }
+	private AnonTxClient AnonTxClient { get; }
 
 	/// <summary>Gets the Bitcoin price in USD.</summary>
 	public decimal UsdExchangeRate
@@ -106,7 +106,7 @@ public class WasabiSynchronizer : PeriodicRunner, INotifyPropertyChanged, IThird
 		{
 			SynchronizeResponse response;
 
-			ushort lastUsedApiVersion = WasabiClient.ApiVersion;
+			ushort lastUsedApiVersion = AnonTxClient.ApiVersion;
 			try
 			{
 				if (SmartHeaderChain.TipHash is null)
@@ -114,7 +114,7 @@ public class WasabiSynchronizer : PeriodicRunner, INotifyPropertyChanged, IThird
 					return;
 				}
 
-				response = await WasabiClient
+				response = await AnonTxClient
 					.GetSynchronizeAsync(SmartHeaderChain.TipHash, MaxFiltersToSync, EstimateSmartFeeMode.Conservative, cancel)
 					.ConfigureAwait(false);
 
@@ -140,7 +140,7 @@ public class WasabiSynchronizer : PeriodicRunner, INotifyPropertyChanged, IThird
 				bool backendCompatible;
 				try
 				{
-					backendCompatible = await WasabiClient.CheckUpdatesAsync(cancel).ConfigureAwait(false);
+					backendCompatible = await AnonTxClient.CheckUpdatesAsync(cancel).ConfigureAwait(false);
 				}
 				catch (HttpRequestException) when (ex.Message.Contains("Not Found"))
 				{
@@ -150,7 +150,7 @@ public class WasabiSynchronizer : PeriodicRunner, INotifyPropertyChanged, IThird
 				}
 
 				// If the backend is compatible and the Api version updated then we just used the wrong API.
-				if (backendCompatible && lastUsedApiVersion != WasabiClient.ApiVersion)
+				if (backendCompatible && lastUsedApiVersion != AnonTxClient.ApiVersion)
 				{
 					// Next request will be fine, do not throw exception.
 					TriggerRound();

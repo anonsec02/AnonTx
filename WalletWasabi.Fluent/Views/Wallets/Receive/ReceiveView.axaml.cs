@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.Wallets.Receive;
+namespace WalletAnonTx.Fluent.Views.Wallets.Receive;
 
 public class ReceiveView : UserControl
 {

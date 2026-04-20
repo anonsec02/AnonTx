@@ -4,13 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.WabiSabi.Models;
+using WalletAnonTx.Bases;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.WabiSabi.Models;
 
-namespace WalletWasabi.WabiSabi.Backend.Statistics;
+namespace WalletAnonTx.WabiSabi.Backend.Statistics;
 
 public class CoinJoinFeeRateStatStore : PeriodicRunner
 {

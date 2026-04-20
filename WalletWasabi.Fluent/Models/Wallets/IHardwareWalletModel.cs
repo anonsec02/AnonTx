@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public interface IHardwareWalletModel : IWalletModel
 {

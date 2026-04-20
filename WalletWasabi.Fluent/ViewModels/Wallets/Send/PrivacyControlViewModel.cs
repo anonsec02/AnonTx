@@ -5,15 +5,15 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using Avalonia.Threading;
 using ReactiveUI;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 [NavigationMetaData(Title = "Privacy Control")]
 public partial class PrivacyControlViewModel : DialogViewModelBase<IEnumerable<SmartCoin>>

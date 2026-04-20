@@ -2,18 +2,18 @@ using System.Reactive.Linq;
 using ReactiveUI;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
-using WalletWasabi.Fluent.ViewModels.Wallets.Send;
-using WalletWasabi.Logging;
-using WalletWasabi.Blockchain.TransactionBuilding;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Send;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Blockchain.TransactionBuilding;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Messages;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Messages;
 
 public partial class PayNowAssistantMessageViewModel : AssistantMessageViewModel
 {
@@ -87,7 +87,7 @@ public partial class PayNowAssistantMessageViewModel : AssistantMessageViewModel
 		catch (Exception ex)
 		{
 			Logger.LogError(ex);
-			await UiContext.Navigate().CompactDialogScreen.ShowErrorAsync("Transaction", ex.ToUserFriendlyString(), "Wasabi was unable to send your transaction.");
+			await UiContext.Navigate().CompactDialogScreen.ShowErrorAsync("Transaction", ex.ToUserFriendlyString(), "AnonTx was unable to send your transaction.");
 		}
 		finally
 		{

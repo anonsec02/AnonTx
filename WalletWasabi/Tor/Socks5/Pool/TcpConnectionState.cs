@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Socks5.Pool;
+namespace WalletAnonTx.Tor.Socks5.Pool;
 
 public enum TcpConnectionState
 {

@@ -1,8 +1,8 @@
 using NBitcoin;
 using System.Diagnostics.CodeAnalysis;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding;
+namespace WalletAnonTx.Blockchain.TransactionBuilding;
 
 public class FeeStrategy
 {

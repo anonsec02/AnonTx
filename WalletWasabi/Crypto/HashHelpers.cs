@@ -1,8 +1,8 @@
 using System.Security.Cryptography;
 using System.Text;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 public static class HashHelpers
 {

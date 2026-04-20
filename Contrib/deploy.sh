@@ -1,10 +1,10 @@
 set -e
 
-SERVICE="walletwasabi.service"
+SERVICE="walletanontx.service"
 
-# Restarting WalletWasabi service....
+# Restarting WalletAnonTx service....
 sudo systemctl restart $SERVICE
-echo "[OK] WalletWasabi service was restarted"
+echo "[OK] WalletAnonTx service was restarted"
 
 # Checking deployment...
 sleep 1

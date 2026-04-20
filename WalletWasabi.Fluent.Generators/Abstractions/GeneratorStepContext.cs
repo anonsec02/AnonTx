@@ -1,5 +1,5 @@
 using Microsoft.CodeAnalysis;
 
-namespace WalletWasabi.Fluent.Generators.Abstractions;
+namespace WalletAnonTx.Fluent.Generators.Abstractions;
 
 internal record GeneratorStepContext(GeneratorExecutionContext Context, Compilation Compilation);

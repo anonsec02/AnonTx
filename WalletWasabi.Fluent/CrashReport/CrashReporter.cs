@@ -1,12 +1,12 @@
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
-using WalletWasabi.Microservices;
-using WalletWasabi.Models;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Microservices;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.CrashReport;
+namespace WalletAnonTx.Fluent.CrashReport;
 
 public static class CrashReporter
 {

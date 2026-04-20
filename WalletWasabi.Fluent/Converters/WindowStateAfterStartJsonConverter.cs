@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Newtonsoft.Json;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public class WindowStateAfterStartJsonConverter : JsonConverter<string>
 {

@@ -1,13 +1,13 @@
 using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Wallets;
-using WalletWasabi.WebClients.PayJoin;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Wallets;
+using WalletAnonTx.WebClients.PayJoin;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding;
+namespace WalletAnonTx.Blockchain.TransactionBuilding;
 
 public static class TransactionBuilderWalletExtensions
 {

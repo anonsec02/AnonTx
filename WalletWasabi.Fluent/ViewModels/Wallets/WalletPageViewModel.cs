@@ -1,13 +1,13 @@
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Login;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Login;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets;
 
 [AppLifetime]
 public partial class WalletPageViewModel : ViewModelBase, IDisposable

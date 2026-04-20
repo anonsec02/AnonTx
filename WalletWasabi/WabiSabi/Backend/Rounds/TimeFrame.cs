@@ -1,4 +1,4 @@
-namespace WalletWasabi.WabiSabi.Backend.Rounds;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds;
 
 public record TimeFrame
 {

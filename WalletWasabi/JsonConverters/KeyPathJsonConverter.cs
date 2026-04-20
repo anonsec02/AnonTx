@@ -1,7 +1,7 @@
 using NBitcoin;
 using Newtonsoft.Json;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class KeyPathJsonConverter : JsonConverter<KeyPath>
 {

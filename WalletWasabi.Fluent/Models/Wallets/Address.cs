@@ -2,12 +2,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Hwi;
-using WalletWasabi.Logging;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Hwi;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public class Address : ReactiveObject, IAddress
 {
@@ -59,7 +59,7 @@ public class Address : ReactiveObject, IAddress
 		}
 		catch (FormatException ex) when (ex.Message.Contains("network") && Network == Network.TestNet)
 		{
-			// This exception happens every time on TestNet because of Wasabi Keypath handling.
+			// This exception happens every time on TestNet because of AnonTx Keypath handling.
 			// The user doesn't need to know about it.
 		}
 		catch (Exception ex)

@@ -1,11 +1,11 @@
 using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Blockchain.Analysis;
+namespace WalletAnonTx.Blockchain.Analysis;
 
 public class CoinjoinAnalyzer
 {

@@ -5,7 +5,7 @@ using Avalonia.Controls.Primitives;
 using Avalonia.Controls.Selection;
 using Avalonia.Media;
 
-namespace WalletWasabi.Fluent.TreeDataGrid;
+namespace WalletAnonTx.Fluent.TreeDataGrid;
 
 internal class TreeDataGridPlainTextCell : TreeDataGridCell
 {

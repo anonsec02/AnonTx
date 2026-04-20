@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Fluent.Models.FileSystem;
+namespace WalletAnonTx.Fluent.Models.FileSystem;
 
 public class FileSystemModel : IFileSystem
 {

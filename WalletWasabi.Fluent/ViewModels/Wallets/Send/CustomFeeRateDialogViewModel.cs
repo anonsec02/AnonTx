@@ -2,11 +2,11 @@ using System.Globalization;
 using System.Reactive.Linq;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Validation;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Models;
+using WalletAnonTx.Fluent.Validation;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 [NavigationMetaData(
 	Title = "Advanced",

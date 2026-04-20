@@ -2,7 +2,7 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.BitcoinCore.Mempool;
+namespace WalletAnonTx.BitcoinCore.Mempool;
 
 /// <remarks>This class is not thread-safe.</remarks>
 public class Mempool

@@ -3,13 +3,13 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.TreeDataGrid;
-using WalletWasabi.Fluent.ViewModels.Wallets.Coins;
-using ScriptType = WalletWasabi.Fluent.Models.Wallets.ScriptType;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.TreeDataGrid;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Coins;
+using ScriptType = WalletAnonTx.Fluent.Models.Wallets.ScriptType;
 
-namespace WalletWasabi.Fluent.ViewModels.CoinControl.Core;
+namespace WalletAnonTx.Fluent.ViewModels.CoinControl.Core;
 
 public abstract partial class CoinListItem : ViewModelBase, ITreeDataGridExpanderItem, IDisposable
 {
@@ -30,7 +30,7 @@ public abstract partial class CoinListItem : ViewModelBase, ITreeDataGridExpande
 	protected CoinListItem()
 	{
 		// Temporarily enable the selection no matter what.
-		// Should be again restricted once https://github.com/zkSNACKs/WalletWasabi/issues/9972 is implemented.
+		// Should be again restricted once https://github.com/zkSNACKs/WalletAnonTx/issues/9972 is implemented.
 		// CanBeSelected = !IsCoinjoining;
 		CanBeSelected = true;
 

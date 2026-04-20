@@ -1,8 +1,8 @@
-using WalletWasabi.Backend.Models.Responses;
+using WalletAnonTx.Backend.Models.Responses;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
-public interface IWasabiBackendStatusProvider
+public interface IAnonTxBackendStatusProvider
 {
 	SynchronizeResponse? LastResponse { get; }
 }

@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.AddWallet;
+namespace WalletAnonTx.Fluent.Views.AddWallet;
 
 public class RecoverWalletView : UserControl
 {

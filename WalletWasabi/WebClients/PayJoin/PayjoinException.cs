@@ -1,4 +1,4 @@
-namespace WalletWasabi.WebClients.PayJoin;
+namespace WalletAnonTx.WebClients.PayJoin;
 
 public class PayjoinException : Exception
 {

@@ -4,9 +4,9 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Fluent.Generators.Analyzers;
+using WalletAnonTx.Fluent.Generators.Analyzers;
 
-namespace WalletWasabi.Fluent.Generators;
+namespace WalletAnonTx.Fluent.Generators;
 
 public static class AnalyzerExtensions
 {
@@ -79,7 +79,7 @@ public static class AnalyzerExtensions
 
 	public static bool IsRoutableViewModel(this SyntaxNode node, SemanticModel model)
 	{
-		return node.IsSubTypeOf(model, "WalletWasabi.Fluent.ViewModels.Navigation.RoutableViewModel");
+		return node.IsSubTypeOf(model, "WalletAnonTx.Fluent.ViewModels.Navigation.RoutableViewModel");
 	}
 
 	public static (string? TypeName, IEnumerable<string> Namespaces) GetDialogResultType(this SyntaxNode node, SemanticModel model)

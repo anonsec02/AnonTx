@@ -3,14 +3,14 @@ using System.Reactive.Disposables;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Dialogs;
-using AddressFunc = System.Func<WalletWasabi.Fluent.Models.Wallets.IAddress, System.Threading.Tasks.Task>;
-using AddressAction = System.Action<WalletWasabi.Fluent.Models.Wallets.IAddress>;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Dialogs;
+using AddressFunc = System.Func<WalletAnonTx.Fluent.Models.Wallets.IAddress, System.Threading.Tasks.Task>;
+using AddressAction = System.Action<WalletAnonTx.Fluent.Models.Wallets.IAddress>;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Receive;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Receive;
 
 public partial class AddressViewModel : ViewModelBase, IDisposable
 {

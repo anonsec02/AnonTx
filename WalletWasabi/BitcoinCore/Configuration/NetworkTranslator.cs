@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Collections.Generic;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.BitcoinCore.Configuration;
+namespace WalletAnonTx.BitcoinCore.Configuration;
 
 public static class NetworkTranslator
 {

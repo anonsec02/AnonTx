@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Avalonia;
 using Avalonia.Controls.Primitives;
 
-namespace WalletWasabi.Fluent.Controls.Sorting;
+namespace WalletAnonTx.Fluent.Controls.Sorting;
 
 public class SortControl : TemplatedControl
 {

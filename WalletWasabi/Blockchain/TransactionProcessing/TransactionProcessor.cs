@@ -1,16 +1,16 @@
 using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Blockchain.Analysis;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.Mempool;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Models;
+using WalletAnonTx.Blockchain.Analysis;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.Mempool;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Blockchain.TransactionProcessing;
+namespace WalletAnonTx.Blockchain.TransactionProcessing;
 
 public class TransactionProcessor
 {

@@ -3,11 +3,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             xmlns:vm="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Settings"
-             xmlns:wallets="clr-namespace:WalletWasabi.Wallets;assembly=WalletWasabi"
-             xmlns:wallets1="clr-namespace:WalletWasabi.Fluent.Models.Wallets"
+             xmlns:vm="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Settings"
+             xmlns:wallets="clr-namespace:WalletAnonTx.Wallets;assembly=WalletAnonTx"
+             xmlns:wallets1="clr-namespace:WalletAnonTx.Fluent.Models.Wallets"
              x:DataType="vm:WalletCoinJoinSettingsViewModel"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Settings.WalletCoinJoinSettingsView"
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Settings.WalletCoinJoinSettingsView"
              x:CompileBindings="True">
 
   <StackPanel Classes="settingsLayout">
@@ -30,7 +30,7 @@
           <ToolTip.Tip>
             <TextBlock>
               - Only loaded wallets can be selected.<LineBreak />
-              - Coins from the coinjoin transaction will be received by this wallet. However, this setting resets after Wasabi restarts.<LineBreak />
+              - Coins from the coinjoin transaction will be received by this wallet. However, this setting resets after AnonTx restarts.<LineBreak />
               - The selected wallet cannot be changed when a coinjoin is in progress.
             </TextBlock>
           </ToolTip.Tip>

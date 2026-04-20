@@ -2,9 +2,9 @@ using NBitcoin;
 using NBitcoin.Protocol;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Wallets.BlockProvider;
+namespace WalletAnonTx.Wallets.BlockProvider;
 
 public class ConnectedNode : IDisposable
 {

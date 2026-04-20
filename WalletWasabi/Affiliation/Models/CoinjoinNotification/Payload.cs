@@ -1,8 +1,8 @@
 using Newtonsoft.Json;
-using WalletWasabi.Affiliation.Serialization;
+using WalletAnonTx.Affiliation.Serialization;
 using System.Text;
 
-namespace WalletWasabi.Affiliation.Models.CoinJoinNotification;
+namespace WalletAnonTx.Affiliation.Models.CoinJoinNotification;
 
 public record Payload(Header Header, Body Body)
 {

@@ -3,18 +3,18 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using NBitcoin;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Fluent.ViewModels.Wallets.Send;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Send;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class TransactionHelpers
 {

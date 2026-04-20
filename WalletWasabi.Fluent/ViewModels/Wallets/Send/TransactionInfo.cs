@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using System.Linq;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.WebClients.PayJoin;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.WebClients.PayJoin;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 public partial class TransactionInfo
 {

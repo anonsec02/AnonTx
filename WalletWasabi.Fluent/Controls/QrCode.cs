@@ -8,9 +8,9 @@ using Avalonia.Media;
 using Avalonia.Media.Imaging;
 using Avalonia.Metadata;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class QrCode : Control
 {

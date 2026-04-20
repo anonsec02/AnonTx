@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public interface IWalletProvider
 {

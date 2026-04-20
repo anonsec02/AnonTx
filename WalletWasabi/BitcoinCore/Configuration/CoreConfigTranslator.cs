@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Linq;
-using WalletWasabi.BitcoinCore.Configuration.Whitening;
-using WalletWasabi.Helpers;
+using WalletAnonTx.BitcoinCore.Configuration.Whitening;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.BitcoinCore.Configuration;
+namespace WalletAnonTx.BitcoinCore.Configuration;
 
 public class CoreConfigTranslator
 {

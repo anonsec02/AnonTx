@@ -2,9 +2,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Microservices;
+using WalletAnonTx.Microservices;
 
-namespace WalletWasabi.Hwi.ProcessBridge;
+namespace WalletAnonTx.Hwi.ProcessBridge;
 
 public class HwiProcessBridge : IHwiProcessInvoker
 {

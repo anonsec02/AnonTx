@@ -6,20 +6,20 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Affiliation;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Services;
-using WalletWasabi.WabiSabi.Backend;
-using WalletWasabi.WabiSabi.Backend.Banning;
-using WalletWasabi.WabiSabi.Backend.DoSPrevention;
-using WalletWasabi.WabiSabi.Backend.Rounds;
-using WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
-using WalletWasabi.WabiSabi.Backend.Statistics;
-using WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+using WalletAnonTx.Affiliation;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Services;
+using WalletAnonTx.WabiSabi.Backend;
+using WalletAnonTx.WabiSabi.Backend.Banning;
+using WalletAnonTx.WabiSabi.Backend.DoSPrevention;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
+using WalletAnonTx.WabiSabi.Backend.Statistics;
+using WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
-namespace WalletWasabi.WabiSabi;
+namespace WalletAnonTx.WabiSabi;
 
 public class WabiSabiCoordinator : BackgroundService
 {
@@ -126,7 +126,7 @@ public class WabiSabiCoordinator : BackgroundService
 		try
 		{
 			var txId = tx.GetHash();
-			if (IsWasabiCoinJoin(txId, tx))
+			if (IsAnonTxCoinJoin(txId, tx))
 			{
 				return;
 			}
@@ -201,8 +201,8 @@ public class WabiSabiCoordinator : BackgroundService
 		}
 	}
 
-	private bool IsWasabiCoinJoin(uint256 txId, Transaction tx) =>
-		CoinJoinIdStore.Contains(txId) || IsFinishedCoinJoin(txId) || IsWasabiCoinJoinLookingTx(tx);
+	private bool IsAnonTxCoinJoin(uint256 txId, Transaction tx) =>
+		CoinJoinIdStore.Contains(txId) || IsFinishedCoinJoin(txId) || IsAnonTxCoinJoinLookingTx(tx);
 
 	private bool IsFinishedCoinJoin(uint256 txId) =>
 		Arena.RoundStates
@@ -210,7 +210,7 @@ public class WabiSabiCoordinator : BackgroundService
 		.OfType<SigningState>()
 		.Any(x => x.CreateUnsignedTransaction().GetHash() == txId);
 
-	private bool IsWasabiCoinJoinLookingTx(Transaction tx) =>
+	private bool IsAnonTxCoinJoinLookingTx(Transaction tx) =>
 		tx.RBF == false
 		&& tx.Inputs.Count >= Config.MinInputCountByBlameRound
 		&& tx.Inputs.Count <= Config.MaxInputCountByRound

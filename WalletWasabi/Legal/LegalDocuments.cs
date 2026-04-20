@@ -2,10 +2,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Legal;
+namespace WalletAnonTx.Legal;
 
 public class LegalDocuments
 {

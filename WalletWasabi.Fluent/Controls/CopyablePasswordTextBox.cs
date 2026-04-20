@@ -5,7 +5,7 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public partial class CopyablePasswordTextBox : TextBox
 {

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using WabiSabi.Crypto.ZeroKnowledge;
-using WalletWasabi.WabiSabi.Client.CoinJoin.Client;
+using WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class SmartRequestNode
 {

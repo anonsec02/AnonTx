@@ -1,13 +1,13 @@
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Fluent.ViewModels.Wallets.Labels;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Labels;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Receive;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Receive;
 
 [NavigationMetaData(Title = "Edit Labels", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class AddressLabelEditViewModel : DialogViewModelBase<LabelsArray?>

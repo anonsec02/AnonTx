@@ -1,10 +1,10 @@
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Helpers;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Blockchain.Transactions;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Blockchain.Transactions;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class CoinHelpers
 {

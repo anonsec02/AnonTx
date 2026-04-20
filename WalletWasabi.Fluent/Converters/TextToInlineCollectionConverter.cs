@@ -4,10 +4,10 @@ using Avalonia.Controls;
 using Avalonia.Controls.Documents;
 using Avalonia.Data.Converters;
 using Avalonia.Media;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.HelpAndSupport;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.HelpAndSupport;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public class TextToInlineCollectionConverter
 {

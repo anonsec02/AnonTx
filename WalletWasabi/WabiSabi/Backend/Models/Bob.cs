@@ -1,7 +1,7 @@
 using NBitcoin;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.WabiSabi.Backend.Models;
+namespace WalletAnonTx.WabiSabi.Backend.Models;
 
 /// <param name="CredentialAmount"> This is slightly larger than the final TXO amount,because the fees are coming down from this.</param>
 public record Bob(Script Script, long CredentialAmount)

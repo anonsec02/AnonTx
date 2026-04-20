@@ -2,11 +2,11 @@ using System.Diagnostics;
 using System.IO;
 using System.Net.Security;
 using System.Net.Sockets;
-using WalletWasabi.Tor.Control.Messages.StreamStatus;
-using WalletWasabi.Tor.Socks5.Pool;
-using WalletWasabi.Tor.Socks5.Pool.Circuits;
+using WalletAnonTx.Tor.Control.Messages.StreamStatus;
+using WalletAnonTx.Tor.Socks5.Pool;
+using WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
-namespace WalletWasabi.Tor.Socks5;
+namespace WalletAnonTx.Tor.Socks5;
 
 /// <summary>
 /// Wraps a TCP connection to Tor SOCKS5 endpoint.

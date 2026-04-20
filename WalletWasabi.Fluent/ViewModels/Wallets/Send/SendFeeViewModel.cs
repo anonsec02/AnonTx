@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Logging;
-using WalletWasabi.Wallets;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Wallets;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 [NavigationMetaData(
 	Title = "Send",

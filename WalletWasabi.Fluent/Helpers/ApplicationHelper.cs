@@ -10,7 +10,7 @@ using Avalonia.Threading;
 using Avalonia.VisualTree;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public class ApplicationHelper
 {

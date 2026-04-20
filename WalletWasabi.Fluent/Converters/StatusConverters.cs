@@ -1,8 +1,8 @@
 using Avalonia.Data.Converters;
-using WalletWasabi.BitcoinCore.Monitoring;
-using WalletWasabi.Models;
+using WalletAnonTx.BitcoinCore.Monitoring;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public static class StatusConverters
 {

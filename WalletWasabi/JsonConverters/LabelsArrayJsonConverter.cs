@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
-using WalletWasabi.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class LabelsArrayJsonConverter : JsonConverter<LabelsArray>
 {

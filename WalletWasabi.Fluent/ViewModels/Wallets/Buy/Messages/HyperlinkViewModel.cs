@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Messages;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Messages;
 
 internal class HyperlinkViewModel
 {

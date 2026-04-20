@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Socks5.Exceptions;
+namespace WalletAnonTx.Tor.Socks5.Exceptions;
 
 /// <summary>
 /// A base class for exceptions thrown by the Tor SOCKS5 classes.

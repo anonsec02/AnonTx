@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.WabiSabi.Models;
+namespace WalletAnonTx.WabiSabi.Models;
 
 public record InputsRemovalRequest(
 	uint256 RoundId,

@@ -8,17 +8,17 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.ViewModels.Wallets.Send;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Send;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Transactions;
+namespace WalletAnonTx.Fluent.Models.Transactions;
 
 public class PrivacySuggestionsModel
 {

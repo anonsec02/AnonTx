@@ -1,28 +1,28 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Control;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Messages;
-using WalletWasabi.Tor.Control.Messages.CircuitStatus;
-using WalletWasabi.Tor.Control.Messages.Events;
-using WalletWasabi.Tor.Control.Messages.Events.OrEvents;
-using WalletWasabi.Tor.Control.Messages.Events.StatusEvents;
-using WalletWasabi.Tor.Control.Messages.StreamStatus;
-using WalletWasabi.Tor.Control.Utils;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Socks5.Exceptions;
-using WalletWasabi.Tor.Socks5.Models;
-using WalletWasabi.Tor.Socks5.Models.Fields.OctetFields;
-using WalletWasabi.Tor.Socks5.Pool;
-using WalletWasabi.Tor.Socks5.Pool.Circuits;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Control;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Messages;
+using WalletAnonTx.Tor.Control.Messages.CircuitStatus;
+using WalletAnonTx.Tor.Control.Messages.Events;
+using WalletAnonTx.Tor.Control.Messages.Events.OrEvents;
+using WalletAnonTx.Tor.Control.Messages.Events.StatusEvents;
+using WalletAnonTx.Tor.Control.Messages.StreamStatus;
+using WalletAnonTx.Tor.Control.Utils;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Socks5.Exceptions;
+using WalletAnonTx.Tor.Socks5.Models;
+using WalletAnonTx.Tor.Socks5.Models.Fields.OctetFields;
+using WalletAnonTx.Tor.Socks5.Pool;
+using WalletAnonTx.Tor.Socks5.Pool.Circuits;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.Tor;
+namespace WalletAnonTx.Tor;
 
-/// <summary>Monitors Tor process bootstrap and reachability of Wasabi Backend.</summary>
+/// <summary>Monitors Tor process bootstrap and reachability of AnonTx Backend.</summary>
 /// <remarks>Tor Monitor can only work if Tor Control is available.</remarks>
 public class TorMonitor : PeriodicRunner
 {
@@ -43,7 +43,7 @@ public class TorMonitor : PeriodicRunner
 	/// <remarks>Guards <see cref="ForceTorRestartCts"/>.</remarks>
 	private readonly object _lock = new();
 
-	public TorMonitor(TimeSpan period, TorProcessManager torProcessManager, WasabiHttpClientFactory httpClientFactory) : base(period)
+	public TorMonitor(TimeSpan period, TorProcessManager torProcessManager, AnonTxHttpClientFactory httpClientFactory) : base(period)
 	{
 		TorProcessManager = torProcessManager;
 		TorHttpPool = httpClientFactory.TorHttpPool!;

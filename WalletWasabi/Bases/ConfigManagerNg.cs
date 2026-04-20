@@ -1,10 +1,10 @@
 using System.IO;
 using System.Text;
 using System.Text.Json;
-using WalletWasabi.Interfaces;
-using WalletWasabi.Logging;
+using WalletAnonTx.Interfaces;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Bases;
+namespace WalletAnonTx.Bases;
 
 public static class ConfigManagerNg
 {

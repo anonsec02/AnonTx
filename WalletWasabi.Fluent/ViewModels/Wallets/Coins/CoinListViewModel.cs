@@ -9,13 +9,13 @@ using Avalonia.Controls;
 using DynamicData;
 using DynamicData.Binding;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Controls.Sorting;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.CoinControl.Core;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Controls.Sorting;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.CoinControl.Core;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Coins;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Coins;
 
 public class CoinListViewModel : ViewModelBase, IDisposable
 {

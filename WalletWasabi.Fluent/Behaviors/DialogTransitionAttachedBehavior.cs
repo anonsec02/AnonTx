@@ -7,7 +7,7 @@ using Avalonia.Controls;
 using Avalonia.Rendering.Composition;
 using Avalonia.Xaml.Interactions.Custom;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class DialogTransitionAttachedBehavior : AttachedToVisualTreeBehavior<Control>
 {

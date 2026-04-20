@@ -2,12 +2,12 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Blockchain.Analysis;
+namespace WalletAnonTx.Blockchain.Analysis;
 
 public class BlockchainAnalyzer
 {
@@ -197,7 +197,7 @@ public class BlockchainAnalyzer
 			if (!tx.ForeignVirtualOutputs.Any(x => x.Amount == virtualOutput.Amount))
 			{
 				// When WW2 denom output isn't too large, then it's not change.
-				if (tx.IsWasabi2Cj is true && StdDenoms.Contains(virtualOutput.Amount.Satoshi))
+				if (tx.IsAnonTx2Cj is true && StdDenoms.Contains(virtualOutput.Amount.Satoshi))
 				{
 					if (maxAmountWeightedAverageIsApplicableFor is null && !TryGetLargestEqualForeignOutputAmount(tx, out maxAmountWeightedAverageIsApplicableFor))
 					{
@@ -372,7 +372,7 @@ public class BlockchainAnalyzer
 	/// <summary>
 	/// Sets output's IsSufficientlyDistancedFromExternalKeys property to false if external, or the tx inputs are all external.
 	/// </summary>
-	/// <remarks>Context: https://github.com/zkSNACKs/WalletWasabi/issues/10567</remarks>
+	/// <remarks>Context: https://github.com/zkSNACKs/WalletAnonTx/issues/10567</remarks>
 	public static void SetIsSufficientlyDistancedFromExternalKeys(SmartCoin output)
 	{
 		if (output.Transaction.WalletInputs.Count == 0)

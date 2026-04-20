@@ -4,7 +4,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.Patterns;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.Patterns;
 
 #nullable disable
 

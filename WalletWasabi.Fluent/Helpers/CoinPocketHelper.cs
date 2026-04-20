@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Helpers;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class CoinPocketHelper
 {

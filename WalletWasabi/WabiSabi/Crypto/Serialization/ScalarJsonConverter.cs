@@ -1,8 +1,8 @@
 using NBitcoin.Secp256k1;
 using Newtonsoft.Json;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Crypto.Serialization;
+namespace WalletAnonTx.WabiSabi.Crypto.Serialization;
 
 public class ScalarJsonConverter : JsonConverter<Scalar>
 {

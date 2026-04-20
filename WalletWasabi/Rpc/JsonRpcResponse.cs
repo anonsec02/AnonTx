@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace WalletWasabi.Rpc;
+namespace WalletAnonTx.Rpc;
 
 public abstract record JsonRpcResponse
 {

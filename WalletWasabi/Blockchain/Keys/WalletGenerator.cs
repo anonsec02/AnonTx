@@ -1,10 +1,10 @@
 using NBitcoin;
 using System.IO;
 using System.Linq;
-using WalletWasabi.Models;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Models;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.Blockchain.Keys;
+namespace WalletAnonTx.Blockchain.Keys;
 
 public class WalletGenerator
 {

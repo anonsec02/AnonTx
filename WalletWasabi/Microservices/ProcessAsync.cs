@@ -2,9 +2,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Microservices;
+namespace WalletAnonTx.Microservices;
 
 /// <summary>
 /// Async wrapper class for <see cref="System.Diagnostics.Process"/> class that implements <see cref="WaitForExitAsync(CancellationToken)"/>

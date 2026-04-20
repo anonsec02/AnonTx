@@ -1,7 +1,7 @@
 using System.IO;
 using System.Text;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class TextReaderExtensions
 {

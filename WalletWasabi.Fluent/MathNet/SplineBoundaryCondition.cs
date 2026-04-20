@@ -1,6 +1,6 @@
-// Copyright (c) 2009-2010 Math.NET Taken from http://github.com/mathnet/mathnet-numerics and modified for Wasabi Wallet
+// Copyright (c) 2009-2010 Math.NET Taken from http://github.com/mathnet/mathnet-numerics and modified for AnonTx Wallet
 
-namespace WalletWasabi.Fluent.MathNet;
+namespace WalletAnonTx.Fluent.MathNet;
 
 /// <summary>
 /// Left and right boundary conditions.

@@ -1,7 +1,7 @@
 using System.Threading;
-using WalletWasabi.Crypto.Randomness;
+using WalletAnonTx.Crypto.Randomness;
 
-namespace WalletWasabi.Tor.Socks5.Pool.Circuits;
+namespace WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
 /// <summary>
 /// Tor circuit for a set of HTTP requests where we don't mind that

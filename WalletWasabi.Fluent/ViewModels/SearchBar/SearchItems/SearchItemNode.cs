@@ -3,11 +3,11 @@ using System.ComponentModel;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Patterns;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Settings;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Patterns;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Settings;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
 
 public class SearchItemNode<TObject, TProperty> : ReactiveObject, IContentSearchItem where TObject : class, INotifyPropertyChanged
 {

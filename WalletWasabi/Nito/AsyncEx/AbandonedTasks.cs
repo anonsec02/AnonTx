@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Nito.AsyncEx;
+namespace WalletAnonTx.Nito.AsyncEx;
 
 /// <summary>
 /// To remember tasks that were fired to forget and so wait for them during dispose.

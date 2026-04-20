@@ -1,10 +1,10 @@
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Messages;
-using WalletWasabi.Tor.Control.Messages.Events;
-using WalletWasabi.Tor.Control.Messages.Events.OrEvents;
-using WalletWasabi.Tor.Control.Messages.Events.StatusEvents;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Messages;
+using WalletAnonTx.Tor.Control.Messages.Events;
+using WalletAnonTx.Tor.Control.Messages.Events.OrEvents;
+using WalletAnonTx.Tor.Control.Messages.Events.StatusEvents;
 
-namespace WalletWasabi.Tor.Control.Utils;
+namespace WalletAnonTx.Tor.Control.Utils;
 
 /// <summary>Parses an incoming Tor control event based on its name.</summary>
 public static class AsyncEventParser

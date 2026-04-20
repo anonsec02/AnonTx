@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.Wallets.Home.Tiles;
+namespace WalletAnonTx.Fluent.Views.Wallets.Home.Tiles;
 
 public class BtcPriceTileView : UserControl
 {

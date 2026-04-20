@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Threading;
 using Avalonia.Xaml.Interactivity;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 /// <summary>
 /// Focuses the associated or target control when executed.

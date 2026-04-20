@@ -1,6 +1,6 @@
-using WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+using WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
-namespace WalletWasabi.WabiSabi.Models.Serialization;
+namespace WalletAnonTx.WabiSabi.Models.Serialization;
 
 public class MultipartyTransactionStateJsonConverter : GenericInterfaceJsonConverter<MultipartyTransactionState>
 {

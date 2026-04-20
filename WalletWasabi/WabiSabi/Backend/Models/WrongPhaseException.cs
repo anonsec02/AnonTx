@@ -1,8 +1,8 @@
 using NBitcoin;
 using System.Linq;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.WabiSabi.Backend.Models;
+namespace WalletAnonTx.WabiSabi.Backend.Models;
 
 public class WrongPhaseException : WabiSabiProtocolException
 {

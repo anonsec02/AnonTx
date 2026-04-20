@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.Fluent.Models;
+namespace WalletAnonTx.Fluent.Models;
 
 public readonly struct DataLegend
 {

@@ -1,10 +1,10 @@
 using Microsoft.Extensions.Caching.Memory;
 using NBitcoin;
-using WalletWasabi.BitcoinCore.Endpointing;
-using WalletWasabi.Blockchain.Mempool;
-using WalletWasabi.Helpers;
+using WalletAnonTx.BitcoinCore.Endpointing;
+using WalletAnonTx.Blockchain.Mempool;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.BitcoinCore;
+namespace WalletAnonTx.BitcoinCore;
 
 public class CoreNodeParams
 {

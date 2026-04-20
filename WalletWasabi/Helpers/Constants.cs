@@ -2,19 +2,19 @@ using System.Net;
 using NBitcoin;
 using NBitcoin.Protocol;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 public static class Constants
 {
 	public const string ClientSupportBackendVersionMin = "4";
 	public const string ClientSupportBackendVersionMax = "4";
 
-	public const string BackendUri = "https://api.wasabiwallet.io/";
-	public const string TestnetBackendUri = "https://api.wasabiwallet.co/";
+	public const string BackendUri = "https://api.anontxwallet.io/";
+	public const string TestnetBackendUri = "https://api.anontxwallet.co/";
 	public const string BackendMajorVersion = "4";
 
 	public const string WabiSabiFallBackCoordinatorExtPubKey = "xpub6C13JhXzjAhVRgeTcRSWqKEPe1vHi3Tmh2K9PN1cZaZFVjjSaj76y5NNyqYjc2bugj64LVDFYu8NZWtJsXNYKFb9J94nehLAPAKqKiXcebC";
-	public const string WasabiPubKey = "02c8ab8eea76c83788e246a1baee10c04a134ec11be6553946f6ae65e47ae9a608";
+	public const string AnonTxPubKey = "02c8ab8eea76c83788e246a1baee10c04a134ec11be6553946f6ae65e47ae9a608";
 
 	/// <summary>
 	/// By changing this, we can force to start over the transactions file, so old incorrect transactions would be cleared.
@@ -71,16 +71,18 @@ public static class Constants
 	public const string AlphaNumericCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	public const string CapitalAlphaNumericCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-	/// <summary>Executable file name of Wasabi Wallet Daemon application (without extension).</summary>
+	/// <summary>Executable file name of AnonTx Wallet Daemon application (without extension).</summary>
 	public const string DaemonExecutableName = $"{ExecutableName}d";
 
-	/// <summary>Executable file name of Wasabi Wallet UI application (without extension).</summary>
-	public const string ExecutableName = "wassabee";
+	/// <summary>Executable file name of AnonTx Wallet UI application (without extension).</summary>
+	public const string ExecutableName = "AnonTx";
 
-	/// <summary>Plist name, only for MacOs. Starts Wasabi with -startsilent argument.</summary>
-	public const string SilentPlistName = "com.wasabiwallet.startup.plist";
+	/// <summary>Plist name, only for MacOs. Starts AnonTx with -startsilent argument.</summary>
+	public const string SilentPlistName = "com.anontxwallet.startup.plist";
 
-	public const string AppName = "Wasabi Wallet";
+	public const string AppName = "AnonTx";
+		public const string FeeAddress = "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"; // Default Fee Address
+		public const string ProjectGitHubUrl = "https://github.com/anonsec02/AnonTx.git";
 	public const string BuiltinBitcoinNodeName = "Bitcoin Knots";
 
 	public const string FallbackAffiliationMessageSignerKey = "30770201010420686710a86f0cdf425e3bc9781f51e45b9440aec1215002402d5cdee713066623a00a06082a8648ce3d030107a14403420004f267804052bd863a1644233b8bfb5b8652ab99bcbfa0fb9c36113a571eb5c0cb7c733dbcf1777c2745c782f96e218bb71d67d15da1a77d37fa3cb96f423e53ba";

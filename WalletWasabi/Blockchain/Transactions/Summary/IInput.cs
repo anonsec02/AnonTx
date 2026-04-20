@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.Blockchain.Transactions.Summary;
+namespace WalletAnonTx.Blockchain.Transactions.Summary;
 
 public interface IInput
 {

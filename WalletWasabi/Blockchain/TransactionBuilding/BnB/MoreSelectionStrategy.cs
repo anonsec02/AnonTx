@@ -1,4 +1,4 @@
-namespace WalletWasabi.Blockchain.TransactionBuilding.BnB;
+namespace WalletAnonTx.Blockchain.TransactionBuilding.BnB;
 
 /// <summary>
 /// Strategy that searches search-space and caches every found selection that minimizes

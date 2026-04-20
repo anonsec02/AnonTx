@@ -7,23 +7,23 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Crypto.Randomness;
-using WalletWasabi.WabiSabi.Backend.Banning;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Models.MultipartyTransaction;
-using WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
-using WalletWasabi.WabiSabi.Backend.Statistics;
+using WalletAnonTx.Bases;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Crypto.Randomness;
+using WalletAnonTx.WabiSabi.Backend.Banning;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
+using WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
+using WalletAnonTx.WabiSabi.Backend.Statistics;
 using System.Collections.Immutable;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Backend.DoSPrevention;
-using WalletWasabi.WabiSabi.Backend.Events;
-using WalletWasabi.Helpers;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Backend.DoSPrevention;
+using WalletAnonTx.WabiSabi.Backend.Events;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds;
 
 public partial class Arena : PeriodicRunner
 {
@@ -294,7 +294,7 @@ public partial class Arena : PeriodicRunner
 					if (!allReady && phaseExpired)
 					{
 						// It would be better to end the round and create a blame round here, but older client would not support it.
-						// See https://github.com/zkSNACKs/WalletWasabi/pull/11028.
+						// See https://github.com/zkSNACKs/WalletAnonTx/pull/11028.
 						round.TransactionSigningTimeFrame = TimeFrame.Create(Config.FailFastTransactionSigningTimeout);
 						round.FastSigningPhase = true;
 					}

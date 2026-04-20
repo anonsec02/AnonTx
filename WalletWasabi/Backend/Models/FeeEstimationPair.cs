@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace WalletWasabi.Backend.Models;
+namespace WalletAnonTx.Backend.Models;
 
 /// <summary>
 /// Satoshi per byte.

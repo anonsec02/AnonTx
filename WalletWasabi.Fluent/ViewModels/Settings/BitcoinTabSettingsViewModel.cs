@@ -2,15 +2,15 @@ using System.Collections.Generic;
 using System.Globalization;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Validation;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Helpers;
-using WalletWasabi.Models;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Validation;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Models;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.Fluent.ViewModels.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.Settings;
 
 [AppLifetime]
 [NavigationMetaData(

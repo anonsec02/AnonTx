@@ -1,7 +1,7 @@
 using NBitcoin;
 using System.Collections.Generic;
 
-namespace WalletWasabi.Blockchain.TransactionOutputs;
+namespace WalletAnonTx.Blockchain.TransactionOutputs;
 
 public class ForeignVirtualOutput
 {

@@ -1,15 +1,15 @@
 using System.IO;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class LinuxStartupHelper
 {
 	public static async Task AddOrRemoveDesktopFileAsync(bool runOnSystemStartup)
 	{
 		string pathToDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), ".config", "autostart");
-		string pathToDesktopFile = Path.Combine(pathToDir, "Wasabi.desktop");
+		string pathToDesktopFile = Path.Combine(pathToDir, "AnonTx.desktop");
 
 		IoHelpers.EnsureContainingDirectoryExists(pathToDesktopFile);
 

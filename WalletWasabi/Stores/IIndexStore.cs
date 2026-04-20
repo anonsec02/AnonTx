@@ -1,8 +1,8 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
+using WalletAnonTx.Backend.Models;
 
-namespace WalletWasabi.Stores;
+namespace WalletAnonTx.Stores;
 
 public interface IIndexStore
 {

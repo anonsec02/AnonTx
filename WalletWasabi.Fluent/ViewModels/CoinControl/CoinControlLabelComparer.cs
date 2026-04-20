@@ -1,7 +1,7 @@
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.ViewModels.CoinControl.Core;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.ViewModels.CoinControl.Core;
 
-namespace WalletWasabi.Fluent.ViewModels.CoinControl;
+namespace WalletAnonTx.Fluent.ViewModels.CoinControl;
 
 public static class CoinControlLabelComparer
 {

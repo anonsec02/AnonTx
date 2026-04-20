@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.Fluent.Extensions;
+namespace WalletAnonTx.Fluent.Extensions;
 
 public static class EnumerableExtensions
 {

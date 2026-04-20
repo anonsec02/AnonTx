@@ -3,14 +3,14 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Http.Extensions;
-using WalletWasabi.WabiSabi.Backend.PostRequests;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.WabiSabi.Models.Serialization;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Http.Extensions;
+using WalletAnonTx.WabiSabi.Backend.PostRequests;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models.Serialization;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class WabiSabiHttpApiClient : IWabiSabiApiRequestHandler
 {

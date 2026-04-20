@@ -2,34 +2,34 @@
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
-using WalletWasabi.Services;
-using WalletWasabi.Services.Terminate;
-using Constants = WalletWasabi.Helpers.Constants;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Services;
+using WalletAnonTx.Services.Terminate;
+using Constants = WalletAnonTx.Helpers.Constants;
 
-namespace WalletWasabi.Daemon;
+namespace WalletAnonTx.Daemon;
 
-public class WasabiApplication
+public class AnonTxApplication
 {
-	public WasabiAppBuilder AppConfig { get; }
+	public AnonTxAppBuilder AppConfig { get; }
 	public Global? Global { get; private set; }
 	public string ConfigFilePath { get; }
 	public Config Config { get; }
 	public SingleInstanceChecker SingleInstanceChecker { get; }
 	public TerminateService TerminateService { get; }
 
-	public WasabiApplication(WasabiAppBuilder wasabiAppBuilder)
+	public AnonTxApplication(AnonTxAppBuilder anontxAppBuilder)
 	{
-		AppConfig = wasabiAppBuilder;
+		AppConfig = anontxAppBuilder;
 
 		ConfigFilePath = Path.Combine(Config.DataDir, "Config.json");
 		Directory.CreateDirectory(Config.DataDir);
-		Config = new Config(LoadOrCreateConfigs(), wasabiAppBuilder.Arguments);
+		Config = new Config(LoadOrCreateConfigs(), anontxAppBuilder.Arguments);
 
 		SetupLogger();
-		Logger.LogDebug($"Wasabi was started with these argument(s): {string.Join(" ", AppConfig.Arguments.DefaultIfEmpty("none"))}.");
+		Logger.LogDebug($"AnonTx was started with these argument(s): {string.Join(" ", AppConfig.Arguments.DefaultIfEmpty("none"))}.");
 		SingleInstanceChecker = new(Config.Network);
 		TerminateService = new(TerminateApplicationAsync, AppConfig.Terminate);
 	}
@@ -50,14 +50,14 @@ public class WasabiApplication
 		if (AppConfig.MustCheckSingleInstance)
 		{
 			var instanceResult = await SingleInstanceChecker.CheckSingleInstanceAsync();
-			if (instanceResult == WasabiInstanceStatus.AnotherInstanceIsRunning)
+			if (instanceResult == AnonTxInstanceStatus.AnotherInstanceIsRunning)
 			{
-				Logger.LogDebug("Wasabi is already running, signaled the first instance.");
+				Logger.LogDebug("AnonTx is already running, signaled the first instance.");
 				return ExitCode.FailedAlreadyRunningSignaled;
 			}
-			if (instanceResult == WasabiInstanceStatus.Error)
+			if (instanceResult == AnonTxInstanceStatus.Error)
 			{
-				Logger.LogCritical($"Wasabi is already running, but cannot be signaled");
+				Logger.LogCritical($"AnonTx is already running, but cannot be signaled");
 				return ExitCode.FailedAlreadyRunningError;
 			}
 		}

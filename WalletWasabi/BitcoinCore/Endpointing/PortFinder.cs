@@ -2,9 +2,9 @@ using NBitcoin;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.BitcoinCore.Endpointing;
+namespace WalletAnonTx.BitcoinCore.Endpointing;
 
 public static class PortFinder
 {

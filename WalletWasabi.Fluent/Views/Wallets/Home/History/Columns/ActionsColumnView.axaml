@@ -2,9 +2,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:viewmodel="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Home.History.HistoryItems"
+             xmlns:viewmodel="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.HistoryItems"
              mc:Ignorable="d" d:DesignWidth="100" d:DesignHeight="50"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Home.History.Columns.ActionsColumnView"
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Home.History.Columns.ActionsColumnView"
              x:CompileBindings="True"
              x:DataType="viewmodel:HistoryItemViewModelBase">
   <UserControl.Styles>

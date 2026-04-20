@@ -1,3 +1,3 @@
-namespace WalletWasabi.Affiliation.Models;
+namespace WalletAnonTx.Affiliation.Models;
 
 public record CoinJoinNotificationResponse(byte[] AffiliateData);

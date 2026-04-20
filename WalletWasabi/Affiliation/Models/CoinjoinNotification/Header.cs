@@ -1,4 +1,4 @@
-namespace WalletWasabi.Affiliation.Models.CoinJoinNotification;
+namespace WalletAnonTx.Affiliation.Models.CoinJoinNotification;
 
 public record Header(string Title, string AffiliationId, int Version)
 {

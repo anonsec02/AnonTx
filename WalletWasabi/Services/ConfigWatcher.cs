@@ -1,9 +1,9 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.WabiSabi.Backend;
+using WalletAnonTx.Bases;
+using WalletAnonTx.WabiSabi.Backend;
 
-namespace WalletWasabi.Services;
+namespace WalletAnonTx.Services;
 
 public class ConfigWatcher : PeriodicRunner
 {

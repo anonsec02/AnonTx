@@ -1,6 +1,6 @@
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class MainNetBitcoinP2pEndPointConverterNg : EndPointJsonConverterNg
 {

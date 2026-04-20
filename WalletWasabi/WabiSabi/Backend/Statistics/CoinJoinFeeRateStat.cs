@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.WabiSabi.Backend.Statistics;
+namespace WalletAnonTx.WabiSabi.Backend.Statistics;
 
 public record CoinJoinFeeRateStat(
 	DateTimeOffset DateTimeOffset,

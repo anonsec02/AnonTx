@@ -2,7 +2,7 @@ using System.Reactive.Linq;
 using System.Windows.Input;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 public partial class LabelViewModel : ViewModelBase
 {

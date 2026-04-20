@@ -1,9 +1,9 @@
 using System.Threading;
-using WalletWasabi.Crypto.Randomness;
+using WalletAnonTx.Crypto.Randomness;
 
-namespace WalletWasabi.Tor.Socks5.Pool.Circuits;
+namespace WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
-/// <summary>Tor circuit that exists for the entire Wasabi Wallet application life.</summary>
+/// <summary>Tor circuit that exists for the entire AnonTx Wallet application life.</summary>
 /// <remarks>
 /// Use this class for HTTP requests where privacy is not important really.
 /// This includes downloading fee rates from a 3rd party service, etc.

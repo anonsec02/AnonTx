@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 public record OwnershipProof : IBitcoinSerializable
 {

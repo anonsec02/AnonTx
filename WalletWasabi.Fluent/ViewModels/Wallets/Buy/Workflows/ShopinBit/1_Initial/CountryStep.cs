@@ -4,10 +4,10 @@ using System.Linq;
 using System.Reactive.Linq;
 using System.Threading;
 using ReactiveUI;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Extensions;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
 /// <summary>
 /// ShopinBit Step #2: Select Country

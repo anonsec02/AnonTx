@@ -1,3 +1,3 @@
-﻿namespace WalletWasabi.Fluent.Models;
+﻿namespace WalletAnonTx.Fluent.Models;
 
 public record TransactionBroadcastInfo(string TransactionId, int InputCount, int OutputCount, string InputAmoutString, string OutputAmountString, string FeeString);

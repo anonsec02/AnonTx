@@ -4,7 +4,7 @@ using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Styling;
 
-namespace WalletWasabi.Fluent.Diagnostics;
+namespace WalletAnonTx.Fluent.Diagnostics;
 
 public partial class DiagnosticsWindow : Window
 {

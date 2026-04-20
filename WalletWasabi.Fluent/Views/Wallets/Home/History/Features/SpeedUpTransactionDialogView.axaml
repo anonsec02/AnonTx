@@ -2,12 +2,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:converters="clr-namespace:WalletWasabi.Fluent.Converters"
-             xmlns:features="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Home.History.Features"
+             xmlns:converters="clr-namespace:WalletAnonTx.Fluent.Converters"
+             xmlns:features="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.Features"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
              x:DataType="features:SpeedUpTransactionDialogViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Home.History.Features.SpeedUpTransactionDialogView">
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Home.History.Features.SpeedUpTransactionDialogView">
 
   <UserControl.Styles>
     <Style Selector="AmountControl" x:CompileBindings="False">

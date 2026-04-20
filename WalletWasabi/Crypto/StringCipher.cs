@@ -1,9 +1,9 @@
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using WalletWasabi.Crypto.Randomness;
+using WalletAnonTx.Crypto.Randomness;
 
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 public static class StringCipher
 {

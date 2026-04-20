@@ -9,15 +9,15 @@ using System.Windows.Input;
 using DynamicData;
 using DynamicData.Aggregation;
 using ReactiveUI;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Wallets.Buy.Messages;
-using WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
-using WalletWasabi.Logging;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Messages;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy;
 
 public partial class OrderViewModel : ViewModelBase, IDisposable
 {
@@ -159,7 +159,7 @@ public partial class OrderViewModel : ViewModelBase, IDisposable
 
 	private async Task ShowErrorAsync(string message)
 	{
-		await UiContext.Navigate().To().ShowErrorDialog(message, "Send Failed", "Wasabi was unable to send your message", NavigationTarget.CompactDialogScreen).GetResultAsync();
+		await UiContext.Navigate().To().ShowErrorDialog(message, "Send Failed", "AnonTx was unable to send your message", NavigationTarget.CompactDialogScreen).GetResultAsync();
 	}
 
 	private void ResetOrder()

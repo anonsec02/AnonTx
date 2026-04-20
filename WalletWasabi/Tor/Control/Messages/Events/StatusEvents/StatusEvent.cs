@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Utils;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Utils;
 
-namespace WalletWasabi.Tor.Control.Messages.Events.StatusEvents;
+namespace WalletAnonTx.Tor.Control.Messages.Events.StatusEvents;
 
 public enum StatusType
 {

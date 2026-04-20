@@ -9,22 +9,22 @@ using System.Windows.Input;
 using NBitcoin;
 using NBitcoin.Policy;
 using ReactiveUI;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.Models.Transactions;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.Models.Transactions;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 [NavigationMetaData(Title = "Transaction Preview")]
 public partial class TransactionPreviewViewModel : RoutableViewModel
@@ -123,7 +123,7 @@ public partial class TransactionPreviewViewModel : RoutableViewModel
 			catch (Exception ex)
 			{
 				Logger.LogError(ex);
-				await ShowErrorAsync("Transaction Export", ex.ToUserFriendlyString(), "Wasabi was unable to export the PSBT.");
+				await ShowErrorAsync("Transaction Export", ex.ToUserFriendlyString(), "AnonTx was unable to export the PSBT.");
 			}
 
 			if (saved)
@@ -252,7 +252,7 @@ public partial class TransactionPreviewViewModel : RoutableViewModel
 			await ShowErrorAsync(
 				"Transaction Building",
 				"The transaction cannot be sent because its fee is more than the payment amount.",
-				"Wasabi was unable to create your transaction.");
+				"AnonTx was unable to create your transaction.");
 
 			return null;
 		}
@@ -279,7 +279,7 @@ public partial class TransactionPreviewViewModel : RoutableViewModel
 			await ShowErrorAsync(
 				"Transaction Building",
 				"There are not enough funds to cover the transaction fee.",
-				"Wasabi was unable to create your transaction.");
+				"AnonTx was unable to create your transaction.");
 
 			return null;
 		}
@@ -290,7 +290,7 @@ public partial class TransactionPreviewViewModel : RoutableViewModel
 			await ShowErrorAsync(
 				"Transaction Building",
 				ex.ToUserFriendlyString(),
-				"Wasabi was unable to create your transaction.");
+				"AnonTx was unable to create your transaction.");
 
 			return null;
 		}
@@ -410,7 +410,7 @@ public partial class TransactionPreviewViewModel : RoutableViewModel
 			await ShowErrorAsync(
 				"Transaction",
 				ex.ToUserFriendlyString(),
-				"Wasabi was unable to send your transaction.");
+				"AnonTx was unable to send your transaction.");
 		}
 		finally
 		{

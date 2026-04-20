@@ -3,10 +3,10 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Fluent.Generators.Abstractions;
-using WalletWasabi.Fluent.Generators.Analyzers;
+using WalletAnonTx.Fluent.Generators.Abstractions;
+using WalletAnonTx.Fluent.Generators.Analyzers;
 
-namespace WalletWasabi.Fluent.Generators.Generators;
+namespace WalletAnonTx.Fluent.Generators.Generators;
 
 internal class UiContextConstructorGenerator : GeneratorStep<ClassDeclarationSyntax>
 {
@@ -109,7 +109,7 @@ internal class UiContextConstructorGenerator : GeneratorStep<ClassDeclarationSyn
 				var code =
 					$$"""
 					{{usings}}
-					using WalletWasabi.Fluent.Models.UI;
+					using WalletAnonTx.Fluent.Models.UI;
 
 					namespace {{namespaceName}};
 

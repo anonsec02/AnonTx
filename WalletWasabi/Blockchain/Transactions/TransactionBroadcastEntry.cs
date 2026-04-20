@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.Blockchain.Transactions;
+namespace WalletAnonTx.Blockchain.Transactions;
 
 public class TransactionBroadcastEntry
 {

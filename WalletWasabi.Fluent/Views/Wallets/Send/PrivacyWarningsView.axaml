@@ -1,8 +1,8 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:model="using:WalletWasabi.Fluent.Models.Transactions"
-             xmlns:send="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Send"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Send.PrivacyWarningsView"
+             xmlns:model="using:WalletAnonTx.Fluent.Models.Transactions"
+             xmlns:send="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Send"
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Send.PrivacyWarningsView"
              x:DataType="send:PrivacySuggestionsFlyoutViewModel"
              x:CompileBindings="True">
   <UserControl.Styles>

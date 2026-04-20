@@ -1,13 +1,13 @@
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.AddWallet;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Userfacing;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.AddWallet;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Userfacing;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Login;
+namespace WalletAnonTx.Fluent.ViewModels.Login;
 
 [NavigationMetaData(Title = "")]
 public partial class LoginViewModel : RoutableViewModel

@@ -2,14 +2,14 @@ using System.Collections.Generic;
 using System.Linq;
 using WabiSabi.Crypto.Randomness;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoin.Client;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
 
 /// <summary>
 /// Generator of randomness for <see cref="CoinJoinCoinSelector"/>.
 /// </summary>
 public class CoinJoinCoinSelectorRandomnessGenerator
 {
-	public CoinJoinCoinSelectorRandomnessGenerator(int maxInputsCount, WasabiRandom rnd)
+	public CoinJoinCoinSelectorRandomnessGenerator(int maxInputsCount, AnonTxRandom rnd)
 	{
 		Rnd = rnd;
 		MaxInputsCount = maxInputsCount;
@@ -21,7 +21,7 @@ public class CoinJoinCoinSelectorRandomnessGenerator
 		}
 	}
 
-	public WasabiRandom Rnd { get; }
+	public AnonTxRandom Rnd { get; }
 	private int MaxInputsCount { get; }
 	private Dictionary<int, int> Distance { get; } = new();
 

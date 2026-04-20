@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using System.Text;
 using NBitcoin;
 using System.Security;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Blockchain.Keys;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Blockchain.Keys;
 using System.Diagnostics.CodeAnalysis;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Userfacing;
+namespace WalletAnonTx.Userfacing;
 
 public static class PasswordHelper
 {

@@ -1,6 +1,6 @@
 using System.Threading;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class CancellationTokenExtensions
 {

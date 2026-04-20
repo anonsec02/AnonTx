@@ -1,7 +1,7 @@
 using System.Linq;
-using WalletWasabi.Fluent.Extensions;
+using WalletAnonTx.Fluent.Extensions;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class TimeSpanFormatter
 {

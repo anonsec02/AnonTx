@@ -1,16 +1,16 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Nito.AsyncEx;
-using WalletWasabi.Services;
-using WalletWasabi.WebClients.BlockstreamInfo;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Nito.AsyncEx;
+using WalletAnonTx.Services;
+using WalletAnonTx.WebClients.BlockstreamInfo;
 
-namespace WalletWasabi.Blockchain.Analysis.FeesEstimation;
+namespace WalletAnonTx.Blockchain.Analysis.FeesEstimation;
 
 public class ThirdPartyFeeProvider : PeriodicRunner, IThirdPartyFeeProvider
 {
-	public ThirdPartyFeeProvider(TimeSpan period, WasabiSynchronizer synchronizer, BlockstreamInfoFeeProvider blockstreamProvider)
+	public ThirdPartyFeeProvider(TimeSpan period, AnonTxSynchronizer synchronizer, BlockstreamInfoFeeProvider blockstreamProvider)
 		: base(period)
 	{
 		Synchronizer = synchronizer;
@@ -19,7 +19,7 @@ public class ThirdPartyFeeProvider : PeriodicRunner, IThirdPartyFeeProvider
 
 	public event EventHandler<AllFeeEstimate>? AllFeeEstimateArrived;
 
-	public WasabiSynchronizer Synchronizer { get; }
+	public AnonTxSynchronizer Synchronizer { get; }
 	public BlockstreamInfoFeeProvider BlockstreamProvider { get; }
 	public AllFeeEstimate? LastAllFeeEstimate { get; private set; }
 	private object Lock { get; } = new();

@@ -1,4 +1,4 @@
-namespace WalletWasabi.Blockchain.Analysis;
+namespace WalletAnonTx.Blockchain.Analysis;
 
 public class StartingAnonScores
 {

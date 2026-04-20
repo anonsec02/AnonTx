@@ -1,6 +1,6 @@
-using WalletWasabi.Crypto.Randomness;
+using WalletAnonTx.Crypto.Randomness;
 
-namespace WalletWasabi.Tor.Socks5.Pool.Circuits;
+namespace WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
 /// <summary>
 /// Random Tor circuit for an HTTP request which should not be linked with any other HTTP request sent previously.

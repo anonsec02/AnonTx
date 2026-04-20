@@ -1,11 +1,11 @@
 using System.Threading.Tasks;
 using System.Threading;
-using WalletWasabi.Hwi;
-using WalletWasabi.Wallets;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
+using WalletAnonTx.Hwi;
+using WalletAnonTx.Wallets;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 internal class HardwareWalletModel : WalletModel, IHardwareWalletModel
 {

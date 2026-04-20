@@ -18,14 +18,14 @@ jobs:
   - task: DotNetCoreCLI@2
     inputs:
       command: 'run'
-      projects: '**/WalletWasabi.Packager.csproj'
+      projects: '**/WalletAnonTx.Packager.csproj'
       arguments: '--cdelivery'
   - task: CopyFiles@2
     inputs:
-      SourceFolder: 'WalletWasabi.Fluent.Desktop/bin/dist/cdelivery/'
+      SourceFolder: 'WalletAnonTx.Fluent.Desktop/bin/dist/cdelivery/'
       contents: '**'
       targetFolder: $(Build.ArtifactStagingDirectory)
   - task: PublishBuildArtifacts@1
     inputs:
       pathToPublish: $(Build.ArtifactStagingDirectory)
-      artifactName: WasabiBuildOutputs
+      artifactName: AnonTxBuildOutputs

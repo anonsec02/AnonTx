@@ -3,12 +3,12 @@ using System.ComponentModel;
 using System.Reactive;
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Bases;
-using WalletWasabi.Fluent.Converters;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Fluent.Converters;
 using System.Runtime.Serialization;
 using System.Runtime.InteropServices;
 
-namespace WalletWasabi.Fluent;
+namespace WalletAnonTx.Fluent;
 
 [JsonObject(MemberSerialization.OptIn)]
 public class UiConfig : ConfigBase
@@ -206,7 +206,7 @@ public class UiConfig : ConfigBase
 	[OnDeserialized]
 	internal void OnDeserialized(StreamingContext context)
 	{
-		if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) // On win this works perfectly. By default Wasabi will run after startup.
+		if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) // On win this works perfectly. By default AnonTx will run after startup.
 		{
 			return;
 		}
@@ -216,7 +216,7 @@ public class UiConfig : ConfigBase
 			return;
 		}
 
-		if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux)) // On Linux we do not start Wasabi with OS by default - because Linux users knows better.
+		if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux)) // On Linux we do not start AnonTx with OS by default - because Linux users knows better.
 		{
 			RunOnSystemStartup = false;
 		}

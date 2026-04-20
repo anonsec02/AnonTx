@@ -3,9 +3,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Patterns;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Patterns;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
 
 public class ActionableItem : IActionableItem
 {

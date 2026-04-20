@@ -2,11 +2,11 @@ using System.Linq;
 using System.Reactive.Linq;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Providers;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Providers;
 
-namespace WalletWasabi.Fluent.ViewModels;
+namespace WalletAnonTx.Fluent.ViewModels;
 
 [AppLifetime]
 public partial class ApplicationViewModel : ViewModelBase, ICanShutdownProvider

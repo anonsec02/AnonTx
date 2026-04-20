@@ -1,6 +1,6 @@
-using WalletWasabi.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Backend.Models;
 
-namespace WalletWasabi.WabiSabi.Models;
+namespace WalletAnonTx.WabiSabi.Models;
 
 public record Error(
 	string Type,

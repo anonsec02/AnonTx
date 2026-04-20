@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using WalletWasabi.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Models.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs.Authorization;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs.Authorization;
 
 [NavigationMetaData(Title = "Enter your passphrase", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class PasswordAuthDialogViewModel : AuthorizationDialogBase

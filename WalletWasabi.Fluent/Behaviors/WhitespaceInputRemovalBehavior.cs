@@ -4,10 +4,10 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Xaml.Interactions.Custom;
-using WalletWasabi.Extensions;
-using WalletWasabi.Fluent.Extensions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Fluent.Extensions;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class WhitespaceInputRemovalBehavior : DisposingBehavior<TextBox>
 {

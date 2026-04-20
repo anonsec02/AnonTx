@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace WalletWasabi.Userfacing;
+namespace WalletAnonTx.Userfacing;
 
 public static class PasswordConsole
 {

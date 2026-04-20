@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace WalletWasabi.Tor.Http.Helpers;
+namespace WalletAnonTx.Tor.Http.Helpers;
 
 public static class HttpStatusCodeHelper
 {

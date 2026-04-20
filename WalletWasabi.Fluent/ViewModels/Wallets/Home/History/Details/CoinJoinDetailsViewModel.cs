@@ -1,10 +1,10 @@
 using System.Reactive.Disposables;
 using NBitcoin;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.History.Details;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.Details;
 
 [NavigationMetaData(Title = "Coinjoin Details", NavigationTarget = NavigationTarget.DialogScreen)]
 public partial class CoinJoinDetailsViewModel : RoutableViewModel

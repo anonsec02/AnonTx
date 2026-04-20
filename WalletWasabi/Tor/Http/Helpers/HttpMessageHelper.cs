@@ -8,14 +8,14 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Http.Models;
-using WalletWasabi.Tor.Socks5.Exceptions;
-using static WalletWasabi.Tor.Http.Constants;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Http.Models;
+using WalletAnonTx.Tor.Socks5.Exceptions;
+using static WalletAnonTx.Tor.Http.Constants;
 
-namespace WalletWasabi.Tor.Http.Helpers;
+namespace WalletAnonTx.Tor.Http.Helpers;
 
 public static class HttpMessageHelper
 {

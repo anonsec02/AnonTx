@@ -1,4 +1,4 @@
-namespace WalletWasabi.Blockchain.Keys;
+namespace WalletAnonTx.Blockchain.Keys;
 
 public enum KeyState
 {

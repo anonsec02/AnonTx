@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoin.Client.Decomposer;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoin.Client.Decomposer;
 
 /// <summary>
 /// Notebook: https://github.com/lontivero/DecompositionsPlayground/blob/master/Notebook.ipynb

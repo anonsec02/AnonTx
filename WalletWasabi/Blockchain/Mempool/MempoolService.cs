@@ -4,14 +4,14 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.Blockchain.Mempool;
+namespace WalletAnonTx.Blockchain.Mempool;
 
 public class MempoolService
 {
@@ -78,7 +78,7 @@ public class MempoolService
 	/// <summary>
 	/// Tries to perform mempool cleanup with the help of the backend.
 	/// </summary>
-	public async Task<bool> TryPerformMempoolCleanupAsync(WasabiHttpClientFactory httpClientFactory)
+	public async Task<bool> TryPerformMempoolCleanupAsync(AnonTxHttpClientFactory httpClientFactory)
 	{
 		// If already cleaning, then no need to run it that often.
 		if (Interlocked.CompareExchange(ref _cleanupInProcess, 1, 0) == 1)
@@ -101,7 +101,7 @@ public class MempoolService
 			Logger.LogInfo("Start cleaning out mempool...");
 			{
 				var compactness = 10;
-				var allMempoolHashes = await httpClientFactory.SharedWasabiClient.GetMempoolHashesAsync(compactness).ConfigureAwait(false);
+				var allMempoolHashes = await httpClientFactory.SharedAnonTxClient.GetMempoolHashesAsync(compactness).ConfigureAwait(false);
 
 				int removedTxCount;
 

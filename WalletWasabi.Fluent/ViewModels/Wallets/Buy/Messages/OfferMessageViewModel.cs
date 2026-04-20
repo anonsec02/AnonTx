@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.BuyAnything;
+using WalletAnonTx.BuyAnything;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Messages;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Messages;
 
 public class OfferMessageViewModel : AssistantMessageViewModel
 {

@@ -2,12 +2,12 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.WabiSabi.Client.CoinJoin.Client;
-using WalletWasabi.WabiSabi.Client.CoinJoinProgressEvents;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
+using WalletAnonTx.WabiSabi.Client.CoinJoinProgressEvents;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class CoinJoinTracker : IDisposable
 {

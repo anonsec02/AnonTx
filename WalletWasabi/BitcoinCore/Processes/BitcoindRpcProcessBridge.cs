@@ -3,14 +3,14 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.BitcoinCore.Configuration;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Microservices;
+using WalletAnonTx.Bases;
+using WalletAnonTx.BitcoinCore.Configuration;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Microservices;
 
-namespace WalletWasabi.BitcoinCore.Processes;
+namespace WalletAnonTx.BitcoinCore.Processes;
 
 /// <summary>
 /// Class for starting and stopping of Bitcoin daemon.

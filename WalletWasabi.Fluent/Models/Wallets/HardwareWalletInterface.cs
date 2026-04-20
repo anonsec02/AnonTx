@@ -1,9 +1,9 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Hwi.Models;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Hwi.Models;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class HardwareWalletInterface

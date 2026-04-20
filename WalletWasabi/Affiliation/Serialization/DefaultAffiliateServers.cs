@@ -1,7 +1,7 @@
 using System.Collections.Immutable;
 using System.ComponentModel;
 
-namespace WalletWasabi.Affiliation.Serialization;
+namespace WalletAnonTx.Affiliation.Serialization;
 
 public class DefaultAffiliateServersAttribute : DefaultValueAttribute
 {

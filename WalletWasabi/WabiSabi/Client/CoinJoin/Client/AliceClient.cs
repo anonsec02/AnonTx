@@ -2,19 +2,19 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Crypto;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Backend.Rounds;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.WabiSabi.Client.RoundStateAwaiters;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.WabiSabi.Client.RoundStateAwaiters;
+using WalletAnonTx.Extensions;
 using System.Net.Http;
 using WabiSabi.Crypto.ZeroKnowledge;
-using WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+using WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoin.Client;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
 
 public class AliceClient
 {

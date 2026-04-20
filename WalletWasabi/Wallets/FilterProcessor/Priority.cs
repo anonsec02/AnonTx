@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.Wallets.FilterProcessor;
+namespace WalletAnonTx.Wallets.FilterProcessor;
 
 public record Priority(SyncType SyncType, uint BlockHeight = 0)
 {

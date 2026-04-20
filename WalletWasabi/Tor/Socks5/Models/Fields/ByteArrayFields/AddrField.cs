@@ -1,10 +1,10 @@
 using System.Linq;
 using System.Text;
-using WalletWasabi.Helpers;
-using WalletWasabi.Tor.Socks5.Models.Bases;
-using WalletWasabi.Tor.Socks5.Models.Fields.OctetFields;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Tor.Socks5.Models.Bases;
+using WalletAnonTx.Tor.Socks5.Models.Fields.OctetFields;
 
-namespace WalletWasabi.Tor.Socks5.Models.Fields.ByteArrayFields;
+namespace WalletAnonTx.Tor.Socks5.Models.Fields.ByteArrayFields;
 
 public class AddrField : ByteArraySerializableBase
 {

@@ -3,12 +3,12 @@ using NBitcoin;
 using System.Collections.Immutable;
 using System.Linq;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Extensions;
-using WalletWasabi.WabiSabi.Backend.Rounds;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.WabiSabi.Client.CoinJoin.Client.Decomposer;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Client.CoinJoin.Client.Decomposer;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public record UtxoSelectionParameters(
 	MoneyRange AllowedInputAmounts,

@@ -8,10 +8,10 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Media;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.MathNet;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.MathNet;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public partial class LineChart : Control
 {

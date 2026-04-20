@@ -1,9 +1,9 @@
 using System.Reactive;
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
-namespace WalletWasabi.Fluent.ViewModels.AddWallet;
+namespace WalletAnonTx.Fluent.ViewModels.AddWallet;
 
 [NavigationMetaData(Title = "Welcome")]
 public partial class WelcomePageViewModel : DialogViewModelBase<Unit>

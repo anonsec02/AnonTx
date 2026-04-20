@@ -4,12 +4,12 @@ using System.Windows.Input;
 using DynamicData.Binding;
 using DynamicData.Aggregation;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Fluent.ViewModels.Wallets.Labels;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Labels;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Receive;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Receive;
 
 [NavigationMetaData(
 	Title = "Receive",

@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Stores;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Stores;
 
-namespace WalletWasabi.Blockchain.Transactions;
+namespace WalletAnonTx.Blockchain.Transactions;
 
 public class TransactionStore : IAsyncDisposable
 {

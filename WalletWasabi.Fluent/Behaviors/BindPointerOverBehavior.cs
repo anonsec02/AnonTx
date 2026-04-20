@@ -6,7 +6,7 @@ using Avalonia.Data;
 using Avalonia.Input;
 using Avalonia.Xaml.Interactions.Custom;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class BindPointerOverBehavior : DisposingBehavior<Control>
 {

@@ -6,14 +6,14 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using WalletWasabi.Extensions;
-using WalletWasabi.Fluent.Validation;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Models;
-using WalletWasabi.Userfacing;
-using WalletWasabi.Userfacing.Bip21;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Fluent.Validation;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Models;
+using WalletAnonTx.Userfacing;
+using WalletAnonTx.Userfacing.Bip21;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs;
 
 [NavigationMetaData(Title = "Address", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class AddressEntryDialogViewModel : DialogViewModelBase<Bip21UriParser.Result?>

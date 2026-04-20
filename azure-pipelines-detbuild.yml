@@ -9,7 +9,7 @@ pool:
 
 steps:
 - checkout: self
-  path: WalletWasabi
+  path: WalletAnonTx
 
 - task: UseDotNet@2
   displayName: 'Install .NET'
@@ -25,16 +25,16 @@ steps:
       $env:GIT_REDIRECT_STDERR = '2>&1'
       cd ..
       # Copy the source files to a different location and build from there.
-      robocopy WalletWasabi WalletWasabiClone /COPYALL /S /NFL /NDL /NJH
-      dotnet run --project WalletWasabi\WalletWasabi.Packager --onlybinaries
-      dotnet run --project WalletWasabiClone\WalletWasabi.Packager --cdelivery
+      robocopy WalletAnonTx WalletAnonTxClone /COPYALL /S /NFL /NDL /NJH
+      dotnet run --project WalletAnonTx\WalletAnonTx.Packager --onlybinaries
+      dotnet run --project WalletAnonTxClone\WalletAnonTx.Packager --cdelivery
 
-      Get-ChildItem -Recurse -Path WalletWasabiClone\WalletWasabi.Fluent.Desktop\bin\dist\cdelivery -Filter "*linux-x64.zip" | Expand-Archive -DestinationPath temp\linux-x64
-      Get-ChildItem -Recurse -Path WalletWasabiClone\WalletWasabi.Fluent.Desktop\bin\dist\cdelivery -Filter "*macOS-x64.zip" | Expand-Archive -DestinationPath temp\osx-x64
-      Get-ChildItem -Recurse -Path WalletWasabiClone\WalletWasabi.Fluent.Desktop\bin\dist\cdelivery -Filter "*macOS-arm64.zip" | Expand-Archive -DestinationPath temp\osx-arm64
-      Get-ChildItem -Recurse -Path WalletWasabiClone\WalletWasabi.Fluent.Desktop\bin\dist\cdelivery -Filter "*win-x64.zip" | Expand-Archive -DestinationPath temp\win-x64
+      Get-ChildItem -Recurse -Path WalletAnonTxClone\WalletAnonTx.Fluent.Desktop\bin\dist\cdelivery -Filter "*linux-x64.zip" | Expand-Archive -DestinationPath temp\linux-x64
+      Get-ChildItem -Recurse -Path WalletAnonTxClone\WalletAnonTx.Fluent.Desktop\bin\dist\cdelivery -Filter "*macOS-x64.zip" | Expand-Archive -DestinationPath temp\osx-x64
+      Get-ChildItem -Recurse -Path WalletAnonTxClone\WalletAnonTx.Fluent.Desktop\bin\dist\cdelivery -Filter "*macOS-arm64.zip" | Expand-Archive -DestinationPath temp\osx-arm64
+      Get-ChildItem -Recurse -Path WalletAnonTxClone\WalletAnonTx.Fluent.Desktop\bin\dist\cdelivery -Filter "*win-x64.zip" | Expand-Archive -DestinationPath temp\win-x64
 
-      git diff --no-index WalletWasabi\WalletWasabi.Fluent.Desktop\bin\dist temp
+      git diff --no-index WalletAnonTx\WalletAnonTx.Fluent.Desktop\bin\dist temp
       if (0 -eq $LASTEXITCODE)
       {
           Write-Output "Deterministic build succeed"

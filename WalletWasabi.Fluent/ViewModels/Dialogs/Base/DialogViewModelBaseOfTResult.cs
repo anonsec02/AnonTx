@@ -2,7 +2,7 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
 /// <summary>
 /// Base ViewModel class for Dialogs that returns a value back.

@@ -1,16 +1,16 @@
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Services;
+using WalletAnonTx.Services;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class AmountProvider : ReactiveObject
 {
-	private readonly WasabiSynchronizer _synchronizer;
+	private readonly AnonTxSynchronizer _synchronizer;
 	[AutoNotify] private decimal _usdExchangeRate;
 
-	public AmountProvider(WasabiSynchronizer synchronizer)
+	public AmountProvider(AnonTxSynchronizer synchronizer)
 	{
 		_synchronizer = synchronizer;
 		BtcToUsdExchangeRates = this.WhenAnyValue(provider => provider._synchronizer.UsdExchangeRate);

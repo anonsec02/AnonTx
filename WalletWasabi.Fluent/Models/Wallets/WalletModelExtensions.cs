@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.TransactionOutputs;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public static class WalletModelExtensions
 {

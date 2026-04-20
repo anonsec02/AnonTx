@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.WabiSabi.Client.Banning;
+namespace WalletAnonTx.WabiSabi.Client.Banning;
 
 public class CoinPrison : IDisposable
 {

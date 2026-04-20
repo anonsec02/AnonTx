@@ -1,12 +1,12 @@
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Logging;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.ViewModels.TransactionBroadcasting;
+namespace WalletAnonTx.Fluent.ViewModels.TransactionBroadcasting;
 
 [NavigationMetaData(Title = "Broadcast Transaction")]
 public partial class BroadcastTransactionViewModel : RoutableViewModel

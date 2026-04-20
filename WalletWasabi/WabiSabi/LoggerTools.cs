@@ -1,10 +1,10 @@
 using System.Runtime.CompilerServices;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Backend.Rounds;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.WabiSabi;
+namespace WalletAnonTx.WabiSabi;
 
 public static class LoggerTools
 {

@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using NBitcoin;
-using WalletWasabi.BitcoinCore.Rpc.Models;
+using WalletAnonTx.BitcoinCore.Rpc.Models;
 
-namespace WalletWasabi.BitcoinCore.Rpc;
+namespace WalletAnonTx.BitcoinCore.Rpc;
 
 public static class RpcParser
 {

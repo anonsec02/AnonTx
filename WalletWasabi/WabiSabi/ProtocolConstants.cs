@@ -1,4 +1,4 @@
-namespace WalletWasabi.WabiSabi;
+namespace WalletAnonTx.WabiSabi;
 
 public static class ProtocolConstants
 {

@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Diagnostics.CodeAnalysis;
-using WalletWasabi.Extensions;
-using WalletWasabi.Userfacing.Bip21;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Userfacing.Bip21;
 
-namespace WalletWasabi.Userfacing;
+namespace WalletAnonTx.Userfacing;
 
 public static class AddressStringParser
 {

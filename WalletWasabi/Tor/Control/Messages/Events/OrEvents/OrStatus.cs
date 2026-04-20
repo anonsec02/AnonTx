@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control.Messages.Events.OrEvents;
+namespace WalletAnonTx.Tor.Control.Messages.Events.OrEvents;
 
 public enum OrStatus
 {

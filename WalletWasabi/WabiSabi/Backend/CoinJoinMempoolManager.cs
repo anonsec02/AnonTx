@@ -1,10 +1,10 @@
 using NBitcoin;
 using System.Linq;
-using WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
+using WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
 using System.Collections.Immutable;
-using WalletWasabi.BitcoinCore.Mempool;
+using WalletAnonTx.BitcoinCore.Mempool;
 
-namespace WalletWasabi.WabiSabi.Backend;
+namespace WalletAnonTx.WabiSabi.Backend;
 
 public class CoinJoinMempoolManager : IDisposable
 {

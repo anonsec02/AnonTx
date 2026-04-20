@@ -1,10 +1,10 @@
 using System.Reactive;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.Validation;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Validation;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Settings;
 
 [NavigationMetaData(Title = "Rename Wallet", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class WalletRenameViewModel : DialogViewModelBase<Unit>

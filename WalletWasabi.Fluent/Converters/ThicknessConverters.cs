@@ -1,7 +1,7 @@
 using Avalonia;
 using Avalonia.Data.Converters;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public class ThicknessConverters
 {

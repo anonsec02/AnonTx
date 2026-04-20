@@ -1,9 +1,9 @@
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Authorization;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Authorization;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 // TODO: Remove this entire class after SendViewModel is decoupled.
 public static class AuthorizationHelpers

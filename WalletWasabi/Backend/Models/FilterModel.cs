@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Text;
 using System.Threading;
-using WalletWasabi.Blockchain.Blocks;
+using WalletAnonTx.Blockchain.Blocks;
 
-namespace WalletWasabi.Backend.Models;
+namespace WalletAnonTx.Backend.Models;
 
 public class FilterModel
 {

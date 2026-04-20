@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using WalletWasabi.Blockchain.Analysis;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
+using WalletAnonTx.Blockchain.Analysis;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Blockchain.Transactions;
+namespace WalletAnonTx.Blockchain.Transactions;
 
 [DebuggerDisplay("{Transaction.GetHash()}")]
 public class SmartTransaction : IEquatable<SmartTransaction>
@@ -20,7 +20,7 @@ public class SmartTransaction : IEquatable<SmartTransaction>
 	#region Constructors
 
 	private Lazy<long[]> _outputValues;
-	private Lazy<bool> _isWasabi2Cj;
+	private Lazy<bool> _isAnonTx2Cj;
 
 	public SmartTransaction(
 		Transaction transaction,
@@ -53,9 +53,9 @@ public class SmartTransaction : IEquatable<SmartTransaction>
 		WalletOutputsInternal = new HashSet<SmartCoin>(Transaction.Outputs.Count);
 
 		_outputValues = new Lazy<long[]>(() => Transaction.Outputs.Select(x => x.Value.Satoshi).ToArray(), true);
-		_isWasabi2Cj = new Lazy<bool>(
+		_isAnonTx2Cj = new Lazy<bool>(
 			() => Transaction.Outputs.Count >= 2 // Sanity check.
-			&& Transaction.Inputs.Count >= 50 // 50 was the minimum input count at the beginning of Wasabi 2.
+			&& Transaction.Inputs.Count >= 50 // 50 was the minimum input count at the beginning of AnonTx 2.
 			&& OutputValues.Count(x => BlockchainAnalyzer.StdDenoms.Contains(x)) > OutputValues.Length * 0.8 // Most of the outputs contains the denomination.
 			&& OutputValues.Zip(OutputValues.Skip(1)).All(p => p.First >= p.Second), // Outputs are ordered descending.
 			isThreadSafe: true);
@@ -66,7 +66,7 @@ public class SmartTransaction : IEquatable<SmartTransaction>
 	#region Members
 
 	public long[] OutputValues => _outputValues.Value;
-	public bool IsWasabi2Cj => _isWasabi2Cj.Value;
+	public bool IsAnonTx2Cj => _isAnonTx2Cj.Value;
 
 	/// <summary>Coins those are on the input side of the tx and belong to ANY loaded wallet. Later if more wallets are loaded this list can increase.</summary>
 	private HashSet<SmartCoin> WalletInputsInternal { get; }

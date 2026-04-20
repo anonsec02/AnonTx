@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace WalletWasabi.JsonConverters.Timing;
+namespace WalletAnonTx.JsonConverters.Timing;
 
 public class DefaultValueTimeSpanAttribute : DefaultValueAttribute
 {

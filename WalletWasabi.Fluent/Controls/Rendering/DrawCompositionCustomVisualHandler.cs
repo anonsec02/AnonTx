@@ -4,7 +4,7 @@ using Avalonia.Platform;
 using Avalonia.Rendering.Composition;
 using Avalonia.Skia;
 
-namespace WalletWasabi.Fluent.Controls.Rendering;
+namespace WalletAnonTx.Fluent.Controls.Rendering;
 
 internal class DrawCompositionCustomVisualHandler : CompositionCustomVisualHandler
 {

@@ -1,4 +1,4 @@
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 [Flags]
 public enum ProofBodyFlags : byte

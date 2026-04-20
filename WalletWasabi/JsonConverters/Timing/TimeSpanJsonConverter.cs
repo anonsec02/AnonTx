@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace WalletWasabi.JsonConverters.Timing;
+namespace WalletAnonTx.JsonConverters.Timing;
 
 public class TimeSpanJsonConverter : JsonConverter<TimeSpan>
 {

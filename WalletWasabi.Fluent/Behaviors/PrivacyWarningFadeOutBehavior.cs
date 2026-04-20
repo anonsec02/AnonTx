@@ -6,10 +6,10 @@ using System.Linq;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using Avalonia.Xaml.Interactions.Custom;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.Transactions;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.Transactions;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class PrivacyWarningFadeOutBehavior : AttachedToVisualTreeBehavior<Control>
 {

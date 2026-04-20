@@ -1,6 +1,6 @@
-using WalletWasabi.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.UI;
 
-namespace WalletWasabi.Fluent.ViewModels.OpenDirectory;
+namespace WalletAnonTx.Fluent.ViewModels.OpenDirectory;
 
 [NavigationMetaData(
 	Title = "Config File",

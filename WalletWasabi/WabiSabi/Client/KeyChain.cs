@@ -1,11 +1,11 @@
 using NBitcoin;
 using System.Linq;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Crypto;
-using WalletWasabi.Extensions;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class KeyChain : IKeyChain
 {

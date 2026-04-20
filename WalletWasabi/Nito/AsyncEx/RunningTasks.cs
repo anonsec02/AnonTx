@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Nito.AsyncEx;
+namespace WalletAnonTx.Nito.AsyncEx;
 
 public class RunningTasks : IDisposable
 {

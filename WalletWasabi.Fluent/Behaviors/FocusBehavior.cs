@@ -4,7 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Data;
 using Avalonia.Xaml.Interactions.Custom;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 internal class FocusBehavior : DisposingBehavior<Control>
 {

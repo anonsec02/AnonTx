@@ -4,13 +4,13 @@ using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using WalletWasabi.Fluent.Generators.Abstractions;
+using WalletAnonTx.Fluent.Generators.Abstractions;
 
-namespace WalletWasabi.Fluent.Generators.Generators;
+namespace WalletAnonTx.Fluent.Generators.Generators;
 
 internal class AutoNotifyGenerator : GeneratorStep<FieldDeclarationSyntax>
 {
-	private const string AutoNotifyAttributeDisplayString = "WalletWasabi.Fluent.AutoNotifyAttribute";
+	private const string AutoNotifyAttributeDisplayString = "WalletAnonTx.Fluent.AutoNotifyAttribute";
 	private const string ReactiveObjectDisplayString = "ReactiveUI.ReactiveObject";
 
 	public override bool Filter(FieldDeclarationSyntax field)

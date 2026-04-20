@@ -1,7 +1,7 @@
 using NBitcoin;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Models;
+namespace WalletAnonTx.WabiSabi.Models;
 
 public readonly struct CoordinationFeeRate
 {

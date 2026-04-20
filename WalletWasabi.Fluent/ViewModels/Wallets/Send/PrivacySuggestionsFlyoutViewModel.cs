@@ -4,11 +4,11 @@ using System.Linq;
 using System.Reactive.Subjects;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Fluent.Models.Transactions;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Fluent.Models.Transactions;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 public partial class PrivacySuggestionsFlyoutViewModel : ViewModelBase
 {

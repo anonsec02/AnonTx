@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using WalletWasabi.WebClients.ShopWare.Models;
+using WalletAnonTx.WebClients.ShopWare.Models;
 
-namespace WalletWasabi.BuyAnything;
+namespace WalletAnonTx.BuyAnything;
 
 public enum MessageSource
 {

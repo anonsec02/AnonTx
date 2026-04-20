@@ -1,7 +1,7 @@
 using NBitcoin.DataEncoders;
 using System.Security.Cryptography;
 
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public class AffiliationMessageSigner : IDisposable
 {

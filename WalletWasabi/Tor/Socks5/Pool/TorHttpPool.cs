@@ -11,18 +11,18 @@ using System.Text;
 using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
-using WalletWasabi.Crypto.Randomness;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Control.Messages.StreamStatus;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Http.Extensions;
-using WalletWasabi.Tor.Http.Models;
-using WalletWasabi.Tor.Socks5.Exceptions;
-using WalletWasabi.Tor.Socks5.Models.Fields.OctetFields;
-using WalletWasabi.Tor.Socks5.Pool.Circuits;
+using WalletAnonTx.Crypto.Randomness;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Control.Messages.StreamStatus;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Http.Extensions;
+using WalletAnonTx.Tor.Http.Models;
+using WalletAnonTx.Tor.Socks5.Exceptions;
+using WalletAnonTx.Tor.Socks5.Models.Fields.OctetFields;
+using WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
-namespace WalletWasabi.Tor.Socks5.Pool;
+namespace WalletAnonTx.Tor.Socks5.Pool;
 
 /// <summary>
 /// The pool represents a set of multiple TCP connections to Tor SOCKS5 endpoint that are
@@ -533,7 +533,7 @@ public class TorHttpPool : IAsyncDisposable
 	{
 		if (!TorControlAvailable)
 		{
-			throw new UnreachableException("This method can be called only if Wasabi was run with Tor Control support.");
+			throw new UnreachableException("This method can be called only if AnonTx was run with Tor Control support.");
 		}
 
 		lock (ConnectionsLock)

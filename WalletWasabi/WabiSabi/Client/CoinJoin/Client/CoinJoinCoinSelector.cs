@@ -4,14 +4,14 @@ using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Linq;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Wallets;
 using SecureRandom = WabiSabi.Crypto.Randomness.SecureRandom;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoin.Client;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
 
 public class CoinJoinCoinSelector
 {
@@ -37,7 +37,7 @@ public class CoinJoinCoinSelector
 	public bool ConsolidationMode { get; }
 	public int AnonScoreTarget { get; }
 	public int SemiPrivateThreshold { get; }
-	private WasabiRandom Rnd => Generator.Rnd;
+	private AnonTxRandom Rnd => Generator.Rnd;
 	private CoinJoinCoinSelectorRandomnessGenerator Generator { get; }
 
 	public static CoinJoinCoinSelector FromWallet(IWallet wallet) =>

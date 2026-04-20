@@ -8,14 +8,14 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Hwi.Models;
-using WalletWasabi.Models;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Hwi.Models;
+using WalletAnonTx.Models;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class WalletRepository : ReactiveObject

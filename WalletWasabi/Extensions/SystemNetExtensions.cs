@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class SystemNetExtensions
 {

@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.Wallets.Home.Tiles.PrivacyBar;
+namespace WalletAnonTx.Fluent.Views.Wallets.Home.Tiles.PrivacyBar;
 
 public partial class PrivacyBarView : UserControl
 {

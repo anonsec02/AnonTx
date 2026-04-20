@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Backend.Banning;
+namespace WalletAnonTx.WabiSabi.Backend.Banning;
 
 public class CoinVerifier : IAsyncDisposable
 {

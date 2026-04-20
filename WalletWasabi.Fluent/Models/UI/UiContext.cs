@@ -1,11 +1,11 @@
-using WalletWasabi.Fluent.Models.ClientConfig;
-using WalletWasabi.Fluent.Models.FileSystem;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
+using WalletAnonTx.Fluent.Models.ClientConfig;
+using WalletAnonTx.Fluent.Models.FileSystem;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
 
-namespace WalletWasabi.Fluent.Models.UI;
+namespace WalletAnonTx.Fluent.Models.UI;
 
 public class UiContext
 {

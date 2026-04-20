@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
 using System.Globalization;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class BlockCypherDateTimeOffsetJsonConverter : JsonConverter<DateTimeOffset?>
 {

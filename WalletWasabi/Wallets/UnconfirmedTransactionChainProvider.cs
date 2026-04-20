@@ -8,21 +8,21 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Http.Extensions;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Http.Extensions;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 public class UnconfirmedTransactionChainProvider : BackgroundService
 {
 	private const int MaximumDelayInSeconds = 120;
 	private const int MaximumRequestsInParallel = 3;
 
-	public UnconfirmedTransactionChainProvider(WasabiHttpClientFactory httpClientFactory)
+	public UnconfirmedTransactionChainProvider(AnonTxHttpClientFactory httpClientFactory)
 	{
 		HttpClient = httpClientFactory.NewHttpClient(httpClientFactory.BackendUriGetter, Tor.Socks5.Pool.Circuits.Mode.NewCircuitPerRequest);
 	}

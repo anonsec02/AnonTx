@@ -5,7 +5,7 @@ using Avalonia.Input;
 using Avalonia.Layout;
 using System.Windows.Input;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 /// <summary>
 /// Container for NavBarItems.

@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace WalletWasabi.JsonConverters.Bitcoin;
+namespace WalletAnonTx.JsonConverters.Bitcoin;
 
 public class DefaultValueScriptAttribute : DefaultValueAttribute
 {

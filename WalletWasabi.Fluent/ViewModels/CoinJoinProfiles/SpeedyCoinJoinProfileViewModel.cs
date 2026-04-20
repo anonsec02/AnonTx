@@ -1,6 +1,6 @@
-using WalletWasabi.Models;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.CoinJoinProfiles;
+namespace WalletAnonTx.Fluent.ViewModels.CoinJoinProfiles;
 
 internal class SpeedyCoinJoinProfileViewModel : CoinJoinProfileViewModelBase
 {

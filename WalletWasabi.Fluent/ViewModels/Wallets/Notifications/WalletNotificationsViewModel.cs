@@ -1,14 +1,14 @@
 using DynamicData;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.TransactionProcessing;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Blockchain.TransactionProcessing;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Notifications;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Notifications;
 
 [AppLifetime]
 public partial class WalletNotificationsViewModel : ViewModelBase
@@ -27,7 +27,7 @@ public partial class WalletNotificationsViewModel : ViewModelBase
 			.Connect()
 			.AutoRefresh(x => x.IsLoggedIn)
 			.Filter(x => x.IsLoggedIn)
-			.FilterOnObservable(x => x.State.Select(s => s == WalletWasabi.Wallets.WalletState.Started))
+			.FilterOnObservable(x => x.State.Select(s => s == WalletAnonTx.Wallets.WalletState.Started))
 			.MergeMany(x => x.Transactions.NewTransactionArrived)
 			.Where(x => !UiContext.ApplicationSettings.PrivacyMode)
 			.Where(x => x.EventArgs.IsNews)

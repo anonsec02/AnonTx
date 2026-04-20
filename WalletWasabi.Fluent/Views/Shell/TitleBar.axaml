@@ -1,11 +1,11 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:searchBar="clr-namespace:WalletWasabi.Fluent.Views.SearchBar"
+             xmlns:searchBar="clr-namespace:WalletAnonTx.Fluent.Views.SearchBar"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:shell="clr-namespace:WalletWasabi.Fluent.Views.Shell"
+             xmlns:shell="clr-namespace:WalletAnonTx.Fluent.Views.Shell"
              mc:Ignorable="d" d:DesignWidth="1000"
-             x:Class="WalletWasabi.Fluent.Views.Shell.TitleBar"
+             x:Class="WalletAnonTx.Fluent.Views.Shell.TitleBar"
              x:Name="UserControl">
 
   <UserControl.Styles>
@@ -29,16 +29,16 @@
 
   <UserControl.Resources>
 
-    <DataTemplate x:Key="WasabiLogo">
+    <DataTemplate x:Key="AnonTxLogo">
       <Viewbox Height="18" Width="18" IsHitTestVisible="False">
-        <ThemeImage Source="{DynamicResource wasabi_logo_dynamic}" />
+        <ThemeImage Source="{DynamicResource anontx_logo_dynamic}" />
       </Viewbox>
     </DataTemplate>
 
     <DataTemplate x:Key="Title">
       <StackPanel IsHitTestVisible="False" x:Name="Title"
                   VerticalAlignment="Center"
-                  TextElement.FontFamily="{StaticResource WasabiLogoTextFont}"
+                  TextElement.FontFamily="{StaticResource AnonTxLogoTextFont}"
                   Classes="h7"
                   TextElement.FontWeight="Light" Orientation="Horizontal" ClipToBounds="False">
         <TextBlock Text="WASABI" Foreground="{DynamicResource LogoFixedForegroundColor}" />
@@ -65,7 +65,7 @@
           <ColumnDefinition Width="140" />
         </Grid.ColumnDefinitions>
 
-        <ContentControl ContentTemplate="{StaticResource WasabiLogo}" />
+        <ContentControl ContentTemplate="{StaticResource AnonTxLogo}" />
 
         <ContentControl Grid.Column="3" ContentTemplate="{StaticResource SearchBar}" />
 
@@ -84,7 +84,7 @@
           <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
 
-        <ContentControl ContentTemplate="{StaticResource WasabiLogo}" />
+        <ContentControl ContentTemplate="{StaticResource AnonTxLogo}" />
 
         <ContentControl Grid.Column="2" ContentTemplate="{StaticResource SearchBar}" />
 
@@ -103,7 +103,7 @@
           <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
 
-        <ContentControl Grid.Column="1" HorizontalAlignment="Left" ContentTemplate="{StaticResource WasabiLogo}" />
+        <ContentControl Grid.Column="1" HorizontalAlignment="Left" ContentTemplate="{StaticResource AnonTxLogo}" />
         <ContentControl Grid.Column="2" ContentTemplate="{StaticResource SearchBar}" />
         <shell:NetworkBadge Margin="10,0,10,0" Grid.Column="3" />
       </Grid>

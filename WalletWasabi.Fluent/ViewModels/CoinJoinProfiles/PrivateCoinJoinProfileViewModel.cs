@@ -1,11 +1,11 @@
-using WalletWasabi.Crypto.Randomness;
-using WalletWasabi.Models;
+using WalletAnonTx.Crypto.Randomness;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.CoinJoinProfiles;
+namespace WalletAnonTx.Fluent.ViewModels.CoinJoinProfiles;
 
 internal class PrivateCoinJoinProfileViewModel : CoinJoinProfileViewModelBase
 {
-	// https://github.com/zkSNACKs/WalletWasabi/pull/10468#issuecomment-1506284198
+	// https://github.com/zkSNACKs/WalletAnonTx/pull/10468#issuecomment-1506284198
 	public const int MinAnonScore = 27;
 
 	public const int MaxAnonScore = 76;

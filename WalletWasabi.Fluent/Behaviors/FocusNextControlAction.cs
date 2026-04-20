@@ -1,9 +1,9 @@
 using Avalonia;
 using Avalonia.Input;
 using Avalonia.Xaml.Interactivity;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class FocusNextControlAction : AvaloniaObject, IAction
 {

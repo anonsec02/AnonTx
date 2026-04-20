@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Http.Extensions;
-using WalletWasabi.WabiSabi.Models.Serialization;
-using WalletWasabi.WebClients.ShopWare.Models;
-using CancelOrderResponse = WalletWasabi.WebClients.ShopWare.Models.StateMachineState;
-using CustomerProfileUpdateResponse = WalletWasabi.WebClients.ShopWare.Models.PropertyBag;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Http.Extensions;
+using WalletAnonTx.WabiSabi.Models.Serialization;
+using WalletAnonTx.WebClients.ShopWare.Models;
+using CancelOrderResponse = WalletAnonTx.WebClients.ShopWare.Models.StateMachineState;
+using CustomerProfileUpdateResponse = WalletAnonTx.WebClients.ShopWare.Models.PropertyBag;
 
-using BillingAddressResponse = WalletWasabi.WebClients.ShopWare.Models.PropertyBag;
+using BillingAddressResponse = WalletAnonTx.WebClients.ShopWare.Models.PropertyBag;
 
-namespace WalletWasabi.WebClients.ShopWare;
+namespace WalletAnonTx.WebClients.ShopWare;
 
 public class ShopWareApiClient : IShopWareApiClient
 {

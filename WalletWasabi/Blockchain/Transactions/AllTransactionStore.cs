@@ -5,12 +5,12 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Stores;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Stores;
 
-namespace WalletWasabi.Blockchain.Transactions;
+namespace WalletAnonTx.Blockchain.Transactions;
 
 public class AllTransactionStore : ITransactionStore, IAsyncDisposable
 {

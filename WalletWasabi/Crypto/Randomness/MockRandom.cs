@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Crypto.Randomness;
+namespace WalletAnonTx.Crypto.Randomness;
 
-public class MockRandom : WasabiRandom
+public class MockRandom : AnonTxRandom
 {
 	public List<byte[]> GetBytesResults { get; } = new List<byte[]>();
 

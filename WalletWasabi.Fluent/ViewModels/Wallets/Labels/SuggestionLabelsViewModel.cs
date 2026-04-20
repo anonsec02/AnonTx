@@ -6,10 +6,10 @@ using System.Reactive.Linq;
 using DynamicData;
 using DynamicData.Binding;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Labels;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Labels;
 
 public partial class SuggestionLabelsViewModel : ActivatableViewModel
 {

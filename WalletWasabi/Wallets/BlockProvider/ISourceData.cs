@@ -1,13 +1,13 @@
 using NBitcoin.Protocol;
 
-namespace WalletWasabi.Wallets.BlockProvider;
+namespace WalletAnonTx.Wallets.BlockProvider;
 
 /// <summary>
 /// Source that provided a bitcoin block to us.
 /// </summary>
 public enum Source
 {
-	/// <summary>Wasabi Wallet file-system cache.</summary>
+	/// <summary>AnonTx Wallet file-system cache.</summary>
 	/// <remarks>The assumption is that the cache is tested always before real block sources.</remarks>
 	FileSystemCache = 0,
 

@@ -5,9 +5,9 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Media.Imaging;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Screenshot;
+namespace WalletAnonTx.Fluent.Screenshot;
 
 public static class Capture
 {
@@ -34,7 +34,7 @@ public static class Capture
 		var file = await FileDialogHelper.SaveFileAsync(
 			"Save screenshot...",
 			new[] { "png", "*" },
-			"WalletWasabi.png",
+			"WalletAnonTx.png",
 			Environment.GetFolderPath(Environment.SpecialFolder.MyPictures));
 		if (file is not null)
 		{

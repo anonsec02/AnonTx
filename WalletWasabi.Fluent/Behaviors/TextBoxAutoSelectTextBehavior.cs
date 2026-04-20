@@ -4,9 +4,9 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
+using WalletAnonTx.Fluent.Extensions;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 internal class TextBoxAutoSelectTextBehavior : AttachedToVisualTreeBehavior<TextBox>
 {

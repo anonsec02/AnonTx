@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
-using WalletWasabi.Models;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class CoinjoinSkipFactorsJsonConverter : JsonConverter<CoinjoinSkipFactors>
 {

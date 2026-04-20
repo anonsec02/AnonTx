@@ -3,7 +3,7 @@ using System.Reactive.Linq;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
-namespace WalletWasabi.Fluent.Extensions;
+namespace WalletAnonTx.Fluent.Extensions;
 
 public static class AvaloniaExtensions
 {

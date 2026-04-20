@@ -1,6 +1,6 @@
-// Copyright (c) 2009-2013 Math.NET Taken from http://github.com/mathnet/mathnet-numerics and modified for Wasabi Wallet
+// Copyright (c) 2009-2013 Math.NET Taken from http://github.com/mathnet/mathnet-numerics and modified for AnonTx Wallet
 
-namespace WalletWasabi.Fluent.MathNet;
+namespace WalletAnonTx.Fluent.MathNet;
 
 public static partial class Precision
 {

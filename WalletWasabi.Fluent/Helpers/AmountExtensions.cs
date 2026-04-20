@@ -1,6 +1,6 @@
-using WalletWasabi.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Models.Wallets;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class AmountExtensions
 {

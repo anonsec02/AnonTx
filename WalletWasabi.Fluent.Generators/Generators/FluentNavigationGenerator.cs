@@ -3,9 +3,9 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Fluent.Generators.Abstractions;
+using WalletAnonTx.Fluent.Generators.Abstractions;
 
-namespace WalletWasabi.Fluent.Generators.Generators;
+namespace WalletAnonTx.Fluent.Generators.Generators;
 
 internal class FluentNavigationGenerator: GeneratorStep
 {
@@ -169,7 +169,7 @@ internal class FluentNavigationGenerator: GeneratorStep
 
 			{{usingsString}}
 
-			namespace WalletWasabi.Fluent.ViewModels.Navigation;
+			namespace WalletAnonTx.Fluent.ViewModels.Navigation;
 
 			public partial class FluentNavigate
 			{

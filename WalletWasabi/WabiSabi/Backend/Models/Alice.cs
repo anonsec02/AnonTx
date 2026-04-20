@@ -1,10 +1,10 @@
 using NBitcoin;
-using WalletWasabi.Crypto;
-using WalletWasabi.Extensions;
-using WalletWasabi.WabiSabi.Backend.Rounds;
-using WalletWasabi.WabiSabi.Models;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Models;
 
-namespace WalletWasabi.WabiSabi.Backend.Models;
+namespace WalletAnonTx.WabiSabi.Backend.Models;
 
 public class Alice
 {

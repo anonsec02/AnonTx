@@ -1,13 +1,13 @@
 using NBitcoin;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionProcessing;
-using WalletWasabi.Models;
-using WalletWasabi.Services;
-using WalletWasabi.Stores;
-using WalletWasabi.Wallets.FilterProcessor;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionProcessing;
+using WalletAnonTx.Models;
+using WalletAnonTx.Services;
+using WalletAnonTx.Stores;
+using WalletAnonTx.Wallets.FilterProcessor;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 /// <summary>
 /// Class to create <see cref="Wallet"/> instances.
@@ -16,7 +16,7 @@ public record WalletFactory(
 	string DataDir,
 	Network Network,
 	BitcoinStore BitcoinStore,
-	WasabiSynchronizer WasabiSynchronizer,
+	AnonTxSynchronizer AnonTxSynchronizer,
 	ServiceConfiguration ServiceConfiguration,
 	HybridFeeProvider FeeProvider,
 	BlockDownloadService BlockDownloadService,
@@ -27,7 +27,7 @@ public record WalletFactory(
 		TransactionProcessor transactionProcessor = new(BitcoinStore.TransactionStore, BitcoinStore.MempoolService, keyManager, ServiceConfiguration.DustThreshold);
 		WalletFilterProcessor walletFilterProcessor = new(keyManager, BitcoinStore, transactionProcessor, BlockDownloadService);
 
-		return new(DataDir, Network, keyManager, BitcoinStore, WasabiSynchronizer, ServiceConfiguration, FeeProvider, transactionProcessor, walletFilterProcessor, UnconfirmedTransactionChainProvider);
+		return new(DataDir, Network, keyManager, BitcoinStore, AnonTxSynchronizer, ServiceConfiguration, FeeProvider, transactionProcessor, walletFilterProcessor, UnconfirmedTransactionChainProvider);
 	}
 
 	public Wallet CreateAndInitialize(KeyManager keyManager)

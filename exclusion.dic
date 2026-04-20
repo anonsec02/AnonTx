@@ -152,7 +152,7 @@ serializer
 regtest
 newtonsoft
 anonscore
-wasabisig
+anontxsig
 privkey
 linux
 digicert
@@ -165,7 +165,7 @@ bitcoind
 chmod
 sudo
 hicolor
-wasabiwallet
+anontxwallet
 zksnacks
 policykit
 payjoin

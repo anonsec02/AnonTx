@@ -1,9 +1,9 @@
 using System.Security.Cryptography;
 using WabiSabi.Crypto.Randomness;
 
-namespace WalletWasabi.Crypto.Randomness;
+namespace WalletAnonTx.Crypto.Randomness;
 
-public class SecureRandom : WasabiRandom
+public class SecureRandom : AnonTxRandom
 {
 	public static readonly SecureRandom Instance = new();
 

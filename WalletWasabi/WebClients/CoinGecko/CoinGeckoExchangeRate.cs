@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace WalletWasabi.WebClients.CoinGecko;
+namespace WalletAnonTx.WebClients.CoinGecko;
 
 public class CoinGeckoExchangeRate
 {

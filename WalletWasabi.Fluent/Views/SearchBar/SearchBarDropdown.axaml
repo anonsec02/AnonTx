@@ -3,15 +3,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
-             x:Class="WalletWasabi.Fluent.Views.SearchBar.SearchBarDropdown"
+             x:Class="WalletAnonTx.Fluent.Views.SearchBar.SearchBarDropdown"
              x:CompileBindings="True"
              x:DataType="sb:SearchBarViewModel"
-             xmlns:conv="clr-namespace:WalletWasabi.Fluent.Converters"
-             xmlns:sb="clr-namespace:WalletWasabi.Fluent.ViewModels.SearchBar"
-             xmlns:settings="clr-namespace:WalletWasabi.Fluent.ViewModels.SearchBar.Settings"
-             xmlns:searchItems="clr-namespace:WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems"
-             xmlns:helpers="clr-namespace:WalletWasabi.Fluent.Helpers"
-             xmlns:searchBar="clr-namespace:WalletWasabi.Fluent.Views.SearchBar">
+             xmlns:conv="clr-namespace:WalletAnonTx.Fluent.Converters"
+             xmlns:sb="clr-namespace:WalletAnonTx.Fluent.ViewModels.SearchBar"
+             xmlns:settings="clr-namespace:WalletAnonTx.Fluent.ViewModels.SearchBar.Settings"
+             xmlns:searchItems="clr-namespace:WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems"
+             xmlns:helpers="clr-namespace:WalletAnonTx.Fluent.Helpers"
+             xmlns:searchBar="clr-namespace:WalletAnonTx.Fluent.Views.SearchBar">
   <Design.DataContext>
     <sb:SearchBarDesignViewModel />
   </Design.DataContext>

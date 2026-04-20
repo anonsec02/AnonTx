@@ -6,7 +6,7 @@ using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Xaml.Interactions.Custom;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class ExecuteCommandOnDoubleTappedBehavior : DisposingBehavior<Control>
 {

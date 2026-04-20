@@ -1,11 +1,11 @@
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.AddWallet;
-using WalletWasabi.Fluent.ViewModels.HelpAndSupport;
-using WalletWasabi.Fluent.ViewModels.OpenDirectory;
-using WalletWasabi.Fluent.ViewModels.Settings;
-using WalletWasabi.Fluent.ViewModels.TransactionBroadcasting;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.AddWallet;
+using WalletAnonTx.Fluent.ViewModels.HelpAndSupport;
+using WalletAnonTx.Fluent.ViewModels.OpenDirectory;
+using WalletAnonTx.Fluent.ViewModels.Settings;
+using WalletAnonTx.Fluent.ViewModels.TransactionBroadcasting;
 
-namespace WalletWasabi.Fluent.ViewModels;
+namespace WalletAnonTx.Fluent.ViewModels;
 
 public static class MainViewModelExtensions
 {

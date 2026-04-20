@@ -1,8 +1,8 @@
 using System.Diagnostics.CodeAnalysis;
-using WalletWasabi.Crypto;
-using WalletWasabi.Crypto.Randomness;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.Crypto.Randomness;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 public class Kitchen
 {

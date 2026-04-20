@@ -2,11 +2,11 @@ using NBitcoin;
 using System.Collections.Generic;
 using WabiSabi.Crypto.Randomness;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds;
 
 public class BlameRound : Round
 {
-	public BlameRound(RoundParameters parameters, Round blameOf, ISet<OutPoint> blameWhitelist, WasabiRandom random)
+	public BlameRound(RoundParameters parameters, Round blameOf, ISet<OutPoint> blameWhitelist, AnonTxRandom random)
 		: base(parameters, random)
 	{
 		BlameOf = blameOf;

@@ -2,7 +2,7 @@ using NBitcoin;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace WalletWasabi.JsonConverters.Bitcoin;
+namespace WalletAnonTx.JsonConverters.Bitcoin;
 
 public class FeeRateJsonConverterNg : JsonConverter<FeeRate>
 {

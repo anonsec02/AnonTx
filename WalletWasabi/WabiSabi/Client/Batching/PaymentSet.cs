@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using NBitcoin;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.WabiSabi.Client.Batching;
+namespace WalletAnonTx.WabiSabi.Client.Batching;
 
 // Represents a set (or subset) of pending payments. This is an auxiliary class that is
 // useful to keep the code of the PaymentAwareOutputProvider cleaner.

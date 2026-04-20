@@ -5,7 +5,7 @@ using Avalonia.Interactivity;
 using Avalonia.VisualTree;
 using Avalonia.Xaml.Interactivity;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class HideFlyoutOnClickBehavior : Behavior<RadioButton>
 {

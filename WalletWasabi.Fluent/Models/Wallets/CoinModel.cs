@@ -2,11 +2,11 @@ using System.Reactive.Disposables;
 using NBitcoin;
 using ReactiveUI;
 using System.Reactive.Linq;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class CoinModel : ReactiveObject

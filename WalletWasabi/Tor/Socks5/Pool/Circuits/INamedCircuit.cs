@@ -1,7 +1,7 @@
-using WalletWasabi.Tor.Socks5.Models.Fields.ByteArrayFields;
-using WalletWasabi.Tor.Socks5.Models.Messages;
+using WalletAnonTx.Tor.Socks5.Models.Fields.ByteArrayFields;
+using WalletAnonTx.Tor.Socks5.Models.Messages;
 
-namespace WalletWasabi.Tor.Socks5.Pool.Circuits;
+namespace WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
 /// <summary>
 /// An abstraction corresponding with a Tor circuit.

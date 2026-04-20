@@ -6,16 +6,16 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Text;
 
-namespace WalletWasabi.Fluent.Generators;
+namespace WalletAnonTx.Fluent.Generators;
 
 [Generator]
 public class NavigationMetaDataGenerator : ISourceGenerator
 {
-	public const string NavigationMetaDataAttributeDisplayString = "WalletWasabi.Fluent.NavigationMetaDataAttribute";
+	public const string NavigationMetaDataAttributeDisplayString = "WalletAnonTx.Fluent.NavigationMetaDataAttribute";
 
-	private const string NavigationMetaDataDisplayString = "WalletWasabi.Fluent.NavigationMetaData";
+	private const string NavigationMetaDataDisplayString = "WalletAnonTx.Fluent.NavigationMetaData";
 
-	private const string RoutableViewModelDisplayString = "WalletWasabi.Fluent.ViewModels.Navigation.RoutableViewModel";
+	private const string RoutableViewModelDisplayString = "WalletAnonTx.Fluent.ViewModels.Navigation.RoutableViewModel";
 
 	public void Initialize(GeneratorInitializationContext context)
 	{
@@ -101,7 +101,7 @@ public class NavigationMetaDataGenerator : ISourceGenerator
 			#nullable enable
 			using System;
 			using System.Threading.Tasks;
-			using WalletWasabi.Fluent.ViewModels.Navigation;
+			using WalletAnonTx.Fluent.ViewModels.Navigation;
 
 			namespace {{namespaceName}};
 

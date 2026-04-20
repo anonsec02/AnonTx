@@ -1,7 +1,7 @@
 using System.Windows.Input;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels;
+namespace WalletAnonTx.Fluent.ViewModels;
 
 public abstract class TriggerCommandViewModel : RoutableViewModel
 {

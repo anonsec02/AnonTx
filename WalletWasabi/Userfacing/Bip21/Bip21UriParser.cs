@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Diagnostics.CodeAnalysis;
 using System.Web;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Userfacing.Bip21;
+namespace WalletAnonTx.Userfacing.Bip21;
 
 /// <summary>
 /// BIP21 URI parser.

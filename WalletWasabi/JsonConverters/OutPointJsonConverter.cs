@@ -1,8 +1,8 @@
 using NBitcoin;
 using Newtonsoft.Json;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class OutPointJsonConverter : JsonConverter<OutPoint>
 {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using WalletWasabi.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.TransactionOutputs;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class CoinRefrigerator
 {

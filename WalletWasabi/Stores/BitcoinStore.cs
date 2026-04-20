@@ -1,12 +1,12 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinP2p;
-using WalletWasabi.Blockchain.Blocks;
-using WalletWasabi.Blockchain.Mempool;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Wallets;
+using WalletAnonTx.BitcoinP2p;
+using WalletAnonTx.Blockchain.Blocks;
+using WalletAnonTx.Blockchain.Mempool;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Stores;
+namespace WalletAnonTx.Stores;
 
 /// <summary>
 /// The purpose of this class is to safely and efficiently manage all the Bitcoin related data

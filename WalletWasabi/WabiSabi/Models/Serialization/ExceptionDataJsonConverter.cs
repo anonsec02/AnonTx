@@ -1,6 +1,6 @@
-using WalletWasabi.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Backend.Models;
 
-namespace WalletWasabi.WabiSabi.Models.Serialization;
+namespace WalletAnonTx.WabiSabi.Models.Serialization;
 
 public class ExceptionDataJsonConverter : GenericInterfaceJsonConverter<ExceptionData>
 {

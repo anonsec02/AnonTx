@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using NBitcoin;
 using NBitcoin.Protocol;
 
-namespace WalletWasabi.Wallets.BlockProvider;
+namespace WalletAnonTx.Wallets.BlockProvider;
 
 /// <summary>
 /// P2P block provider downloads blocks from Bitcoin nodes using the P2P protocol.

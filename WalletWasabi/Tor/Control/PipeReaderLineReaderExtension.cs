@@ -4,9 +4,9 @@ using System.IO.Pipelines;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Tor.Control;
+namespace WalletAnonTx.Tor.Control;
 
 /// <summary>
 /// This class employs <c>System.IO.Pipelines</c> to correctly read incoming streamed data.

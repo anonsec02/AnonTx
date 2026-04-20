@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
-using WalletWasabi.Blockchain.TransactionBuilding.BnB;
+using WalletAnonTx.Blockchain.TransactionBuilding.BnB;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding;
+namespace WalletAnonTx.Blockchain.TransactionBuilding;
 
 /// <seealso href="https://murch.one/wp-content/uploads/2016/11/erhardt2016coinselection.pdf">Section "5.3 Branch and Bound".</seealso>
 public class BranchAndBound

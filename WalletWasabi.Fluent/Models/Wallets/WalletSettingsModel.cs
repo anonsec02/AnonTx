@@ -2,13 +2,13 @@ using System.Reactive;
 using NBitcoin;
 using ReactiveUI;
 using System.Reactive.Linq;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Models;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Models;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AppLifetime]
 [AutoInterface]

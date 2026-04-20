@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.Affiliation.Extensions;
+namespace WalletAnonTx.Affiliation.Extensions;
 
 public static class NBitcoinExtensions
 {

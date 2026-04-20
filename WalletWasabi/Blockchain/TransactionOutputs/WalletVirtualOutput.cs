@@ -2,7 +2,7 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.Blockchain.TransactionOutputs;
+namespace WalletAnonTx.Blockchain.TransactionOutputs;
 
 public class WalletVirtualOutput
 {

@@ -2,22 +2,22 @@ using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Socks5.Pool;
-using WalletWasabi.Tor.Socks5.Pool.Circuits;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Socks5.Pool;
+using WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
-namespace WalletWasabi.WebClients.Wasabi;
+namespace WalletAnonTx.WebClients.AnonTx;
 
 /// <summary>
 /// Factory class to get proper <see cref="IHttpClient"/> client which is set up based on user settings.
 /// </summary>
-public class WasabiHttpClientFactory : IWasabiHttpClientFactory, IAsyncDisposable
+public class AnonTxHttpClientFactory : IAnonTxHttpClientFactory, IAsyncDisposable
 {
 	/// <summary>
 	/// Creates a new instance of the object.
 	/// </summary>
 	/// <param name="torEndPoint">If <c>null</c> then clearnet (not over Tor) is used, otherwise HTTP requests are routed through provided Tor endpoint.</param>
-	public WasabiHttpClientFactory(EndPoint? torEndPoint, Func<Uri>? backendUriGetter, bool torControlAvailable = true)
+	public AnonTxHttpClientFactory(EndPoint? torEndPoint, Func<Uri>? backendUriGetter, bool torControlAvailable = true)
 	{
 		HttpClient = CreateLongLivedHttpClient(automaticDecompression: DecompressionMethods.GZip | DecompressionMethods.Brotli);
 
@@ -35,7 +35,7 @@ public class WasabiHttpClientFactory : IWasabiHttpClientFactory, IAsyncDisposabl
 			BackendHttpClient = new ClearnetHttpClient(HttpClient, BackendUriGetter);
 		}
 
-		SharedWasabiClient = new(BackendHttpClient);
+		SharedAnonTxClient = new(BackendHttpClient);
 	}
 
 	/// <summary>Tor SOCKS5 endpoint.</summary>
@@ -58,8 +58,8 @@ public class WasabiHttpClientFactory : IWasabiHttpClientFactory, IAsyncDisposabl
 	/// <summary>Backend HTTP client, shared instance.</summary>
 	private IHttpClient BackendHttpClient { get; }
 
-	/// <summary>Shared instance of <see cref="WasabiClient"/>.</summary>
-	public WasabiClient SharedWasabiClient { get; }
+	/// <summary>Shared instance of <see cref="AnonTxClient"/>.</summary>
+	public AnonTxClient SharedAnonTxClient { get; }
 
 	/// <summary>
 	/// Creates a long-lived <see cref="HttpClient"/> instance for accessing clearnet sites.
@@ -112,7 +112,7 @@ public class WasabiHttpClientFactory : IWasabiHttpClientFactory, IAsyncDisposabl
 	}
 
 	/// <summary>
-	/// Creates a new <see cref="IHttpClient"/> with the base URI is set to Wasabi Backend.
+	/// Creates a new <see cref="IHttpClient"/> with the base URI is set to AnonTx Backend.
 	/// </summary>
 	public IHttpClient NewHttpClient(Mode mode, ICircuit? circuit = null, int maximumRedirects = 0)
 	{

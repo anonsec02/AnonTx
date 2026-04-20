@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Media;
 using Avalonia.Controls.Primitives;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class ProgressRingArc : TemplatedControl
 {

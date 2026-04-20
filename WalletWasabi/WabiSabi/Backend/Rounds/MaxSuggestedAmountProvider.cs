@@ -2,7 +2,7 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds;
 
 public class MaxSuggestedAmountProvider
 {

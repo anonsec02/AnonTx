@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Avalonia.Platform.Storage;
 using Avalonia.VisualTree;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class FileDialogHelper
 {

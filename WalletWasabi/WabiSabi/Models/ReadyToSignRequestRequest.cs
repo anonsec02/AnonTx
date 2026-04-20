@@ -1,9 +1,9 @@
 using System.Linq;
 using NBitcoin;
 using Newtonsoft.Json;
-using WalletWasabi.Affiliation;
+using WalletAnonTx.Affiliation;
 
-namespace WalletWasabi.WabiSabi.Models;
+namespace WalletAnonTx.WabiSabi.Models;
 
 public record ReadyToSignRequestRequest
 {

@@ -14,28 +14,28 @@
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
 		<DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
-		<PathMap>$(MSBuildProjectDirectory)\=WalletWasabi.Fluent.Desktop</PathMap>
+		<PathMap>$(MSBuildProjectDirectory)\=WalletAnonTx.Fluent.Desktop</PathMap>
 	</PropertyGroup>
 
 	<PropertyGroup>
 		<Authors>zkSNACKs Ltd</Authors>
 		<Company>zkSNACKs Ltd</Company>
 		<NeutralLanguage>en-US</NeutralLanguage>
-		<AssemblyTitle>Wasabi Wallet Fluent</AssemblyTitle>
+		<AssemblyTitle>AnonTx Wallet Fluent</AssemblyTitle>
 		<Description>
 			Open-source, non-custodial, privacy focused Bitcoin wallet for Windows, Linux, and Mac. Built-in Tor, coinjoin, payjoin and coin control features.
 		</Description>
 		<Copyright>MIT</Copyright>
-		<PackageId>Wasabi Wallet Fluent</PackageId>
-		<AssemblyTitle>Wasabi Wallet</AssemblyTitle>
+		<PackageId>AnonTx Wallet Fluent</PackageId>
+		<AssemblyTitle>AnonTx Wallet</AssemblyTitle>
 		<PackageTags>bitcoin-wallet;privacy;bitcoin;dotnet;nbitcoin;cross-platform;zerolink;wallet;wabisabi;coinjoin;tor</PackageTags>
-		<PackageProjectUrl>https://github.com/zkSNACKs/WalletWasabi/</PackageProjectUrl>
-		<PackageLicenseUrl>https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md</PackageLicenseUrl>
+		<PackageProjectUrl>https://github.com/zkSNACKs/WalletAnonTx/</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/zkSNACKs/WalletAnonTx/blob/master/LICENSE.md</PackageLicenseUrl>
 		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/zkSNACKs/WalletWasabi/</RepositoryUrl>
-		<ApplicationIcon>Assets\WasabiLogo.ico</ApplicationIcon>
-		<PackageIcon>Assets\WasabiLogo.ico</PackageIcon>
-		<Product>Wasabi Wallet Fluent</Product>
+		<RepositoryUrl>https://github.com/zkSNACKs/WalletAnonTx/</RepositoryUrl>
+		<ApplicationIcon>Assets\AnonTxLogo.ico</ApplicationIcon>
+		<PackageIcon>Assets\AnonTxLogo.ico</PackageIcon>
+		<Product>AnonTx Wallet Fluent</Product>
 		<!-- owners is not supported in MSBuild -->
 	</PropertyGroup>
 
@@ -47,8 +47,8 @@
 		<PackageReference Include="Avalonia.ReactiveUI" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\WalletWasabi.Fluent\WalletWasabi.Fluent.csproj" />
-		<ProjectReference Include="..\WalletWasabi\WalletWasabi.csproj" />
+		<ProjectReference Include="..\WalletAnonTx.Fluent\WalletAnonTx.Fluent.csproj" />
+		<ProjectReference Include="..\WalletAnonTx\WalletAnonTx.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

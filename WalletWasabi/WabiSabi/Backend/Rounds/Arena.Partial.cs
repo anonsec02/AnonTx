@@ -3,17 +3,17 @@ using NBitcoin;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Affiliation;
+using WalletAnonTx.Affiliation;
 using WabiSabi.CredentialRequesting;
 using WabiSabi.Crypto;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Backend.PostRequests;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.WabiSabi.Models.MultipartyTransaction;
-using WalletWasabi.Logging;
-using WalletWasabi.Crypto.Randomness;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Backend.PostRequests;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Crypto.Randomness;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds;
 
 public partial class Arena : IWabiSabiApiRequestHandler
 {

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using DynamicData;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionProcessing;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionProcessing;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AppLifetime]
 [AutoInterface]

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
 namespace Nito.Collections;
 

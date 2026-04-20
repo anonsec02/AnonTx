@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
 using System.Text;
 
-namespace WalletWasabi.Models;
+namespace WalletAnonTx.Models;
 
 [JsonObject(MemberSerialization.OptIn)]
 public record SerializableException

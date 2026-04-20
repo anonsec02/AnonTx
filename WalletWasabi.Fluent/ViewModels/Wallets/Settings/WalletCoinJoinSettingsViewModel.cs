@@ -7,12 +7,12 @@ using System.Windows.Input;
 using DynamicData;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.CoinJoinProfiles;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.CoinJoinProfiles;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Settings;
 
 [NavigationMetaData(
 	Title = "Coinjoin Settings",

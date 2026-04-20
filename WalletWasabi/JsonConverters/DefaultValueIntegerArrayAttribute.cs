@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class DefaultValueIntegerArrayAttribute : DefaultValueAttribute
 {

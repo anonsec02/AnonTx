@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Utils;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Utils;
 
-namespace WalletWasabi.Tor.Control.Messages;
+namespace WalletAnonTx.Tor.Control.Messages;
 
 /// <remarks>
 /// Note that the protocol_version is the only mandatory data for a valid PROTOCOLINFO response.

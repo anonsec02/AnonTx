@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 public static class Extensions
 {

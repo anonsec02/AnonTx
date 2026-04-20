@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.Blockchain.Keys;
+namespace WalletAnonTx.Blockchain.Keys;
 
 public record HdPubKeyInfo
 {

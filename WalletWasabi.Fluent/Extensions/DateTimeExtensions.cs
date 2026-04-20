@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.Extensions;
+namespace WalletAnonTx.Fluent.Extensions;
 
 public static class DateTimeExtensions
 {

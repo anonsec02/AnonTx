@@ -2,11 +2,11 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Http;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Http;
 
-namespace WalletWasabi.Tor.StatusChecker;
+namespace WalletAnonTx.Tor.StatusChecker;
 
 /// <summary>
 /// Component that periodically checks https://status.torproject.org/ to detect network disruptions.

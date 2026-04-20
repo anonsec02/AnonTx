@@ -3,11 +3,11 @@ using System.IO;
 using System.Linq;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.MathNet;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.MathNet;
 using System.Windows.Input;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 public partial class FeeChartViewModel : ViewModelBase
 {

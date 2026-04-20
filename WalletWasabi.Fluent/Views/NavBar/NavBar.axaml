@@ -2,13 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:conv="using:WalletWasabi.Fluent.Converters"
-             xmlns:vm="using:WalletWasabi.Fluent.ViewModels.NavBar"
-             xmlns:vmw="using:WalletWasabi.Fluent.ViewModels.Wallets"
+             xmlns:conv="using:WalletAnonTx.Fluent.Converters"
+             xmlns:vm="using:WalletAnonTx.Fluent.ViewModels.NavBar"
+             xmlns:vmw="using:WalletAnonTx.Fluent.ViewModels.Wallets"
              x:DataType="vm:NavBarViewModel"
              x:CompileBindings="True"
              mc:Ignorable="d" d:DesignWidth="280" d:DesignHeight="459"
-             x:Class="WalletWasabi.Fluent.Views.NavBar.NavBar" UseLayoutRounding="False"
+             x:Class="WalletAnonTx.Fluent.Views.NavBar.NavBar" UseLayoutRounding="False"
              Name="NavBarUserControl">
   <UserControl.Styles>
 

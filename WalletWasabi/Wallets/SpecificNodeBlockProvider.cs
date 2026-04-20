@@ -5,16 +5,16 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Wallets.BlockProvider;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Wallets.BlockProvider;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 /// <summary>
-/// This block provider uses <c>NetworkBitcoinP2pEndPoint</c> from Wasabi Wallet config to provide blocks from a local or remote node.
+/// This block provider uses <c>NetworkBitcoinP2pEndPoint</c> from AnonTx Wallet config to provide blocks from a local or remote node.
 /// </summary>
 public class SpecificNodeBlockProvider : IBlockProvider, IAsyncDisposable
 {
@@ -125,8 +125,8 @@ public class SpecificNodeBlockProvider : IBlockProvider, IAsyncDisposable
 						if (ex is OperationCanceledException)
 						{
 							string message = $"""
-							                  Wasabi could not complete the handshake with the node '{BitcoinCoreEndPoint}'. Probably Wasabi is not whitelisted by the node.
-							                  Use "whitebind" in the node configuration. Typically whitebind=127.0.0.1:8333 if Wasabi and the node are on the same machine and whitelist=1.2.3.4 if they are not.
+							                  AnonTx could not complete the handshake with the node '{BitcoinCoreEndPoint}'. Probably AnonTx is not whitelisted by the node.
+							                  Use "whitebind" in the node configuration. Typically whitebind=127.0.0.1:8333 if AnonTx and the node are on the same machine and whitelist=1.2.3.4 if they are not.
 							                  """;
 
 							Logger.LogWarning(message);
@@ -179,7 +179,7 @@ public class SpecificNodeBlockProvider : IBlockProvider, IAsyncDisposable
 		{
 			ConnectCancellation = cancellationToken,
 			IsRelay = false,
-			UserAgent = $"/Wasabi:{Constants.ClientVersion}/"
+			UserAgent = $"/AnonTx:{Constants.ClientVersion}/"
 		};
 
 		// If an onion was added must try to use Tor.
@@ -199,7 +199,7 @@ public class SpecificNodeBlockProvider : IBlockProvider, IAsyncDisposable
 
 		if (!node.IsConnected)
 		{
-			throw new InvalidOperationException($"Wasabi could not complete the handshake with the node '{BitcoinCoreEndPoint}' and dropped the connection.{Environment.NewLine}" +
+			throw new InvalidOperationException($"AnonTx could not complete the handshake with the node '{BitcoinCoreEndPoint}' and dropped the connection.{Environment.NewLine}" +
 				"Probably this is because the node does not support retrieving full blocks or segwit serialization.");
 		}
 

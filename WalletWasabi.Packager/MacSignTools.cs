@@ -4,9 +4,9 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Runtime.InteropServices;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Packager;
+namespace WalletAnonTx.Packager;
 
 public static class MacSignTools
 {
@@ -22,7 +22,7 @@ public static class MacSignTools
 		string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 		string removableDriveFolder = Tools.GetSingleUsbDrive();
 
-		var srcZipFileNamePattern = "WasabiToNotarize-*";
+		var srcZipFileNamePattern = "AnonTxToNotarize-*";
 		var files = Directory.GetFiles(removableDriveFolder, srcZipFileNamePattern);
 		if (files.Length != 2)
 		{
@@ -46,8 +46,8 @@ public static class MacSignTools
 		foreach (var zipPath in files)
 		{
 			var zipFile = Path.GetFileName(zipPath);
-			var versionPrefix = Path.GetFileNameWithoutExtension(zipPath).Split('-')[1]; // Example: "WasabiToNotarize-2.0.0.0-arm64.zip or WasabiToNotarize-2.0.0.0.zip ".
-			var workingDir = Path.Combine(desktopPath, "wasabiTemp");
+			var versionPrefix = Path.GetFileNameWithoutExtension(zipPath).Split('-')[1]; // Example: "AnonTxToNotarize-2.0.0.0-arm64.zip or AnonTxToNotarize-2.0.0.0.zip ".
+			var workingDir = Path.Combine(desktopPath, "anontxTemp");
 			var dmgPath = Path.Combine(workingDir, "dmg");
 			var unzippedPath = Path.Combine(workingDir, "unzipped");
 			var appName = $"{Constants.AppName}.app";
@@ -57,10 +57,10 @@ public static class MacSignTools
 			var appResPath = Path.Combine(appContentsPath, "Resources");
 			var appFrameworksPath = Path.Combine(appContentsPath, "Frameworks");
 			var infoFilePath = Path.Combine(appContentsPath, "Info.plist");
-			var dmgFileName = zipFile.Replace("WasabiToNotarize", "Wasabi").Replace("zip", "dmg");
+			var dmgFileName = zipFile.Replace("AnonTxToNotarize", "AnonTx").Replace("zip", "dmg");
 			var dmgFilePath = Path.Combine(workingDir, dmgFileName);
-			var dmgUnzippedFilePath = Path.Combine(workingDir, $"Wasabi.tmp.dmg");
-			var appNotarizeFilePath = Path.Combine(workingDir, $"Wasabi-{versionPrefix}.zip");
+			var dmgUnzippedFilePath = Path.Combine(workingDir, $"AnonTx.tmp.dmg");
+			var appNotarizeFilePath = Path.Combine(workingDir, $"AnonTx-{versionPrefix}.zip");
 			var contentsPath = Path.GetFullPath(Path.Combine(Program.PackagerProjectDirectory.Replace("\\", "//"), "Content", "Osx"));
 			var entitlementsPath = Path.Combine(contentsPath, "entitlements.plist");
 			var dmgContentsDir = Path.Combine(contentsPath, "Dmg");
@@ -214,7 +214,7 @@ public static class MacSignTools
 
 			IoHelpers.CopyFilesRecursively(new DirectoryInfo(dmgContentsDir), new DirectoryInfo(dmgPath));
 
-			File.Copy(Path.Combine(contentsPath, "WasabiLogo.icns"), Path.Combine(dmgPath, ".VolumeIcon.icns"), true);
+			File.Copy(Path.Combine(contentsPath, "AnonTxLogo.icns"), Path.Combine(dmgPath, ".VolumeIcon.icns"), true);
 
 			var temp = Path.Combine(dmgPath, ".DS_Store.dat");
 			File.Move(temp, Path.Combine(dmgPath, ".DS_Store"), true);
@@ -236,7 +236,7 @@ public static class MacSignTools
 					"create",
 					$"\"{dmgUnzippedFilePath}\"",
 					"-ov",
-					$"-volname \"Wasabi Wallet\"",
+					$"-volname \"AnonTx Wallet\"",
 					"-fs HFS+",
 					$"-srcfolder \"{dmgPath}\""
 				});
@@ -331,11 +331,11 @@ public static class MacSignTools
 	{
 		Console.WriteLine("Start notarizing, uploading file.");
 
-		// -p WasabiNotarize = Saved the credentials in the keychain profile which keeps the password safe on the local machine. Name of the profile is "WasabiNotarize".
+		// -p AnonTxNotarize = Saved the credentials in the keychain profile which keeps the password safe on the local machine. Name of the profile is "AnonTxNotarize".
 		using var process = Process.Start(new ProcessStartInfo
 		{
 			FileName = "xcrun",
-			Arguments = $"notarytool submit --wait --apple-id \"{appleId}\" -p \"WasabiNotarize\" \"{filePath}\" ",
+			Arguments = $"notarytool submit --wait --apple-id \"{appleId}\" -p \"AnonTxNotarize\" \"{filePath}\" ",
 			RedirectStandardOutput = true,
 		});
 

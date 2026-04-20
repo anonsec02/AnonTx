@@ -1,6 +1,6 @@
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Affiliation.Models.CoinJoinNotification;
+namespace WalletAnonTx.Affiliation.Models.CoinJoinNotification;
 
 public record Input(Outpoint Prevout, byte[] ScriptPubkey, long Amount, bool IsAffiliated, bool IsNoFee)
 {

@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Interfaces;
-using WalletWasabi.Tor.Http.Extensions;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Interfaces;
+using WalletAnonTx.Tor.Http.Extensions;
 
-namespace WalletWasabi.WebClients.BlockchainInfo;
+namespace WalletAnonTx.WebClients.BlockchainInfo;
 
 public class BlockchainInfoExchangeRateProvider : IExchangeRateProvider
 {

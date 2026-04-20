@@ -1,10 +1,10 @@
 using System.Net;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Http.Extensions;
-using WalletWasabi.Tor.Http.Helpers;
-using static WalletWasabi.Tor.Http.Constants;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Http.Extensions;
+using WalletAnonTx.Tor.Http.Helpers;
+using static WalletAnonTx.Tor.Http.Constants;
 
-namespace WalletWasabi.Tor.Http.Models;
+namespace WalletAnonTx.Tor.Http.Models;
 
 public class StatusLine : StartLine
 {

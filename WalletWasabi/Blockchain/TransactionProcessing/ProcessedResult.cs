@@ -1,10 +1,10 @@
 using NBitcoin;
 using System.Collections.Generic;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Blockchain.TransactionProcessing;
+namespace WalletAnonTx.Blockchain.TransactionProcessing;
 
 public class ProcessedResult
 {

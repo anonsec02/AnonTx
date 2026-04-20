@@ -1,6 +1,6 @@
 using Avalonia.Controls.Models.TreeDataGrid;
 
-namespace WalletWasabi.Fluent.TreeDataGrid;
+namespace WalletAnonTx.Fluent.TreeDataGrid;
 
 internal class PrivacyTextCell : ICell
 {

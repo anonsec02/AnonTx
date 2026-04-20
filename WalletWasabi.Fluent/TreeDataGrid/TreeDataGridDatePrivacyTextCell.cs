@@ -1,4 +1,4 @@
-﻿namespace WalletWasabi.Fluent.TreeDataGrid;
+﻿namespace WalletAnonTx.Fluent.TreeDataGrid;
 
 public class TreeDataGridDatePrivacyTextCell : TreeDataGridPrivacyTextCell
 {

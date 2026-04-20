@@ -4,10 +4,10 @@ using NBitcoin;
 using NBitcoin.RPC;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinCore.Rpc.Models;
-using WalletWasabi.Cache;
+using WalletAnonTx.BitcoinCore.Rpc.Models;
+using WalletAnonTx.Cache;
 
-namespace WalletWasabi.BitcoinCore.Rpc;
+namespace WalletAnonTx.BitcoinCore.Rpc;
 
 public class CachedRpcClient : RpcClientBase
 {

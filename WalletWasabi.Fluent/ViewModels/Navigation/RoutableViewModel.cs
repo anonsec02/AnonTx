@@ -3,9 +3,9 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
-namespace WalletWasabi.Fluent.ViewModels.Navigation;
+namespace WalletAnonTx.Fluent.ViewModels.Navigation;
 
 public abstract partial class RoutableViewModel : ViewModelBase, INavigatable
 {

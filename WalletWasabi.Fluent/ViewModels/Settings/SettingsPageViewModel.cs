@@ -4,13 +4,13 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Settings;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Settings;
 
-namespace WalletWasabi.Fluent.ViewModels.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.Settings;
 
 [AppLifetime]
 [NavigationMetaData(
@@ -56,7 +56,7 @@ public partial class SettingsPageViewModel : DialogViewModelBase<Unit>
 		// Show restart notification when needed only if this page is not active.
 		UiContext.ApplicationSettings.IsRestartNeeded
 				 .Where(x => x && !IsActive)
-				 .Do(_ => NotificationHelpers.Show(new RestartViewModel("To apply the new setting, Wasabi Wallet needs to be restarted")))
+				 .Do(_ => NotificationHelpers.Show(new RestartViewModel("To apply the new setting, AnonTx Wallet needs to be restarted")))
 				 .Subscribe();
 	}
 

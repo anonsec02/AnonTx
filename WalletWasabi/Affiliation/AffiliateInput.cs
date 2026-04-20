@@ -1,5 +1,5 @@
 using NBitcoin;
 
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public record AffiliateInput(OutPoint Prevout, Script ScriptPubKey, Money Amount, string AffiliationId, bool IsNoFee);

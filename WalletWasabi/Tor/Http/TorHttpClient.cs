@@ -2,11 +2,11 @@ using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Tor.Socks5.Exceptions;
-using WalletWasabi.Tor.Socks5.Pool;
-using WalletWasabi.Tor.Socks5.Pool.Circuits;
+using WalletAnonTx.Tor.Socks5.Exceptions;
+using WalletAnonTx.Tor.Socks5.Pool;
+using WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
-namespace WalletWasabi.Tor.Http;
+namespace WalletAnonTx.Tor.Http;
 
 public class TorHttpClient : IHttpClient
 {

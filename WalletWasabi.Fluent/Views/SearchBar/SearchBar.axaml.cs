@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.SearchBar;
+namespace WalletAnonTx.Fluent.Views.SearchBar;
 
 public class SearchBar : UserControl
 {

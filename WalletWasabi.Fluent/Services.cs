@@ -1,16 +1,16 @@
-using WalletWasabi.Blockchain.Blocks;
-using WalletWasabi.Blockchain.TransactionBroadcasting;
-using WalletWasabi.Daemon;
-using WalletWasabi.Helpers;
-using WalletWasabi.Services;
-using WalletWasabi.Services.Terminate;
-using WalletWasabi.Stores;
-using WalletWasabi.Tor;
-using WalletWasabi.Tor.StatusChecker;
-using WalletWasabi.Wallets;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Blockchain.Blocks;
+using WalletAnonTx.Blockchain.TransactionBroadcasting;
+using WalletAnonTx.Daemon;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Services;
+using WalletAnonTx.Services.Terminate;
+using WalletAnonTx.Stores;
+using WalletAnonTx.Tor;
+using WalletAnonTx.Tor.StatusChecker;
+using WalletAnonTx.Wallets;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.Fluent;
+namespace WalletAnonTx.Fluent;
 
 public static class Services
 {
@@ -22,7 +22,7 @@ public static class Services
 
 	public static SmartHeaderChain SmartHeaderChain => BitcoinStore.SmartHeaderChain;
 
-	public static WasabiHttpClientFactory HttpClientFactory { get; private set; } = null!;
+	public static AnonTxHttpClientFactory HttpClientFactory { get; private set; } = null!;
 
 	public static string PersistentConfigFilePath { get; private set; } = null!;
 

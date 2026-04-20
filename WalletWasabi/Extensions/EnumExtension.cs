@@ -1,8 +1,8 @@
 using System.ComponentModel;
 using System.Linq;
-using WalletWasabi.Models;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class EnumExtensions
 {

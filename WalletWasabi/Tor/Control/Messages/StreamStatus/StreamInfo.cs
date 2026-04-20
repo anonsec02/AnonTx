@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Utils;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Utils;
 
-namespace WalletWasabi.Tor.Control.Messages.StreamStatus;
+namespace WalletAnonTx.Tor.Control.Messages.StreamStatus;
 
 /// <summary>Implemented as specified in <c>4.1.2. Stream status changed</c> spec.</summary>
 /// <seealso href="https://gitweb.torproject.org/torspec.git/tree/control-spec.txt"/>

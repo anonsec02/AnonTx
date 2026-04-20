@@ -1,7 +1,7 @@
 using System.Windows.Input;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.ViewModels.HelpAndSupport;
+namespace WalletAnonTx.Fluent.ViewModels.HelpAndSupport;
 
 public partial class LinkViewModel : ViewModelBase
 {

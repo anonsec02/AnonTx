@@ -1,7 +1,7 @@
 using System.Net.Http;
-using static WalletWasabi.Tor.Http.Constants;
+using static WalletAnonTx.Tor.Http.Constants;
 
-namespace WalletWasabi.Tor.Http.Models;
+namespace WalletAnonTx.Tor.Http.Models;
 
 // https://tools.ietf.org/html/rfc7230#section-3.1.1
 // request-line   = method SP request-target SP HTTP-version CRLF

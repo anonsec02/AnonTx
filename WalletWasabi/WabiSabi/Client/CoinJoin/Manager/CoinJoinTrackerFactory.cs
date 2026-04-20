@@ -2,18 +2,18 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using NBitcoin;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.WabiSabi.Client.CoinJoin.Client;
-using WalletWasabi.WabiSabi.Client.RoundStateAwaiters;
-using WalletWasabi.Wallets;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
+using WalletAnonTx.WabiSabi.Client.RoundStateAwaiters;
+using WalletAnonTx.Wallets;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class CoinJoinTrackerFactory
 {
 	public CoinJoinTrackerFactory(
-		IWasabiHttpClientFactory httpClientFactory,
+		IAnonTxHttpClientFactory httpClientFactory,
 		RoundStateUpdater roundStatusUpdater,
 		CoinJoinConfiguration coinJoinConfiguration,
 		CancellationToken cancellationToken)
@@ -25,7 +25,7 @@ public class CoinJoinTrackerFactory
 		LiquidityClueProvider = new LiquidityClueProvider();
 	}
 
-	private IWasabiHttpClientFactory HttpClientFactory { get; }
+	private IAnonTxHttpClientFactory HttpClientFactory { get; }
 	private RoundStateUpdater RoundStatusUpdater { get; }
 	private CoinJoinConfiguration CoinJoinConfiguration { get; }
 	private CancellationToken CancellationToken { get; }

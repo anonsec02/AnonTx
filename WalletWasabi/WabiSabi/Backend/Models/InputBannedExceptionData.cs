@@ -1,3 +1,3 @@
-namespace WalletWasabi.WabiSabi.Backend.Models;
+namespace WalletAnonTx.WabiSabi.Backend.Models;
 
 public record InputBannedExceptionData(DateTimeOffset BannedUntil) : ExceptionData;

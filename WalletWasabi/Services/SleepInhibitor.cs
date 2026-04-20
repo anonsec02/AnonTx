@@ -1,15 +1,15 @@
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Helpers;
-using WalletWasabi.Helpers.PowerSaving;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.WabiSabi.Client.CoinJoin.Client;
-using static WalletWasabi.Helpers.PowerSaving.LinuxInhibitorTask;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Helpers.PowerSaving;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
+using static WalletAnonTx.Helpers.PowerSaving.LinuxInhibitorTask;
 
-namespace WalletWasabi.Services;
+namespace WalletAnonTx.Services;
 
 public class SleepInhibitor : PeriodicRunner
 {

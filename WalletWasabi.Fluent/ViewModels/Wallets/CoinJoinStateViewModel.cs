@@ -3,17 +3,17 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Avalonia.Threading;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.State;
-using WalletWasabi.Fluent.ViewModels.Wallets.Settings;
-using WalletWasabi.WabiSabi.Backend.Rounds;
-using WalletWasabi.WabiSabi.Client.CoinJoinProgressEvents;
-using WalletWasabi.WabiSabi.Client.StatusChangedEvents;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.State;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Settings;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Client.CoinJoinProgressEvents;
+using WalletAnonTx.WabiSabi.Client.StatusChangedEvents;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets;
 
 [AppLifetime]
 public partial class CoinJoinStateViewModel : ViewModelBase

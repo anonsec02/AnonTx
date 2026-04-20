@@ -7,10 +7,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.Packager;
+namespace WalletAnonTx.Packager;
 
 /// <summary>
 /// Instructions:
@@ -20,7 +20,7 @@ namespace WalletWasabi.Packager;
 /// <item>Build WIX project with Release and x64 configuration.</item>
 /// <item>Sign with Packager, set restore true so the password won't be kept.</item>
 /// </list>
-/// <seealso href="https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/ClientDeployment.md"/>
+/// <seealso href="https://github.com/zkSNACKs/WalletAnonTx/blob/master/WalletAnonTx.Documentation/ClientDeployment.md"/>
 /// </summary>
 public static class Program
 {
@@ -29,8 +29,8 @@ public static class Program
 	public const string DaemonExecutableName = Constants.DaemonExecutableName;
 	public const string ExecutableName = Constants.ExecutableName;
 
-	private const string WasabiPrivateKeyFilePath = @"C:\wasabi\Wasabi.privkey";
-	private const string WasabiPublicKeyFilePath = @"C:\wasabi\Wasabi.pubkey";
+	private const string AnonTxPrivateKeyFilePath = @"C:\anontx\AnonTx.privkey";
+	private const string AnonTxPublicKeyFilePath = @"C:\anontx\AnonTx.pubkey";
 
 	/// <remarks>Only 64-bit platforms are supported for now.</remarks>
 	/// <seealso href="https://docs.microsoft.com/en-us/dotnet/articles/core/rid-catalog"/>
@@ -49,9 +49,9 @@ public static class Program
 
 	public static string PackagerProjectDirectory { get; } = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", ".."));
 	public static string SolutionDirectory { get; } = Path.GetFullPath(Path.Combine(PackagerProjectDirectory, ".."));
-	public static string DesktopProjectDirectory { get; } = Path.GetFullPath(Path.Combine(SolutionDirectory, "WalletWasabi.Fluent.Desktop"));
-	public static string LibraryProjectDirectory { get; } = Path.GetFullPath(Path.Combine(SolutionDirectory, "WalletWasabi"));
-	public static string WixProjectDirectory { get; } = Path.GetFullPath(Path.Combine(SolutionDirectory, "WalletWasabi.WindowsInstaller"));
+	public static string DesktopProjectDirectory { get; } = Path.GetFullPath(Path.Combine(SolutionDirectory, "WalletAnonTx.Fluent.Desktop"));
+	public static string LibraryProjectDirectory { get; } = Path.GetFullPath(Path.Combine(SolutionDirectory, "WalletAnonTx"));
+	public static string WixProjectDirectory { get; } = Path.GetFullPath(Path.Combine(SolutionDirectory, "WalletAnonTx.WindowsInstaller"));
 	public static string BinDistDirectory { get; } = Path.GetFullPath(Path.Combine(DesktopProjectDirectory, "bin", "dist"));
 
 	/// <summary>
@@ -70,7 +70,7 @@ public static class Program
 
 		if (argsProcessor.IsGeneratePrivateKey())
 		{
-			await WasabiSignerHelpers.GeneratePrivateAndPublicKeyToFileAsync(WasabiPrivateKeyFilePath, WasabiPublicKeyFilePath).ConfigureAwait(false);
+			await AnonTxSignerHelpers.GeneratePrivateAndPublicKeyToFileAsync(AnonTxPrivateKeyFilePath, AnonTxPublicKeyFilePath).ConfigureAwait(false);
 			return;
 		}
 
@@ -128,7 +128,7 @@ public static class Program
 				string publishedFolder = Path.Combine(BinDistDirectory, target);
 
 				Console.WriteLine("Move created .msi");
-				var msiPath = Path.Combine(WixProjectDirectory, "bin", "Release", "Wasabi.msi");
+				var msiPath = Path.Combine(WixProjectDirectory, "bin", "Release", "AnonTx.msi");
 				var msiFileName = Path.GetFileNameWithoutExtension(msiPath);
 				var newMsiPath = Path.Combine(BinDistDirectory, $"{msiFileName}-{VersionPrefix}.msi");
 
@@ -140,7 +140,7 @@ public static class Program
 
 				if (!File.Exists(msiPath))
 				{
-					throw new Exception(".msi does not exist. Expected path: Wasabi.msi.");
+					throw new Exception(".msi does not exist. Expected path: AnonTx.msi.");
 				}
 
 				File.Move(msiPath, newMsiPath);
@@ -149,14 +149,14 @@ public static class Program
 				string pfxPassword = PasswordConsole.ReadPassword();
 
 				// Sign code with digicert.
-				StartProcessAndWaitForExit("cmd", BinDistDirectory, $"signtool sign /d \"Wasabi Wallet\" /f \"{PfxPath}\" /p {pfxPassword} /t http://timestamp.digicert.com /a \"{newMsiPath}\" && exit");
+				StartProcessAndWaitForExit("cmd", BinDistDirectory, $"signtool sign /d \"AnonTx Wallet\" /f \"{PfxPath}\" /p {pfxPassword} /t http://timestamp.digicert.com /a \"{newMsiPath}\" && exit");
 
 				await IoHelpers.TryDeleteDirectoryAsync(publishedFolder).ConfigureAwait(false);
 				Console.WriteLine($"Deleted {publishedFolder}");
 			}
 			else if (target.StartsWith("osx", StringComparison.OrdinalIgnoreCase))
 			{
-				string dmgFileName = target.Contains("arm") ? $"Wasabi-{VersionPrefix}.dmg" : $"Wasabi-{VersionPrefix}-arm64.dmg";
+				string dmgFileName = target.Contains("arm") ? $"AnonTx-{VersionPrefix}.dmg" : $"AnonTx-{VersionPrefix}-arm64.dmg";
 				string destinationFilePath = Path.Combine(BinDistDirectory, dmgFileName);
 				if (File.Exists(destinationFilePath))
 				{
@@ -193,17 +193,17 @@ public static class Program
 		// We do not need this file anymore SHA256SUMS.ASC contains the hashes and the signature as well.
 		File.Delete(sha256SumsFilePath);
 
-		using var key = await WasabiSignerHelpers.GetPrivateKeyFromFileAsync(WasabiPrivateKeyFilePath).ConfigureAwait(false);
+		using var key = await AnonTxSignerHelpers.GetPrivateKeyFromFileAsync(AnonTxPrivateKeyFilePath).ConfigureAwait(false);
 
 		// We will sign the whole file with the hashes and the pgp signature.
 		var sha256sumAscFilePath = Path.Combine(BinDistDirectory, "SHA256SUMS.asc");
-		await WasabiSignerHelpers.SignSha256SumsFileAsync(sha256sumAscFilePath, key).ConfigureAwait(false);
+		await AnonTxSignerHelpers.SignSha256SumsFileAsync(sha256sumAscFilePath, key).ConfigureAwait(false);
 
 		// Verify back the signature file.
-		await WasabiSignerHelpers.VerifySha256SumsFileAsync(sha256sumAscFilePath).ConfigureAwait(false);
+		await AnonTxSignerHelpers.VerifySha256SumsFileAsync(sha256sumAscFilePath).ConfigureAwait(false);
 
-		// Verify back Wasabi installer's hashes
-		await WasabiSignerHelpers.VerifyInstallerFileHashesAsync(finalFiles, sha256sumAscFilePath).ConfigureAwait(false);
+		// Verify back AnonTx installer's hashes
+		await AnonTxSignerHelpers.VerifyInstallerFileHashesAsync(finalFiles, sha256sumAscFilePath).ConfigureAwait(false);
 
 		IoHelpers.OpenFolderInFileExplorer(BinDistDirectory);
 	}
@@ -320,19 +320,19 @@ public static class Program
 				}
 			}
 
-			// Rename WalletWasabi.Fluent.Desktop(.exe) -> wassabee(.exe).
+			// Rename WalletAnonTx.Fluent.Desktop(.exe) -> wassabee(.exe).
 			string executableExtension = target.StartsWith("win") ? ".exe" : "";
-			string oldExecutablePath = Path.Combine(currentBinDistDirectory, $"WalletWasabi.Fluent.Desktop{executableExtension}");
+			string oldExecutablePath = Path.Combine(currentBinDistDirectory, $"WalletAnonTx.Fluent.Desktop{executableExtension}");
 			string newExecutablePath = Path.Combine(currentBinDistDirectory, $"{ExecutableName}{executableExtension}");
 			File.Move(oldExecutablePath, newExecutablePath);
 
-			// Rename WalletWasabi.Daemon(.exe) -> wassabeed(.exe).
-			oldExecutablePath = Path.Combine(currentBinDistDirectory, $"WalletWasabi.Daemon{executableExtension}");
+			// Rename WalletAnonTx.Daemon(.exe) -> wassabeed(.exe).
+			oldExecutablePath = Path.Combine(currentBinDistDirectory, $"WalletAnonTx.Daemon{executableExtension}");
 			newExecutablePath = Path.Combine(currentBinDistDirectory, $"{DaemonExecutableName}{executableExtension}");
 			File.Move(oldExecutablePath, newExecutablePath);
 
 			// Delete unused executables.
-			File.Delete(Path.Combine(currentBinDistDirectory, $"WalletWasabi.Fluent{executableExtension}"));
+			File.Delete(Path.Combine(currentBinDistDirectory, $"WalletAnonTx.Fluent{executableExtension}"));
 
 			// IF IT'S IN ONLYBINARIES MODE DON'T DO ANYTHING FANCY PACKAGING AFTER THIS!!!
 			if (OnlyBinaries)
@@ -344,7 +344,7 @@ public static class Program
 
 			if (target.StartsWith("win"))
 			{
-				ZipFile.CreateFromDirectory(currentBinDistDirectory, Path.Combine(deliveryPath, $"Wasabi-{deterministicFileNameTag}-{GetPackageTargetPostfix(target)}.zip"));
+				ZipFile.CreateFromDirectory(currentBinDistDirectory, Path.Combine(deliveryPath, $"AnonTx-{deterministicFileNameTag}-{GetPackageTargetPostfix(target)}.zip"));
 
 				if (IsContinuousDelivery)
 				{
@@ -353,7 +353,7 @@ public static class Program
 			}
 			else if (target.StartsWith("osx"))
 			{
-				ZipFile.CreateFromDirectory(currentBinDistDirectory, Path.Combine(deliveryPath, $"Wasabi-{deterministicFileNameTag}-{GetPackageTargetPostfix(target)}.zip"));
+				ZipFile.CreateFromDirectory(currentBinDistDirectory, Path.Combine(deliveryPath, $"AnonTx-{deterministicFileNameTag}-{GetPackageTargetPostfix(target)}.zip"));
 
 				if (IsContinuousDelivery)
 				{
@@ -364,7 +364,7 @@ public static class Program
 				var postfix = target.Contains("arm64") ? "-arm64" : "";
 
 				// After notarization this will be the filename of the dmg file.
-				var zipFileName = $"WasabiToNotarize-{deterministicFileNameTag}{postfix}.zip";
+				var zipFileName = $"AnonTxToNotarize-{deterministicFileNameTag}{postfix}.zip";
 				var zipFilePath = Path.Combine(BinDistDirectory, zipFileName);
 
 				ZipFile.CreateFromDirectory(currentBinDistDirectory, zipFilePath);
@@ -387,7 +387,7 @@ public static class Program
 			}
 			else if (target.StartsWith("linux"))
 			{
-				ZipFile.CreateFromDirectory(currentBinDistDirectory, Path.Combine(deliveryPath, $"Wasabi-{deterministicFileNameTag}-{GetPackageTargetPostfix(target)}.zip"));
+				ZipFile.CreateFromDirectory(currentBinDistDirectory, Path.Combine(deliveryPath, $"AnonTx-{deterministicFileNameTag}-{GetPackageTargetPostfix(target)}.zip"));
 
 				if (IsContinuousDelivery)
 				{
@@ -401,7 +401,7 @@ public static class Program
 					throw new Exception($"{publishedFolder} does not exist.");
 				}
 
-				var newFolderName = $"Wasabi-{VersionPrefix}";
+				var newFolderName = $"AnonTx-{VersionPrefix}";
 				var newFolderPath = Path.Combine(BinDistDirectory, newFolderName);
 
 				Console.WriteLine($"# Move '{publishedFolder}' to '{newFolderPath}'.");
@@ -434,8 +434,8 @@ public static class Program
 				var debianFolderRelativePath = Path.Combine(debFolderRelativePath, "DEBIAN");
 				var debianFolderPath = Path.Combine(BinDistDirectory, debianFolderRelativePath);
 				Directory.CreateDirectory(debianFolderPath);
-				newFolderName = "wasabiwallet";
-				var linuxWasabiWalletFolder = Tools.LinuxPathCombine(linuxUsrLocalBinFolder, newFolderName);
+				newFolderName = "anontxwallet";
+				var linuxAnonTxWalletFolder = Tools.LinuxPathCombine(linuxUsrLocalBinFolder, newFolderName);
 				var newFolderRelativePath = Path.Combine(debUsrLocalBinFolderRelativePath, newFolderName);
 				newFolderPath = Path.Combine(BinDistDirectory, newFolderRelativePath);
 				Directory.Move(publishedFolder, newFolderPath);
@@ -445,7 +445,7 @@ public static class Program
 
 				foreach (var file in assetsInfo.EnumerateFiles())
 				{
-					var number = file.Name.Split(new string[] { "WasabiLogo", ".png" }, StringSplitOptions.RemoveEmptyEntries);
+					var number = file.Name.Split(new string[] { "AnonTxLogo", ".png" }, StringSplitOptions.RemoveEmptyEntries);
 					if (number.Length == 1 && int.TryParse(number.First(), out int size))
 					{
 						string destinationFolder = Path.Combine(debUsrShareIconsFolderPath, $"{size}x{size}", "apps");
@@ -462,9 +462,9 @@ public static class Program
 					$"Section: utils\n" +
 					$"Maintainer: zkSNACKs Ltd <info@zksnacks.com>\n" +
 					$"Version: {VersionPrefix}\n" +
-					$"Homepage: https://wasabiwallet.io\n" +
-					$"Vcs-Git: git://github.com/zkSNACKs/WalletWasabi.git\n" +
-					$"Vcs-Browser: https://github.com/zkSNACKs/WalletWasabi\n" +
+					$"Homepage: https://anontxwallet.io\n" +
+					$"Vcs-Git: git://github.com/zkSNACKs/WalletAnonTx.git\n" +
+					$"Vcs-Browser: https://github.com/zkSNACKs/WalletAnonTx\n" +
 					$"Architecture: amd64\n" +
 					$"License: Open Source (MIT)\n" +
 					$"Installed-Size: {installedSizeKb}\n" +
@@ -476,7 +476,7 @@ public static class Program
 
 				string postInstScriptContent = """
 											   #!/bin/sh
-											   /usr/local/bin/wasabiwallet/Microservices/Binaries/lin64/hwi installudevrules
+											   /usr/local/bin/anontxwallet/Microservices/Binaries/lin64/hwi installudevrules
 											   exit 0
 											   """.ReplaceLineEndings("\n");
 
@@ -486,28 +486,28 @@ public static class Program
 				var desktopFilePath = Path.Combine(debUsrAppFolderPath, $"{ExecutableName}.desktop");
 				var desktopFileContent = $"[Desktop Entry]\n" +
 					$"Type=Application\n" +
-					$"Name=Wasabi Wallet\n" +
-					$"StartupWMClass=Wasabi Wallet\n" +
+					$"Name=AnonTx Wallet\n" +
+					$"StartupWMClass=AnonTx Wallet\n" +
 					$"GenericName=Bitcoin Wallet\n" +
 					$"Comment=Privacy focused Bitcoin wallet.\n" +
 					$"Icon={ExecutableName}\n" +
 					$"Terminal=false\n" +
 					$"Exec={ExecutableName}\n" +
 					$"Categories=Office;Finance;\n" +
-					$"Keywords=bitcoin;wallet;crypto;blockchain;wasabi;privacy;anon;awesome;\n";
+					$"Keywords=bitcoin;wallet;crypto;blockchain;anontx;privacy;anon;awesome;\n";
 
 				File.WriteAllText(desktopFilePath, desktopFileContent, Encoding.ASCII);
 
 				const string Shebang = "#!/usr/bin/env sh\n";
-				var wasabiStarterScriptPath = Path.Combine(debUsrLocalBinFolderPath, $"{ExecutableName}");
-				var wasabiStarterScriptContent = Shebang +
-					$"{linuxWasabiWalletFolder.TrimEnd('/')}/{ExecutableName} $@\n";
-				var wasabiDaemonStarterScriptPath = Path.Combine(debUsrLocalBinFolderPath, $"{DaemonExecutableName}");
-				var wasabiDaemonStarterScriptContent = Shebang +
-					$"{linuxWasabiWalletFolder.TrimEnd('/')}/{DaemonExecutableName} $@\n";
+				var anontxStarterScriptPath = Path.Combine(debUsrLocalBinFolderPath, $"{ExecutableName}");
+				var anontxStarterScriptContent = Shebang +
+					$"{linuxAnonTxWalletFolder.TrimEnd('/')}/{ExecutableName} $@\n";
+				var anontxDaemonStarterScriptPath = Path.Combine(debUsrLocalBinFolderPath, $"{DaemonExecutableName}");
+				var anontxDaemonStarterScriptContent = Shebang +
+					$"{linuxAnonTxWalletFolder.TrimEnd('/')}/{DaemonExecutableName} $@\n";
 
-				File.WriteAllText(wasabiStarterScriptPath, wasabiStarterScriptContent, Encoding.ASCII);
-				File.WriteAllText(wasabiDaemonStarterScriptPath, wasabiDaemonStarterScriptContent, Encoding.ASCII);
+				File.WriteAllText(anontxStarterScriptPath, anontxStarterScriptContent, Encoding.ASCII);
+				File.WriteAllText(anontxDaemonStarterScriptPath, anontxDaemonStarterScriptContent, Encoding.ASCII);
 
 				string debDesktopFileLinuxPath = Tools.LinuxPathCombine(debUsrAppFolderRelativePath, $"{ExecutableName}.desktop");
 
@@ -525,7 +525,7 @@ public static class Program
 				await IoHelpers.TryDeleteDirectoryAsync(debFolderPath).ConfigureAwait(false);
 
 				string oldDeb = Path.Combine(BinDistDirectory, $"{ExecutableName}_{VersionPrefix}_amd64.deb");
-				string newDeb = Path.Combine(BinDistDirectory, $"Wasabi-{VersionPrefix}.deb");
+				string newDeb = Path.Combine(BinDistDirectory, $"AnonTx-{VersionPrefix}.deb");
 				File.Move(oldDeb, newDeb);
 
 				await IoHelpers.TryDeleteDirectoryAsync(publishedFolder).ConfigureAwait(false);

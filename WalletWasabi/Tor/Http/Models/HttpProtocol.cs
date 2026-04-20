@@ -1,5 +1,5 @@
 // https://tools.ietf.org/html/rfc7230#section-2.6
-namespace WalletWasabi.Tor.Http.Models;
+namespace WalletAnonTx.Tor.Http.Models;
 
 public class HttpProtocol : IEquatable<HttpProtocol>, IEquatable<string>
 {

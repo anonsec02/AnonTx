@@ -1,5 +1,5 @@
 using System.Collections.Immutable;
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class DateTimeOffsetExtensions
 {

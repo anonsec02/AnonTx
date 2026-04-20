@@ -1,8 +1,8 @@
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.UI;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs.Announcement;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs.Announcement;
 
 [NavigationMetaData(Title = "Announcement", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class ZkSnacksCoordinatorAnnouncementViewModel : AnnouncementBase

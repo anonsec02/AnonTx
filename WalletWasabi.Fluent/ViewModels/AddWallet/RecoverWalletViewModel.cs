@@ -9,14 +9,14 @@ using DynamicData;
 using DynamicData.Binding;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Fluent.Validation;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Fluent.Models;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.Validation;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Fluent.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.AddWallet;
+namespace WalletAnonTx.Fluent.ViewModels.AddWallet;
 
 [NavigationMetaData(Title = "Recovery Words")]
 public partial class RecoverWalletViewModel : RoutableViewModel
@@ -77,7 +77,7 @@ public partial class RecoverWalletViewModel : RoutableViewModel
 		catch (Exception ex)
 		{
 			Logger.LogError(ex);
-			await ShowErrorAsync(Title, ex.ToUserFriendlyString(), "Wasabi was unable to recover the wallet.");
+			await ShowErrorAsync(Title, ex.ToUserFriendlyString(), "AnonTx was unable to recover the wallet.");
 		}
 
 		IsBusy = false;

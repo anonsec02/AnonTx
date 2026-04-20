@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.Models;
+namespace WalletAnonTx.Fluent.Models;
 
 public enum BalanceType
 {

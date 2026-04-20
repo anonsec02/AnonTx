@@ -1,7 +1,7 @@
 using NBitcoin;
 using Newtonsoft.Json;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 /// <summary>
 /// Converter used to convert <see cref="Network"/> to and from JSON.

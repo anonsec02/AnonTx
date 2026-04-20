@@ -2,7 +2,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Tor.Http;
+namespace WalletAnonTx.Tor.Http;
 
 /// <summary>
 /// Interface defining HTTP client capable of sending either absolute or relative HTTP requests.

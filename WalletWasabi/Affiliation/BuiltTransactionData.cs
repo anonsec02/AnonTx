@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using NBitcoin;
-using WalletWasabi.Affiliation.Models.CoinJoinNotification;
-using WalletWasabi.Affiliation.Extensions;
-using WalletWasabi.WabiSabi.Models;
+using WalletAnonTx.Affiliation.Models.CoinJoinNotification;
+using WalletAnonTx.Affiliation.Extensions;
+using WalletAnonTx.WabiSabi.Models;
 
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public class BuiltTransactionData
 {

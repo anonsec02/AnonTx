@@ -1,8 +1,8 @@
-using WalletWasabi.Helpers;
-using WalletWasabi.Hwi.Exceptions;
-using WalletWasabi.Models;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Hwi.Exceptions;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class ExceptionExtensions
 {

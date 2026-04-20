@@ -4,16 +4,16 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
 using System.Linq;
-using WalletWasabi.Bases;
-using WalletWasabi.Helpers;
-using WalletWasabi.JsonConverters;
-using WalletWasabi.JsonConverters.Bitcoin;
-using WalletWasabi.JsonConverters.Timing;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.Affiliation.Serialization;
-using WalletWasabi.WabiSabi.Backend.DoSPrevention;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.JsonConverters;
+using WalletAnonTx.JsonConverters.Bitcoin;
+using WalletAnonTx.JsonConverters.Timing;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.Affiliation.Serialization;
+using WalletAnonTx.WabiSabi.Backend.DoSPrevention;
 
-namespace WalletWasabi.WabiSabi.Backend;
+namespace WalletAnonTx.WabiSabi.Backend;
 
 [JsonObject(MemberSerialization.OptIn)]
 public class WabiSabiConfig : ConfigBase
@@ -295,7 +295,7 @@ public class WabiSabiConfig : ConfigBase
 		}
 
 		// When adding new script types, please see
-		// https://github.com/zkSNACKs/WalletWasabi/issues/5440
+		// https://github.com/zkSNACKs/WalletAnonTx/issues/5440
 
 		return scriptTypes.ToImmutableSortedSet();
 	}

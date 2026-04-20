@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.Blockchain.Keys;
+namespace WalletAnonTx.Blockchain.Keys;
 
 public class HdPubKeyPathView : IEnumerable<HdPubKey>
 {

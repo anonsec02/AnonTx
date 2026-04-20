@@ -8,14 +8,14 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Threading;
 using NBitcoin;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Helpers;
-using WalletWasabi.Userfacing;
-using static WalletWasabi.Userfacing.CurrencyInput;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Userfacing;
+using static WalletAnonTx.Userfacing.CurrencyInput;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public partial class CurrencyEntryBox : TextBox
 {

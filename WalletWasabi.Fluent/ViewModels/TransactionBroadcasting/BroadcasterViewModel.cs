@@ -1,8 +1,8 @@
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.UI;
 
-namespace WalletWasabi.Fluent.ViewModels.TransactionBroadcasting;
+namespace WalletAnonTx.Fluent.ViewModels.TransactionBroadcasting;
 
 [NavigationMetaData(
 	Title = "Broadcaster",

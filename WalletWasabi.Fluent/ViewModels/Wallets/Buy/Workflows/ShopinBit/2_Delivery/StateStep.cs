@@ -5,10 +5,10 @@ using System.Reactive.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.BuyAnything;
-using CountryState = WalletWasabi.WebClients.ShopWare.Models.State;
+using WalletAnonTx.BuyAnything;
+using CountryState = WalletAnonTx.WebClients.ShopWare.Models.State;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
 public partial class StateStep : WorkflowStep<CountryState>
 {

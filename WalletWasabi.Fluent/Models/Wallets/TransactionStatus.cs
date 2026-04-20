@@ -1,4 +1,4 @@
-﻿namespace WalletWasabi.Fluent.Models.Wallets;
+﻿namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public enum TransactionStatus
 {

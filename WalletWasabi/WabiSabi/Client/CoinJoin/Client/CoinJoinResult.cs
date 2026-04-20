@@ -1,8 +1,8 @@
 using NBitcoin;
 using System.Collections.Immutable;
-using WalletWasabi.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.TransactionOutputs;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public abstract record CoinJoinResult;
 

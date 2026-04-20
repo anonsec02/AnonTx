@@ -1,12 +1,12 @@
 using ReactiveUI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Wallets;
 using System.Reactive.Disposables;
-using WalletWasabi.Fluent.Models;
+using WalletAnonTx.Fluent.Models;
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Fluent.ViewModels.AddWallet;
+namespace WalletAnonTx.Fluent.ViewModels.AddWallet;
 
 [NavigationMetaData(Title = "Success")]
 public partial class AddedWalletPageViewModel : RoutableViewModel

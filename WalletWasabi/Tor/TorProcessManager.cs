@@ -5,16 +5,16 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Microservices;
-using WalletWasabi.Models;
-using WalletWasabi.Tor.Control;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Messages;
-using WalletWasabi.Tor.Socks5;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Microservices;
+using WalletAnonTx.Models;
+using WalletAnonTx.Tor.Control;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Messages;
+using WalletAnonTx.Tor.Socks5;
 
-namespace WalletWasabi.Tor;
+namespace WalletAnonTx.Tor;
 
 /// <summary>Manages lifetime of Tor process.</summary>
 /// <seealso href="https://2019.www.torproject.org/docs/tor-manual.html.en"/>
@@ -191,7 +191,7 @@ public class TorProcessManager : IAsyncDisposable
 
 			try
 			{
-				// Is Tor already running? Either our Tor process from previous Wasabi Wallet run or possibly user's own Tor.
+				// Is Tor already running? Either our Tor process from previous AnonTx Wallet run or possibly user's own Tor.
 				bool isAlreadyRunning = await TcpConnectionFactory.IsTorRunningAsync(cancellationToken).ConfigureAwait(false);
 
 				if (isAlreadyRunning)

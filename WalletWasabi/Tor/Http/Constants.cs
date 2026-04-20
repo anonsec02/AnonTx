@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Http;
+namespace WalletAnonTx.Tor.Http;
 
 public static class Constants
 {

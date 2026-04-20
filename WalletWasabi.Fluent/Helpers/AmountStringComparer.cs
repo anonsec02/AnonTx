@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public class AmountStringComparer : StringComparer
 {

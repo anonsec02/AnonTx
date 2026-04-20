@@ -2,13 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:s="clr-namespace:WalletWasabi.Fluent.Views.SearchBar"
+             xmlns:s="clr-namespace:WalletAnonTx.Fluent.Views.SearchBar"
              mc:Ignorable="d"
-             xmlns:searchBar="clr-namespace:WalletWasabi.Fluent.ViewModels.SearchBar"
-             xmlns:helpers="clr-namespace:WalletWasabi.Fluent.Helpers"
+             xmlns:searchBar="clr-namespace:WalletAnonTx.Fluent.ViewModels.SearchBar"
+             xmlns:helpers="clr-namespace:WalletAnonTx.Fluent.Helpers"
              x:CompileBindings="True"
              x:DataType="searchBar:SearchBarViewModel"
-             x:Class="WalletWasabi.Fluent.Views.SearchBar.SearchBar"
+             x:Class="WalletAnonTx.Fluent.Views.SearchBar.SearchBar"
              x:Name="UserControl">
   <UserControl.Resources>
     <Thickness x:Key="TextControlBorderThemeThicknessFocused">1</Thickness>

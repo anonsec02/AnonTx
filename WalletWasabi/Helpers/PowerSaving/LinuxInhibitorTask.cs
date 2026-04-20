@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
-using WalletWasabi.Microservices;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Microservices;
 
-namespace WalletWasabi.Helpers.PowerSaving;
+namespace WalletAnonTx.Helpers.PowerSaving;
 
 /// <summary><c>systemd-inhibitor</c> API wrapper.</summary>
 /// <remarks>Only works on Linux machines that use systemd.</remarks>

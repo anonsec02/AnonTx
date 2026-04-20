@@ -1,3 +1,3 @@
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public record WalletLoginResult(bool Success, bool CompatibilityPasswordUsed);

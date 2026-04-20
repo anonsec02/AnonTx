@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace WalletWasabi.Tor.Control.Messages;
+namespace WalletAnonTx.Tor.Control.Messages;
 
 /// <summary>
 /// A class containing information regarding a response received back from a Tor control connection.

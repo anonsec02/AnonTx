@@ -4,9 +4,9 @@ using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class ShowFlyoutOnPointerOverBehavior : AttachedToVisualTreeBehavior<Control>
 {

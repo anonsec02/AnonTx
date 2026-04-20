@@ -1,9 +1,9 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Daemon;
+namespace WalletAnonTx.Daemon;
 
 public enum ExitCode
 {
@@ -12,34 +12,34 @@ public enum ExitCode
 	FailedAlreadyRunningError,
 }
 
-public record WasabiAppBuilder(string AppName, string[] Arguments)
+public record AnonTxAppBuilder(string AppName, string[] Arguments)
 {
 	internal bool MustCheckSingleInstance { get; init; }
 	internal EventHandler<Exception>? UnhandledExceptionEventHandler { get; init; }
 	internal EventHandler<AggregateException>? UnobservedTaskExceptionsEventHandler { get; init; }
 	internal Action Terminate { get; init; } = () => { };
 
-	public WasabiAppBuilder EnsureSingleInstance(bool ensure = true) =>
+	public AnonTxAppBuilder EnsureSingleInstance(bool ensure = true) =>
 		this with { MustCheckSingleInstance = ensure };
 
-	public WasabiAppBuilder OnUnhandledExceptions(EventHandler<Exception> handler) =>
+	public AnonTxAppBuilder OnUnhandledExceptions(EventHandler<Exception> handler) =>
 		this with { UnhandledExceptionEventHandler = handler };
 
-	public WasabiAppBuilder OnUnobservedTaskExceptions(EventHandler<AggregateException> handler) =>
+	public AnonTxAppBuilder OnUnobservedTaskExceptions(EventHandler<AggregateException> handler) =>
 		this with { UnobservedTaskExceptionsEventHandler = handler };
 
-	public WasabiAppBuilder OnTermination(Action action) =>
+	public AnonTxAppBuilder OnTermination(Action action) =>
 		this with { Terminate = action };
-	public WasabiApplication Build() =>
+	public AnonTxApplication Build() =>
 		new(this);
 
-	public static WasabiAppBuilder Create(string appName, string[] args) =>
+	public static AnonTxAppBuilder Create(string appName, string[] args) =>
 		new(appName, args);
 }
 
-public static class WasabiAppExtensions
+public static class AnonTxAppExtensions
 {
-	public static async Task<ExitCode> RunAsConsoleAsync(this WasabiApplication app)
+	public static async Task<ExitCode> RunAsConsoleAsync(this AnonTxApplication app)
 	{
 		void ProcessCommands()
 		{

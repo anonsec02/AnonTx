@@ -1,17 +1,17 @@
 using System;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 using System.Net.Sockets;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Daemon;
+namespace WalletAnonTx.Daemon;
 
 public class Program
 {
 	public static async Task<int> Main(string[] args)
 	{
-		var app = WasabiAppBuilder
-			.Create("Wasabi Daemon", args)
+		var app = AnonTxAppBuilder
+			.Create("AnonTx Daemon", args)
 			.EnsureSingleInstance()
 			.OnUnhandledExceptions(LogUnhandledException)
 			.OnUnobservedTaskExceptions(LogUnobservedTaskException)

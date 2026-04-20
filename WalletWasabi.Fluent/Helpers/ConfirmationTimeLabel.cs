@@ -1,10 +1,10 @@
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class ConfirmationTimeLabel
 {
 	public static string AxisLabel(TimeSpan timeSpan)
 	{
-		if (timeSpan <= TransactionFeeHelper.CalculateConfirmationTime(WalletWasabi.Helpers.Constants.FastestConfirmationTarget))
+		if (timeSpan <= TransactionFeeHelper.CalculateConfirmationTime(WalletAnonTx.Helpers.Constants.FastestConfirmationTarget))
 		{
 			return "fastest";
 		}
@@ -14,7 +14,7 @@ public static class ConfirmationTimeLabel
 
 	public static string SliderLabel(TimeSpan timeSpan)
 	{
-		if (timeSpan <= TransactionFeeHelper.CalculateConfirmationTime(WalletWasabi.Helpers.Constants.FastestConfirmationTarget))
+		if (timeSpan <= TransactionFeeHelper.CalculateConfirmationTime(WalletAnonTx.Helpers.Constants.FastestConfirmationTarget))
 		{
 			return "fastest";
 		}

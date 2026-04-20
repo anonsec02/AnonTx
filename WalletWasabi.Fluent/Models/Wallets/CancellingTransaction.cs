@@ -1,6 +1,6 @@
-﻿using WalletWasabi.Blockchain.TransactionBuilding;
+﻿using WalletAnonTx.Blockchain.TransactionBuilding;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public record CancellingTransaction(
 	TransactionModel TargetTransaction,

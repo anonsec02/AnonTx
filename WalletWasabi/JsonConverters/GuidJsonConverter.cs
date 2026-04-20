@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 /// <summary>
 ///     JSON converter for <see cref="Guid"/>.

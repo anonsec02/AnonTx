@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace WalletWasabi.WabiSabi.Crypto.Serialization;
+namespace WalletAnonTx.WabiSabi.Crypto.Serialization;
 
 public static class JsonReaderExtensions
 {

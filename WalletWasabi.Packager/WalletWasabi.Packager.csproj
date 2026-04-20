@@ -8,11 +8,11 @@
 		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
 		<DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
 		<RuntimeIdentifiers>win-x64;linux-x64;osx-x64;osx-arm64;</RuntimeIdentifiers>
-		<PathMap>$(MSBuildProjectDirectory)\=WalletWasabi.Packager</PathMap>
+		<PathMap>$(MSBuildProjectDirectory)\=WalletAnonTx.Packager</PathMap>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<DocumentationFile>bin\Debug\net8.0\WalletWasabi.Packager.xml</DocumentationFile>
+		<DocumentationFile>bin\Debug\net8.0\WalletAnonTx.Packager.xml</DocumentationFile>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -23,7 +23,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\WalletWasabi\WalletWasabi.csproj" />
+		<ProjectReference Include="..\WalletAnonTx\WalletAnonTx.csproj" />
 	</ItemGroup>
 
 </Project>

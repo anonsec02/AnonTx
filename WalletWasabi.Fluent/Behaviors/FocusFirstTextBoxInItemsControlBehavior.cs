@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using Avalonia.LogicalTree;
 using Avalonia.Xaml.Interactivity;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 internal class FocusFirstTextBoxInItemsControlBehavior : Behavior<ItemsControl>
 {

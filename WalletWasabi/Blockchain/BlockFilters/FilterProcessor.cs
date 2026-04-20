@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Logging;
-using WalletWasabi.Stores;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Stores;
 
-namespace WalletWasabi.Blockchain.BlockFilters;
+namespace WalletAnonTx.Blockchain.BlockFilters;
 
 public class FilterProcessor
 {

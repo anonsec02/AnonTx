@@ -1,9 +1,9 @@
 using System.Globalization;
 using Avalonia;
 using Avalonia.Data.Converters;
-using WalletWasabi.Fluent.Models;
+using WalletAnonTx.Fluent.Models;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public class HealthMonitorStateVisibilityConverter : IValueConverter
 {

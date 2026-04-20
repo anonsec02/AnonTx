@@ -2,11 +2,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:tiles="using:WalletWasabi.Fluent.ViewModels.Wallets.Home.Tiles"
-             xmlns:ring="using:WalletWasabi.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing"
-             xmlns:ringView="using:WalletWasabi.Fluent.Views.Wallets.Home.Tiles.PrivacyRing"
+             xmlns:tiles="using:WalletAnonTx.Fluent.ViewModels.Wallets.Home.Tiles"
+             xmlns:ring="using:WalletAnonTx.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing"
+             xmlns:ringView="using:WalletAnonTx.Fluent.Views.Wallets.Home.Tiles.PrivacyRing"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Home.Tiles.PrivacyRing.PrivacyRingView"
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Home.Tiles.PrivacyRing.PrivacyRingView"
              x:Name="View">
   <UserControl.Styles>
     <Style Selector="Path:pointerover">

@@ -4,7 +4,7 @@ using Avalonia;
 using Avalonia.Xaml.Interactivity;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class OnSignalTriggerBehavior : Trigger
 {

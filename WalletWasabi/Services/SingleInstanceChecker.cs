@@ -6,11 +6,11 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Services;
+namespace WalletAnonTx.Services;
 
-public enum WasabiInstanceStatus
+public enum AnonTxInstanceStatus
 {
 	Error,
 	AnotherInstanceIsRunning,
@@ -19,17 +19,17 @@ public enum WasabiInstanceStatus
 
 public class SingleInstanceChecker : BackgroundService, IAsyncDisposable
 {
-	private const string WasabiMagicString = "InBitcoinWeTrust";
+	private const string AnonTxMagicString = "InBitcoinWeTrust";
 	public static readonly TimeSpan ClientTimeOut = TimeSpan.FromSeconds(2);
 
 	/// <summary>Multiplier to be applied to all timeouts in this class.</summary>
 	private readonly int _timeoutMultiplier;
 
 	/// <summary>
-	/// Creates an object to ensure mutual exclusion of Wasabi instances per Network <paramref name="network"/>.
+	/// Creates an object to ensure mutual exclusion of AnonTx instances per Network <paramref name="network"/>.
 	/// The solution based on TCP socket.
 	/// </summary>
-	/// <param name="network">Bitcoin network selected when Wasabi Wallet was started. It will use the port 37129, 37130, 37131 according to network main, test, reg.</param>
+	/// <param name="network">Bitcoin network selected when AnonTx Wallet was started. It will use the port 37129, 37130, 37131 according to network main, test, reg.</param>
 	public SingleInstanceChecker(Network network) : this(NetworkToPort(network))
 	{
 	}
@@ -51,27 +51,27 @@ public class SingleInstanceChecker : BackgroundService, IAsyncDisposable
 	private CancellationTokenSource DisposeCts { get; } = new();
 	private TaskCompletionSource? TaskStartTcpListener { get; set; }
 
-	public async Task<WasabiInstanceStatus> CheckSingleInstanceAsync()
+	public async Task<AnonTxInstanceStatus> CheckSingleInstanceAsync()
 	{
 		// Start single instance checker that is active over the lifetime of the application.
 		try
 		{
 			var singleInstanceResult = await CanRunAsSingleInstanceAsync().ConfigureAwait(false);
 			return singleInstanceResult
-				? WasabiInstanceStatus.NoOtherInstanceIsRunning
-				: WasabiInstanceStatus.AnotherInstanceIsRunning;
+				? AnonTxInstanceStatus.NoOtherInstanceIsRunning
+				: AnonTxInstanceStatus.AnotherInstanceIsRunning;
 		}
 		catch (Exception e)
 		{
 			Logger.LogError(e);
-			return WasabiInstanceStatus.Error;
+			return AnonTxInstanceStatus.Error;
 		}
 	}
 
 	/// <summary>
 	/// This function verifies whether is the only instance running on this machine or not. In case of secondary start
 	/// we try to signal the first instance before returning false.
-	/// On macOS this function will never fail if you run Wasabi as a macApp, because mac prevents running the same APP multiple times on OS level.
+	/// On macOS this function will never fail if you run AnonTx as a macApp, because mac prevents running the same APP multiple times on OS level.
 	/// </summary>
 	/// <returns>true if this is the only instance running; otherwise false.</returns>
 	private async Task<bool> CanRunAsSingleInstanceAsync()
@@ -94,8 +94,8 @@ public class SingleInstanceChecker : BackgroundService, IAsyncDisposable
 		catch (SocketException ex) when (ex.ErrorCode is 10048 or 48 or 98)
 		{
 			// ErrorCodes are different on every OS: win, macOS, Linux.
-			// It is already used -> another Wasabi is running on this network.
-			Logger.LogDebug("Another Wasabi instance is already running.");
+			// It is already used -> another AnonTx is running on this network.
+			Logger.LogDebug("Another AnonTx instance is already running.");
 		}
 
 		// Signal to the other instance, that there was an attempt to start the software.
@@ -115,7 +115,7 @@ public class SingleInstanceChecker : BackgroundService, IAsyncDisposable
 		await using var writer = new StreamWriter(networkStream, Encoding.UTF8);
 #pragma warning restore CA2007 // Consider calling ConfigureAwait on the awaited task
 
-		await writer.WriteAsync(WasabiMagicString.AsMemory(), cts.Token).ConfigureAwait(false);
+		await writer.WriteAsync(AnonTxMagicString.AsMemory(), cts.Token).ConfigureAwait(false);
 		await writer.FlushAsync().ConfigureAwait(false);
 		await networkStream.FlushAsync(cts.Token).ConfigureAwait(false);
 
@@ -169,15 +169,15 @@ public class SingleInstanceChecker : BackgroundService, IAsyncDisposable
 
 					// The read operation cancellation will happen on reader disposal.
 					string answer = await reader.ReadToEndAsync(cts.Token).ConfigureAwait(false);
-					if (answer == WasabiMagicString)
+					if (answer == AnonTxMagicString)
 					{
-						Logger.LogInfo($"Detected another Wasabi instance.");
+						Logger.LogInfo($"Detected another AnonTx instance.");
 						OtherInstanceStarted?.Invoke(this, EventArgs.Empty);
 					}
 				}
 				catch (Exception ex)
 				{
-					// Somebody connected but it was not another Wasabi instance.
+					// Somebody connected but it was not another AnonTx instance.
 					Logger.LogDebug(ex);
 				}
 			}

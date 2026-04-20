@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.WebUtilities;
 using NBitcoin;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Extensions;
-using WalletWasabi.Tor.Http;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Tor.Http;
 
-namespace WalletWasabi.WebClients.PayJoin;
+namespace WalletAnonTx.WebClients.PayJoin;
 
 public class PayjoinClient : IPayjoinClient
 {

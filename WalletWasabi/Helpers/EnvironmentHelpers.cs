@@ -6,11 +6,11 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
-using WalletWasabi.Microservices;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Microservices;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 public static class EnvironmentHelpers
 {
@@ -112,8 +112,8 @@ public static class EnvironmentHelpers
 
 	// This method removes the path and file extension.
 	//
-	// Given Wasabi releases are currently built using Windows, the generated assemblies contain
-	// the hard coded "C:\Users\User\Desktop\WalletWasabi\.......\FileName.cs" string because that
+	// Given AnonTx releases are currently built using Windows, the generated assemblies contain
+	// the hard coded "C:\Users\User\Desktop\WalletAnonTx\.......\FileName.cs" string because that
 	// is the real path of the file, it doesn't matter what OS was targeted.
 	// In Windows and Linux that string is a valid path and that means Path.GetFileNameWithoutExtension
 	// can extract the file name but in the case of OSX the same string is not a valid path so, it assumes

@@ -2,7 +2,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public static class ReflectionUtils
 {

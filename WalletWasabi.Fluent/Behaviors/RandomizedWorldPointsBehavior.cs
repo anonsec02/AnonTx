@@ -7,9 +7,9 @@ using Avalonia.Controls;
 using Avalonia.Data;
 using Avalonia.Threading;
 using Avalonia.Xaml.Interactivity;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class RandomizedWorldPointsBehavior : Behavior<Canvas>
 {

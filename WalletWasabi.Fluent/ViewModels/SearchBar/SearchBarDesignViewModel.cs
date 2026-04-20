@@ -5,10 +5,10 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using DynamicData;
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Patterns;
-using WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Patterns;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar;
 
 public class SearchBarDesignViewModel : ReactiveObject
 {

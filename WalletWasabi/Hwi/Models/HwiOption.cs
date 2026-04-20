@@ -1,8 +1,8 @@
 using NBitcoin;
-using WalletWasabi.Helpers;
-using WalletWasabi.Hwi.Parsers;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Hwi.Parsers;
 
-namespace WalletWasabi.Hwi.Models;
+namespace WalletAnonTx.Hwi.Models;
 
 public class HwiOption : IEquatable<HwiOption>
 {

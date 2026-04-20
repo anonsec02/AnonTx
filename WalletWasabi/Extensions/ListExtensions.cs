@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class ListExtensions
 {

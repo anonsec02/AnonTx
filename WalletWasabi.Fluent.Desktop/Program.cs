@@ -10,19 +10,19 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Threading;
 using ReactiveUI;
 using System.Linq;
-using WalletWasabi.Fluent.CrashReport;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
+using WalletAnonTx.Fluent.CrashReport;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
 using System.Diagnostics.CodeAnalysis;
-using WalletWasabi.Fluent.Desktop.Extensions;
+using WalletAnonTx.Fluent.Desktop.Extensions;
 using System.Net.Sockets;
 using System.Collections.ObjectModel;
-using WalletWasabi.Daemon;
-using LogLevel = WalletWasabi.Logging.LogLevel;
+using WalletAnonTx.Daemon;
+using LogLevel = WalletAnonTx.Logging.LogLevel;
 using System.Threading;
 
-namespace WalletWasabi.Fluent.Desktop;
+namespace WalletAnonTx.Fluent.Desktop;
 
 public class Program
 {
@@ -51,8 +51,8 @@ public class Program
 
 		try
 		{
-			var app = WasabiAppBuilder
-				.Create("Wasabi GUI", args)
+			var app = AnonTxAppBuilder
+				.Create("AnonTx GUI", args)
 				.EnsureSingleInstance()
 				.OnUnhandledExceptions(LogUnhandledException)
 				.OnUnobservedTaskExceptions(LogUnobservedTaskException)
@@ -137,16 +137,16 @@ public class Program
 
 		return result
 			.With(new Win32PlatformOptions { RenderingMode = new[] { Win32RenderingMode.Software } })
-			.With(new X11PlatformOptions { RenderingMode = new[] { X11RenderingMode.Software }, WmClass = "Wasabi Wallet Crash Report" })
+			.With(new X11PlatformOptions { RenderingMode = new[] { X11RenderingMode.Software }, WmClass = "AnonTx Wallet Crash Report" })
 			.With(new AvaloniaNativePlatformOptions { RenderingMode = new[] { AvaloniaNativeRenderingMode.Software } })
 			.With(new MacOSPlatformOptions { ShowInDock = true })
 			.AfterSetup(_ => ThemeHelper.ApplyTheme(Theme.Dark));
 	}
 }
 
-public static class WasabiAppExtensions
+public static class AnonTxAppExtensions
 {
-	public static async Task<ExitCode> RunAsGuiAsync(this WasabiApplication app)
+	public static async Task<ExitCode> RunAsGuiAsync(this AnonTxApplication app)
 	{
 		return await app.RunAsync(
 			afterStarting: () =>
@@ -163,7 +163,7 @@ public static class WasabiAppExtensions
 					RxApp.MainThreadScheduler.Schedule(() => throw new ApplicationException("Exception has been thrown in unobserved ThrownExceptions", ex));
 				});
 
-				Logger.LogInfo("Wasabi GUI started.");
+				Logger.LogInfo("AnonTx GUI started.");
 				bool runGuiInBackground = app.AppConfig.Arguments.Any(arg => arg.Contains(StartupHelper.SilentArgument));
 				UiConfig uiConfig = LoadOrCreateUiConfig(Config.DataDir);
 				Services.Initialize(app.Global!, uiConfig, app.SingleInstanceChecker, app.TerminateService);

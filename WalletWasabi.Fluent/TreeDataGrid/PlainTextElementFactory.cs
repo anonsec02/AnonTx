@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 
-namespace WalletWasabi.Fluent.TreeDataGrid;
+namespace WalletAnonTx.Fluent.TreeDataGrid;
 
 internal class PlainTextElementFactory : TreeDataGridElementFactory
 {

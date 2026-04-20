@@ -2,12 +2,12 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using NBitcoin;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Hwi;
-using WalletWasabi.Hwi.Models;
-using WalletWasabi.Logging;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Hwi;
+using WalletAnonTx.Hwi.Models;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 public static class HardwareWalletOperationHelpers
 {

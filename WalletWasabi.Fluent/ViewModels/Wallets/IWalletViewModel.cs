@@ -1,6 +1,6 @@
 ﻿using NBitcoin;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets;
 
 public interface IWalletViewModel
 {

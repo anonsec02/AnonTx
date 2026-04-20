@@ -1,8 +1,8 @@
 using NBitcoin;
 using System.Net;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.BitcoinCore.Endpointing;
+namespace WalletAnonTx.BitcoinCore.Endpointing;
 
 public class EndPointStrategy
 {

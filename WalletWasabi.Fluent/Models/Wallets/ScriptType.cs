@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public record ScriptType(string Name, string ShortName)
 {

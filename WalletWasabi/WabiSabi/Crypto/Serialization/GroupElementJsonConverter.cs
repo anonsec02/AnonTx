@@ -1,8 +1,8 @@
 using Newtonsoft.Json;
 using WabiSabi.Crypto.Groups;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Crypto.Serialization;
+namespace WalletAnonTx.WabiSabi.Crypto.Serialization;
 
 public class GroupElementJsonConverter : JsonConverter<GroupElement>
 {

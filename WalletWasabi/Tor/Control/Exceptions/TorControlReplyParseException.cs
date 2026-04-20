@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control.Exceptions;
+namespace WalletAnonTx.Tor.Control.Exceptions;
 
 public class TorControlReplyParseException : TorControlException
 {

@@ -3,13 +3,13 @@ using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
 using NBitcoin;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Fluent.ViewModels.Wallets.Send;
-using WalletWasabi.Helpers;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Send;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class TransactionFeeHelper
 {

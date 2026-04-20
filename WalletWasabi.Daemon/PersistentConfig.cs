@@ -4,13 +4,13 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net;
 using System.Text.Json.Serialization;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Interfaces;
-using WalletWasabi.JsonConverters;
-using WalletWasabi.JsonConverters.Bitcoin;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Interfaces;
+using WalletAnonTx.JsonConverters;
+using WalletAnonTx.JsonConverters.Bitcoin;
 
-namespace WalletWasabi.Daemon;
+namespace WalletAnonTx.Daemon;
 
 public record PersistentConfig : IConfigNg
 {
@@ -217,13 +217,13 @@ public record PersistentConfig : IConfigNg
 		bool hasChanged = false;
 		newConfig = null;
 
-		if (MainNetBackendUri == "https://wasabiwallet.io/" || TestNetBackendUri == "https://wasabiwallet.co/")
+		if (MainNetBackendUri == "https://anontxwallet.io/" || TestNetBackendUri == "https://anontxwallet.co/")
 		{
 			hasChanged = true;
 			newConfig = this with
 			{
-				MainNetBackendUri = "https://api.wasabiwallet.io/",
-				TestNetBackendUri = "https://api.wasabiwallet.co/",
+				MainNetBackendUri = "https://api.anontxwallet.io/",
+				TestNetBackendUri = "https://api.anontxwallet.co/",
 			};
 		}
 

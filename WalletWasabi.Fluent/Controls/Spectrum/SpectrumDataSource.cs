@@ -1,6 +1,6 @@
 using Avalonia.Threading;
 
-namespace WalletWasabi.Fluent.Controls.Spectrum;
+namespace WalletAnonTx.Fluent.Controls.Spectrum;
 
 public abstract class SpectrumDataSource
 {

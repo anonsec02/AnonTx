@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace WalletWasabi.Userfacing;
+namespace WalletAnonTx.Userfacing;
 
 public static partial class CurrencyInput
 {

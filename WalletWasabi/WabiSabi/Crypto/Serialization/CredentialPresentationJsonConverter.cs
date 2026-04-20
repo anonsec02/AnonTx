@@ -1,9 +1,9 @@
 using Newtonsoft.Json;
 using WabiSabi.Crypto.Groups;
 using WabiSabi.Crypto.ZeroKnowledge;
-using WalletWasabi.JsonConverters;
+using WalletAnonTx.JsonConverters;
 
-namespace WalletWasabi.WabiSabi.Crypto.Serialization;
+namespace WalletAnonTx.WabiSabi.Crypto.Serialization;
 
 public class CredentialPresentationJsonConverter : JsonConverter<CredentialPresentation>
 {

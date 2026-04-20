@@ -1,6 +1,6 @@
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+namespace WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
 // This represents parameters all clients must agree on to produce a valid &
 // standard transaction subject to constraints.

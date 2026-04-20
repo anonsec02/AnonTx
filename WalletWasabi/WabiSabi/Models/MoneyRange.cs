@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.WabiSabi.Models;
+namespace WalletAnonTx.WabiSabi.Models;
 
 public record MoneyRange(Money Min, Money Max)
 {

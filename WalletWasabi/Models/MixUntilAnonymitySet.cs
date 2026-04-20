@@ -1,4 +1,4 @@
-namespace WalletWasabi.Models;
+namespace WalletAnonTx.Models;
 
 public enum MixUntilAnonymitySet
 {

@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding.BnB;
+namespace WalletAnonTx.Blockchain.TransactionBuilding.BnB;
 
 /// <summary>
 /// Models a coin selection with <see cref="PaymentAmount">sum of coin effective values</see> and

@@ -3,7 +3,7 @@ using Avalonia.Data.Converters;
 using System.Globalization;
 using Avalonia.Media;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public class NavBarIconConverter : IValueConverter
 {

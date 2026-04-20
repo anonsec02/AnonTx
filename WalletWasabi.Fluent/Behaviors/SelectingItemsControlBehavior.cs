@@ -8,7 +8,7 @@ using Avalonia.Controls.Primitives;
 using Avalonia.Rendering.Composition;
 using Avalonia.VisualTree;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class SelectingItemsControlBehavior
 {

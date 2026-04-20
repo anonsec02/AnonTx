@@ -1,4 +1,4 @@
-namespace WalletWasabi.Bases;
+namespace WalletAnonTx.Bases;
 
 public class ExceptionInfo
 {

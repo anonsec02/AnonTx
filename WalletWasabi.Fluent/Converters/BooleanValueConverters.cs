@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public class BoolStringConverter : BoolToGenericConverter<string>
 {

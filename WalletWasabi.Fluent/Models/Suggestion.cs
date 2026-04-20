@@ -1,7 +1,7 @@
 using System.Windows.Input;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.Models;
+namespace WalletAnonTx.Fluent.Models;
 
 public class Suggestion
 {

@@ -1,8 +1,8 @@
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Utils;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Utils;
 
-namespace WalletWasabi.Tor.Control.Messages.Events.OrEvents;
+namespace WalletAnonTx.Tor.Control.Messages.Events.OrEvents;
 
 /// <seealso href="https://gitweb.torproject.org/torspec.git/tree/control-spec.txt">4.1.3. OR Connection status changed</seealso>
 public class OrConnEvent : IAsyncEvent

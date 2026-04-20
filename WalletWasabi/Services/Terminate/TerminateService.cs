@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 using System.Runtime.Loader;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Services.Terminate;
+namespace WalletAnonTx.Services.Terminate;
 
 public class TerminateService
 {
@@ -57,7 +57,7 @@ public class TerminateService
 
 		if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) && !Debugger.IsAttached)
 		{
-			// If the debugger is attached and you subscribe to SystemEvents, then on quit Wasabi gracefully stops but never returns from console.
+			// If the debugger is attached and you subscribe to SystemEvents, then on quit AnonTx gracefully stops but never returns from console.
 			Logger.LogDebug($"{nameof(TerminateService)} subscribed to SystemEvents");
 			SystemEvents.SessionEnding += Windows_SystemEvents_SessionEnding;
 			IsSystemEventsSubscribed = true;
@@ -80,12 +80,12 @@ public class TerminateService
 	{
 		if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 		{
-			// This event will only be triggered if you run Wasabi from the published package. Use the packager with the --OnlyBinaries option.
+			// This event will only be triggered if you run AnonTx from the published package. Use the packager with the --OnlyBinaries option.
 			Logger.LogInfo($"Process termination was requested by the OS, reason '{e.Reason}'.");
 			e.Cancel = true;
 		}
 
-		// This must be a blocking call because after this the OS will terminate the Wasabi process if it exists.
+		// This must be a blocking call because after this the OS will terminate the AnonTx process if it exists.
 		// The process will be killed by the OS after ~7 seconds, even with e.Cancel = true.
 		Terminate();
 	}
@@ -94,7 +94,7 @@ public class TerminateService
 	{
 		Logger.LogDebug("ProcessExit was called.");
 
-		// This must be a blocking call because after this the OS will terminate Wasabi process if exists.
+		// This must be a blocking call because after this the OS will terminate AnonTx process if exists.
 		Terminate();
 	}
 
@@ -189,6 +189,6 @@ public class TerminateService
 		// Indicate that the termination procedure finished. So other callers can return.
 		Interlocked.Exchange(ref _terminateStatus, TerminateStatusFinished);
 
-		Logger.LogSoftwareStopped("Wasabi");
+		Logger.LogSoftwareStopped("AnonTx");
 	}
 }

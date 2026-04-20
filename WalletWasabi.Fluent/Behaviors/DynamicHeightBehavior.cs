@@ -4,7 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class DynamicHeightBehavior : DisposingBehavior<Control>
 {

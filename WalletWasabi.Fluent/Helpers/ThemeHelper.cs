@@ -1,7 +1,7 @@
 using Avalonia;
 using Avalonia.Styling;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public enum Theme
 {

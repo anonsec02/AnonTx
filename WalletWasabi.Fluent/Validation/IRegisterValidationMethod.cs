@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.Validation;
+namespace WalletAnonTx.Fluent.Validation;
 
 public interface IRegisterValidationMethod
 {

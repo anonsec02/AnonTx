@@ -1,9 +1,9 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Avalonia.Xaml.Interactivity"
-                    xmlns:historyItems="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Home.History.HistoryItems"
-                    xmlns:receive="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Receive"
-                    xmlns:treeDataGrid="clr-namespace:WalletWasabi.Fluent.TreeDataGrid">
+                    xmlns:historyItems="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.HistoryItems"
+                    xmlns:receive="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Receive"
+                    xmlns:treeDataGrid="clr-namespace:WalletAnonTx.Fluent.TreeDataGrid">
 
   <Design.PreviewWith>
     <StackPanel Spacing="8">

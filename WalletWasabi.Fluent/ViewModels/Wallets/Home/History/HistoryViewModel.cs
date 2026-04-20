@@ -10,16 +10,16 @@ using DynamicData;
 using DynamicData.Binding;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Controls.Sorting;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.TreeDataGrid;
-using WalletWasabi.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
-using WalletWasabi.Fluent.Views.Wallets.Home.History.Columns;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Controls.Sorting;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.TreeDataGrid;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
+using WalletAnonTx.Fluent.Views.Wallets.Home.History.Columns;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.History;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.History;
 
 [AppLifetime]
 public partial class HistoryViewModel : ActivatableViewModel

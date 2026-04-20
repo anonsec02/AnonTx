@@ -5,10 +5,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using WalletWasabi.Extensions;
-using WalletWasabi.JsonConverters;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.JsonConverters;
 
-namespace WalletWasabi.Rpc;
+namespace WalletAnonTx.Rpc;
 
 /// <summary>
 /// This class coordinates all the major steps in processing the RPC call.

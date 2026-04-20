@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control.Messages.CircuitStatus;
+namespace WalletAnonTx.Tor.Control.Messages.CircuitStatus;
 
 public enum HsState
 {

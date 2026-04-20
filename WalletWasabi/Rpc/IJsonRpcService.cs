@@ -1,4 +1,4 @@
-namespace WalletWasabi.Rpc;
+namespace WalletAnonTx.Rpc;
 
 public interface IJsonRpcService
 {

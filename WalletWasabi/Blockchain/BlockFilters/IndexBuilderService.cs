@@ -5,15 +5,15 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.BitcoinCore.Rpc.Models;
-using WalletWasabi.Blockchain.Blocks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.BitcoinCore.Rpc.Models;
+using WalletAnonTx.Blockchain.Blocks;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Blockchain.BlockFilters;
+namespace WalletAnonTx.Blockchain.BlockFilters;
 
 public class IndexBuilderService
 {
@@ -165,7 +165,7 @@ public class IndexBuilderService
 								syncInfo = await GetSyncInfoAsync().ConfigureAwait(false);
 							}
 
-							// If wasabi filter height is the same as core we may be done.
+							// If anontx filter height is the same as core we may be done.
 							if (syncInfo.BlockCount == currentHeight)
 							{
 								// Check that core is fully synced

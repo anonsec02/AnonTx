@@ -1,9 +1,9 @@
 using WabiSabi.Crypto.Randomness;
 
-namespace WalletWasabi.Crypto.Randomness;
+namespace WalletAnonTx.Crypto.Randomness;
 
 /// <seealso href="https://devblogs.microsoft.com/pfxteam/getting-random-numbers-in-a-thread-safe-way/"/>>
-public class InsecureRandom : WasabiRandom
+public class InsecureRandom : AnonTxRandom
 {
 	public static readonly InsecureRandom Instance = new();
 

@@ -1,8 +1,8 @@
 using NBitcoin;
 using Newtonsoft.Json;
-using WalletWasabi.JsonConverters;
+using WalletAnonTx.JsonConverters;
 
-namespace WalletWasabi.WabiSabi.Client.Banning;
+namespace WalletAnonTx.WabiSabi.Client.Banning;
 
 public record PrisonedCoinRecord
 {

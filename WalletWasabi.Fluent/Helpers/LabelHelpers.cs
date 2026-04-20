@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Fluent.ViewModels.Wallets.Labels;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Labels;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class LabelHelpers
 {

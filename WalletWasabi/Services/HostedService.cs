@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Hosting;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Services;
+namespace WalletAnonTx.Services;
 
 public class HostedService
 {

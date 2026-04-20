@@ -1,17 +1,17 @@
 using System.Linq;
 using System.Collections.Immutable;
 using Microsoft.Extensions.Hosting;
-using WalletWasabi.Affiliation.Models;
+using WalletAnonTx.Affiliation.Models;
 using NBitcoin;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using WalletWasabi.Affiliation.Models.CoinJoinNotification;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
+using WalletAnonTx.Affiliation.Models.CoinJoinNotification;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public class AffiliateDataUpdater : BackgroundService
 {

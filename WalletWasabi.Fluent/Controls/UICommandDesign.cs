@@ -1,6 +1,6 @@
 using System.Windows.Input;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class UICommandDesign : IUICommand
 {

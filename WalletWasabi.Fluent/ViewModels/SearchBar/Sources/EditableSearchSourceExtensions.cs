@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
 
 public static class EditableSearchSourceExtensions
 {

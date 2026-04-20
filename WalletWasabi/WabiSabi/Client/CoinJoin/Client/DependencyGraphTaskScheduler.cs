@@ -5,16 +5,16 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using WabiSabi.Crypto.ZeroKnowledge;
-using WalletWasabi.Affiliation.Models;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Crypto;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Userfacing.Bip21;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Client.CredentialDependencies;
+using WalletAnonTx.Affiliation.Models;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Userfacing.Bip21;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Client.CredentialDependencies;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoin.Client;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
 
 public class DependencyGraphTaskScheduler
 {

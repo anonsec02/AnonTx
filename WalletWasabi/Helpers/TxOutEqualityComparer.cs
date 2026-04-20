@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using NBitcoin;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 public class TxOutEqualityComparer : IEqualityComparer<TxOut>
 {

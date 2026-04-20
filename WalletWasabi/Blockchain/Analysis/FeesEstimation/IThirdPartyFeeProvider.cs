@@ -1,4 +1,4 @@
-namespace WalletWasabi.Blockchain.Analysis.FeesEstimation;
+namespace WalletAnonTx.Blockchain.Analysis.FeesEstimation;
 
 public interface IThirdPartyFeeProvider
 {

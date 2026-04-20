@@ -1,7 +1,7 @@
 using NBitcoin;
 using System.Diagnostics.CodeAnalysis;
 
-namespace WalletWasabi.BitcoinCore.Configuration.Whitening;
+namespace WalletAnonTx.BitcoinCore.Configuration.Whitening;
 
 public class WhiteBind : WhiteEntry
 {

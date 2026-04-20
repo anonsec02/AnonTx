@@ -1,8 +1,8 @@
 using System.Text;
-using WalletWasabi.Helpers;
-using WalletWasabi.Tor.Socks5.Models.Bases;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Tor.Socks5.Models.Bases;
 
-namespace WalletWasabi.Tor.Socks5.Models.Fields.ByteArrayFields;
+namespace WalletAnonTx.Tor.Socks5.Models.Fields.ByteArrayFields;
 
 public class PasswdField : ByteArraySerializableBase
 {

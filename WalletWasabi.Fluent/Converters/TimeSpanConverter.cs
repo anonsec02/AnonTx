@@ -1,7 +1,7 @@
 using Avalonia.Data.Converters;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public class TimeSpanConverter
 {

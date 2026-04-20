@@ -1,8 +1,8 @@
 using NBitcoin;
 using Newtonsoft.Json;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class BitcoinAddressJsonConverter : JsonConverter<BitcoinAddress>
 {

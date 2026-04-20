@@ -4,13 +4,13 @@ using System.Reactive.Disposables;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Logging;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.ViewModels.AddWallet;
+namespace WalletAnonTx.Fluent.ViewModels.AddWallet;
 
 [NavigationMetaData(
 	Title = "Add Wallet",
@@ -86,7 +86,7 @@ public partial class AddWalletPageViewModel : DialogViewModelBase<Unit>
 		catch (Exception ex)
 		{
 			Logger.LogError(ex);
-			await ShowErrorAsync("Import wallet", ex.ToUserFriendlyString(), "Wasabi was unable to import your wallet.");
+			await ShowErrorAsync("Import wallet", ex.ToUserFriendlyString(), "AnonTx was unable to import your wallet.");
 		}
 	}
 

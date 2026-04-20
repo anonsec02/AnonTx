@@ -2,13 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:v="using:WalletWasabi.Fluent.Views.Settings"
-             xmlns:settings="using:WalletWasabi.Fluent.ViewModels.Settings"
-             xmlns:conv="using:WalletWasabi.Fluent.Converters"
+             xmlns:v="using:WalletAnonTx.Fluent.Views.Settings"
+             xmlns:settings="using:WalletAnonTx.Fluent.ViewModels.Settings"
+             xmlns:conv="using:WalletAnonTx.Fluent.Converters"
              mc:Ignorable="d" d:DesignWidth="428" d:DesignHeight="371"
              x:DataType="settings:SettingsPageViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.Settings.SettingsPageView">
+             x:Class="WalletAnonTx.Fluent.Views.Settings.SettingsPageView">
 
   <ContentArea Title="{Binding Title}"
                  Caption="Manage appearance, privacy and other settings"
@@ -24,7 +24,7 @@
                      DockPanel.Dock="Bottom">
         <StackPanel Orientation="Horizontal">
           <TextBlock Text="Changes will be applied after restarting the application." />
-          <Button Content="Restart Wasabi" Classes="activeHyperLink plain" Margin="5 0 0 0" Command="{Binding RestartCommand}" />
+          <Button Content="Restart AnonTx" Classes="activeHyperLink plain" Margin="5 0 0 0" Command="{Binding RestartCommand}" />
         </StackPanel>
       </InfoMessage>
       <InfoMessage Foreground="{StaticResource WarningMessageForeground}"

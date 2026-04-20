@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.WabiSabi.Backend.Banning;
+namespace WalletAnonTx.WabiSabi.Backend.Banning;
 
 /// <summary>
 /// The basic report we get back from CoinVerifierAPI, within every necessary

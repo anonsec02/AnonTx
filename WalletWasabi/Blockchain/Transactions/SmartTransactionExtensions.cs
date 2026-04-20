@@ -1,10 +1,10 @@
 using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Blockchain.Transactions.Summary;
-using WalletWasabi.Models;
+using WalletAnonTx.Blockchain.Transactions.Summary;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Blockchain.Transactions;
+namespace WalletAnonTx.Blockchain.Transactions;
 
 public static class SmartTransactionExtensions
 {

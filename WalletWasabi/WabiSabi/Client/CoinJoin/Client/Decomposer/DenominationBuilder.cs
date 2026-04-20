@@ -2,9 +2,9 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoin.Client.Decomposer;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoin.Client.Decomposer;
 
 public static class DenominationBuilder
 {
@@ -13,7 +13,7 @@ public static class DenominationBuilder
 		Money maxAllowedOutputAmount,
 		FeeRate feeRate,
 		IEnumerable<ScriptType> allowedOutputTypes,
-		WasabiRandom random)
+		AnonTxRandom random)
 	{
 		var denominations = new HashSet<Output>();
 

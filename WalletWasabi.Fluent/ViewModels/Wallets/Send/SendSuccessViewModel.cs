@@ -1,10 +1,10 @@
 using System.Reactive.Disposables;
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 public partial class SendSuccessViewModel : RoutableViewModel
 {

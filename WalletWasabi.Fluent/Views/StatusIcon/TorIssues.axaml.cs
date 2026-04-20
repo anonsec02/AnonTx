@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.StatusIcon;
+namespace WalletAnonTx.Fluent.Views.StatusIcon;
 
 public class TorIssues : UserControl
 {

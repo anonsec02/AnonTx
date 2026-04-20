@@ -1,8 +1,8 @@
 using System.Collections.Immutable;
 using System.Linq;
-using WalletWasabi.Crypto.Randomness;
+using WalletAnonTx.Crypto.Randomness;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class TimeSpanExtensions
 {

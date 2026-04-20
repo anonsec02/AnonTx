@@ -1,4 +1,4 @@
-namespace WalletWasabi.Blockchain.TransactionBuilding;
+namespace WalletAnonTx.Blockchain.TransactionBuilding;
 
 public enum ChangeStrategy
 {

@@ -1,6 +1,6 @@
 using Avalonia;
 
-namespace WalletWasabi.Fluent.Validation;
+namespace WalletAnonTx.Fluent.Validation;
 
 public class CheckMarkStatus
 {

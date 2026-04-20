@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 using NBitcoin;
 using NBitcoin.Protocol;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 public class P2PNodesManager
 {

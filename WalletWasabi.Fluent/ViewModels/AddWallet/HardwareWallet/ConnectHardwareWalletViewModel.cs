@@ -4,15 +4,15 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Hwi.Models;
-using WalletWasabi.Logging;
-using WalletWasabi.Nito.AsyncEx;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Hwi.Models;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Nito.AsyncEx;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.AddWallet.HardwareWallet;
+namespace WalletAnonTx.Fluent.ViewModels.AddWallet.HardwareWallet;
 
 [NavigationMetaData(Title = "Hardware Wallet")]
 public partial class ConnectHardwareWalletViewModel : RoutableViewModel

@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Fluent.ViewModels.HelpAndSupport;
+namespace WalletAnonTx.Fluent.ViewModels.HelpAndSupport;
 
 [NavigationMetaData(
-	Title = "About Wasabi",
-	Caption = "Display Wasabi's current info",
+	Title = "About AnonTx",
+	Caption = "Display AnonTx's current info",
 	IconName = "info_regular",
 	Order = 4,
 	Category = "Help & Support",
@@ -118,21 +118,21 @@ public partial class AboutViewModel : RoutableViewModel
 
 	public Version ClientVersion => Constants.ClientVersion;
 
-	public static string ClearnetLink => "https://wasabiwallet.io/";
+	public static string ClearnetLink => "https://anontxwallet.io/";
 
-	public static string TorLink => "http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion";
+	public static string TorLink => "http://anontxukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion";
 
-	public static string SourceCodeLink => "https://github.com/WalletWasabi/WalletWasabi/";
+	public static string SourceCodeLink => "https://github.com/WalletAnonTx/WalletAnonTx/";
 
 	public static string StatusPageLink => "https://stats.uptimerobot.com/YQqGyUL8A7";
 
-	public static string UserSupportLink => "https://github.com/WalletWasabi/WalletWasabi/discussions/5185";
+	public static string UserSupportLink => "https://github.com/WalletAnonTx/WalletAnonTx/discussions/5185";
 
-	public static string BugReportLink => "https://github.com/WalletWasabi/WalletWasabi/issues/new?template=bug-report.md";
+	public static string BugReportLink => "https://github.com/WalletAnonTx/WalletAnonTx/issues/new?template=bug-report.md";
 
-	public static string FAQLink => "https://docs.wasabiwallet.io/FAQ/";
+	public static string FAQLink => "https://docs.anontxwallet.io/FAQ/";
 
-	public static string DocsLink => "https://docs.wasabiwallet.io/";
+	public static string DocsLink => "https://docs.anontxwallet.io/";
 
-	public static string LicenseLink => "https://github.com/WalletWasabi/WalletWasabi/blob/master/LICENSE.md";
+	public static string LicenseLink => "https://github.com/WalletAnonTx/WalletAnonTx/blob/master/LICENSE.md";
 }

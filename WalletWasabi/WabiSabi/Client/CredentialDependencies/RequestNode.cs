@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Client.CredentialDependencies;
+namespace WalletAnonTx.WabiSabi.Client.CredentialDependencies;
 
 public abstract class RequestNode
 {

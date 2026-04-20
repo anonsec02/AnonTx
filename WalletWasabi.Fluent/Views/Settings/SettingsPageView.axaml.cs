@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.Settings;
+namespace WalletAnonTx.Fluent.Views.Settings;
 
 public class SettingsPageView : UserControl
 {

@@ -5,9 +5,9 @@ Last Updated: Jun 15, 2022
 SUMMARY
 =========================================
 
-    The WASABI team is committed to be fully transparent to its users, from its source code to the legal aspects of its services. The purpose of Wasabi Wallet is to provide privacy for its users’ Bitcoin transactions. This means that with the use of the wallet we would like to enable the users to make Bitcoin payments in such a way that their spending history, wallet balances, etc. are not visible to the receiving party. This does not necessarily mean that the user stays anonymous, since the receiving party might have to identify the sending party.
-    Our goal is to minimize the unintentional leaking or disclosure of private financial information to third parties and to the receiver of any transaction resulting from the use of the Wasabi Wallet. The protection of your privacy and the protection of your (personal) data is our highest priority, which also defines the essence of our services.
-    One instance of the Wasabi Wallet CoinJoin coordinating server is operated by a legal entity, zkSNACKs Ltd. Thus, in order to legally provide our services to our clients, we have defined the framework and the rules that both parties must follow in order to protect each other.
+    The WASABI team is committed to be fully transparent to its users, from its source code to the legal aspects of its services. The purpose of AnonTx Wallet is to provide privacy for its users’ Bitcoin transactions. This means that with the use of the wallet we would like to enable the users to make Bitcoin payments in such a way that their spending history, wallet balances, etc. are not visible to the receiving party. This does not necessarily mean that the user stays anonymous, since the receiving party might have to identify the sending party.
+    Our goal is to minimize the unintentional leaking or disclosure of private financial information to third parties and to the receiver of any transaction resulting from the use of the AnonTx Wallet. The protection of your privacy and the protection of your (personal) data is our highest priority, which also defines the essence of our services.
+    One instance of the AnonTx Wallet CoinJoin coordinating server is operated by a legal entity, zkSNACKs Ltd. Thus, in order to legally provide our services to our clients, we have defined the framework and the rules that both parties must follow in order to protect each other.
 
     The most important parts of the document below is summarized in the following points:
      - The service is open-source under the MIT license.
@@ -35,15 +35,15 @@ I. TERMS AND CONDITIONS
      - zkSNACKs Ltd. (“Service Provider” or “we”, which includes our subsidiaries, partners, affiliates, agents, employees, licensors, service providers or subcontractors (if any)) and
      - the person, persons, or entity (“You” or “Your”) using the Services (as defined below).
 
-    These Terms apply to the download of the Client Application (as defined below), any access and use of the Client Application , our website at https://wasabiwallet.io or its onion mirror at http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion (*) and our CoinJoin Coordinator Services (as defined below), and any of our other Services related to or utilizing any of the foregoing, which we refer to in these Terms and Conditions documents (“Terms” or “Terms of Use”), collectively, as our “Services”.
+    These Terms apply to the download of the Client Application (as defined below), any access and use of the Client Application , our website at https://anontxwallet.io or its onion mirror at http://anontxukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion (*) and our CoinJoin Coordinator Services (as defined below), and any of our other Services related to or utilizing any of the foregoing, which we refer to in these Terms and Conditions documents (“Terms” or “Terms of Use”), collectively, as our “Services”.
 
 1.2 ELIGIBILITY AND AGREEMENT
     If You use the Services these Terms apply. You will be solely liable for any damage or consequences arising from use without the full acceptance of the rules. The Service Provider shall not be liable under any circumstances in this case.
     You can use our Services only if You can lawfully enter into an agreement pursuant to these Terms under applicable law. You acknowledge that Your use of this Software is at Your own discretion and in compliance with all applicable laws and regulations.
-    Due to the nature of the Service, we cannot guarantee the full compliance of user transactions, therefore it is Your own responsibility to ensure that the use of Wasabi Wallet complies with Your local laws and jurisdiction.
+    Due to the nature of the Service, we cannot guarantee the full compliance of user transactions, therefore it is Your own responsibility to ensure that the use of AnonTx Wallet complies with Your local laws and jurisdiction.
 
 1.3 RESPONSIBILITY FOR WALLET BACKUPS AND OTHER AUTHENTICATION MEANS
-    With our Services You, and only You are able to access and transact through Your wallet. This is enabled by Your recovery words, passwords and encrypted secret keys. If you use our Services to create a wallet, the software will use an algorithm to generate random recovery words and optionally combines it with an additional word (called the passphrase as defined in BIP39), where Wasabi may use your chosen wallet password as the default passphrase. We call the combination of the recovery words and the passphrase as wallet backup, or backup.
+    With our Services You, and only You are able to access and transact through Your wallet. This is enabled by Your recovery words, passwords and encrypted secret keys. If you use our Services to create a wallet, the software will use an algorithm to generate random recovery words and optionally combines it with an additional word (called the passphrase as defined in BIP39), where AnonTx may use your chosen wallet password as the default passphrase. We call the combination of the recovery words and the passphrase as wallet backup, or backup.
 
     THE SERVICE PROVIDER EXPRESSLY DECLARES THAT IT DOES NOT STORE, HAVE ACCESS TO, OR HAVE ANY WAY OR MEANS OF RECOVERING YOUR BACKUP.
 
@@ -64,7 +64,7 @@ I. TERMS AND CONDITIONS
 2.1 DESCRIPTION OF SERVICES
     This Software consists of the Client Application and the CoinJoin Coordinator (both as defined below) and functions as a free, open-source, non-custodial desktop Bitcoin wallet. The Software does not constitute an account where we or other third parties serve as financial intermediaries or custodians of Your bitcoins. The Software and our Services are therefore not a bank, a custodian, an exchange, a financial intermediary or a regulated financial institution.
 
-    The client application (“Client Application”) is software, with the sole purpose of allowing You access to the Bitcoin network and our Services (as defined below), without the need or requirement to create or maintain a user account. The application itself is an ordinary Bitcoin desktop wallet with ordinary features. Wasabi Wallet does not store, send or receive bitcoins. This is because bitcoins exist only by virtue of the ownership record maintained in the Bitcoin network. Any transfer of title in bitcoins occurs within the decentralized Bitcoin network, and not in the Wasabi Wallet.
+    The client application (“Client Application”) is software, with the sole purpose of allowing You access to the Bitcoin network and our Services (as defined below), without the need or requirement to create or maintain a user account. The application itself is an ordinary Bitcoin desktop wallet with ordinary features. AnonTx Wallet does not store, send or receive bitcoins. This is because bitcoins exist only by virtue of the ownership record maintained in the Bitcoin network. Any transfer of title in bitcoins occurs within the decentralized Bitcoin network, and not in the AnonTx Wallet.
     The CoinJoin Coordinator Service is an online service that implements trustless CoinJoin to prevent third parties from spying on the Blockchain. Throughout the process, the Service does not initiate or process any standalone transactions whatsoever towards third parties (i.e. non-users of the Service) and therefore does not store or transmit value belonging to others. For further information on how it works please visit our GitHub page: https://github.com/zkSNACKs
 
 2.2 FEES
@@ -141,7 +141,7 @@ I. TERMS AND CONDITIONS
 7 WAY OF SUPPORT
 ================
 
-    Wasabi Wallet provides WRITTEN support only. We do not currently offer phone support and we will NEVER call, e-mail or get in touch in any form with our users to offer any wallet recovery services. Please be safe and guard Your wallet information and funds. If You see any signs of abuse in this regard, please let us know at one of the contacts listed at the end of this document.
+    AnonTx Wallet provides WRITTEN support only. We do not currently offer phone support and we will NEVER call, e-mail or get in touch in any form with our users to offer any wallet recovery services. Please be safe and guard Your wallet information and funds. If You see any signs of abuse in this regard, please let us know at one of the contacts listed at the end of this document.
 
 8 LIMITATION OF LIABILITY
 =========================
@@ -241,12 +241,12 @@ Contact details regarding this declaration
 III. LEGAL STATEMENT OF WASABI WALLET
 =========================================
 
-    zkSNACKs Ltd., the creator of Wasabi Wallet and owner of the brand only supports behaviour that is legally acceptable by Republic of Seychelles  and international legal standards, and strictly rejects all kinds of illegal activities.
+    zkSNACKs Ltd., the creator of AnonTx Wallet and owner of the brand only supports behaviour that is legally acceptable by Republic of Seychelles  and international legal standards, and strictly rejects all kinds of illegal activities.
 
 INFORMATION PROVIDED
 ====================
 
-    Service Provider provides information and material of a general nature. You are neither authorized to nor should You rely on the Service Provider for legal advice, investment advice, or advice of any kind. You act at Your own risk in any reliance on the contents provided. In no way are the owners of, or contributors to, the Service responsible for the actions, decisions, or other behaviour taken or not taken by You in reliance upon the Website or the use of Wasabi Wallet.
+    Service Provider provides information and material of a general nature. You are neither authorized to nor should You rely on the Service Provider for legal advice, investment advice, or advice of any kind. You act at Your own risk in any reliance on the contents provided. In no way are the owners of, or contributors to, the Service responsible for the actions, decisions, or other behaviour taken or not taken by You in reliance upon the Website or the use of AnonTx Wallet.
     Any exchange prices displayed are provided by 3rd party services and are not indicative of the Bitcoin being backed by any commodity or other form of money or having any other tangible value at all. The Service Provider makes no guarantees that Bitcoins can be exchanged or sold at the price displayed.
     We have no control over the value of bitcoin, or the operation of the underlying software protocols which govern the operation of Bitcoin supported on our platform. We assume no responsibility for the operation of the underlying protocols and we are not able to guarantee their functionality, security or availability.
 
@@ -263,7 +263,7 @@ COMPLIANCE WITH TAX OBLIGATIONS
 COUNTRY OF RESIDENCE
 ====================
 
-    In case You are a Gibraltar or Republic of Seychelles resident and willing to use Wasabi Wallet please inform us in advance on the following e-mail address: legal@zksnacks.com.
+    In case You are a Gibraltar or Republic of Seychelles resident and willing to use AnonTx Wallet please inform us in advance on the following e-mail address: legal@zksnacks.com.
 
     zkSNACKs Ltd.
     www.zksnacks.com(*)

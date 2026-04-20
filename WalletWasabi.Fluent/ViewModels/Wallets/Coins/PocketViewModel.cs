@@ -5,12 +5,12 @@ using System.Reactive.Linq;
 using DynamicData;
 using DynamicData.Aggregation;
 using ReactiveUI;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.CoinControl.Core;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.CoinControl.Core;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Coins;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Coins;
 
 public class PocketViewModel : CoinListItem
 {

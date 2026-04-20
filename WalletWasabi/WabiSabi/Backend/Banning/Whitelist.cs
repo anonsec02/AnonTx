@@ -7,10 +7,10 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.WabiSabi.Backend.Banning;
+namespace WalletAnonTx.WabiSabi.Backend.Banning;
 
 /// <summary>
 /// Clean UTXOs are cached and saved here.

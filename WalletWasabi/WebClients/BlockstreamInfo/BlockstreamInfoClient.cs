@@ -4,17 +4,17 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Http.Extensions;
-using WalletWasabi.Tor.Socks5.Pool.Circuits;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Http.Extensions;
+using WalletAnonTx.Tor.Socks5.Pool.Circuits;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.WebClients.BlockstreamInfo;
+namespace WalletAnonTx.WebClients.BlockstreamInfo;
 
 public class BlockstreamInfoClient
 {
-	public BlockstreamInfoClient(Network network, WasabiHttpClientFactory httpClientFactory)
+	public BlockstreamInfoClient(Network network, AnonTxHttpClientFactory httpClientFactory)
 	{
 		string uriString;
 

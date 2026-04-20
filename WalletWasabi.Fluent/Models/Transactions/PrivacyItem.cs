@@ -1,3 +1,3 @@
-﻿namespace WalletWasabi.Fluent.Models.Transactions;
+﻿namespace WalletAnonTx.Fluent.Models.Transactions;
 
 public abstract record PrivacyItem();

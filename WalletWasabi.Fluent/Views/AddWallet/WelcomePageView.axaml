@@ -2,9 +2,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:addWallet="clr-namespace:WalletWasabi.Fluent.ViewModels.AddWallet"
+             xmlns:addWallet="clr-namespace:WalletAnonTx.Fluent.ViewModels.AddWallet"
              mc:Ignorable="d" d:DesignWidth="800"
-             x:Class="WalletWasabi.Fluent.Views.AddWallet.WelcomePageView"
+             x:Class="WalletAnonTx.Fluent.Views.AddWallet.WelcomePageView"
              x:DataType="addWallet:WelcomePageViewModel"
              x:CompileBindings="True">
   <Interaction.Behaviors>
@@ -115,9 +115,11 @@
         <!-- Get started -->
         <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center">
           <StackPanel DockPanel.Dock="Bottom" Spacing="10">
-            <TextBlock Text="Welcome to Wasabi Wallet" FontSize="30" HorizontalAlignment="Center" />
-
-            <TextBlock TextAlignment="Center" Text="An easy to use, privacy focused, open source bitcoin wallet." FontWeight="Light" />
+            <TextBlock Text="Welcome to AnonTx" FontSize="30" HorizontalAlignment="Center" />
+            <TextBlock TextAlignment="Center" Text="Anonymous Bitcoin address generation and transaction broadcasting over Tor." FontWeight="Light" />
+            <Button Classes="plain" Command="{Binding OpenUrlCommand}" CommandParameter="https://github.com/anonsec02/AnonTx.git" HorizontalAlignment="Center" Margin="0 10">
+              <TextBlock Text="View Source Code on GitHub" Foreground="{DynamicResource SystemAccentColor}" TextDecorations="Underline" />
+            </Button>
           </StackPanel>
           <Panel Height="120" HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="0 0 0 20">
             <ExperimentalAcrylicBorder Margin="2">

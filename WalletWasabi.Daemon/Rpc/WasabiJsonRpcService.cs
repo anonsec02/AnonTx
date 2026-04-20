@@ -6,32 +6,32 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinP2p;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Models;
-using WalletWasabi.Rpc;
-using WalletWasabi.Services;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.WabiSabi.Client.Batching;
-using WalletWasabi.WabiSabi.Client.CoinJoin.Client;
-using WalletWasabi.Wallets;
+using WalletAnonTx.BitcoinP2p;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Models;
+using WalletAnonTx.Rpc;
+using WalletAnonTx.Services;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.WabiSabi.Client.Batching;
+using WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
+using WalletAnonTx.Wallets;
 using JsonRpcResult = System.Collections.Generic.Dictionary<string, object?>;
 using JsonRpcResultList = System.Collections.Immutable.ImmutableArray<System.Collections.Generic.Dictionary<string, object?>>;
 
-namespace WalletWasabi.Daemon.Rpc;
+namespace WalletAnonTx.Daemon.Rpc;
 
 [SuppressMessage("ReSharper", "CoVariantArrayConversion")]
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 [SuppressMessage("ReSharper", "UnusedMember.Global")]
-public class WasabiJsonRpcService : IJsonRpcService
+public class AnonTxJsonRpcService : IJsonRpcService
 {
-	public WasabiJsonRpcService(Global global)
+	public AnonTxJsonRpcService(Global global)
 	{
 		Global = global;
 	}
@@ -192,7 +192,7 @@ public class WasabiJsonRpcService : IJsonRpcService
 	[JsonRpcMethod("getstatus", initializable: false)]
 	public JsonRpcResult GetStatus()
 	{
-		var sync = Global.HostedServices.Get<WasabiSynchronizer>();
+		var sync = Global.HostedServices.Get<AnonTxSynchronizer>();
 		var smartHeaderChain = Global.BitcoinStore.SmartHeaderChain;
 
 		return new JsonRpcResult
@@ -248,7 +248,7 @@ public class WasabiJsonRpcService : IJsonRpcService
 	}
 
 	/// <summary>
-	/// Unsafe, because no matter how big fee the user chooses, Wasabi will build the transaction.
+	/// Unsafe, because no matter how big fee the user chooses, AnonTx will build the transaction.
 	/// Potentially, the user can burn his money using this method, so be careful!
 	/// </summary>
 	[JsonRpcMethod("buildunsafetransaction")]
@@ -519,7 +519,7 @@ public class WasabiJsonRpcService : IJsonRpcService
 	[JsonRpcMethod("getfeerates", initializable: false)]
 	public object GetFeeRate()
 	{
-		if (Global.HostedServices.Get<WasabiSynchronizer>().LastAllFeeEstimate is { } nonNullFeeRates)
+		if (Global.HostedServices.Get<AnonTxSynchronizer>().LastAllFeeEstimate is { } nonNullFeeRates)
 		{
 			return nonNullFeeRates.Estimations;
 		}

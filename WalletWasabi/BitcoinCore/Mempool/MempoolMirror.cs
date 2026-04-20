@@ -4,12 +4,12 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Logging;
+using WalletAnonTx.Bases;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.BitcoinCore.Mempool;
+namespace WalletAnonTx.BitcoinCore.Mempool;
 
 public class MempoolMirror : PeriodicRunner
 {

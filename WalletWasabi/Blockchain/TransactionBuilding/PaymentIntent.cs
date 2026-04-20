@@ -2,10 +2,10 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding;
+namespace WalletAnonTx.Blockchain.TransactionBuilding;
 
 public class PaymentIntent
 {

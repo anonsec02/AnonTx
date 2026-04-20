@@ -2,13 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:wallets="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets"
-             xmlns:converters="clr-namespace:WalletWasabi.Fluent.Converters"
+             xmlns:wallets="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets"
+             xmlns:converters="clr-namespace:WalletAnonTx.Fluent.Converters"
              Background="Transparent"
              x:DataType="wallets:WalletViewModel"
              x:CompileBindings="True"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="64"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.MusicControlsView">
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.MusicControlsView">
   <UserControl.Resources>
     <converters:ReplaceWordsByContentConverter x:Key="ReplaceWordsByContentConverter">
       <ResourceDictionary x:CompileBindings="False">
@@ -58,7 +58,7 @@
             </Style>
           </StackPanel.Styles>
           <ThemeImage Height="35" Width="35" VerticalAlignment="Center" HorizontalAlignment="Center"
-                      Source="{DynamicResource wasabi_logo_dynamic}" />
+                      Source="{DynamicResource anontx_logo_dynamic}" />
           <StackPanel Spacing="5">
             <TransitioningContentControl MinWidth="350" MaxWidth="350" MinHeight="18" Content="{Binding CurrentStatus}">
               <TransitioningContentControl.PageTransition>

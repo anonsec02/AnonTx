@@ -8,17 +8,17 @@ using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinCore.Configuration;
-using WalletWasabi.BitcoinCore.Configuration.Whitening;
-using WalletWasabi.BitcoinCore.Processes;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Blockchain.Mempool;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.BitcoinCore.Configuration;
+using WalletAnonTx.BitcoinCore.Configuration.Whitening;
+using WalletAnonTx.BitcoinCore.Processes;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Blockchain.Mempool;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.BitcoinCore;
+namespace WalletAnonTx.BitcoinCore;
 
 public class CoreNode
 {
@@ -130,7 +130,7 @@ public class CoreNode
 		{
 			$"{configPrefix}.server			= 1",
 			$"{configPrefix}.listen			= 1",
-			$"{configPrefix}.daemon			= 0", // https://github.com/zkSNACKs/WalletWasabi/issues/3588
+			$"{configPrefix}.daemon			= 0", // https://github.com/zkSNACKs/WalletAnonTx/issues/3588
 			$"{configPrefix}.whitebind		= {whiteBindPermissionsPart}{coreNode.P2pEndPoint.ToString(coreNode.Network.DefaultPort)}",
 			$"{configPrefix}.rpcbind		= {rpcBindParameter}",
 			$"{configPrefix}.rpcallowip		= {IPAddress.Loopback}",
@@ -219,7 +219,7 @@ public class CoreNode
 			desiredConfigLines.Add($"{configPrefix}.rpcthreads = {coreNodeParams.RpcThreads}");
 		}
 
-		var sectionComment = $"# The following configuration options were added or modified by Wasabi Wallet.";
+		var sectionComment = $"# The following configuration options were added or modified by AnonTx Wallet.";
 
 		// If the comment is not already present.
 		// And there would be new config entries added.

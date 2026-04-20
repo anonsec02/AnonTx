@@ -1,5 +1,5 @@
-using WalletWasabi.Affiliation.Models.CoinJoinNotification;
+using WalletAnonTx.Affiliation.Models.CoinJoinNotification;
 
-namespace WalletWasabi.Affiliation.Models;
+namespace WalletAnonTx.Affiliation.Models;
 
 public record CoinJoinNotificationRequest(Body Body, byte[] Signature);

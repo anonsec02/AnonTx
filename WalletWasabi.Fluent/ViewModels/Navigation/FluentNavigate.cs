@@ -1,6 +1,6 @@
-using WalletWasabi.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.UI;
 
-namespace WalletWasabi.Fluent.ViewModels.Navigation;
+namespace WalletAnonTx.Fluent.ViewModels.Navigation;
 
 /// <summary>
 /// This class contains source-generated methods that enable fluent-style navigation APIs.

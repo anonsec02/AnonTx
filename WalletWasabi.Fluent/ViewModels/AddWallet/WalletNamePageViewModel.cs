@@ -1,16 +1,16 @@
 using ReactiveUI;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Fluent.Validation;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Fluent.Validation;
 using System.Threading.Tasks;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Models;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Models;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.UI;
 
-namespace WalletWasabi.Fluent.ViewModels.AddWallet;
+namespace WalletAnonTx.Fluent.ViewModels.AddWallet;
 
 [NavigationMetaData(Title = "Wallet Name")]
 public partial class WalletNamePageViewModel : RoutableViewModel
@@ -79,7 +79,7 @@ public partial class WalletNamePageViewModel : RoutableViewModel
 		}
 		catch (Exception ex)
 		{
-			await ShowErrorAsync("Import wallet", ex.ToUserFriendlyString(), "Wasabi was unable to import your wallet.");
+			await ShowErrorAsync("Import wallet", ex.ToUserFriendlyString(), "AnonTx was unable to import your wallet.");
 			BackCommand.Execute(null);
 		}
 	}

@@ -1,11 +1,11 @@
 using NBitcoin;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 /// <summary>
 /// Produces random <see cref="LockTime"/> value for a new transaction based on observed lock-time values distribution in Bitcoin mainnet network.
 /// </summary>
-/// <remarks>Helps avoid fingerprinting of Wasabi Wallet transactions.</remarks>
+/// <remarks>Helps avoid fingerprinting of AnonTx Wallet transactions.</remarks>
 public class LockTimeSelector
 {
 	static LockTimeSelector()
@@ -25,7 +25,7 @@ public class LockTimeSelector
 	public LockTime GetLockTimeBasedOnDistribution(uint tipHeight)
 	{
 		// We use the TimeLock distribution observed in the bitcoin network
-		// in order to reduce the wasabi wallet transactions fingerprinting
+		// in order to reduce the anontx wallet transactions fingerprinting
 		// chances.
 		//
 		// Network observations:

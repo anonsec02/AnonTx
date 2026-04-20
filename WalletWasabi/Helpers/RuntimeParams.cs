@@ -3,9 +3,9 @@ using Nito.AsyncEx;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 public class RuntimeParams
 {

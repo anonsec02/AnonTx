@@ -7,19 +7,19 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models.Responses;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
-using WalletWasabi.Services;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Http.Extensions;
+using WalletAnonTx.Backend.Models.Responses;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Services;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Http.Extensions;
 
-namespace WalletWasabi.WebClients.Wasabi;
+namespace WalletAnonTx.WebClients.AnonTx;
 
-public class WasabiClient
+public class AnonTxClient
 {
-	public WasabiClient(IHttpClient httpClient)
+	public AnonTxClient(IHttpClient httpClient)
 	{
 		HttpClient = httpClient;
 	}

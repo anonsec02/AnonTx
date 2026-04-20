@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Io;
+namespace WalletAnonTx.Io;
 
 public class SafeIoManager : IoManager
 {

@@ -2,7 +2,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NBitcoin;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 /// <summary>
 /// IBlockProvider is an abstraction for types that can return blocks.

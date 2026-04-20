@@ -1,10 +1,10 @@
 using NBitcoin;
 using NBitcoin.Protocol;
 using System.Net;
-using WalletWasabi.Blockchain.Mempool;
-using WalletWasabi.Blockchain.Transactions;
+using WalletAnonTx.Blockchain.Mempool;
+using WalletAnonTx.Blockchain.Transactions;
 
-namespace WalletWasabi.BitcoinP2p;
+namespace WalletAnonTx.BitcoinP2p;
 
 public class TrustedP2pBehavior : P2pBehavior
 {

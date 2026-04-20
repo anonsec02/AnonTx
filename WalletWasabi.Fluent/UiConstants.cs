@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent;
+namespace WalletAnonTx.Fluent;
 
 public static class UiConstants
 {

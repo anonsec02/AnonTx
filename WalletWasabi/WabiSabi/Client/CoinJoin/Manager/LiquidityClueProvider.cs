@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using NBitcoin;
-using WalletWasabi.Blockchain.Analysis;
-using WalletWasabi.Helpers;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.Analysis;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class LiquidityClueProvider
 {

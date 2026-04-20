@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 using DynamicData.Aggregation;
 using DynamicData.Binding;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Fluent.ViewModels.Wallets.Coins;
-using WalletWasabi.Fluent.ViewModels.Wallets.Send;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Coins;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Advanced;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Advanced;
 
 [NavigationMetaData(
 	Title = "Wallet Coins",

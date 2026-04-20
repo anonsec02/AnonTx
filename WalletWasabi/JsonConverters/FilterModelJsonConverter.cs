@@ -1,8 +1,8 @@
 using Newtonsoft.Json;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class FilterModelJsonConverter : JsonConverter<FilterModel>
 {

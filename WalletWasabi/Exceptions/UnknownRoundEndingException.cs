@@ -1,8 +1,8 @@
 using NBitcoin;
 using System.Collections.Immutable;
-using WalletWasabi.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.TransactionOutputs;
 
-namespace WalletWasabi.Exceptions;
+namespace WalletAnonTx.Exceptions;
 
 public class UnknownRoundEndingException : Exception
 {

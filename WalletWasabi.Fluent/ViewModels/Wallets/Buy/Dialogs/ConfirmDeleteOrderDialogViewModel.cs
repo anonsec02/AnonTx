@@ -1,7 +1,7 @@
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Dialogs;
 
 [NavigationMetaData(Title = "Delete Order", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class ConfirmDeleteOrderDialogViewModel : DialogViewModelBase<bool>

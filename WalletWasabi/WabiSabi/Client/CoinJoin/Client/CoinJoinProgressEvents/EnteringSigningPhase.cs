@@ -1,6 +1,6 @@
-using WalletWasabi.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoinProgressEvents;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoinProgressEvents;
 
 public class EnteringSigningPhase : RoundStateChanged
 {

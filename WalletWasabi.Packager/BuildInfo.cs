@@ -1,9 +1,9 @@
 using System.Text.Json.Serialization;
 
-namespace WalletWasabi.Packager;
+namespace WalletAnonTx.Packager;
 
 /// <summary>
-/// Contains information about environment and source code that was used to produce a Wasabi Wallet build.
+/// Contains information about environment and source code that was used to produce a AnonTx Wallet build.
 /// </summary>
 public class BuildInfo
 {
@@ -21,7 +21,7 @@ public class BuildInfo
 	[JsonPropertyName("NetSdkVersion")]
 	public string NetSdkVersion { get; }
 
-	/// <summary>Git commit hash corresponding with the code that was used to produce a Wasabi Wallet build.</summary>
+	/// <summary>Git commit hash corresponding with the code that was used to produce a AnonTx Wallet build.</summary>
 	[JsonPropertyName("GitCommitHash")]
 	public string GitCommitHash { get; }
 }

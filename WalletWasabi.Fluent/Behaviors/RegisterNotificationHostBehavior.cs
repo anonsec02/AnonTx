@@ -1,9 +1,9 @@
 using System.Reactive.Disposables;
 using Avalonia;
 using Avalonia.Xaml.Interactions.Custom;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class RegisterNotificationHostBehavior : AttachedToVisualTreeBehavior<Visual>
 {

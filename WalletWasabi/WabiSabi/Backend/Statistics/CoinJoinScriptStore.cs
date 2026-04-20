@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace WalletWasabi.WabiSabi.Backend.Statistics;
+namespace WalletAnonTx.WabiSabi.Backend.Statistics;
 
 public class CoinJoinScriptStore
 {

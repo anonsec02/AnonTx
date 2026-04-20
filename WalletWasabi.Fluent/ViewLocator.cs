@@ -1,8 +1,8 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using WalletWasabi.Fluent.ViewModels;
+using WalletAnonTx.Fluent.ViewModels;
 
-namespace WalletWasabi.Fluent;
+namespace WalletAnonTx.Fluent;
 
 [StaticViewLocator]
 public partial class ViewLocator : IDataTemplate

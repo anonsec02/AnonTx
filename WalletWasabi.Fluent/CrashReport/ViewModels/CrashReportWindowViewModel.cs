@@ -1,12 +1,12 @@
 using ReactiveUI;
 using System.Windows.Input;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.ViewModels;
-using WalletWasabi.Fluent.ViewModels.HelpAndSupport;
-using WalletWasabi.Models;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.ViewModels;
+using WalletAnonTx.Fluent.ViewModels.HelpAndSupport;
+using WalletAnonTx.Models;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Fluent.CrashReport.ViewModels;
+namespace WalletAnonTx.Fluent.CrashReport.ViewModels;
 
 public class CrashReportWindowViewModel : ViewModelBase
 {
@@ -34,11 +34,11 @@ public class CrashReportWindowViewModel : ViewModelBase
 
 	public ICommand CopyTraceCommand { get; }
 
-	public string Caption => $"A problem has occurred and Wasabi is unable to continue.";
+	public string Caption => $"A problem has occurred and AnonTx is unable to continue.";
 
 	public string Link => AboutViewModel.BugReportLink;
 
 	public string Trace => SerializedException.ToString();
 
-	public string Title => "Wasabi has crashed";
+	public string Title => "AnonTx has crashed";
 }

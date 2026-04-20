@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public class RoundData
 {

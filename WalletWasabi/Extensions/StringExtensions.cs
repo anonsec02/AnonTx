@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using static System.Text.RegularExpressions.Regex;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static partial class StringExtensions
 {

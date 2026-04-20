@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class ReverseComparer : IComparer<long>
 {

@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 using Dispatcher = Avalonia.Threading.Dispatcher;
 
-namespace WalletWasabi.Fluent.ViewModels.AddWallet.Create;
+namespace WalletAnonTx.Fluent.ViewModels.AddWallet.Create;
 
 [NavigationMetaData(Title = "Recovery Words")]
 public partial class RecoveryWordsViewModel : RoutableViewModel

@@ -3,11 +3,11 @@ using Avalonia.Controls;
 using ReactiveUI;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
-using WalletWasabi.Fluent.Extensions;
+using WalletAnonTx.Fluent.Extensions;
 using Avalonia.VisualTree;
 using Avalonia.Xaml.Interactions.Custom;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class CheckMarkVisibilityBehavior : AttachedToVisualTreeBehavior<PathIcon>
 {

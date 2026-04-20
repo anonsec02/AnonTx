@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.WabiSabi.Backend.Events;
+namespace WalletAnonTx.WabiSabi.Backend.Events;
 
 public class AffiliationAddedEventArgs : EventArgs
 {

@@ -7,7 +7,7 @@ using Avalonia.Controls.Primitives;
 using Avalonia.Markup.Xaml.Templates;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class DummyRowsControl : TemplatedControl
 {

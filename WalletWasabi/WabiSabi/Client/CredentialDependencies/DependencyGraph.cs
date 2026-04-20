@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Linq;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.WabiSabi.Client.CredentialDependencies;
+namespace WalletAnonTx.WabiSabi.Client.CredentialDependencies;
 
 [DebuggerDisplay("{AsGraphviz(),nq}")]
 public record DependencyGraph

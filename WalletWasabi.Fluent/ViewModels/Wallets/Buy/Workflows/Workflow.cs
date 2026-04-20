@@ -4,11 +4,11 @@ using System.Reactive.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
 public abstract partial class Workflow : ReactiveObject, IDisposable
 {

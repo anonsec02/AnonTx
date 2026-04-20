@@ -2,9 +2,9 @@ using NBitcoin;
 using NBitcoin.Policy;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Exceptions;
+namespace WalletAnonTx.Exceptions;
 
 public class InvalidTxException : Exception
 {

@@ -4,7 +4,7 @@ using System.Globalization;
 using Avalonia.Data;
 using Avalonia.Data.Converters;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 /// <summary>
 /// Converter to convert an enum value to bool by comparing to the given parameter.

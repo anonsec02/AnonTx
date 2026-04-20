@@ -2,12 +2,12 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using NBitcoin;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.WabiSabi.Client.Batching;
+namespace WalletAnonTx.WabiSabi.Client.Batching;
 
 // Represents a collection of payments.
 // It is possible to add new (pending) payments to be embedded in a coinjoin.
@@ -63,7 +63,7 @@ public class PaymentBatch
 
 	public PaymentSet GetBestPaymentSet(Money availableAmount, int availableVsize, RoundParameters roundParameters)
 	{
-		// Not all payments are allowed. Wasabi coordinator only supports P2WPKH and Taproot
+		// Not all payments are allowed. AnonTx coordinator only supports P2WPKH and Taproot
 		// and even those depend on the round parameters.
 		var allowedOutputTypes = roundParameters.AllowedOutputTypes;
 		var allowedOutputAmounts = roundParameters.AllowedOutputAmounts;

@@ -4,7 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Dialogs;
 using Avalonia.Media;
 
-namespace WalletWasabi.Fluent.Desktop.Extensions;
+namespace WalletAnonTx.Fluent.Desktop.Extensions;
 
 public static class AppBuilderExtension
 {
@@ -44,7 +44,7 @@ public static class AppBuilderExtension
 				RenderingMode = enableGpu
 					? new[] { X11RenderingMode.Glx, X11RenderingMode.Software }
 					: new[] { X11RenderingMode.Software },
-				WmClass = "Wasabi Wallet"
+				WmClass = "AnonTx Wallet"
 			})
 			.With(new AvaloniaNativePlatformOptions
 			{

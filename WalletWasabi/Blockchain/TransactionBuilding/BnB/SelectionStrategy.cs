@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding.BnB;
+namespace WalletAnonTx.Blockchain.TransactionBuilding.BnB;
 
 public abstract class SelectionStrategy
 {

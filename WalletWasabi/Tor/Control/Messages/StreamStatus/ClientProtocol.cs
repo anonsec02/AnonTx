@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control.Messages.StreamStatus;
+namespace WalletAnonTx.Tor.Control.Messages.StreamStatus;
 
 /// <remarks>
 /// The <see cref="ClientProtocol"/> indicates the protocol that was used by a client to initiate a stream.

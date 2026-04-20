@@ -1,13 +1,13 @@
 using System.Reactive.Linq;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Fluent.ViewModels.StatusIcon;
+namespace WalletAnonTx.Fluent.ViewModels.StatusIcon;
 
 [AppLifetime]
 public partial class StatusIconViewModel : ViewModelBase
@@ -19,7 +19,7 @@ public partial class StatusIconViewModel : ViewModelBase
 		UiContext = uiContext;
 		HealthMonitor = uiContext.HealthMonitor;
 
-		ManualUpdateCommand = ReactiveCommand.CreateFromTask(() => UiContext.FileSystem.OpenBrowserAsync("https://wasabiwallet.io/#download"));
+		ManualUpdateCommand = ReactiveCommand.CreateFromTask(() => UiContext.FileSystem.OpenBrowserAsync("https://anontxwallet.io/#download"));
 		UpdateCommand = ReactiveCommand.Create(
 			() =>
 			{

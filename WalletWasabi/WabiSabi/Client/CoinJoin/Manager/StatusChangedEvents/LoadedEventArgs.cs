@@ -1,6 +1,6 @@
-using WalletWasabi.Wallets;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.WabiSabi.Client.StatusChangedEvents;
+namespace WalletAnonTx.WabiSabi.Client.StatusChangedEvents;
 
 public class LoadedEventArgs : StatusChangedEventArgs
 {

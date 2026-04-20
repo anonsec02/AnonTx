@@ -1,11 +1,11 @@
 using NBitcoin;
 using System.Linq;
-using WalletWasabi.BitcoinCore.Rpc.Models;
-using WalletWasabi.Blockchain.BlockFilters;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Helpers;
+using WalletAnonTx.BitcoinCore.Rpc.Models;
+using WalletAnonTx.Blockchain.BlockFilters;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Blockchain.Blocks;
+namespace WalletAnonTx.Blockchain.Blocks;
 
 public class SmartHeader
 {

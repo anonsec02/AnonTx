@@ -1,12 +1,12 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="using:WalletWasabi.Fluent"
-             xmlns:models="using:WalletWasabi.Models"
-             xmlns:vm="using:WalletWasabi.Fluent.ViewModels"
-             xmlns:converters="clr-namespace:WalletWasabi.Fluent.Converters"
+             xmlns:local="using:WalletAnonTx.Fluent"
+             xmlns:models="using:WalletAnonTx.Models"
+             xmlns:vm="using:WalletAnonTx.Fluent.ViewModels"
+             xmlns:converters="clr-namespace:WalletAnonTx.Fluent.Converters"
              x:DataType="vm:ApplicationViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.App"
+             x:Class="WalletAnonTx.Fluent.App"
              RequestedThemeVariant="Dark">
   <Application.DataTemplates>
     <local:ViewLocator />
@@ -28,19 +28,19 @@
   <Application.Styles>
     <FluentTheme />
     <StyleInclude Source="avares://Avalonia.Controls.TreeDataGrid/Themes/Fluent.axaml"/>
-    <StyleInclude Source="avares://WalletWasabi.Fluent/Styles/Themes/Fluent.axaml" />
-    <StyleInclude Source="avares://WalletWasabi.Fluent/Icons/Icons.axaml" />
-    <StyleInclude Source="avares://WalletWasabi.Fluent/Styles/Styles.axaml" />
+    <StyleInclude Source="avares://WalletAnonTx.Fluent/Styles/Themes/Fluent.axaml" />
+    <StyleInclude Source="avares://WalletAnonTx.Fluent/Icons/Icons.axaml" />
+    <StyleInclude Source="avares://WalletAnonTx.Fluent/Styles/Styles.axaml" />
   </Application.Styles>
   <NativeMenu.Menu>
     <NativeMenu>
-      <NativeMenuItem Header="About Wasabi Wallet" Command="{Binding AboutCommand}" />
+      <NativeMenuItem Header="About AnonTx Wallet" Command="{Binding AboutCommand}" />
     </NativeMenu>
   </NativeMenu.Menu>
   <TrayIcon.Icons>
     <TrayIcons>
-      <TrayIcon Icon="/Assets/WasabiLogo.ico" Command="{Binding ShowCommand}" ToolTipText="Wasabi Wallet">
-        <!-- TODO: This is temporary workaround until https://github.com/zkSNACKs/WalletWasabi/issues/8151 is fixed. -->
+      <TrayIcon Icon="/Assets/AnonTxLogo.ico" Command="{Binding ShowCommand}" ToolTipText="AnonTx Wallet">
+        <!-- TODO: This is temporary workaround until https://github.com/zkSNACKs/WalletAnonTx/issues/8151 is fixed. -->
         <!--<NativeMenu.Menu>
           <NativeMenu>
             <NativeMenuItem Header="{Binding IsMainWindowShown, Converter={StaticResource ShowHideBoolConverter}}" Command="{Binding ShowHideCommand}" />

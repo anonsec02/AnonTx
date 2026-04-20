@@ -1,6 +1,6 @@
 using System.Windows.Input;
 
-namespace WalletWasabi.Fluent.Controls.Sorting;
+namespace WalletAnonTx.Fluent.Controls.Sorting;
 
 public class SortableItemDesign : ISortableItem
 {

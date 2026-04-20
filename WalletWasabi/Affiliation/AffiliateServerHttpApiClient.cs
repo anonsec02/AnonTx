@@ -1,4 +1,4 @@
-using WalletWasabi.Affiliation.Models;
+using WalletAnonTx.Affiliation.Models;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,13 +6,13 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Http.Extensions;
-using WalletWasabi.Affiliation.Serialization;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Http.Extensions;
+using WalletAnonTx.Affiliation.Serialization;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public class AffiliateServerHttpApiClient
 {

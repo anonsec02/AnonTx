@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.ViewModels.Navigation;
+namespace WalletAnonTx.Fluent.ViewModels.Navigation;
 
 public interface INavigatable
 {

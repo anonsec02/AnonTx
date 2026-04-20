@@ -11,10 +11,10 @@ using Avalonia.Layout;
 using Avalonia.VisualTree;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class DualCurrencyEntryBox : TemplatedControl
 {

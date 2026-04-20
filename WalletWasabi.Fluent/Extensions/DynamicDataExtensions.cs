@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Reactive.Linq;
 using DynamicData;
 
-namespace WalletWasabi.Fluent.Extensions;
+namespace WalletAnonTx.Fluent.Extensions;
 
 public static class DynamicDataExtensions
 {

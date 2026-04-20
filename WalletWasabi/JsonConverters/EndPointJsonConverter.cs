@@ -1,8 +1,8 @@
 using Newtonsoft.Json;
 using System.Net;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class EndPointJsonConverter : JsonConverter<EndPoint>
 {

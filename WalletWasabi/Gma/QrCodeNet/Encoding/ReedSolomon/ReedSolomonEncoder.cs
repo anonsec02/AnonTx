@@ -1,4 +1,4 @@
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
 namespace Gma.QrCodeNet.Encoding.ReedSolomon;
 

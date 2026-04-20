@@ -1,7 +1,7 @@
 using NBitcoin.RPC;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Blockchain.BlockFilters;
+namespace WalletAnonTx.Blockchain.BlockFilters;
 
 public class SyncInfo
 {

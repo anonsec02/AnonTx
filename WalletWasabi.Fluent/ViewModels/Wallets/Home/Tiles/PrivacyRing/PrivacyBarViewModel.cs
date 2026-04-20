@@ -3,11 +3,11 @@ using DynamicData.Binding;
 using System.Linq;
 using NBitcoin;
 using System.Reactive.Disposables;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.Models.Wallets;
 using System.Collections.Generic;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing;
 
 public partial class PrivacyBarViewModel : ActivatableViewModel
 {

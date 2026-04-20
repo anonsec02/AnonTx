@@ -4,9 +4,9 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
 
 public class CoinJoinTransactionArchiver
 {

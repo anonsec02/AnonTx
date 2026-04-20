@@ -1,4 +1,4 @@
-namespace WalletWasabi.Models;
+namespace WalletAnonTx.Models;
 
 [AttributeUsage(AttributeTargets.Field)]
 public class FriendlyNameAttribute : Attribute

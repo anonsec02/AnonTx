@@ -2,9 +2,9 @@ using NBitcoin;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.BitcoinCore.Configuration.Whitening;
+namespace WalletAnonTx.BitcoinCore.Configuration.Whitening;
 
 public abstract class WhiteEntry
 {

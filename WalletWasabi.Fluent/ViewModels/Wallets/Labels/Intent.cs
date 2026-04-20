@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Labels;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Labels;
 
 public enum Intent
 {

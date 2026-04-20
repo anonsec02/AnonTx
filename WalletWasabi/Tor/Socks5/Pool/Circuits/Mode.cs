@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Socks5.Pool.Circuits;
+namespace WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
 public enum Mode
 {

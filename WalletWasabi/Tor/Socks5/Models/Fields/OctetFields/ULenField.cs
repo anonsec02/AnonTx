@@ -1,7 +1,7 @@
-using WalletWasabi.Tor.Socks5.Models.Bases;
-using WalletWasabi.Tor.Socks5.Models.Fields.ByteArrayFields;
+using WalletAnonTx.Tor.Socks5.Models.Bases;
+using WalletAnonTx.Tor.Socks5.Models.Fields.ByteArrayFields;
 
-namespace WalletWasabi.Tor.Socks5.Models.Fields.OctetFields;
+namespace WalletAnonTx.Tor.Socks5.Models.Fields.OctetFields;
 
 public class ULenField : OctetSerializableBase
 {

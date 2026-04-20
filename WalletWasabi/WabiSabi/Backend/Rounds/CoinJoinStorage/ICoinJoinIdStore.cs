@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
 
 public interface ICoinJoinIdStore
 {

@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
 
 public interface IActionableItem : ISearchItem
 {

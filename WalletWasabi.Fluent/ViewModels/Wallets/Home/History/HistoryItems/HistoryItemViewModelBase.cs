@@ -4,12 +4,12 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.TreeDataGrid;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.TreeDataGrid;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
 
 public abstract partial class HistoryItemViewModelBase : ViewModelBase, ITreeDataGridExpanderItem
 {

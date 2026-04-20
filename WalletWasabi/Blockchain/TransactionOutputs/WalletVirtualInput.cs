@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Blockchain.Keys;
+using WalletAnonTx.Blockchain.Keys;
 
-namespace WalletWasabi.Blockchain.TransactionOutputs;
+namespace WalletAnonTx.Blockchain.TransactionOutputs;
 
 public class WalletVirtualInput
 {

@@ -3,7 +3,7 @@ using System.Text;
 using NBitcoin;
 using static NBitcoin.Crypto.Hashes;
 
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 public class Slip21Node
 {

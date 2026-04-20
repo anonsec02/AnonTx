@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
-using WalletWasabi.WebClients.BuyAnything;
-using WalletWasabi.WebClients.ShopWare.Models;
+using WalletAnonTx.WebClients.BuyAnything;
+using WalletAnonTx.WebClients.ShopWare.Models;
 using Enumerable = System.Linq.Enumerable;
 
-namespace WalletWasabi.BuyAnything;
+namespace WalletAnonTx.BuyAnything;
 
 public enum OrderStatus
 {

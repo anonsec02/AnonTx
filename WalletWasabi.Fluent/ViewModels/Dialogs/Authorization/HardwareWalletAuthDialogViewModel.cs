@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs.Authorization;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs.Authorization;
 
 [NavigationMetaData(Title = "Authorize with Hardware Wallet", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class HardwareWalletAuthDialogViewModel : AuthorizationDialogBase

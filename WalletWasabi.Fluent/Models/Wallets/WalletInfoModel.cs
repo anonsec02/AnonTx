@@ -1,9 +1,9 @@
-using WalletWasabi.Extensions;
-using WalletWasabi.Userfacing;
-using WalletWasabi.Wallets;
-using static WalletWasabi.Blockchain.Keys.WpkhOutputDescriptorHelper;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Userfacing;
+using WalletAnonTx.Wallets;
+using static WalletAnonTx.Blockchain.Keys.WpkhOutputDescriptorHelper;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class WalletInfoModel

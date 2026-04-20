@@ -3,9 +3,9 @@ using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using NBitcoin;
-using WalletWasabi.Fluent.Extensions;
+using WalletAnonTx.Fluent.Extensions;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static partial class TextHelpers
 {

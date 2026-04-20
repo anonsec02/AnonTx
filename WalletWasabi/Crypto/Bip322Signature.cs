@@ -1,7 +1,7 @@
 using NBitcoin;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 public record Bip322Signature : IBitcoinSerializable
 {

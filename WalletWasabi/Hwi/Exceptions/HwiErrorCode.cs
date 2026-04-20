@@ -1,4 +1,4 @@
-namespace WalletWasabi.Hwi.Exceptions;
+namespace WalletAnonTx.Hwi.Exceptions;
 
 /// <summary>
 /// Source: https://github.com/bitcoin-core/HWI/blob/master/hwilib/errors.py

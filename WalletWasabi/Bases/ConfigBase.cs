@@ -1,12 +1,12 @@
 using Newtonsoft.Json;
 using System.IO;
 using System.Text;
-using WalletWasabi.Helpers;
-using WalletWasabi.Interfaces;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Models.Serialization;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Interfaces;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Models.Serialization;
 
-namespace WalletWasabi.Bases;
+namespace WalletAnonTx.Bases;
 
 public abstract class ConfigBase : NotifyPropertyChangedBase, IConfig
 {

@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.VisualTree;
 using System.Linq;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class PrivacyBar : ItemsControl
 {

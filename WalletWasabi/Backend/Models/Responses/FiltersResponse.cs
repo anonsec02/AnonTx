@@ -1,8 +1,8 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using WalletWasabi.JsonConverters;
+using WalletAnonTx.JsonConverters;
 
-namespace WalletWasabi.Backend.Models.Responses;
+namespace WalletAnonTx.Backend.Models.Responses;
 
 public class FiltersResponse
 {

@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using WalletWasabi.Models;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.Validation;
+namespace WalletAnonTx.Fluent.Validation;
 
 public delegate void ValidateMethod(IValidationErrors errors);
 

@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using NBitcoin;
 using Newtonsoft.Json;
-using WalletWasabi.JsonConverters;
-using WalletWasabi.JsonConverters.Bitcoin;
-using WalletWasabi.JsonConverters.Collections;
+using WalletAnonTx.JsonConverters;
+using WalletAnonTx.JsonConverters.Bitcoin;
+using WalletAnonTx.JsonConverters.Collections;
 
-namespace WalletWasabi.Models;
+namespace WalletAnonTx.Models;
 public record UnconfirmedTransactionChainItem(
 	[JsonProperty]
 	[JsonConverter(typeof(Uint256JsonConverter))]

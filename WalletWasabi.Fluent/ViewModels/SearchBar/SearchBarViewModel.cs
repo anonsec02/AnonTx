@@ -5,12 +5,12 @@ using System.Windows.Input;
 using DynamicData;
 using DynamicData.Binding;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar;
 
 [AppLifetime]
 public partial class SearchBarViewModel : ReactiveObject

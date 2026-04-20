@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.Models;
+namespace WalletAnonTx.Models;
 
 public class ErrorDescriptors : List<ErrorDescriptor>, IValidationErrors
 {

@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Blockchain.Transactions;
+using WalletAnonTx.Blockchain.Transactions;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class LinqExtensions
 {
-	public static T? RandomElement<T>(this IEnumerable<T> source, WasabiRandom random)
+	public static T? RandomElement<T>(this IEnumerable<T> source, AnonTxRandom random)
 	{
 		T? current = default;
 		int count = 0;
@@ -27,7 +27,7 @@ public static class LinqExtensions
 	/// Selects a random element based on order bias.
 	/// </summary>
 	/// <param name="biasPercent">1-100, eg. if 80, then 80% probability for the first element.</param>
-	public static T? BiasedRandomElement<T>(this IEnumerable<T> source, int biasPercent, WasabiRandom random)
+	public static T? BiasedRandomElement<T>(this IEnumerable<T> source, int biasPercent, AnonTxRandom random)
 	{
 		foreach (T element in source)
 		{
@@ -40,7 +40,7 @@ public static class LinqExtensions
 		return source.Any() ? source.First() : default;
 	}
 
-	public static IList<T> Shuffle<T>(this IList<T> list, WasabiRandom random)
+	public static IList<T> Shuffle<T>(this IList<T> list, AnonTxRandom random)
 	{
 		int n = list.Count;
 		while (n > 1)
@@ -54,7 +54,7 @@ public static class LinqExtensions
 		return list;
 	}
 
-	public static IList<T> ToShuffled<T>(this IEnumerable<T> list, WasabiRandom random)
+	public static IList<T> ToShuffled<T>(this IEnumerable<T> list, AnonTxRandom random)
 	{
 		return list.ToList().Shuffle(random);
 	}

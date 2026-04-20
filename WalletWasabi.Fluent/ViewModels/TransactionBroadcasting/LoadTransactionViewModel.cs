@@ -3,14 +3,14 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Logging;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.ViewModels.TransactionBroadcasting;
+namespace WalletAnonTx.Fluent.ViewModels.TransactionBroadcasting;
 
 [NavigationMetaData(Title = "Transaction Broadcaster")]
 public partial class LoadTransactionViewModel : DialogViewModelBase<SmartTransaction?>

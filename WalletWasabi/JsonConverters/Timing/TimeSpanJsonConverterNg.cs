@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace WalletWasabi.JsonConverters.Timing;
+namespace WalletAnonTx.JsonConverters.Timing;
 
 public class TimeSpanJsonConverterNg : JsonConverter<TimeSpan>
 {

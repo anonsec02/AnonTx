@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
 
 public interface IContentSearchItem : ISearchItem
 {

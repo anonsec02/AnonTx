@@ -6,10 +6,10 @@ using System.Globalization;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinCore.Rpc.Models;
-using WalletWasabi.Extensions;
+using WalletAnonTx.BitcoinCore.Rpc.Models;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.BitcoinCore.Rpc;
+namespace WalletAnonTx.BitcoinCore.Rpc;
 
 public class RpcClientBase : IRPCClient
 {

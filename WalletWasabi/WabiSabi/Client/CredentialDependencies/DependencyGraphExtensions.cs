@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace WalletWasabi.WabiSabi.Client.CredentialDependencies;
+namespace WalletAnonTx.WabiSabi.Client.CredentialDependencies;
 
 public static class DependencyGraphExtensions
 {

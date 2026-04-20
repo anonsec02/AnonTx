@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs.Authorization;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs.Authorization;
 
 public abstract partial class AuthorizationDialogBase : DialogViewModelBase<bool>
 {

@@ -1,6 +1,6 @@
-using WalletWasabi.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.TransactionOutputs;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoinProgressEvents;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoinProgressEvents;
 
 public class CoinBanned : CoinJoinProgressEventArgs
 {

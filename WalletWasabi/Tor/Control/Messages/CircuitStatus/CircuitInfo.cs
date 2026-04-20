@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Control.Utils;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Control.Utils;
 
-namespace WalletWasabi.Tor.Control.Messages.CircuitStatus;
+namespace WalletAnonTx.Tor.Control.Messages.CircuitStatus;
 
 /// <summary>Implemented as specified in <c>4.1.1. Circuit status changed</c> spec.</summary>
 /// <remarks>

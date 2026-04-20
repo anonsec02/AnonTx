@@ -5,9 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Backend.Banning;
+namespace WalletAnonTx.WabiSabi.Backend.Banning;
 
 public class CoinVerifierLogger : IAsyncDisposable
 {

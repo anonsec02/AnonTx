@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Stores;
+namespace WalletAnonTx.Stores;
 
 public class TransactionSqliteStorage : IDisposable
 {

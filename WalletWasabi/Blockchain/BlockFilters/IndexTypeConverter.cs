@@ -1,6 +1,6 @@
-using WalletWasabi.BitcoinCore.Rpc.Models;
+using WalletAnonTx.BitcoinCore.Rpc.Models;
 
-namespace WalletWasabi.Blockchain.BlockFilters;
+namespace WalletAnonTx.Blockchain.BlockFilters;
 
 public static class IndexTypeConverter
 {

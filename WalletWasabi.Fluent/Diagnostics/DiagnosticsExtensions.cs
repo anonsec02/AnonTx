@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 
-namespace WalletWasabi.Fluent.Diagnostics;
+namespace WalletAnonTx.Fluent.Diagnostics;
 
 public static class DiagnosticsExtensions
 {

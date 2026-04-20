@@ -4,9 +4,9 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Logging;
+namespace WalletAnonTx.Logging;
 
 /// <summary>
 /// Logging class.

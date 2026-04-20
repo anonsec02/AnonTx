@@ -1,6 +1,6 @@
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.Models.ClientConfig;
+namespace WalletAnonTx.Fluent.Models.ClientConfig;
 
 public class ClientConfigModel : IClientConfig
 {

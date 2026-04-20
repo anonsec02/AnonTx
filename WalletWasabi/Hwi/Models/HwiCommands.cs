@@ -1,4 +1,4 @@
-namespace WalletWasabi.Hwi.Models;
+namespace WalletAnonTx.Hwi.Models;
 
 /// <summary>
 /// List of commands that HWI project supports for various <see href="https://en.wikipedia.org/wiki/Human_interface_device">HID devices</see>.

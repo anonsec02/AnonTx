@@ -1,8 +1,8 @@
 using NBitcoin;
 using System.Collections.Generic;
-using WalletWasabi.Blockchain.TransactionBuilding;
+using WalletAnonTx.Blockchain.TransactionBuilding;
 
-namespace WalletWasabi.Blockchain.Transactions;
+namespace WalletAnonTx.Blockchain.Transactions;
 
 /// <param name="PaymentIntent">Payment(s) to make.</param>
 /// <param name="FeeRate"></param>

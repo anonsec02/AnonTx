@@ -2,11 +2,11 @@ using Microsoft.Extensions.Hosting;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Bases;
+namespace WalletAnonTx.Bases;
 
 /// <summary>
 /// <see cref="PeriodicRunner"/> is an extension of <see cref="BackgroundService"/> that is useful for tasks

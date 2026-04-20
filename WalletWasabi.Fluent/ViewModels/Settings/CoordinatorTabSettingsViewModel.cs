@@ -1,12 +1,12 @@
 using System.Globalization;
 using ReactiveUI;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Validation;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Models;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Validation;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.Settings;
 
 [AppLifetime]
 [NavigationMetaData(

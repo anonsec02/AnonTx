@@ -1,6 +1,6 @@
 using NBitcoin.Protocol;
 
-namespace WalletWasabi.Wallets.BlockProvider;
+namespace WalletAnonTx.Wallets.BlockProvider;
 
 public interface ISourceRequest { }
 

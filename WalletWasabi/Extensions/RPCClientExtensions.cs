@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinCore.Monitoring;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.BitcoinCore.Monitoring;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 using FeeRateByConfirmationTarget = System.Collections.Generic.Dictionary<int, int>;
 
-namespace WalletWasabi.Extensions;
+namespace WalletAnonTx.Extensions;
 
 public static class RPCClientExtensions
 {

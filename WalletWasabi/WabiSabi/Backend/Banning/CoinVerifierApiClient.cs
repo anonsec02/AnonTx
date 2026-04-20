@@ -3,10 +3,10 @@ using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Http.Extensions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Http.Extensions;
 
-namespace WalletWasabi.WabiSabi.Backend.Banning;
+namespace WalletAnonTx.WabiSabi.Backend.Banning;
 
 public class CoinVerifierApiClient : IAsyncDisposable
 {

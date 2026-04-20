@@ -2,7 +2,7 @@ using NBitcoin;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 /// <summary>
 /// Converter used to convert <see cref="Network"/> to and from JSON.

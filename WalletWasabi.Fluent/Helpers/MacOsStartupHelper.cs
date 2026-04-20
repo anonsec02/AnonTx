@@ -1,9 +1,9 @@
 using System.IO;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class MacOsStartupHelper
 {
@@ -17,7 +17,7 @@ public static class MacOsStartupHelper
 		<plist version=\"1.0\">
 		<dict>
 		    <key>Label</key>
-		    <string>com.wasabiwallet.startup</string>
+		    <string>com.anontxwallet.startup</string>
 			<key>ProgramArguments</key>
 			<array>
 				<string>{EnvironmentHelpers.GetExecutablePath()}</string>
@@ -62,8 +62,8 @@ public static class MacOsStartupHelper
 
 	private static async Task DeleteLoginItemIfExistsAsync()
 	{
-		// From 2.0.6, we use LaunchAgents instead of Login Items to run Wasabi hidden during startup. We need to delete older existing Login Items.
-		// https://github.com/zkSNACKs/WalletWasabi/pull/12772#pullrequestreview-1984574457
+		// From 2.0.6, we use LaunchAgents instead of Login Items to run AnonTx hidden during startup. We need to delete older existing Login Items.
+		// https://github.com/zkSNACKs/WalletAnonTx/pull/12772#pullrequestreview-1984574457
 		string result = await EnvironmentHelpers.ShellExecAndGetResultAsync(ListCmd).ConfigureAwait(false);
 		bool loginItemExists = result.Contains(Constants.AppName);
 		if (loginItemExists)

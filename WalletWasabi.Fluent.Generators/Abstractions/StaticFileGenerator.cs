@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.Fluent.Generators.Abstractions;
+namespace WalletAnonTx.Fluent.Generators.Abstractions;
 
 internal abstract class StaticFileGenerator
 {

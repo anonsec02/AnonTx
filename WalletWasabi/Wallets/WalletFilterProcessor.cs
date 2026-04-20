@@ -5,24 +5,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionProcessing;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Services.Terminate;
-using WalletWasabi.Stores;
-using WalletWasabi.Wallets.BlockProvider;
-using WalletWasabi.Wallets.FilterProcessor;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionProcessing;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Services.Terminate;
+using WalletAnonTx.Stores;
+using WalletAnonTx.Wallets.BlockProvider;
+using WalletAnonTx.Wallets.FilterProcessor;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 /// <summary>
 /// Service that keeps processing block filters.
 /// </summary>
-/// <seealso href="https://github.com/zkSNACKs/WalletWasabi/issues/10219">TurboSync specification.</seealso>
+/// <seealso href="https://github.com/zkSNACKs/WalletAnonTx/issues/10219">TurboSync specification.</seealso>
 public class WalletFilterProcessor : BackgroundService
 {
 	/// <remarks>Guarded by <see cref="Lock"/>.</remarks>

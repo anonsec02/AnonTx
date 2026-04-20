@@ -1,7 +1,7 @@
 using NBitcoin;
 using Newtonsoft.Json;
 
-namespace WalletWasabi.JsonConverters.Bitcoin;
+namespace WalletAnonTx.JsonConverters.Bitcoin;
 
 public class ScriptJsonConverter : JsonConverter<Script>
 {

@@ -3,7 +3,7 @@ using Newtonsoft.Json.Serialization;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.Affiliation.Serialization;
+namespace WalletAnonTx.Affiliation.Serialization;
 
 public static class CanonicalJsonSerializationOptions
 {

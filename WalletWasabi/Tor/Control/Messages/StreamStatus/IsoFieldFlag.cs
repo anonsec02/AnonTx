@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control.Messages.StreamStatus;
+namespace WalletAnonTx.Tor.Control.Messages.StreamStatus;
 
 /// <summary>
 /// The "ISO_FIELDS" field indicates the set of STREAM event fields for which stream

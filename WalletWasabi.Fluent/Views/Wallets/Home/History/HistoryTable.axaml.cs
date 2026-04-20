@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.Wallets.Home.History;
+namespace WalletAnonTx.Fluent.Views.Wallets.Home.History;
 
 public class HistoryTable : UserControl
 {

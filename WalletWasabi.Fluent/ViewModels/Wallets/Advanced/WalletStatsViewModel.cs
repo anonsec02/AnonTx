@@ -1,9 +1,9 @@
 using System.Reactive.Disposables;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Advanced;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Advanced;
 
 [NavigationMetaData(
 	Title = "Wallet Stats",

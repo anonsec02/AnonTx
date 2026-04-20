@@ -7,11 +7,11 @@ using DynamicData;
 using DynamicData.Aggregation;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.Tiles;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.Tiles;
 
 public partial class PrivacyControlTileViewModel : ActivatableViewModel, IPrivacyRingPreviewItem
 {

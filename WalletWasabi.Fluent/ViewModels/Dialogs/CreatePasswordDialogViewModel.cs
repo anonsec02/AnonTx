@@ -1,11 +1,11 @@
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Fluent.Validation;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Models;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Fluent.Validation;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Models;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs;
 
 [NavigationMetaData(NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class CreatePasswordDialogViewModel : DialogViewModelBase<string?>

@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
-namespace WalletWasabi.Fluent.ViewModels.Navigation;
+namespace WalletAnonTx.Fluent.ViewModels.Navigation;
 
 public class FluentDialog<TResult>
 {

@@ -1,10 +1,10 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Wallets;
-using WalletWasabi.WebClients.BuyAnything;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Wallets;
+using WalletAnonTx.WebClients.BuyAnything;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
 public class StartConversationStep : WorkflowStep<ConversationId>
 {

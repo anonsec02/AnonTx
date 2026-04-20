@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.BitcoinCore.Rpc.Models;
+namespace WalletAnonTx.BitcoinCore.Rpc.Models;
 
 public class TransactionBlockInfo
 {

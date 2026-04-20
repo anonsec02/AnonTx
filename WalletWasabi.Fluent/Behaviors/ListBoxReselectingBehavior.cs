@@ -7,7 +7,7 @@ using Avalonia.Xaml.Interactions.Custom;
 using DynamicData.Binding;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class ListBoxReselectingBehavior : DisposingBehavior<ListBox>
 {

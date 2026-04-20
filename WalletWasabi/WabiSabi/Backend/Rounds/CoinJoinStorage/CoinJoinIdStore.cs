@@ -2,10 +2,10 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
 
 public class CoinJoinIdStore : InMemoryCoinJoinIdStore
 {

@@ -7,12 +7,12 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
-using WalletWasabi.Fluent.Controls;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Fluent.Controls;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class PasteButtonFlashBehavior : AttachedToVisualTreeBehavior<AnimatedButton>
 {

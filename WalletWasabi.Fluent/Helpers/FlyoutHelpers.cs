@@ -6,7 +6,7 @@ using Avalonia.Controls.Primitives;
 using Avalonia.VisualTree;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class FlyoutHelpers
 {

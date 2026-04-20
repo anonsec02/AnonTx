@@ -1,7 +1,7 @@
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class AssetHelpers
 {

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.BitcoinCore;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Bases;
+using WalletAnonTx.BitcoinCore;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Blockchain.Blocks;
+namespace WalletAnonTx.Blockchain.Blocks;
 
 public class BlockNotifier : PeriodicRunner
 {

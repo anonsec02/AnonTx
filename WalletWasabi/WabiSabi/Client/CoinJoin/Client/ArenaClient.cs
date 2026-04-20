@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Affiliation;
+using WalletAnonTx.Affiliation;
 using WabiSabi.Crypto;
 using WabiSabi.Crypto.ZeroKnowledge;
-using WalletWasabi.Crypto;
-using WalletWasabi.Helpers;
-using WalletWasabi.WabiSabi.Backend.PostRequests;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.WabiSabi.Backend.PostRequests;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoin.Client;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
 
 public class ArenaClient
 {

@@ -1,9 +1,9 @@
 using System.Reactive.Disposables;
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels;
+namespace WalletAnonTx.Fluent.ViewModels;
 
 [NavigationMetaData(Title = "Success")]
 public partial class SuccessViewModel : RoutableViewModel

@@ -6,7 +6,7 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using Avalonia.Xaml.Interactions.Custom;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 internal class FocusNextItemBehavior : DisposingBehavior<Control>
 {

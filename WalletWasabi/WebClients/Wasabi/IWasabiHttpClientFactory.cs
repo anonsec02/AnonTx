@@ -1,9 +1,9 @@
-using WalletWasabi.Tor.Http;
-using WalletWasabi.Tor.Socks5.Pool.Circuits;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
-namespace WalletWasabi.WebClients.Wasabi;
+namespace WalletAnonTx.WebClients.AnonTx;
 
-public interface IWasabiHttpClientFactory
+public interface IAnonTxHttpClientFactory
 {
 	(PersonCircuit, IHttpClient) NewHttpClientWithPersonCircuit()
 	{

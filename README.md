@@ -1,91 +1,32 @@
-<p align="center">
-  <a href="https://wasabiwallet.io">
-    <img src="https://github.com/zkSNACKs/WalletWasabi/blob/master/ui-ww.png">
-  </a>
-</p>
+# AnonTx
 
-<h3 align="center">
-    An open-source, non-custodial, privacy-focused Bitcoin wallet for desktop.
-</h3>
+AnonTx is a standalone Bitcoin privacy desktop application designed for maximum anonymity. It allows users to generate Bitcoin addresses and broadcast signed transactions exclusively over the Tor network.
 
-<h3 align="center">
-  <a href="https://wasabiwallet.io">
-    Website
-  </a>
-  <span> | </span>
-  <a href="https://docs.wasabiwallet.io/">
-    Documentation
-  </a>
-  <span> | </span>
-  <a href="https://wasabiwallet.io/swagger/index.html">
-    API
-  </a>
-  <span> | </span>
-  <a href="https://github.com/zkSNACKs/WalletWasabi/discussions/5185">
-    Support
-  </a>
-  <span> | </span>
-  <a href="https://www.youtube.com/c/WasabiWallet">
-    YouTube
-  </a>
-  <span> | </span>
-  <a href="https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt">
-    PGP
-  </a>
-</h3>
+## Features
 
-<h3>
+- **Anonymous Address Generation**: Generate new Bitcoin addresses with QR codes.
+- **Secure Broadcasting**: Broadcast pre-signed transactions over Tor to ensure your IP address remains hidden.
+- **Tor Integration**: All network traffic is routed through the Tor network by default.
+- **Open Source**: Transparency is key to privacy. View the full source code on GitHub.
 
-| Code Quality           | Windows Tests           | Linux Tests             | macOS Tests             | Continuous Delivery       | Deterministic builds      | License                   |
-| :----------------------| :-----------------------| :-----------------------| :-----------------------| :-------------------------| :-------------------------| :-------------------------|
-| [![CodeFactor][9]][10] | [![Build Status][1]][2] | [![Build Status][3]][4] | [![Build Status][5]][6] | [![Build Status][11]][12] | [![Build Status][13]][14] | [![GitHub license][7]][8] |
+## Technical Specifications
 
-[1]: https://dev.azure.com/zkSNACKs/Wasabi/_apis/build/status/Wasabi.Windows?branchName=master
-[2]: https://dev.azure.com/zkSNACKs/Wasabi/_build?definitionId=3
-[3]: https://dev.azure.com/zkSNACKs/Wasabi/_apis/build/status/Wasabi.Linux?branchName=master
-[4]: https://dev.azure.com/zkSNACKs/Wasabi/_build?definitionId=1
-[5]: https://dev.azure.com/zkSNACKs/Wasabi/_apis/build/status/Wasabi.Osx?branchName=master
-[6]: https://dev.azure.com/zkSNACKs/Wasabi/_build?definitionId=2
-[7]: https://img.shields.io/github/license/zkSNACKs/WalletWasabi.svg
-[8]: https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md
-[9]: https://www.codefactor.io/repository/github/zksnacks/walletwasabi/badge
-[10]: https://www.codefactor.io/repository/github/zksnacks/walletwasabi
-[11]: https://dev.azure.com/zkSNACKs/Wasabi/_apis/build/status/Wasabi.ContinuousDelivery?branchName=master
-[12]: https://dev.azure.com/zkSNACKs/Wasabi/_build/latest?definitionId=12&branchName=master
-[13]: https://dev.azure.com/zkSNACKs/Wasabi/_apis/build/status/Wasabi.DeterministicBuild?branchName=master
-[14]: https://dev.azure.com/zkSNACKs/Wasabi/_build/latest?definitionId=13&branchName=master
+- **Platform**: Windows (Standalone Desktop Application)
+- **Framework**: .NET 6 / Avalonia UI (Fluent Design)
+- **Privacy**: Integrated Tor onion routing.
 
-</h3>
-<br>
+## Development
 
-# [Download Wasabi](https://github.com/zkSNACKs/WalletWasabi/releases)
+AnonTx is developed by `anonsec02`.
 
-<br>
+### Building from Source
 
-# Build From Source Code
+1. Install .NET 6 SDK.
+2. Clone the repository: `git clone https://github.com/anonsec02/AnonTx.git`
+3. Navigate to the project directory: `cd AnonTx`
+4. Build the project: `dotnet build`
+5. Run the application: `dotnet run --project WalletAnonTx.Fluent.Desktop`
 
-### Get The Requirements
+## License
 
-1. Get Git: https://git-scm.com/downloads
-2. Get .NET 8.0 SDK: https://dotnet.microsoft.com/download
-3. Optionally disable .NET's telemetry by executing in the terminal `export DOTNET_CLI_TELEMETRY_OPTOUT=1` on Linux and macOS or `setx DOTNET_CLI_TELEMETRY_OPTOUT 1` on Windows.
-
-### Get Wasabi
-
-Clone & Restore & Build
-
-```sh
-git clone --depth=1 --single-branch --branch=master https://github.com/zkSNACKs/WalletWasabi.git
-cd WalletWasabi/WalletWasabi.Fluent.Desktop
-dotnet build
-```
-
-### Run Wasabi
-
-Run Wasabi with `dotnet run` from the `WalletWasabi.Fluent.Desktop` folder.
-
-### Update Wasabi
-
-```sh
-git pull
-```
+This project is licensed under the MIT License - see the LICENSE file for details.

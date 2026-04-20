@@ -1,13 +1,13 @@
 using NBitcoin;
 using System.Linq;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Models;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.Models;
+namespace WalletAnonTx.Fluent.Models;
 
 [AutoInterface]
 public partial class TransactionBroadcasterModel

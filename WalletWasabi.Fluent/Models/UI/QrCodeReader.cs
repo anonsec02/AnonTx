@@ -13,7 +13,7 @@ using ZXing.SkiaSharp;
 using ZXing.Common;
 using ZXing;
 
-namespace WalletWasabi.Fluent.Models.UI;
+namespace WalletAnonTx.Fluent.Models.UI;
 
 [AutoInterface]
 public partial class QrCodeReader

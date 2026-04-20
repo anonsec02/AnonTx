@@ -4,7 +4,7 @@ using Avalonia.Styling;
 using System.Reactive.Disposables;
 using Avalonia.Xaml.Interactions.Custom;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class FadeInBehavior : AttachedToVisualTreeBehavior<Visual>
 {

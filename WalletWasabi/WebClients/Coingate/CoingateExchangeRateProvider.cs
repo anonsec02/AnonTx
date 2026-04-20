@@ -2,10 +2,10 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Interfaces;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Interfaces;
 
-namespace WalletWasabi.WebClients.Coingate;
+namespace WalletAnonTx.WebClients.Coingate;
 
 public class CoingateExchangeRateProvider : IExchangeRateProvider
 {

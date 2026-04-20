@@ -5,15 +5,15 @@ using System.Linq;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinCore.Monitoring;
-using WalletWasabi.BitcoinP2p;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Models;
-using WalletWasabi.Services;
-using WalletWasabi.Tor.StatusChecker;
+using WalletAnonTx.BitcoinCore.Monitoring;
+using WalletAnonTx.BitcoinP2p;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Models;
+using WalletAnonTx.Services;
+using WalletAnonTx.Tor.StatusChecker;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public partial interface IHealthMonitor : IDisposable
 {
@@ -44,7 +44,7 @@ public partial class HealthMonitor : ReactiveObject, IDisposable
 		UseBitcoinCore = applicationSettings.StartLocalBitcoinCoreOnStartup;
 
 		var nodes = Services.HostedServices.Get<P2pNetwork>().Nodes.ConnectedNodes;
-		var synchronizer = Services.HostedServices.Get<WasabiSynchronizer>();
+		var synchronizer = Services.HostedServices.Get<AnonTxSynchronizer>();
 
 		// Tor Status
 		synchronizer.WhenAnyValue(x => x.TorStatus)

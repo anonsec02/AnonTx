@@ -34,6 +34,6 @@ jobs:
     displayName: 'Test Debug'
     inputs:
       command: test
-      projects: 'WalletWasabi.Tests/WalletWasabi.Tests.csproj'
+      projects: 'WalletAnonTx.Tests/WalletAnonTx.Tests.csproj'
       arguments: --configuration $(testConfiguration) --filter "UnitTests" --logger "console;verbosity=detailed" --collect:"XPlat Code Coverage"
       publishTestResults: true

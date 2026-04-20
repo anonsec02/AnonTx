@@ -1,7 +1,7 @@
 using NBitcoin;
-using WalletWasabi.Hwi.Models;
+using WalletAnonTx.Hwi.Models;
 
-namespace WalletWasabi.Fluent.Models;
+namespace WalletAnonTx.Fluent.Models;
 
 public abstract record WalletCreationOptions(string? WalletName = null)
 {

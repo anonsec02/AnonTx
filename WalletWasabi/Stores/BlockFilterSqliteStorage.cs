@@ -2,9 +2,9 @@ using Microsoft.Data.Sqlite;
 using NBitcoin;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using WalletWasabi.Backend.Models;
+using WalletAnonTx.Backend.Models;
 
-namespace WalletWasabi.Stores;
+namespace WalletAnonTx.Stores;
 
 /// <summary>
 /// SQLite-based storage for block filters.

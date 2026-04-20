@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Tor.Http.Extensions;
+namespace WalletAnonTx.Tor.Http.Extensions;
 
 public static class HttpContentExtensions
 {

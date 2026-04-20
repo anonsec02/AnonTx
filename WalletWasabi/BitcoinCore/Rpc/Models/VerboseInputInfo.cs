@@ -1,7 +1,7 @@
 using NBitcoin;
 using System.Diagnostics.CodeAnalysis;
 
-namespace WalletWasabi.BitcoinCore.Rpc.Models;
+namespace WalletAnonTx.BitcoinCore.Rpc.Models;
 
 public class VerboseInputInfo
 {

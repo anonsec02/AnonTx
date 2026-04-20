@@ -1,9 +1,9 @@
 using System.Collections.Immutable;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 using NBitcoin;
-using WalletWasabi.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models;
 
-namespace WalletWasabi.WabiSabi.Client.Batching;
+namespace WalletAnonTx.WabiSabi.Client.Batching;
 
 public abstract record PaymentState
 {

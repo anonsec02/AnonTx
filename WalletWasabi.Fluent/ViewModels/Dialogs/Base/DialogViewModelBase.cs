@@ -1,6 +1,6 @@
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
 /// <summary>
 /// CommonBase class.

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Blockchain.Blocks;
+namespace WalletAnonTx.Blockchain.Blocks;
 
 /// <summary>
 /// High performance chain index and cache.

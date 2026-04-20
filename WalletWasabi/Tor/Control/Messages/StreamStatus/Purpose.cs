@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control.Messages.StreamStatus;
+namespace WalletAnonTx.Tor.Control.Messages.StreamStatus;
 
 /// <seealso href="https://gitweb.torproject.org/torspec.git/tree/control-spec.txt">See section "4.1.2. Stream status changed".</seealso>
 public enum Purpose

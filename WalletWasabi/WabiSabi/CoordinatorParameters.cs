@@ -1,8 +1,8 @@
 using System.IO;
-using WalletWasabi.Helpers;
-using WalletWasabi.WabiSabi.Backend;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.WabiSabi.Backend;
 
-namespace WalletWasabi.WabiSabi;
+namespace WalletAnonTx.WabiSabi;
 
 public class CoordinatorParameters
 {

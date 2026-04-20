@@ -2,13 +2,13 @@ using NBitcoin;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 using System.Linq;
-using WalletWasabi.Helpers;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+namespace WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
 public record SigningState : MultipartyTransactionState
 {

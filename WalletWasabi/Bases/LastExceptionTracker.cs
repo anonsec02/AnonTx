@@ -1,4 +1,4 @@
-namespace WalletWasabi.Bases;
+namespace WalletAnonTx.Bases;
 
 /// <summary>
 /// Tracker that stores the latest received exception, and increases a counter as long as the same exception type is received.

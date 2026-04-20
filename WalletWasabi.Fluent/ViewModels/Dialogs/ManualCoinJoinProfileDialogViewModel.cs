@@ -1,8 +1,8 @@
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.CoinJoinProfiles;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.CoinJoinProfiles;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs;
 
 [NavigationMetaData(Title = "Coinjoin Strategy Settings", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class ManualCoinJoinProfileDialogViewModel : DialogViewModelBase<ManualCoinJoinProfileDialogViewModel.ManualCoinJoinProfileDialogViewModelResult?>

@@ -1,11 +1,11 @@
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using DynamicData;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Patterns;
-using WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Patterns;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
 
 [AppLifetime]
 public class EditableSearchSourceSource : IEditableSearchSource

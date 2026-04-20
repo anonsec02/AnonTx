@@ -1,6 +1,6 @@
-using WalletWasabi.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
 
-namespace WalletWasabi.Fluent.Models.Transactions;
+namespace WalletAnonTx.Fluent.Models.Transactions;
 
 public enum WarningSeverity
 {

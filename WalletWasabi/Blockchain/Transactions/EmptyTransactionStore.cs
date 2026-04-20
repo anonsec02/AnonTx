@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using NBitcoin;
 
-namespace WalletWasabi.Blockchain.Transactions;
+namespace WalletAnonTx.Blockchain.Transactions;
 
 public class EmptyTransactionStore : ITransactionStore
 {

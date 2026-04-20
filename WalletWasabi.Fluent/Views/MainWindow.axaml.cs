@@ -3,10 +3,10 @@ using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Rendering;
-using WalletWasabi.Fluent.Diagnostics;
-using WalletWasabi.Fluent.Screenshot;
+using WalletAnonTx.Fluent.Diagnostics;
+using WalletAnonTx.Fluent.Screenshot;
 
-namespace WalletWasabi.Fluent.Views;
+namespace WalletAnonTx.Fluent.Views;
 
 public class MainWindow : Window
 {

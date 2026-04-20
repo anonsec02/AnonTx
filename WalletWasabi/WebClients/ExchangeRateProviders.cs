@@ -1,18 +1,18 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Interfaces;
-using WalletWasabi.Logging;
-using WalletWasabi.WebClients.BlockchainInfo;
-using WalletWasabi.WebClients.Coinbase;
-using WalletWasabi.WebClients.Bitstamp;
-using WalletWasabi.WebClients.CoinGecko;
-using WalletWasabi.WebClients.Gemini;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Interfaces;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WebClients.BlockchainInfo;
+using WalletAnonTx.WebClients.Coinbase;
+using WalletAnonTx.WebClients.Bitstamp;
+using WalletAnonTx.WebClients.CoinGecko;
+using WalletAnonTx.WebClients.Gemini;
 using System.Linq;
 using System.Threading;
-using WalletWasabi.WebClients.Coingate;
+using WalletAnonTx.WebClients.Coingate;
 
-namespace WalletWasabi.WebClients;
+namespace WalletAnonTx.WebClients;
 
 public class ExchangeRateProvider : IExchangeRateProvider
 {

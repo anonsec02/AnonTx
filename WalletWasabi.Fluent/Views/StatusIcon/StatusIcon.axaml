@@ -2,14 +2,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:converters="using:WalletWasabi.Fluent.Converters"
-             xmlns:models="clr-namespace:WalletWasabi.Fluent.Models"
-             xmlns:statusIcon="clr-namespace:WalletWasabi.Fluent.ViewModels.StatusIcon"
-             xmlns:st="clr-namespace:WalletWasabi.Fluent.Views.StatusIcon"
+             xmlns:converters="using:WalletAnonTx.Fluent.Converters"
+             xmlns:models="clr-namespace:WalletAnonTx.Fluent.Models"
+             xmlns:statusIcon="clr-namespace:WalletAnonTx.Fluent.ViewModels.StatusIcon"
+             xmlns:st="clr-namespace:WalletAnonTx.Fluent.Views.StatusIcon"
              mc:Ignorable="d" d:DesignWidth="671" d:DesignHeight="32"
              x:DataType="statusIcon:StatusIconViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.StatusIcon.StatusIcon">
+             x:Class="WalletAnonTx.Fluent.Views.StatusIcon.StatusIcon">
   <UserControl.Styles>
 
     <Style Selector="PathIcon">
@@ -68,7 +68,7 @@
                       HorizontalAlignment="Center"
                       Height="30" />
             <TextBlock DockPanel.Dock="Bottom"
-                       Text="The reported balance might not be accurate, and some other features may not be available, because Wasabi was unable to connect to the server. Retrying to connect."
+                       Text="The reported balance might not be accurate, and some other features may not be available, because AnonTx was unable to connect to the server. Retrying to connect."
                        TextWrapping="Wrap"
                        TextAlignment="Center" />
           </DockPanel>
@@ -80,7 +80,7 @@
                       HorizontalAlignment="Center"
                       Height="30" />
             <TextBlock DockPanel.Dock="Bottom"
-                       Text="This version of Wasabi is not compatible with the backend it tries to connect to. Update if available or change the backend provider."
+                       Text="This version of AnonTx is not compatible with the backend it tries to connect to. Update if available or change the backend provider."
                        TextWrapping="Wrap"
                        TextAlignment="Center" />
           </DockPanel>

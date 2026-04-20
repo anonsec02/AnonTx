@@ -1,4 +1,4 @@
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 public enum SyncType
 {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using WalletWasabi.Fluent.Generators.Abstractions;
+using WalletAnonTx.Fluent.Generators.Abstractions;
 
-namespace WalletWasabi.Fluent.Generators.Generators;
+namespace WalletAnonTx.Fluent.Generators.Generators;
 
 internal class AutoInterfaceAttributeGenerator: StaticFileGenerator
 {
@@ -11,7 +11,7 @@ internal class AutoInterfaceAttributeGenerator: StaticFileGenerator
 		#nullable enable
 		using System;
 
-		namespace WalletWasabi.Fluent;
+		namespace WalletAnonTx.Fluent;
 
 		[AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
 		sealed class AutoInterfaceAttribute : Attribute

@@ -1,6 +1,6 @@
 using Avalonia;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public class StraightLineFormula
 {

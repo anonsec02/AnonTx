@@ -2,10 +2,10 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Tor.Http;
+namespace WalletAnonTx.Tor.Http;
 
 /// <summary>
-/// HTTP client implementation based on .NET's <see cref="HttpClient"/> which provides least privacy for Wasabi users,
+/// HTTP client implementation based on .NET's <see cref="HttpClient"/> which provides least privacy for AnonTx users,
 /// as HTTP requests are being sent over clearnet.
 /// </summary>
 /// <remarks>Inner <see cref="HttpClient"/> instance is thread-safe.</remarks>

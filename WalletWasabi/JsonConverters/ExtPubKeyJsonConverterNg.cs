@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class ExtPubKeyJsonConverterNg : JsonConverter<ExtPubKey>
 {

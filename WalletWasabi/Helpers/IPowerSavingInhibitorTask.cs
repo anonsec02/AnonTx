@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 /// <summary>Task that makes sure that computer does not go to sleep, switch to idle state, etc.</summary>
 public interface IPowerSavingInhibitorTask

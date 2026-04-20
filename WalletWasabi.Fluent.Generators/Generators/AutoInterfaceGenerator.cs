@@ -3,13 +3,13 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Fluent.Generators.Abstractions;
+using WalletAnonTx.Fluent.Generators.Abstractions;
 
-namespace WalletWasabi.Fluent.Generators.Generators;
+namespace WalletAnonTx.Fluent.Generators.Generators;
 
 internal class AutoInterfaceGenerator : GeneratorStep<ClassDeclarationSyntax>
 {
-	private const string AutoInterfaceAttribute = "WalletWasabi.Fluent.AutoInterfaceAttribute";
+	private const string AutoInterfaceAttribute = "WalletAnonTx.Fluent.AutoInterfaceAttribute";
 
 	public override void Execute(ClassDeclarationSyntax[] syntaxNodes)
 	{

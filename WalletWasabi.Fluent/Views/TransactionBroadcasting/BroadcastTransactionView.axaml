@@ -1,9 +1,9 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:transactionBroadcasting="using:WalletWasabi.Fluent.ViewModels.TransactionBroadcasting"
+             xmlns:transactionBroadcasting="using:WalletAnonTx.Fluent.ViewModels.TransactionBroadcasting"
              x:DataType="transactionBroadcasting:BroadcastTransactionViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.TransactionBroadcasting.BroadcastTransactionView">
+             x:Class="WalletAnonTx.Fluent.Views.TransactionBroadcasting.BroadcastTransactionView">
   <ContentArea Title="{Binding Title}"
                  EnableCancel="{Binding EnableCancel}"
                  EnableBack="{Binding EnableBack}"

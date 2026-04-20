@@ -4,12 +4,12 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.History.Details;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.Details;
 
 [NavigationMetaData(Title = "Transaction Details")]
 public partial class TransactionDetailsViewModel : RoutableViewModel

@@ -4,13 +4,13 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using DynamicData;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Logging;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.History.Features;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.Features;
 
 [NavigationMetaData(Title = "Speed Up Transaction", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class SpeedUpTransactionDialogViewModel : RoutableViewModel
@@ -69,7 +69,7 @@ public partial class SpeedUpTransactionDialogViewModel : RoutableViewModel
 		{
 			Logger.LogError(ex);
 			var msg = speedupTransaction.TargetTransaction.Confirmed ? "The transaction is already confirmed." : ex.ToUserFriendlyString();
-			UiContext.Navigate().To().ShowErrorDialog(msg, "Speed Up Failed", "Wasabi was unable to speed up your transaction.", NavigationTarget.CompactDialogScreen);
+			UiContext.Navigate().To().ShowErrorDialog(msg, "Speed Up Failed", "AnonTx was unable to speed up your transaction.", NavigationTarget.CompactDialogScreen);
 		}
 
 		IsBusy = false;

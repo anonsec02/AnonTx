@@ -1,8 +1,8 @@
 using NBitcoin;
 using System.ComponentModel;
-using WalletWasabi.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class DefaultValueCoordinationFeeRateAttribute : DefaultValueAttribute
 {

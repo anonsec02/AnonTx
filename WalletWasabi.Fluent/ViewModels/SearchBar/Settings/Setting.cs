@@ -4,7 +4,7 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.Settings;
 
 public class Setting<TOwner, TProperty> : ReactiveObject, IDisposable where TOwner : class, INotifyPropertyChanged
 {

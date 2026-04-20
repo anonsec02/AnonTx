@@ -1,10 +1,10 @@
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
-using WalletWasabi.Microservices;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Microservices;
 
-namespace WalletWasabi.Helpers.PowerSaving;
+namespace WalletAnonTx.Helpers.PowerSaving;
 
 public class BaseInhibitorTask : IPowerSavingInhibitorTask
 {

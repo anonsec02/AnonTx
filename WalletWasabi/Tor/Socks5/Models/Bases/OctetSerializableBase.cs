@@ -1,7 +1,7 @@
-using WalletWasabi.Helpers;
-using WalletWasabi.Tor.Socks5.Models.Interfaces;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Tor.Socks5.Models.Interfaces;
 
-namespace WalletWasabi.Tor.Socks5.Models.Bases;
+namespace WalletAnonTx.Tor.Socks5.Models.Bases;
 
 public abstract class OctetSerializableBase : IByteSerializable, IEquatable<OctetSerializableBase>, IEquatable<byte>
 {

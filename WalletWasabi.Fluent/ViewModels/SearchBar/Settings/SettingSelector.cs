@@ -3,7 +3,7 @@ using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.Settings;
 
 public class SettingSelector : IDataTemplate
 {

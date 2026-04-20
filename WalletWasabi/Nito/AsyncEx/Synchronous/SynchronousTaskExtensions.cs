@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
 namespace Nito.AsyncEx.Synchronous;
 

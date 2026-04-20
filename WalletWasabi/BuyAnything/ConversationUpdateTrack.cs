@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace WalletWasabi.BuyAnything;
+namespace WalletAnonTx.BuyAnything;
 
 public class ConversationUpdateTrack
 {

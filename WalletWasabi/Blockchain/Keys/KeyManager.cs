@@ -7,17 +7,17 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Security;
 using System.Text;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Helpers;
-using WalletWasabi.Io;
-using WalletWasabi.JsonConverters;
-using WalletWasabi.JsonConverters.Bitcoin;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Wallets;
-using static WalletWasabi.Blockchain.Keys.WpkhOutputDescriptorHelper;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Io;
+using WalletAnonTx.JsonConverters;
+using WalletAnonTx.JsonConverters.Bitcoin;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Wallets;
+using static WalletAnonTx.Blockchain.Keys.WpkhOutputDescriptorHelper;
 
-namespace WalletWasabi.Blockchain.Keys;
+namespace WalletAnonTx.Blockchain.Keys;
 
 [JsonObject(MemberSerialization.OptIn)]
 public class KeyManager
@@ -523,9 +523,9 @@ public class KeyManager
 		{
 			var keySource = GetHdPubKeyGenerator(hdPubKey.IsInternal, hdPubKey.FullKeyPath.GetScriptTypeFromKeyPath());
 
-			// This can happen after downgrading to pre-taproot wasabi version the switching back to a supporting
+			// This can happen after downgrading to pre-taproot anontx version the switching back to a supporting
 			// version so taproot keys are detected. However, the user has not login yet so taprootextpubkey is
-			// not derived yet (because pre-taproot wasabi do not serialize fields that it doesn't know)
+			// not derived yet (because pre-taproot anontx do not serialize fields that it doesn't know)
 			if (keySource is { })
 			{
 				var view = HdPubKeyCache.GetView(keySource.KeyPath);

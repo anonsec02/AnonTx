@@ -1,6 +1,6 @@
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.ViewModels.AddWallet.Create;
+namespace WalletAnonTx.Fluent.ViewModels.AddWallet.Create;
 
 public partial class RecoveryWordViewModel : ViewModelBase
 {

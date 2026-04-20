@@ -5,11 +5,11 @@ using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Models;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Blockchain.TransactionOutputs;
+namespace WalletAnonTx.Blockchain.TransactionOutputs;
 
 public class CoinsRegistry : ICoinsView
 {

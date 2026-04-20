@@ -5,17 +5,17 @@ using System.Net.Sockets;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Socks5.Exceptions;
-using WalletWasabi.Tor.Socks5.Models.Bases;
-using WalletWasabi.Tor.Socks5.Models.Fields.ByteArrayFields;
-using WalletWasabi.Tor.Socks5.Models.Fields.OctetFields;
-using WalletWasabi.Tor.Socks5.Models.Messages;
-using WalletWasabi.Tor.Socks5.Pool.Circuits;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Socks5.Exceptions;
+using WalletAnonTx.Tor.Socks5.Models.Bases;
+using WalletAnonTx.Tor.Socks5.Models.Fields.ByteArrayFields;
+using WalletAnonTx.Tor.Socks5.Models.Fields.OctetFields;
+using WalletAnonTx.Tor.Socks5.Models.Messages;
+using WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
-namespace WalletWasabi.Tor.Socks5;
+namespace WalletAnonTx.Tor.Socks5;
 
 /// <summary>
 /// Factory class to create new <see cref="TorTcpConnection"/> instances.

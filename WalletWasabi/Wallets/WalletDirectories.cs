@@ -2,9 +2,9 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 public class WalletDirectories
 {

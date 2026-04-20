@@ -1,4 +1,4 @@
-namespace WalletWasabi.WabiSabi.Backend.Banning;
+namespace WalletAnonTx.WabiSabi.Backend.Banning;
 
 public enum AuditEventType
 {

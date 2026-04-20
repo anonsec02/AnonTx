@@ -1,9 +1,9 @@
 using NBitcoin;
 using ReactiveUI;
 using System.Collections.Generic;
-using WalletWasabi.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 public partial class TransactionModel : ReactiveObject
 {

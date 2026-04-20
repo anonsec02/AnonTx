@@ -1,9 +1,9 @@
 using NBitcoin;
 using System.Linq;
 using System.Collections.Generic;
-using WalletWasabi.Blockchain.Keys;
+using WalletAnonTx.Blockchain.Keys;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public class InternalDestinationProvider : IDestinationProvider
 {

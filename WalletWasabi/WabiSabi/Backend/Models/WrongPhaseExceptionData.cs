@@ -1,5 +1,5 @@
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.WabiSabi.Backend.Models;
+namespace WalletAnonTx.WabiSabi.Backend.Models;
 
 public record WrongPhaseExceptionData(Phase CurrentPhase) : ExceptionData;

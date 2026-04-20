@@ -1,6 +1,6 @@
-using WalletWasabi.WebClients.ShopWare.Models;
+using WalletAnonTx.WebClients.ShopWare.Models;
 
-namespace WalletWasabi.WebClients.ShopWare;
+namespace WalletAnonTx.WebClients.ShopWare;
 
 public static class ShopWareRequestFactory
 {

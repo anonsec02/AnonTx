@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace WalletWasabi.Bases;
+namespace WalletAnonTx.Bases;
 
 public abstract class NotifyPropertyChangedBase : INotifyPropertyChanged
 {

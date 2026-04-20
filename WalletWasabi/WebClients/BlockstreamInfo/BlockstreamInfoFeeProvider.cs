@@ -1,9 +1,9 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
 
-namespace WalletWasabi.WebClients.BlockstreamInfo;
+namespace WalletAnonTx.WebClients.BlockstreamInfo;
 
 public class BlockstreamInfoFeeProvider : PeriodicRunner, IThirdPartyFeeProvider
 {

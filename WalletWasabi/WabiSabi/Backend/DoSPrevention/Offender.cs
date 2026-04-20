@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using NBitcoin;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.WabiSabi.Backend.DoSPrevention;
+namespace WalletAnonTx.WabiSabi.Backend.DoSPrevention;
 
 public enum RoundDisruptionMethod
 {

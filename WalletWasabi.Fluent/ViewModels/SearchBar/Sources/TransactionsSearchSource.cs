@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 using DynamicData;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Patterns;
-using WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
-using WalletWasabi.Fluent.ViewModels.Wallets;
-using WalletWasabi.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
-using WalletWasabi.Helpers;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Patterns;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
+using WalletAnonTx.Fluent.ViewModels.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
 
 public class TransactionsSearchSource : ReactiveObject, ISearchSource, IDisposable
 {

@@ -8,26 +8,26 @@ using System.Net.Http;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Microservices;
-using WalletWasabi.Tor.Http;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Microservices;
+using WalletAnonTx.Tor.Http;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.Services;
+namespace WalletAnonTx.Services;
 
 public class UpdateManager : PeriodicRunner
 {
-	private const string ReleaseURL = "https://api.github.com/repos/WalletWasabi/WalletWasabi/releases/latest";
+	private const string ReleaseURL = "https://api.github.com/repos/WalletAnonTx/WalletAnonTx/releases/latest";
 
-	public UpdateManager(TimeSpan period, string dataDir, bool downloadNewVersion, IHttpClient githubHttpClient, WasabiClient sharedWasabiClient)
+	public UpdateManager(TimeSpan period, string dataDir, bool downloadNewVersion, IHttpClient githubHttpClient, AnonTxClient sharedAnonTxClient)
 		: base(period)
 	{
 		InstallerDir = Path.Combine(dataDir, "Installer");
 		GithubHttpClient = githubHttpClient;
-		WasabiClient = sharedWasabiClient;
-		// The feature is disabled on linux at the moment because we install Wasabi Wallet as a Debian package.
+		AnonTxClient = sharedAnonTxClient;
+		// The feature is disabled on linux at the moment because we install AnonTx Wallet as a Debian package.
 		DownloadNewVersion = downloadNewVersion && (RuntimeInformation.IsOSPlatform(OSPlatform.OSX) || RuntimeInformation.IsOSPlatform(OSPlatform.Windows));
 	}
 
@@ -44,7 +44,7 @@ public class UpdateManager : PeriodicRunner
 	/// <summary>Install new version on shutdown or not.</summary>
 	public bool DoUpdateOnClose { get; set; }
 
-	private WasabiClient WasabiClient { get; }
+	private AnonTxClient AnonTxClient { get; }
 
 	protected override async Task ActionAsync(CancellationToken cancellationToken)
 	{
@@ -57,7 +57,7 @@ public class UpdateManager : PeriodicRunner
 
 			if (!updateAvailable)
 			{
-				// After updating Wasabi, remove old installer file.
+				// After updating AnonTx, remove old installer file.
 				Cleanup();
 				return;
 			}
@@ -104,7 +104,7 @@ public class UpdateManager : PeriodicRunner
 		var sha256SumsFilePath = Path.Combine(InstallerDir, "SHA256SUMS.asc");
 
 		// This will throw InvalidOperationException in case of invalid signature.
-		await DownloadAndValidateWasabiSignatureAsync(sha256SumsFilePath, info.AssetDownloadLinks, cancellationToken).ConfigureAwait(false);
+		await DownloadAndValidateAnonTxSignatureAsync(sha256SumsFilePath, info.AssetDownloadLinks, cancellationToken).ConfigureAwait(false);
 
 		var installerFilePath = Path.Combine(InstallerDir, info.InstallerFileName);
 
@@ -140,7 +140,7 @@ public class UpdateManager : PeriodicRunner
 
 	private async Task VerifyInstallerHashAsync(string installerFilePath, string expectedHash, CancellationToken cancellationToken)
 	{
-		var bytes = await WasabiSignerHelpers.GetShaComputedBytesOfFileAsync(installerFilePath, cancellationToken).ConfigureAwait(false);
+		var bytes = await AnonTxSignerHelpers.GetShaComputedBytesOfFileAsync(installerFilePath, cancellationToken).ConfigureAwait(false);
 		string downloadedHash = Convert.ToHexString(bytes).ToLower();
 
 		if (expectedHash != downloadedHash)
@@ -178,7 +178,7 @@ public class UpdateManager : PeriodicRunner
 	private async Task<ReleaseInfo> GetLatestReleaseFromGithubAsync(CancellationToken cancellationToken)
 	{
 		using HttpRequestMessage message = new(HttpMethod.Get, ReleaseURL);
-		message.Headers.UserAgent.Add(new("WalletWasabi", "2.0"));
+		message.Headers.UserAgent.Add(new("WalletAnonTx", "2.0"));
 		var response = await GithubHttpClient.SendAsync(message, cancellationToken).ConfigureAwait(false);
 
 		JObject jsonResponse = JObject.Parse(await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false));
@@ -201,11 +201,11 @@ public class UpdateManager : PeriodicRunner
 		return new ReleaseInfo(githubVersion, assetDownloadLinks);
 	}
 
-	private async Task DownloadAndValidateWasabiSignatureAsync(string sha256SumsFilePath, List<string> assetDownloadLinks, CancellationToken cancellationToken)
+	private async Task DownloadAndValidateAnonTxSignatureAsync(string sha256SumsFilePath, List<string> assetDownloadLinks, CancellationToken cancellationToken)
 	{
-		var wasabiSigFilePath = Path.Combine(InstallerDir, "SHA256SUMS.wasabisig");
+		var anontxSigFilePath = Path.Combine(InstallerDir, "SHA256SUMS.anontxsig");
 		string sha256SumsUrl = assetDownloadLinks.First(url => url.Contains("SHA256SUMS.asc"));
-		string wasabiSigUrl = assetDownloadLinks.First(url => url.Contains("SHA256SUMS.wasabisig"));
+		string anontxSigUrl = assetDownloadLinks.First(url => url.Contains("SHA256SUMS.anontxsig"));
 
 		try
 		{
@@ -216,31 +216,31 @@ public class UpdateManager : PeriodicRunner
 			IoHelpers.EnsureContainingDirectoryExists(sha256SumsFilePath);
 			File.WriteAllText(sha256SumsFilePath, sha256Content);
 
-			using HttpRequestMessage signatureRequest = new(HttpMethod.Get, wasabiSigUrl);
+			using HttpRequestMessage signatureRequest = new(HttpMethod.Get, anontxSigUrl);
 			using HttpResponseMessage signatureResponse = await GithubHttpClient.SendAsync(signatureRequest, cancellationToken).ConfigureAwait(false);
 			string signatureContent = await signatureResponse.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-			IoHelpers.EnsureContainingDirectoryExists(wasabiSigFilePath);
-			File.WriteAllText(wasabiSigFilePath, signatureContent);
+			IoHelpers.EnsureContainingDirectoryExists(anontxSigFilePath);
+			File.WriteAllText(anontxSigFilePath, signatureContent);
 
-			await WasabiSignerHelpers.VerifySha256SumsFileAsync(sha256SumsFilePath).ConfigureAwait(false);
+			await AnonTxSignerHelpers.VerifySha256SumsFileAsync(sha256SumsFilePath).ConfigureAwait(false);
 		}
 		catch (HttpRequestException ex)
 		{
 			string message = "";
 			if (ex.StatusCode is HttpStatusCode.NotFound)
 			{
-				message = "Wasabi signature files were not found under the API.";
+				message = "AnonTx signature files were not found under the API.";
 			}
 			else
 			{
-				message = "Something went wrong while getting Wasabi signature files.";
+				message = "Something went wrong while getting AnonTx signature files.";
 			}
 			throw new InvalidOperationException(message, ex);
 		}
 		catch (IOException)
 		{
-			// There's a chance to get IOException when closing Wasabi during stream copying. Throw OperationCancelledException instead.
+			// There's a chance to get IOException when closing AnonTx during stream copying. Throw OperationCancelledException instead.
 			cancellationToken.ThrowIfCancellationRequested();
 			throw;
 		}

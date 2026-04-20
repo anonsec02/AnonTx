@@ -1,8 +1,8 @@
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.Settings;
 
 public class RestartViewModel : ViewModelBase
 {

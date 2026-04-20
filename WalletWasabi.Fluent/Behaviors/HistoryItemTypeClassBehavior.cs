@@ -4,9 +4,9 @@ using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using NBitcoin;
 using Avalonia.Xaml.Interactions.Custom;
-using WalletWasabi.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class HistoryItemTypeClassBehavior : AttachedToVisualTreeBehavior<Avalonia.Controls.TreeDataGrid>
 {

@@ -1,4 +1,4 @@
-namespace WalletWasabi.Stores;
+namespace WalletAnonTx.Stores;
 
 public static class SqliteStorageHelper
 {

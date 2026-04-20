@@ -1,8 +1,8 @@
 using NBitcoin;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Blockchain.Transactions;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Blockchain.Transactions;
 
-namespace WalletWasabi.Fluent.Models;
+namespace WalletAnonTx.Fluent.Models;
 
 public class TransactionAuthorizationInfo
 {

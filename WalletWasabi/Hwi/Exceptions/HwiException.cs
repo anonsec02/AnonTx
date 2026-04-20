@@ -1,4 +1,4 @@
-namespace WalletWasabi.Hwi.Exceptions;
+namespace WalletAnonTx.Hwi.Exceptions;
 
 public class HwiException : Exception
 {

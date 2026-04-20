@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace WalletWasabi.Blockchain.TransactionOutputs;
+namespace WalletAnonTx.Blockchain.TransactionOutputs;
 
 public class CoinsView : ICoinsView
 {

@@ -3,9 +3,9 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
-using WalletWasabi.Fluent.TreeDataGrid;
+using WalletAnonTx.Fluent.TreeDataGrid;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 /// <remark>
 /// Items must implement <see cref="ITreeDataGridExpanderItem"/> interface.

@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.Wallets.Send;
+namespace WalletAnonTx.Fluent.Views.Wallets.Send;
 
 public class TransactionPreviewView : UserControl
 {

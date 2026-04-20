@@ -1,4 +1,4 @@
-namespace WalletWasabi.WabiSabi.Backend.DoSPrevention;
+namespace WalletAnonTx.WabiSabi.Backend.DoSPrevention;
 
 public record DoSConfiguration(
 	decimal SeverityInBitcoinsPerHour,

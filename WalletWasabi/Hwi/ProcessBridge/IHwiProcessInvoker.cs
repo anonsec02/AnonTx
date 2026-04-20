@@ -2,7 +2,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WalletWasabi.Hwi.ProcessBridge;
+namespace WalletAnonTx.Hwi.ProcessBridge;
 
 public interface IHwiProcessInvoker
 {

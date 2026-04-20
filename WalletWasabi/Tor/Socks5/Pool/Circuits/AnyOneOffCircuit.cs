@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Socks5.Pool.Circuits;
+namespace WalletAnonTx.Tor.Socks5.Pool.Circuits;
 
 /// <summary>
 /// Special type representing any <see cref="OneOffCircuit"/> that is ready to send an HTTP request.

@@ -2,11 +2,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="using:WalletWasabi.Fluent.ViewModels.HelpAndSupport"
+             xmlns:vm="using:WalletAnonTx.Fluent.ViewModels.HelpAndSupport"
              mc:Ignorable="d" d:DesignWidth="428" d:DesignHeight="371"
              x:DataType="vm:AboutViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.HelpAndSupport.AboutView">
+             x:Class="WalletAnonTx.Fluent.Views.HelpAndSupport.AboutView">
   <Panel>
     <ContentArea EnableNext="{Binding !EnableBack}"
                           NextContent="Close"
@@ -14,11 +14,11 @@
       <DockPanel LastChildFill="True">
         <Viewbox DockPanel.Dock="Top" Margin="25,25,25,50" Width="112" VerticalAlignment="Center"
                  HorizontalAlignment="Center">
-          <Image Source="{DynamicResource wasabi_logo_dynamic}" />
+          <Image Source="{DynamicResource anontx_logo_dynamic}" />
         </Viewbox>
         <Viewbox ClipToBounds="False" DockPanel.Dock="Top" Width="220" VerticalAlignment="Center"
                  HorizontalAlignment="Center">
-          <ContentControl Template="{DynamicResource wasabi_logo_text_dynamic}"
+          <ContentControl Template="{DynamicResource anontx_logo_text_dynamic}"
                           VerticalAlignment="Center" ClipToBounds="False" />
         </Viewbox>
         <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" Text="{Binding ClientVersion}" Margin="0,5,0,50" Opacity="0.5" />

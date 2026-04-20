@@ -1,8 +1,8 @@
 using System.Linq;
-using WalletWasabi.Helpers;
-using static WalletWasabi.Tor.Http.Constants;
+using WalletAnonTx.Helpers;
+using static WalletAnonTx.Tor.Http.Constants;
 
-namespace WalletWasabi.Tor.Http.Models;
+namespace WalletAnonTx.Tor.Http.Models;
 
 public abstract class StartLine
 {

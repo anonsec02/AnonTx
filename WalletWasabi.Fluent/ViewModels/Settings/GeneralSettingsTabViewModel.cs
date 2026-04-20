@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Logging;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Logging;
 using System.Windows.Input;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Models;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.Settings;
 
 [AppLifetime]
 [NavigationMetaData(
@@ -19,7 +19,7 @@ namespace WalletWasabi.Fluent.ViewModels.Settings;
 	Category = "Settings",
 	Keywords = new[]
 	{
-			"Settings", "General", "Bitcoin", "Dark", "Mode", "Run", "Wasabi", "Computer", "System", "Start", "Background", "Close",
+			"Settings", "General", "Bitcoin", "Dark", "Mode", "Run", "AnonTx", "Computer", "System", "Start", "Background", "Close",
 			"Auto", "Copy", "Paste", "Addresses", "Custom", "Change", "Address", "Fee", "Display", "Format", "BTC", "sats"
 	},
 	IconName = "settings_general_regular")]

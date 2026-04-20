@@ -1,7 +1,7 @@
 using NBitcoin;
 using System.Collections.Generic;
 
-namespace WalletWasabi.WabiSabi.Client.CredentialDependencies;
+namespace WalletAnonTx.WabiSabi.Client.CredentialDependencies;
 
 public class OutputNode : RequestNode
 {

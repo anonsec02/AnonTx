@@ -2,10 +2,10 @@ using System.Collections.Generic;
 using Avalonia.Controls;
 using Avalonia.Controls.Models.TreeDataGrid;
 using Avalonia.Controls.Templates;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Views.Wallets.Receive.Columns;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Views.Wallets.Receive.Columns;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Receive;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Receive;
 
 public static class ReceiveAddressesDataGridSource
 {

@@ -2,14 +2,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="using:WalletWasabi.Fluent.ViewModels.CoinJoinProfiles"
-             xmlns:prof="clr-namespace:WalletWasabi.Fluent.Views.CoinJoinProfiles"
+             xmlns:vm="using:WalletAnonTx.Fluent.ViewModels.CoinJoinProfiles"
+             xmlns:prof="clr-namespace:WalletAnonTx.Fluent.Views.CoinJoinProfiles"
              mc:Ignorable="d" d:DesignWidth="428" d:DesignHeight="371"
              x:DataType="vm:CoinJoinProfilesViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.CoinJoinProfiles.CoinJoinProfilesView">
+             x:Class="WalletAnonTx.Fluent.Views.CoinJoinProfiles.CoinJoinProfilesView">
   <ContentArea Title="{Binding Title}"
-               Caption="Wasabi takes care of your financial privacy by automatically starting to coinjoin all your funds. Select a coinjoin strategy that fits you best!"
+               Caption="AnonTx takes care of your financial privacy by automatically starting to coinjoin all your funds. Select a coinjoin strategy that fits you best!"
                EnableCancel="{Binding EnableCancel}"
                EnableBack="{Binding EnableBack}"
                NextContent="Done" EnableNext="True"

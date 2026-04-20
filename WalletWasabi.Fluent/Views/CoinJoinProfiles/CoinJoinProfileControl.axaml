@@ -2,12 +2,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="using:WalletWasabi.Fluent.ViewModels.CoinJoinProfiles"
+             xmlns:vm="using:WalletAnonTx.Fluent.ViewModels.CoinJoinProfiles"
              mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="450"
              x:DataType="vm:CoinJoinProfileViewModelBase"
              ClipToBounds="False"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.CoinJoinProfiles.CoinJoinProfileControl">
+             x:Class="WalletAnonTx.Fluent.Views.CoinJoinProfiles.CoinJoinProfileControl">
   <DockPanel MaxWidth="180">
     <TextBlock Text="{Binding Title}" TextWrapping="Wrap" TextAlignment="Center" DockPanel.Dock="Top" />
     <TextBlock Text="{Binding Description}" TextWrapping="Wrap" HorizontalAlignment="Center" DockPanel.Dock="Bottom" />

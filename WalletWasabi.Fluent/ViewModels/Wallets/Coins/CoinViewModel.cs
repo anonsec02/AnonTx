@@ -1,12 +1,12 @@
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.CoinControl.Core;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.CoinControl.Core;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Coins;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Coins;
 
 public class CoinViewModel : CoinListItem
 {

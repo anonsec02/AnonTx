@@ -1,11 +1,11 @@
 using System.Windows.Input;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.ViewModels.HelpAndSupport;
+namespace WalletAnonTx.Fluent.ViewModels.HelpAndSupport;
 
 [NavigationMetaData(
 	Title = "Report a Bug",
-	Caption = "Open Wasabi's GitHub issues website",
+	Caption = "Open AnonTx's GitHub issues website",
 	Order = 1,
 	Category = "Help & Support",
 	Keywords = new[]

@@ -6,10 +6,10 @@ using Avalonia.Input;
 using Avalonia.VisualTree;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class HoldKeyBehavior : AttachedToVisualTreeBehavior<InputElement>
 {

@@ -5,11 +5,11 @@ using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
 
-namespace WalletWasabi.WabiSabi.Backend.DoSPrevention;
+namespace WalletAnonTx.WabiSabi.Backend.DoSPrevention;
 
 public class Warden : BackgroundService
 {

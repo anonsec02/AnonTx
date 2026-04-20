@@ -2,11 +2,11 @@ using NBitcoin;
 using NBitcoin.Protocol;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Logging;
-using WalletWasabi.Wallets.BlockProvider;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Wallets.BlockProvider;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 /// <summary>
 /// P2P block provider is a blocks provider getting the blocks from bitcoin nodes using the P2P bitcoin protocol.

@@ -1,7 +1,7 @@
 using System.Reactive;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs.Announcement;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs.Announcement;
 
 [NavigationMetaData(Title = "")]
 public partial class AnnouncementBase : DialogViewModelBase<Unit>

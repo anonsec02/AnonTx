@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class SuggestionItem : ContentControl
 {

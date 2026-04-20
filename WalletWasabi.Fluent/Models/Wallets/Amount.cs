@@ -1,8 +1,8 @@
 using System.Reactive.Linq;
 using NBitcoin;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 /// <summary>
 /// Encapsulates a BTC amount and its corresponding USD exchange rate as an Observable sequence.

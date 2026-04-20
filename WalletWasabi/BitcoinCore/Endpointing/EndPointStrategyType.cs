@@ -1,4 +1,4 @@
-namespace WalletWasabi.BitcoinCore.Endpointing;
+namespace WalletAnonTx.BitcoinCore.Endpointing;
 
 public enum EndPointStrategyType
 {

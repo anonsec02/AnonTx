@@ -6,14 +6,14 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Net;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Tor;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Tor;
+using WalletAnonTx.Userfacing;
 
-namespace WalletWasabi.Daemon;
+namespace WalletAnonTx.Daemon;
 
 public class Config
 {
@@ -71,16 +71,16 @@ public class Config
 				"Tor is started with the set of specified bridges",
 				GetStringArrayValue("TorBridges", PersistentConfig.TorBridges, cliArgs)),
 			[nameof(TerminateTorOnExit)] = (
-				"Stop the Tor process when Wasabi is closed",
+				"Stop the Tor process when AnonTx is closed",
 				GetBoolValue("TerminateTorOnExit", PersistentConfig.TerminateTorOnExit, cliArgs)),
 			[ nameof(DownloadNewVersion)] = (
-				"Automatically download any new released version of Wasabi",
+				"Automatically download any new released version of AnonTx",
 				GetBoolValue("DownloadNewVersion", PersistentConfig.DownloadNewVersion, cliArgs)),
 			[ nameof(StartLocalBitcoinCoreOnStartup)] = (
-				"Start a local bitcoin node when Wasabi starts",
+				"Start a local bitcoin node when AnonTx starts",
 				GetBoolValue("StartLocalBitcoinCoreOnStartup", PersistentConfig.StartLocalBitcoinCoreOnStartup, cliArgs)),
 			[ nameof(StopLocalBitcoinCoreOnShutdown)] = (
-				"Stop the local bitcoin node when Wasabi is closed",
+				"Stop the local bitcoin node when AnonTx is closed",
 				GetBoolValue("StopLocalBitcoinCoreOnShutdown", PersistentConfig.StopLocalBitcoinCoreOnShutdown, cliArgs)),
 			[ nameof(LocalBitcoinCoreDataDir)] = (
 				"The path of the data directory to be used by the local bitcoin node",
@@ -113,7 +113,7 @@ public class Config
 				"The amount threshold under which coins received from others to already used addresses are considered a dust attack",
 				GetMoneyValue("DustThreshold", PersistentConfig.DustThreshold, cliArgs)),
 			[ nameof(BlockOnlyMode)] = (
-				"Wasabi listens only for blocks and not for transactions",
+				"AnonTx listens only for blocks and not for transactions",
 				GetBoolValue("BlockOnly", value: false, cliArgs)),
 			[ nameof(LogLevel)] = (
 				"The level of detail in the logs: trace, debug, info, warning, error, or critical",
@@ -196,7 +196,7 @@ public class Config
 
 	public static string DataDir { get; } = GetStringValue(
 		"datadir",
-		EnvironmentHelpers.GetDataDir(Path.Combine("WalletWasabi", "Client")),
+		EnvironmentHelpers.GetDataDir(Path.Combine("WalletAnonTx", "Client")),
 		Environment.GetCommandLineArgs()).EffectiveValue;
 
 	/// <summary>Whether a config option was overridden by a command line argument or an environment variable.</summary>

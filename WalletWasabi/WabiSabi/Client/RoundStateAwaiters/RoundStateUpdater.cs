@@ -5,12 +5,12 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.WabiSabi.Backend.PostRequests;
-using WalletWasabi.WabiSabi.Backend.Rounds;
-using WalletWasabi.WabiSabi.Models;
+using WalletAnonTx.Bases;
+using WalletAnonTx.WabiSabi.Backend.PostRequests;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Models;
 
-namespace WalletWasabi.WabiSabi.Client.RoundStateAwaiters;
+namespace WalletAnonTx.WabiSabi.Client.RoundStateAwaiters;
 
 public class RoundStateUpdater : PeriodicRunner
 {

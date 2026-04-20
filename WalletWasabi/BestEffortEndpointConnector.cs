@@ -8,9 +8,9 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi;
+namespace WalletAnonTx;
 
 public class BestEffortEndpointConnector : IEnpointConnector
 {

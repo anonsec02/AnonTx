@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.Fluent.Validation;
+namespace WalletAnonTx.Fluent.Validation;
 
 public interface IValidations
 {

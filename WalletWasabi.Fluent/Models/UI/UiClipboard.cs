@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Models.UI;
+namespace WalletAnonTx.Fluent.Models.UI;
 
 [AutoInterface]
 public partial class UiClipboard

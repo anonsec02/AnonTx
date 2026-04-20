@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Affiliation.Serialization;
+namespace WalletAnonTx.Affiliation.Serialization;
 
 public class AffiliationByteArrayJsonConverter : JsonConverter<byte[]>
 {

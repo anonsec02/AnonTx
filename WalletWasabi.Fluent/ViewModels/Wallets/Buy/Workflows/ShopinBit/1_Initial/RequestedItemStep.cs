@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Reactive.Linq;
 using System.Threading;
 using ReactiveUI;
-using WalletWasabi.BuyAnything;
+using WalletAnonTx.BuyAnything;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
 /// <summary>
 /// ShopinBit Step #3: Input your request.

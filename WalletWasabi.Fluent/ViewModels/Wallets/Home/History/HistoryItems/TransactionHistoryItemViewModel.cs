@@ -1,10 +1,10 @@
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Logging;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
 
 public partial class TransactionHistoryItemViewModel : HistoryItemViewModelBase
 {
@@ -31,7 +31,7 @@ public partial class TransactionHistoryItemViewModel : HistoryItemViewModelBase
 		catch (Exception ex)
 		{
 			Logger.LogError(ex);
-			UiContext.Navigate().To().ShowErrorDialog(ex.ToUserFriendlyString(), "Speed Up failed", "Wasabi could not initiate the transaction speed up process.");
+			UiContext.Navigate().To().ShowErrorDialog(ex.ToUserFriendlyString(), "Speed Up failed", "AnonTx could not initiate the transaction speed up process.");
 		}
 	}
 
@@ -45,7 +45,7 @@ public partial class TransactionHistoryItemViewModel : HistoryItemViewModelBase
 		catch (Exception ex)
 		{
 			Logger.LogError(ex);
-			UiContext.Navigate().To().ShowErrorDialog(ex.ToUserFriendlyString(), "Cancel failed", "Wasabi could not initiate the cancelling process.");
+			UiContext.Navigate().To().ShowErrorDialog(ex.ToUserFriendlyString(), "Cancel failed", "AnonTx could not initiate the cancelling process.");
 		}
 	}
 }

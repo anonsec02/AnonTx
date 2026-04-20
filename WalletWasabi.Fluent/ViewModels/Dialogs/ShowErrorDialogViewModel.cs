@@ -1,7 +1,7 @@
 using ReactiveUI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs;
 
 public class ShowErrorDialogViewModel : DialogViewModelBase<bool>
 {

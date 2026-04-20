@@ -1,8 +1,8 @@
 using Avalonia;
 using Avalonia.Controls.Primitives;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class WalletIconControl : TemplatedControl
 {

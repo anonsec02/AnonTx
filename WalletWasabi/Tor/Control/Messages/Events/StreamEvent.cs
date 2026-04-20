@@ -1,8 +1,8 @@
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Messages.StreamStatus;
-using WalletWasabi.Tor.Control.Utils;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Messages.StreamStatus;
+using WalletAnonTx.Tor.Control.Utils;
 
-namespace WalletWasabi.Tor.Control.Messages.Events;
+namespace WalletAnonTx.Tor.Control.Messages.Events;
 
 /// <summary>Circuit event as specified in <c>4.1.2. Stream status changed</c> spec.</summary>
 /// <seealso href="https://gitweb.torproject.org/torspec.git/tree/control-spec.txt"/>

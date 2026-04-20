@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.WebClients.PayJoin;
+namespace WalletAnonTx.WebClients.PayJoin;
 
 public class PayjoinClientParameters
 {

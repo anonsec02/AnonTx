@@ -4,10 +4,10 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
-using WalletWasabi.Extensions;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class WhitespacePasteRemovalBehavior : DisposingBehavior<TextBox>
 {

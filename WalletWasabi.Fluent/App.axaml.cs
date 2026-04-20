@@ -7,16 +7,16 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.Models.ClientConfig;
-using WalletWasabi.Fluent.Models.FileSystem;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
-using WalletWasabi.Services;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.Models.ClientConfig;
+using WalletAnonTx.Fluent.Models.FileSystem;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
+using WalletAnonTx.Services;
 
-namespace WalletWasabi.Fluent;
+namespace WalletAnonTx.Fluent;
 
 public class App : Application
 {
@@ -26,7 +26,7 @@ public class App : Application
 
 	public App()
 	{
-		Name = "Wasabi Wallet";
+		Name = "AnonTx Wallet";
 	}
 
 	public App(Func<Task> backendInitialiseAsync, bool startInBg) : this()
@@ -80,7 +80,7 @@ public class App : Application
 
 	private void InitializeTrayIcons()
 	{
-		// TODO: This is temporary workaround until https://github.com/zkSNACKs/WalletWasabi/issues/8151 is fixed.
+		// TODO: This is temporary workaround until https://github.com/zkSNACKs/WalletAnonTx/issues/8151 is fixed.
 		var trayIcon = TrayIcon.GetIcons(this).FirstOrDefault();
 		if (trayIcon is not null)
 		{
@@ -124,7 +124,7 @@ public class App : Application
 
 	private static IAmountProvider CreateAmountProvider()
 	{
-		return new AmountProvider(Services.HostedServices.Get<WasabiSynchronizer>());
+		return new AmountProvider(Services.HostedServices.Get<AnonTxSynchronizer>());
 	}
 
 	private UiContext CreateUiContext()

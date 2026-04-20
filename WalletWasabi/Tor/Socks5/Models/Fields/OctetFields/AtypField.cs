@@ -1,9 +1,9 @@
 using System.Net;
 using System.Net.Sockets;
-using WalletWasabi.Helpers;
-using WalletWasabi.Tor.Socks5.Models.Bases;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Tor.Socks5.Models.Bases;
 
-namespace WalletWasabi.Tor.Socks5.Models.Fields.OctetFields;
+namespace WalletAnonTx.Tor.Socks5.Models.Fields.OctetFields;
 
 public class AtypField : OctetSerializableBase
 {

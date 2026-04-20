@@ -2,12 +2,12 @@ using NBitcoin;
 using System.Collections.Generic;
 using WabiSabi.Crypto;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Crypto;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Crypto;
-using WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Crypto;
+using WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds;
 
 /// <summary>
 /// DO ONLY APPEND TO THE END
@@ -30,7 +30,7 @@ public enum EndRoundState
 
 public class Round
 {
-	public Round(RoundParameters parameters, WasabiRandom random)
+	public Round(RoundParameters parameters, AnonTxRandom random)
 	{
 		Parameters = parameters;
 

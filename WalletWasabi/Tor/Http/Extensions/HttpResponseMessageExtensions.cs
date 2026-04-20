@@ -4,15 +4,15 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using WalletWasabi.Affiliation;
-using WalletWasabi.Tor.Http.Helpers;
-using WalletWasabi.Tor.Http.Models;
-using WalletWasabi.WabiSabi;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.WabiSabi.Models.Serialization;
+using WalletAnonTx.Affiliation;
+using WalletAnonTx.Tor.Http.Helpers;
+using WalletAnonTx.Tor.Http.Models;
+using WalletAnonTx.WabiSabi;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models.Serialization;
 
-namespace WalletWasabi.Tor.Http.Extensions;
+namespace WalletAnonTx.Tor.Http.Extensions;
 
 public static class HttpResponseMessageExtensions
 {

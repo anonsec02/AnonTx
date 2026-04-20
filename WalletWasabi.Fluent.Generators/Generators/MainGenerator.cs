@@ -1,7 +1,7 @@
 using Microsoft.CodeAnalysis;
-using WalletWasabi.Fluent.Generators.Abstractions;
+using WalletAnonTx.Fluent.Generators.Abstractions;
 
-namespace WalletWasabi.Fluent.Generators.Generators;
+namespace WalletAnonTx.Fluent.Generators.Generators;
 
 [Generator]
 internal class MainGenerator : CombinedGenerator

@@ -2,9 +2,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:shell="using:WalletWasabi.Fluent.Views.Shell"
+             xmlns:shell="using:WalletAnonTx.Fluent.Views.Shell"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="WalletWasabi.Fluent.Views.Shell.WelcomeBg">
+             x:Class="WalletAnonTx.Fluent.Views.Shell.WelcomeBg">
   <Panel Classes="mainx" Width="1600" Height="900">
     <Panel.Resources>
       <ControlTemplate x:Key="wa1">

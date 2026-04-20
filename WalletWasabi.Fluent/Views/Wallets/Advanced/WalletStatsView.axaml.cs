@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.Wallets.Advanced;
+namespace WalletAnonTx.Fluent.Views.Wallets.Advanced;
 
 public class WalletStatsView : UserControl
 {

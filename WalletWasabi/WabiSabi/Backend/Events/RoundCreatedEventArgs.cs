@@ -1,7 +1,7 @@
 using NBitcoin;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.WabiSabi.Backend.Events;
+namespace WalletAnonTx.WabiSabi.Backend.Events;
 
 public class RoundCreatedEventArgs : EventArgs
 {

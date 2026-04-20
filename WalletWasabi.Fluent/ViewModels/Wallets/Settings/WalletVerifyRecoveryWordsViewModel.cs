@@ -7,14 +7,14 @@ using DynamicData;
 using DynamicData.Binding;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.Validation;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Validation;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Settings;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Settings;
 
 [NavigationMetaData(Title = "Verify Recovery Words")]
 public partial class WalletVerifyRecoveryWordsViewModel : RoutableViewModel
@@ -82,7 +82,7 @@ public partial class WalletVerifyRecoveryWordsViewModel : RoutableViewModel
 		catch (Exception ex)
 		{
 			Logger.LogError(ex);
-			await ShowErrorAsync(Title, ex.ToUserFriendlyString(), "Wasabi was unable to verify the recovery words.");
+			await ShowErrorAsync(Title, ex.ToUserFriendlyString(), "AnonTx was unable to verify the recovery words.");
 		}
 	}
 

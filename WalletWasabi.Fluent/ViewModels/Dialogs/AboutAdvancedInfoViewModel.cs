@@ -1,8 +1,8 @@
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Helpers;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs;
 
 [NavigationMetaData(Title = "About", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class AboutAdvancedInfoViewModel : DialogViewModelBase<System.Reactive.Unit>
@@ -22,7 +22,7 @@ public partial class AboutAdvancedInfoViewModel : DialogViewModelBase<System.Rea
 
 	public string BackendCompatibleVersions => Constants.ClientSupportBackendVersionText;
 
-	public string CurrentBackendMajorVersion => WasabiClient.ApiVersion.ToString();
+	public string CurrentBackendMajorVersion => AnonTxClient.ApiVersion.ToString();
 
 	protected override void OnDialogClosed()
 	{

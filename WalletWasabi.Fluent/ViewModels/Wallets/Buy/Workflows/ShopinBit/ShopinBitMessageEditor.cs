@@ -1,7 +1,7 @@
 using System.Threading;
-using WalletWasabi.BuyAnything;
+using WalletAnonTx.BuyAnything;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows.ShopinBit;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows.ShopinBit;
 
 public class ShopinBitMessageEditor : IMessageEditor
 {

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.BitcoinCore.Configuration;
+namespace WalletAnonTx.BitcoinCore.Configuration;
 
 public class CoreConfig
 {

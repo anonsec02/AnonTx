@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using ReactiveUI;
-using WalletWasabi.Models;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.Validation;
+namespace WalletAnonTx.Fluent.Validation;
 
 public class Validations : ReactiveObject, IRegisterValidationMethod, IValidations
 {

@@ -1,9 +1,9 @@
 using ReactiveUI;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.NavBar;
+namespace WalletAnonTx.Fluent.ViewModels.NavBar;
 
 public partial class NavBarItemViewModel : RoutableViewModel
 {

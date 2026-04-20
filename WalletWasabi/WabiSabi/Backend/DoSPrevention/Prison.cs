@@ -2,11 +2,11 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Channels;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Backend.Rounds;
-using WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
 
-namespace WalletWasabi.WabiSabi.Backend.DoSPrevention;
+namespace WalletAnonTx.WabiSabi.Backend.DoSPrevention;
 
 public class Prison
 {

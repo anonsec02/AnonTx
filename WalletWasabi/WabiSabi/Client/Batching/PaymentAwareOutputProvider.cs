@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using NBitcoin;
-using WalletWasabi.Extensions;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.WabiSabi.Client.Batching;
+namespace WalletAnonTx.WabiSabi.Client.Batching;
 
 // Represents an `OutputProvider` that has a reference to the `BatchedPayments` instance created by a `Wallet`.
 // This class is then aware of the existence of payments for a `Wallet`, what allows it to provide outputs for

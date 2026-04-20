@@ -1,7 +1,7 @@
 using Avalonia;
 using Avalonia.Skia;
 
-namespace WalletWasabi.Fluent.Controls.Rendering;
+namespace WalletAnonTx.Fluent.Controls.Rendering;
 
 internal interface IDrawHandler : IDisposable
 {

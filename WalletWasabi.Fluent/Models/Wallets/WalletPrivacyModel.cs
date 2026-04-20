@@ -1,10 +1,10 @@
 using System.Reactive;
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class WalletPrivacyModel

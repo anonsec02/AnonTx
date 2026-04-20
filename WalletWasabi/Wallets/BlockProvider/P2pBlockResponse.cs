@@ -1,5 +1,5 @@
 using NBitcoin;
 
-namespace WalletWasabi.Wallets.BlockProvider;
+namespace WalletAnonTx.Wallets.BlockProvider;
 
 public record P2pBlockResponse(Block? Block, ISourceData SourceData);

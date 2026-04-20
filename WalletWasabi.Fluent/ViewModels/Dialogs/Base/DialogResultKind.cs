@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.ViewModels.Dialogs.Base;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
 
 public enum DialogResultKind
 {

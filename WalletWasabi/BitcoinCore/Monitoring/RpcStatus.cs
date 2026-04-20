@@ -1,4 +1,4 @@
-namespace WalletWasabi.BitcoinCore.Monitoring;
+namespace WalletAnonTx.BitcoinCore.Monitoring;
 
 public class RpcStatus : IEquatable<RpcStatus>
 {

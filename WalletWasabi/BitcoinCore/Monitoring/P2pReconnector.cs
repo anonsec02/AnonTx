@@ -1,10 +1,10 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.BitcoinCore.Monitoring;
+namespace WalletAnonTx.BitcoinCore.Monitoring;
 
 public class P2pReconnector : PeriodicRunner
 {

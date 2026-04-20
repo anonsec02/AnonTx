@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Threading;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.HelpAndSupport;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.HelpAndSupport;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
 /// <summary>
 /// ShopinBit Step #4: Accept the Privacy Policy

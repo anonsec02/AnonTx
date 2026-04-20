@@ -1,4 +1,4 @@
-namespace WalletWasabi.Blockchain.BlockFilters;
+namespace WalletAnonTx.Blockchain.BlockFilters;
 
 public enum IndexType
 {

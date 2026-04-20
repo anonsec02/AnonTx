@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.Models;
+namespace WalletAnonTx.Fluent.Models;
 
 public record EnumValue<T>(T Value, string Name) where T : Enum
 {

@@ -1,11 +1,11 @@
 using NBitcoin;
 using System.Linq;
-using WalletWasabi.Crypto;
-using WalletWasabi.Extensions;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+namespace WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
 // This class represents actions of the BIP 370 creator and constructor roles
 public record ConstructionState : MultipartyTransactionState

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletWasabi.Backend", "WalletWasabi.Backend\WalletWasabi.Backend.csproj", "{A378E063-1660-472F-9CB2-0A3E96A56A63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletAnonTx.Backend", "WalletAnonTx.Backend\WalletAnonTx.Backend.csproj", "{A378E063-1660-472F-9CB2-0A3E96A56A63}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletWasabi.Tests", "WalletWasabi.Tests\WalletWasabi.Tests.csproj", "{50BDFA09-7575-4EEE-B733-D41B65B06D00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletAnonTx.Tests", "WalletAnonTx.Tests\WalletAnonTx.Tests.csproj", "{50BDFA09-7575-4EEE-B733-D41B65B06D00}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletWasabi", "WalletWasabi\WalletWasabi.csproj", "{526AC796-6CC0-4ADA-9A7E-C12267719A1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletAnonTx", "WalletAnonTx\WalletAnonTx.csproj", "{526AC796-6CC0-4ADA-9A7E-C12267719A1A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6611C6DA-01B6-4C7D-ACD9-F212DD5D66BD}"
 	ProjectSection(SolutionItems) = preProject
@@ -30,17 +30,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		flake.nix = flake.nix
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletWasabi.Packager", "WalletWasabi.Packager\WalletWasabi.Packager.csproj", "{8BE916A0-1F3F-4757-BAD9-BFBAB8EAC3C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletAnonTx.Packager", "WalletAnonTx.Packager\WalletAnonTx.Packager.csproj", "{8BE916A0-1F3F-4757-BAD9-BFBAB8EAC3C2}"
 EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WalletWasabi.WindowsInstaller", "WalletWasabi.WindowsInstaller\WalletWasabi.WindowsInstaller.wixproj", "{54654468-4F58-4253-84BD-6F53A8D3D2C4}"
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WalletAnonTx.WindowsInstaller", "WalletAnonTx.WindowsInstaller\WalletAnonTx.WindowsInstaller.wixproj", "{54654468-4F58-4253-84BD-6F53A8D3D2C4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletWasabi.Fluent.Desktop", "WalletWasabi.Fluent.Desktop\WalletWasabi.Fluent.Desktop.csproj", "{177A8AC0-7879-4719-A8A9-49E1D75B3A2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletAnonTx.Fluent.Desktop", "WalletAnonTx.Fluent.Desktop\WalletAnonTx.Fluent.Desktop.csproj", "{177A8AC0-7879-4719-A8A9-49E1D75B3A2B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletWasabi.Fluent.Generators", "WalletWasabi.Fluent.Generators\WalletWasabi.Fluent.Generators.csproj", "{5A3DFE7E-F850-4C07-BF10-F845FA328C98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletAnonTx.Fluent.Generators", "WalletAnonTx.Fluent.Generators\WalletAnonTx.Fluent.Generators.csproj", "{5A3DFE7E-F850-4C07-BF10-F845FA328C98}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletWasabi.Fluent", "WalletWasabi.Fluent\WalletWasabi.Fluent.csproj", "{1E9A8055-DC14-4C7D-8878-887D50B55A10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletAnonTx.Fluent", "WalletAnonTx.Fluent\WalletAnonTx.Fluent.csproj", "{1E9A8055-DC14-4C7D-8878-887D50B55A10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletWasabi.Daemon", "WalletWasabi.Daemon\WalletWasabi.Daemon.csproj", "{29599048-B3F1-48B9-AEBB-1A32D64BC4F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletAnonTx.Daemon", "WalletAnonTx.Daemon\WalletAnonTx.Daemon.csproj", "{29599048-B3F1-48B9-AEBB-1A32D64BC4F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

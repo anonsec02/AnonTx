@@ -1,7 +1,7 @@
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Models;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.CoinJoinProfiles;
+namespace WalletAnonTx.Fluent.ViewModels.CoinJoinProfiles;
 
 public class ManualCoinJoinProfileViewModel : CoinJoinProfileViewModelBase
 {

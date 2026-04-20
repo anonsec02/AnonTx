@@ -6,7 +6,7 @@ using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.VisualTree;
 
-namespace WalletWasabi.Fluent.Views.Shell;
+namespace WalletAnonTx.Fluent.Views.Shell;
 
 public class TitleBar : UserControl
 {

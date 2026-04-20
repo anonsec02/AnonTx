@@ -2,7 +2,7 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace WalletWasabi.Blockchain.TransactionOutputs;
+namespace WalletAnonTx.Blockchain.TransactionOutputs;
 
 public interface ICoinsView : IEnumerable<SmartCoin>
 {

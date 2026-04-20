@@ -1,8 +1,8 @@
 using System.IO;
 using System.Runtime.InteropServices;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Microservices;
+namespace WalletAnonTx.Microservices;
 
 public static class MicroserviceHelpers
 {

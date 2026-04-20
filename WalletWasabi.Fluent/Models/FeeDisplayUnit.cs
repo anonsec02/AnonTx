@@ -1,6 +1,6 @@
-using WalletWasabi.Models;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.Models;
+namespace WalletAnonTx.Fluent.Models;
 
 public enum FeeDisplayUnit
 {

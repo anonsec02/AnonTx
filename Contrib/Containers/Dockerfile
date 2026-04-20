@@ -7,17 +7,17 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ENV DOTNET_CLI_TELEMETRY_OPTOUT=1
 WORKDIR /src
-COPY ["WalletWasabi.Backend/WalletWasabi.Backend.csproj", "WalletWasabi.Backend/"]
-COPY ["WalletWasabi/WalletWasabi.csproj", "WalletWasabi/"]
-RUN dotnet restore "WalletWasabi.Backend/WalletWasabi.Backend.csproj"
+COPY ["WalletAnonTx.Backend/WalletAnonTx.Backend.csproj", "WalletAnonTx.Backend/"]
+COPY ["WalletAnonTx/WalletAnonTx.csproj", "WalletAnonTx/"]
+RUN dotnet restore "WalletAnonTx.Backend/WalletAnonTx.Backend.csproj"
 COPY . .
-WORKDIR "/src/WalletWasabi.Backend"
-RUN dotnet build "WalletWasabi.Backend.csproj" -c Release -o /app/build
+WORKDIR "/src/WalletAnonTx.Backend"
+RUN dotnet build "WalletAnonTx.Backend.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "WalletWasabi.Backend.csproj" -c Release -o /app/publish
+RUN dotnet publish "WalletAnonTx.Backend.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "WalletWasabi.Backend.dll"]
+ENTRYPOINT ["dotnet", "WalletAnonTx.Backend.dll"]

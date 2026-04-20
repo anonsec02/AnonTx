@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.Infrastructure;
+namespace WalletAnonTx.Fluent.Infrastructure;
 
 /// <summary>
 /// Indicates that the decorated application instances do not need to implement IDisposable 

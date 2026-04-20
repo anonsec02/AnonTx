@@ -1,4 +1,4 @@
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.Tiles.PrivacyRing;
 
 public interface IPrivacyRingPreviewItem
 {

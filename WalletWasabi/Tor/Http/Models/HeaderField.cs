@@ -1,10 +1,10 @@
 using System.IO;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using static WalletWasabi.Tor.Http.Constants;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using static WalletAnonTx.Tor.Http.Constants;
 
-namespace WalletWasabi.Tor.Http.Models;
+namespace WalletAnonTx.Tor.Http.Models;
 
 public class HeaderField
 {

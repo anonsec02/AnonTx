@@ -3,13 +3,13 @@ using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Controls.Models.TreeDataGrid;
 using Avalonia.Controls.Templates;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.TreeDataGrid;
-using WalletWasabi.Fluent.ViewModels.CoinControl;
-using WalletWasabi.Fluent.ViewModels.CoinControl.Core;
-using WalletWasabi.Fluent.Views.CoinControl.Core.Cells;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.TreeDataGrid;
+using WalletAnonTx.Fluent.ViewModels.CoinControl;
+using WalletAnonTx.Fluent.ViewModels.CoinControl.Core;
+using WalletAnonTx.Fluent.Views.CoinControl.Core.Cells;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Coins;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Coins;
 
 public static class CoinListDataGridSource
 {

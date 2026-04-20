@@ -1,4 +1,4 @@
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public class AffiliationException : Exception
 {

@@ -1,10 +1,10 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Bases;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.BitcoinCore.Monitoring;
+namespace WalletAnonTx.BitcoinCore.Monitoring;
 
 public class RpcMonitor : PeriodicRunner
 {

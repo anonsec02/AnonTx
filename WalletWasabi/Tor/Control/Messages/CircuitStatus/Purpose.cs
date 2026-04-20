@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control.Messages.CircuitStatus;
+namespace WalletAnonTx.Tor.Control.Messages.CircuitStatus;
 
 /// <seealso href="https://gitweb.torproject.org/torspec.git/tree/control-spec.txt">See section "4.1.1. Circuit status changed".</seealso>
 public enum Purpose

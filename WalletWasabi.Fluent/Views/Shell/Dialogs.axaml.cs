@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.Shell;
+namespace WalletAnonTx.Fluent.Views.Shell;
 
 public class Dialogs : UserControl
 {

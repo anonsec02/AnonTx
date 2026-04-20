@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Avalonia;
 using Avalonia.Media;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public enum AxisPlotMode
 {

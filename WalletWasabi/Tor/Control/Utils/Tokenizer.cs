@@ -1,6 +1,6 @@
-using WalletWasabi.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Exceptions;
 
-namespace WalletWasabi.Tor.Control.Utils;
+namespace WalletAnonTx.Tor.Control.Utils;
 
 /// <summary>
 /// Helper functions for parsing Tor control protocol replies.

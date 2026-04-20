@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.Wallets.Buy;
+namespace WalletAnonTx.Fluent.Views.Wallets.Buy;
 
 public class BuyView : UserControl
 {

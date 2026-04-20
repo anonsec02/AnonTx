@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.Rpc;
+namespace WalletAnonTx.Rpc;
 
 public class PaymentInfo
 {

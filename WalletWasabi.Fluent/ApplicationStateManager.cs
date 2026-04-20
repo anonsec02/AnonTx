@@ -4,19 +4,19 @@ using System.Reactive.Linq;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Providers;
-using WalletWasabi.Fluent.State;
-using WalletWasabi.Fluent.ViewModels;
-using WalletWasabi.Fluent.Views;
-using WalletWasabi.Logging;
-using WalletWasabi.Services;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Providers;
+using WalletAnonTx.Fluent.State;
+using WalletAnonTx.Fluent.ViewModels;
+using WalletAnonTx.Fluent.Views;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Services;
 using Avalonia.Threading;
 
-namespace WalletWasabi.Fluent;
+namespace WalletAnonTx.Fluent;
 
 [AppLifetime]
 public class ApplicationStateManager : IMainWindowService

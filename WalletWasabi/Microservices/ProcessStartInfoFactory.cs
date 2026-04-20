@@ -1,10 +1,10 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace WalletWasabi.Microservices;
+namespace WalletAnonTx.Microservices;
 
 /// <summary>
-/// Factory for <see cref="ProcessStartInfo"/> with pre-defined properties as needed in Wasabi Wallet.
+/// Factory for <see cref="ProcessStartInfo"/> with pre-defined properties as needed in AnonTx Wallet.
 /// </summary>
 public class ProcessStartInfoFactory
 {

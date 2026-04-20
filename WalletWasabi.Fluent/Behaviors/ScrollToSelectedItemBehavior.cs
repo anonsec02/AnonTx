@@ -4,7 +4,7 @@ using System.Reactive.Linq;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class ScrollToSelectedItemBehavior : AttachedToVisualTreeBehavior<Avalonia.Controls.TreeDataGrid>
 {

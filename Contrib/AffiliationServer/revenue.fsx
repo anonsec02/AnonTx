@@ -1,6 +1,6 @@
 #r "nuget:fstoolkit.errorhandling"
 #r "nuget:nbitcoin"
-#r "../../WalletWasabi/bin/Debug/net8.0/WalletWasabi.dll"
+#r "../../WalletAnonTx/bin/Debug/net8.0/WalletAnonTx.dll"
 #r "System.Security.Cryptography.dll"
 
 open System.Security.Cryptography
@@ -12,9 +12,9 @@ open System
 open System.IO
 open Newtonsoft.Json
 open FsToolkit.ErrorHandling
-open WalletWasabi.Affiliation.Models
-open WalletWasabi.Affiliation.Serialization
-open WalletWasabi.Affiliation.Models.CoinJoinNotification
+open WalletAnonTx.Affiliation.Models
+open WalletAnonTx.Affiliation.Serialization
+open WalletAnonTx.Affiliation.Models.CoinJoinNotification
 
 module CommandLine =
     let tryParseArgument (arg : string) =

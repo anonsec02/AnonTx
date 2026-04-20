@@ -4,9 +4,9 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public enum ReplacementMode
 {

@@ -3,7 +3,7 @@ using System.Text;
 using NBitcoin;
 using NBitcoin.Protocol;
 
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 public record CoinJoinInputCommitmentData
 {

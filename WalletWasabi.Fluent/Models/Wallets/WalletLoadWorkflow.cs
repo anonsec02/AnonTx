@@ -5,14 +5,14 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using System.Threading.Tasks;
-using WalletWasabi.Blockchain.BlockFilters;
-using WalletWasabi.Blockchain.Blocks;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Logging;
-using WalletWasabi.Services;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Blockchain.BlockFilters;
+using WalletAnonTx.Blockchain.Blocks;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Services;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class WalletLoadWorkflow
@@ -54,7 +54,7 @@ public partial class WalletLoadWorkflow
 		_stopwatch = Stopwatch.StartNew();
 		_disposables.Add(Disposable.Create(_stopwatch.Stop));
 
-		Observable.FromAsync(() => Services.HostedServices.Get<WasabiSynchronizer>().InitialRequestTcs.Task)
+		Observable.FromAsync(() => Services.HostedServices.Get<AnonTxSynchronizer>().InitialRequestTcs.Task)
 			.ObserveOn(RxApp.MainThreadScheduler)
 			.SubscribeAsync(LoadWalletAsync)
 			.DisposeWith(_disposables);

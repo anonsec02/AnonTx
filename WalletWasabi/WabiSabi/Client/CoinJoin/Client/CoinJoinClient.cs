@@ -5,25 +5,25 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Tor.Socks5.Pool.Circuits;
-using WalletWasabi.WabiSabi.Backend.Models;
-using WalletWasabi.WabiSabi.Backend.Rounds;
-using WalletWasabi.WabiSabi.Client.CoinJoinProgressEvents;
-using WalletWasabi.WabiSabi.Client.CredentialDependencies;
-using WalletWasabi.WabiSabi.Client.RoundStateAwaiters;
-using WalletWasabi.WabiSabi.Client.StatusChangedEvents;
-using WalletWasabi.WabiSabi.Models;
-using WalletWasabi.WabiSabi.Models.MultipartyTransaction;
-using WalletWasabi.WebClients.Wasabi;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Tor.Socks5.Pool.Circuits;
+using WalletAnonTx.WabiSabi.Backend.Models;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Client.CoinJoinProgressEvents;
+using WalletAnonTx.WabiSabi.Client.CredentialDependencies;
+using WalletAnonTx.WabiSabi.Client.RoundStateAwaiters;
+using WalletAnonTx.WabiSabi.Client.StatusChangedEvents;
+using WalletAnonTx.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
+using WalletAnonTx.WebClients.AnonTx;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoin.Client;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
 
 public class CoinJoinClient
 {
@@ -37,7 +37,7 @@ public class CoinJoinClient
 	private static readonly TimeSpan MaximumRequestDelay = TimeSpan.FromSeconds(10);
 
 	public CoinJoinClient(
-		IWasabiHttpClientFactory httpClientFactory,
+		IAnonTxHttpClientFactory httpClientFactory,
 		IKeyChain keyChain,
 		OutputProvider outputProvider,
 		RoundStateUpdater roundStatusUpdater,
@@ -66,7 +66,7 @@ public class CoinJoinClient
 	public ImmutableList<SmartCoin> CoinsInCriticalPhase { get; private set; } = ImmutableList<SmartCoin>.Empty;
 
 	private SecureRandom SecureRandom { get; }
-	private IWasabiHttpClientFactory HttpClientFactory { get; }
+	private IAnonTxHttpClientFactory HttpClientFactory { get; }
 	private IKeyChain KeyChain { get; }
 	private OutputProvider OutputProvider { get; }
 	private RoundStateUpdater RoundStatusUpdater { get; }
@@ -852,7 +852,7 @@ public class CoinJoinClient
 		// lying (it lied us before when it responded with 200 OK to the OutputRegistration requests or it is lying us
 		// now when we identify as satoshi.
 		// In this scenario we should ban the coordinator and stop dealing with it.
-		// see more: https://github.com/zkSNACKs/WalletWasabi/issues/8171
+		// see more: https://github.com/zkSNACKs/WalletAnonTx/issues/8171
 		bool mustSignAllInputs = SanityCheck(outputTxOuts, unsignedCoinJoin.Transaction.Outputs);
 		if (!mustSignAllInputs)
 		{

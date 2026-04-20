@@ -4,14 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Hwi.Exceptions;
-using WalletWasabi.Hwi.Models;
-using WalletWasabi.Hwi.Parsers;
-using WalletWasabi.Hwi.ProcessBridge;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Hwi.Exceptions;
+using WalletAnonTx.Hwi.Models;
+using WalletAnonTx.Hwi.Parsers;
+using WalletAnonTx.Hwi.ProcessBridge;
 
-namespace WalletWasabi.Hwi;
+namespace WalletAnonTx.Hwi;
 
 public class HwiClient
 {

@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.Metadata;
 using Avalonia.Controls.Primitives;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 [TemplatePart("PART_TrimmedTextBlock", typeof(TextBlock))]
 [TemplatePart("PART_NoTrimTextBlock", typeof(FadeOutTextBlock))]

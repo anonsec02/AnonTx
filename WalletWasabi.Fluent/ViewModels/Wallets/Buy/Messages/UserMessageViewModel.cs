@@ -2,10 +2,10 @@ using ReactiveUI;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Messages;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Messages;
 
 public partial class UserMessageViewModel : MessageViewModel
 {

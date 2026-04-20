@@ -1,9 +1,9 @@
 using Avalonia;
 using Avalonia.Controls.Primitives;
 using Avalonia.Media;
-using WalletWasabi.Fluent.Models;
+using WalletAnonTx.Fluent.Models;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class PrivacyBarSegment : TemplatedControl
 {

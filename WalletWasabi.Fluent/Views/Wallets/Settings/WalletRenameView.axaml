@@ -2,9 +2,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Settings"
+             xmlns:vm="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Settings"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Settings.WalletRenameView"
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Settings.WalletRenameView"
              x:DataType="vm:WalletRenameViewModel" >
   <ContentArea Title="{Binding Title}"
                  Caption="You can modify the name of your wallet"

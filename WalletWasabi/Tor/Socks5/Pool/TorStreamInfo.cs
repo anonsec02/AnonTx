@@ -1,6 +1,6 @@
-using WalletWasabi.Tor.Control.Messages.StreamStatus;
+using WalletAnonTx.Tor.Control.Messages.StreamStatus;
 
-namespace WalletWasabi.Tor.Socks5.Pool;
+namespace WalletAnonTx.Tor.Socks5.Pool;
 
 /// <summary>Latest Tor stream state update.</summary>
 /// <remarks>

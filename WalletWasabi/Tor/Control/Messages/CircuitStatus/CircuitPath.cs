@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control.Messages.CircuitStatus;
+namespace WalletAnonTx.Tor.Control.Messages.CircuitStatus;
 
 /// <remarks>
 /// <see cref="FingerPrint"/> is a 40*HEXDIG string.

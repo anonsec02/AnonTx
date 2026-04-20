@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.WabiSabi.Backend.Rounds.CoinJoinStorage;
+namespace WalletAnonTx.WabiSabi.Backend.Rounds.CoinJoinStorage;
 
 public class InMemoryCoinJoinIdStore : ICoinJoinIdStore
 {

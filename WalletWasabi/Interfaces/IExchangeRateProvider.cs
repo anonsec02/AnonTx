@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
+using WalletAnonTx.Backend.Models;
 
-namespace WalletWasabi.Interfaces;
+namespace WalletAnonTx.Interfaces;
 
 public interface IExchangeRateProvider
 {

@@ -3,11 +3,11 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using WalletWasabi.Crypto;
-using WalletWasabi.Extensions;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.WabiSabi.Models.MultipartyTransaction;
+namespace WalletAnonTx.WabiSabi.Models.MultipartyTransaction;
 
 public interface IEvent
 { }

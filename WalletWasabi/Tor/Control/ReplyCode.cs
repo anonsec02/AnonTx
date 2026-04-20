@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control;
+namespace WalletAnonTx.Tor.Control;
 
 /// <summary>
 /// An enumerator containing the status codes sent in response to commands.

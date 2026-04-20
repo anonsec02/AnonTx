@@ -1,4 +1,4 @@
-namespace WalletWasabi.WabiSabi.Client.CredentialDependencies;
+namespace WalletAnonTx.WabiSabi.Client.CredentialDependencies;
 
 public enum CredentialType
 {

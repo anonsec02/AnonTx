@@ -5,11 +5,11 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
-using WalletWasabi.Services.Terminate;
-using WalletWasabi.Wallets.BlockProvider;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Services.Terminate;
+using WalletAnonTx.Wallets.BlockProvider;
 
-namespace WalletWasabi.Wallets.FilterProcessor;
+namespace WalletAnonTx.Wallets.FilterProcessor;
 
 /// <summary>
 /// Service that prioritizes and handles block downloads.

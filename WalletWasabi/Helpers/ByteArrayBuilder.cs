@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 public class ByteArrayBuilder
 {

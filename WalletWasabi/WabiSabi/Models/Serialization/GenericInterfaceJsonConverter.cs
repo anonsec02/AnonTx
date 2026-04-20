@@ -3,7 +3,7 @@ using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace WalletWasabi.WabiSabi.Models.Serialization;
+namespace WalletAnonTx.WabiSabi.Models.Serialization;
 
 public class GenericInterfaceJsonConverter<T> : JsonConverter<T>
 {

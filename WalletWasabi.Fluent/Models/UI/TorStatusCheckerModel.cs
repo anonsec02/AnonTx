@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Linq;
-using WalletWasabi.Tor.StatusChecker;
+using WalletAnonTx.Tor.StatusChecker;
 
-namespace WalletWasabi.Fluent.Models.UI;
+namespace WalletAnonTx.Fluent.Models.UI;
 
 [AutoInterface]
 public partial class TorStatusCheckerModel

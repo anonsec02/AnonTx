@@ -1,4 +1,4 @@
-namespace WalletWasabi.Interfaces;
+namespace WalletAnonTx.Interfaces;
 
 public interface IConfig
 {

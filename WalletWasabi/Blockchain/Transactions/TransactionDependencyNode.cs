@@ -1,7 +1,7 @@
 using NBitcoin;
 using System.Collections.Generic;
 
-namespace WalletWasabi.Blockchain.Transactions;
+namespace WalletAnonTx.Blockchain.Transactions;
 
 public class TransactionDependencyNode
 {

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using NBitcoin;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Crypto;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Crypto;
 
-namespace WalletWasabi.WabiSabi.Client;
+namespace WalletAnonTx.WabiSabi.Client;
 
 public interface IKeyChain
 {

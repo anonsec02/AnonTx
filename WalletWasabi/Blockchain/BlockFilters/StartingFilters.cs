@@ -1,9 +1,9 @@
 using NBitcoin;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Blockchain.Blocks;
-using WalletWasabi.Exceptions;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Blockchain.Blocks;
+using WalletAnonTx.Exceptions;
 
-namespace WalletWasabi.Blockchain.BlockFilters;
+namespace WalletAnonTx.Blockchain.BlockFilters;
 
 public static class StartingFilters
 {

@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 
-namespace WalletWasabi.Packager;
+namespace WalletAnonTx.Packager;
 
 public static class Tools
 {

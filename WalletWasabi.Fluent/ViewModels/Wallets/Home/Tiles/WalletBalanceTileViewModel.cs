@@ -1,6 +1,6 @@
-using WalletWasabi.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Models.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.Tiles;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.Tiles;
 
 public class WalletBalanceTileViewModel : ActivatableViewModel
 {

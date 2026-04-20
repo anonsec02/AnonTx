@@ -1,7 +1,7 @@
 using System.Reactive.Disposables;
 using Avalonia.Xaml.Interactivity;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public abstract class DisposingTrigger : Trigger
 {

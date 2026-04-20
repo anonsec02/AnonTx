@@ -3,13 +3,13 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Send;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
 public partial class LabelSelectionViewModel : ViewModelBase
 {

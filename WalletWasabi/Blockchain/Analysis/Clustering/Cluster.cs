@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Bases;
-using WalletWasabi.Blockchain.Keys;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Blockchain.Keys;
 
-namespace WalletWasabi.Blockchain.Analysis.Clustering;
+namespace WalletAnonTx.Blockchain.Analysis.Clustering;
 
 public class Cluster : NotifyPropertyChangedBase, IEquatable<Cluster>
 {

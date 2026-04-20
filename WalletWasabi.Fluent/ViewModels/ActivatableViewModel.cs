@@ -1,6 +1,6 @@
 using System.Reactive.Disposables;
 
-namespace WalletWasabi.Fluent.ViewModels;
+namespace WalletAnonTx.Fluent.ViewModels;
 
 public class ActivatableViewModel : ViewModelBase
 {

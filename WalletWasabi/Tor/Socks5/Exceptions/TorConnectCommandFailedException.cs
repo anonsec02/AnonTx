@@ -1,7 +1,7 @@
-using WalletWasabi.Helpers;
-using WalletWasabi.Tor.Socks5.Models.Fields.OctetFields;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Tor.Socks5.Models.Fields.OctetFields;
 
-namespace WalletWasabi.Tor.Socks5.Exceptions;
+namespace WalletAnonTx.Tor.Socks5.Exceptions;
 
 /// <summary>
 /// Thrown when Tor SOCKS5 responds with an error code to previously sent <see cref="CmdField.Connect"/> command.

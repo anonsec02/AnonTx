@@ -7,26 +7,26 @@ using Avalonia.Controls;
 using DynamicData;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Affiliation.Models;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Announcement;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Fluent.ViewModels.NavBar;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Fluent.ViewModels.SearchBar;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
-using WalletWasabi.Fluent.ViewModels.Settings;
-using WalletWasabi.Fluent.ViewModels.StatusIcon;
-using WalletWasabi.Fluent.ViewModels.Wallets;
-using WalletWasabi.Fluent.ViewModels.Wallets.Notifications;
+using WalletAnonTx.Affiliation.Models;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Announcement;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.NavBar;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.SearchBar;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
+using WalletAnonTx.Fluent.ViewModels.Settings;
+using WalletAnonTx.Fluent.ViewModels.StatusIcon;
+using WalletAnonTx.Fluent.ViewModels.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Notifications;
 
-namespace WalletWasabi.Fluent.ViewModels;
+namespace WalletAnonTx.Fluent.ViewModels;
 
 [AppLifetime]
 public partial class MainViewModel : ViewModelBase
 {
-	[AutoNotify] private string _title = "Wasabi Wallet";
+	[AutoNotify] private string _title = "AnonTx Wallet";
 	[AutoNotify] private WindowState _windowState;
 	[AutoNotify] private bool _isOobeBackgroundVisible;
 	[AutoNotify] private bool _isCoinJoinActive;

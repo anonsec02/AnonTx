@@ -1,13 +1,13 @@
 using NBitcoin;
 using System.Linq;
 using System.Collections.Generic;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionOutputs;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionOutputs;
 using System.Collections.Immutable;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Blockchain.TransactionBuilding;
+namespace WalletAnonTx.Blockchain.TransactionBuilding;
 
 public class SmartCoinSelector : ICoinSelector
 {

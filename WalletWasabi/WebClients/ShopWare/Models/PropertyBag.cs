@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.WebClients.ShopWare.Models;
+namespace WalletAnonTx.WebClients.ShopWare.Models;
 
 public class PropertyBag : Dictionary<string, object>
 {

@@ -3,10 +3,10 @@ using System.IO;
 using System.IO.Pipelines;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Messages;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Messages;
 
-namespace WalletWasabi.Tor.Control;
+namespace WalletAnonTx.Tor.Control;
 
 public class TorControlReplyReader
 {

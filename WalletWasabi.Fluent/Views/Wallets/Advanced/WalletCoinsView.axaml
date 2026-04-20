@@ -3,12 +3,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             xmlns:coins="clr-namespace:WalletWasabi.Fluent.Views.Wallets.Coins"
-             xmlns:advanced="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Advanced"
-             xmlns:sorting="clr-namespace:WalletWasabi.Fluent.Controls.Sorting"
+             xmlns:coins="clr-namespace:WalletAnonTx.Fluent.Views.Wallets.Coins"
+             xmlns:advanced="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Advanced"
+             xmlns:sorting="clr-namespace:WalletAnonTx.Fluent.Controls.Sorting"
              x:DataType="advanced:WalletCoinsViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Advanced.WalletCoinsView">
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Advanced.WalletCoinsView">
   <ContentArea Title="{Binding Title}"
                Caption="A list of coins that you own, optionally you can send them without change."
                EnableNext="True" NextContent="Done"

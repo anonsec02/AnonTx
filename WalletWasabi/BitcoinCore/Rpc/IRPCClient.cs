@@ -3,9 +3,9 @@ using NBitcoin.RPC;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BitcoinCore.Rpc.Models;
+using WalletAnonTx.BitcoinCore.Rpc.Models;
 
-namespace WalletWasabi.BitcoinCore.Rpc;
+namespace WalletAnonTx.BitcoinCore.Rpc;
 
 public interface IRPCClient
 {

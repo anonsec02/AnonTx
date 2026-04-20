@@ -2,11 +2,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:recoverWallet="using:WalletWasabi.Fluent.ViewModels.AddWallet"
+             xmlns:recoverWallet="using:WalletAnonTx.Fluent.ViewModels.AddWallet"
              mc:Ignorable="d" d:DesignWidth="428" d:DesignHeight="371"
              x:DataType="recoverWallet:RecoverWalletViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.AddWallet.RecoverWalletView">
+             x:Class="WalletAnonTx.Fluent.Views.AddWallet.RecoverWalletView">
   <ContentArea x:Name="RecoveryPageRoot"
                  Title="{Binding Title}"
                  CancelContent="Cancel"

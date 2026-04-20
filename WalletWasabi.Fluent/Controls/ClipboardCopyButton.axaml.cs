@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls.Primitives;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Controls;
+namespace WalletAnonTx.Fluent.Controls;
 
 public class ClipboardCopyButton : TemplatedControl
 {

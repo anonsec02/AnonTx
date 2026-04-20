@@ -4,7 +4,7 @@ using Avalonia.Platform;
 using Avalonia.Rendering.SceneGraph;
 using Avalonia.Skia;
 
-namespace WalletWasabi.Fluent.Controls.Spectrum;
+namespace WalletAnonTx.Fluent.Controls.Spectrum;
 
 public class SpectrumDrawOperation : ICustomDrawOperation
 {

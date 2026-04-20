@@ -1,11 +1,11 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using WalletWasabi.Fluent.CrashReport.ViewModels;
-using WalletWasabi.Models;
-using WalletWasabi.Fluent.CrashReport.Views;
+using WalletAnonTx.Fluent.CrashReport.ViewModels;
+using WalletAnonTx.Models;
+using WalletAnonTx.Fluent.CrashReport.Views;
 
-namespace WalletWasabi.Fluent.CrashReport;
+namespace WalletAnonTx.Fluent.CrashReport;
 
 public class CrashReportApp : Application
 {
@@ -13,7 +13,7 @@ public class CrashReportApp : Application
 
 	public CrashReportApp()
 	{
-		Name = "Wasabi Wallet Crash Report";
+		Name = "AnonTx Wallet Crash Report";
 	}
 
 	public CrashReportApp(SerializableException exception) : this()

@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using DynamicData;
 using DynamicData.Binding;
 using ReactiveUI;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Fluent.ViewModels.Wallets;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.NavBar;
+namespace WalletAnonTx.Fluent.ViewModels.NavBar;
 
 /// <summary>
 /// The ViewModel that represents the structure of the sidebar.

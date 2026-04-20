@@ -1,7 +1,7 @@
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Extensions;
+namespace WalletAnonTx.Fluent.Extensions;
 
 public static class TransactionSummaryExtensions
 {

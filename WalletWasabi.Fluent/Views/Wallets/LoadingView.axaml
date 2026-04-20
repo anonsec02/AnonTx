@@ -2,11 +2,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="using:WalletWasabi.Fluent.ViewModels.Wallets"
+             xmlns:vm="using:WalletAnonTx.Fluent.ViewModels.Wallets"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:DataType="vm:LoadingViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.LoadingView">
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.LoadingView">
   <ContentArea Title="{Binding WalletName, FallbackValue=My Wallet with a very long name}"
                ScrollViewer.VerticalScrollBarVisibility="Disabled">
     <Panel>
@@ -27,7 +27,7 @@
           <TextBlock Text="Downloading and processing Bitcoin network data" TextAlignment="Center" FontSize="22"
                      DockPanel.Dock="Bottom" />
           <TextBlock
-            Text="Wasabi does this without any third party knowing about your balance and financial activity."
+            Text="AnonTx does this without any third party knowing about your balance and financial activity."
             TextAlignment="Center" TextWrapping="Wrap" Opacity="0.6" />
 
           <TextBlock

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using WalletWasabi.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public class LabelsComparer : IEqualityComparer<LabelsArray>
 {

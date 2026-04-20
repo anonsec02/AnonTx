@@ -5,10 +5,10 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using static WalletWasabi.Tor.Http.Constants;
+using WalletAnonTx.Extensions;
+using static WalletAnonTx.Tor.Http.Constants;
 
-namespace WalletWasabi.Tor.Http.Models;
+namespace WalletAnonTx.Tor.Http.Models;
 
 public class HeaderSection
 {

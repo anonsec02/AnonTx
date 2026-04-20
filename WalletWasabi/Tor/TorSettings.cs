@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Runtime.InteropServices;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Microservices;
-using WalletWasabi.Models;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Microservices;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Tor;
+namespace WalletAnonTx.Tor;
 
 /// <summary>
 /// All Tor-related settings.
@@ -18,10 +18,10 @@ public class TorSettings
 	/// <summary>Tor binary file name without extension.</summary>
 	public const string TorBinaryFileName = "tor";
 
-	/// <summary>Default port assigned to Tor SOCKS5 for the Wasabi's bundled Tor.</summary>
+	/// <summary>Default port assigned to Tor SOCKS5 for the AnonTx's bundled Tor.</summary>
 	public const int DefaultSocksPort = 37150;
 
-	/// <summary>Default port assigned to Tor control for the Wasabi's bundled Tor.</summary>
+	/// <summary>Default port assigned to Tor control for the AnonTx's bundled Tor.</summary>
 	public const int DefaultControlPort = 37151;
 
 	public TorSettings(
@@ -38,9 +38,9 @@ public class TorSettings
 	{
 		IsCustomTorFolder = torFolder is not null;
 
-		bool defaultWasabiTorPorts = socksPort == DefaultSocksPort && controlPort == DefaultControlPort;
+		bool defaultAnonTxTorPorts = socksPort == DefaultSocksPort && controlPort == DefaultControlPort;
 
-		if (defaultWasabiTorPorts)
+		if (defaultAnonTxTorPorts)
 		{
 			// Use different ports when user overrides Tor folder to avoid accessing the same control_auth_cookie file.
 			if (IsCustomTorFolder)
@@ -66,7 +66,7 @@ public class TorSettings
 		Bridges = bridges ?? [];
 		OwningProcessId = owningProcessId;
 
-		CookieAuthFilePath = defaultWasabiTorPorts
+		CookieAuthFilePath = defaultAnonTxTorPorts
 			? Path.Combine(dataDir, $"control_auth_cookie")
 			: Path.Combine(dataDir, $"control_auth_cookie_{socksPort}_{controlPort}");
 
@@ -76,7 +76,7 @@ public class TorSettings
 
 		if (torMode == TorMode.EnabledOnlyRunning && terminateOnExit)
 		{
-			Logger.LogWarning("Wasabi is instructed to use a running Tor process. Terminate on exit was disabled.");
+			Logger.LogWarning("AnonTx is instructed to use a running Tor process. Terminate on exit was disabled.");
 		}
 
 		TorMode = torMode;
@@ -107,7 +107,7 @@ public class TorSettings
 	/// <summary>Full Tor distribution folder where Tor installation files are located.</summary>
 	public string DistributionFolder { get; }
 
-	/// <summary>Whether Tor should be terminated when Wasabi Wallet terminates.</summary>
+	/// <summary>Whether Tor should be terminated when AnonTx Wallet terminates.</summary>
 	public bool TerminateOnExit { get; }
 
 	/// <summary>Array of bridges to use.</summary>

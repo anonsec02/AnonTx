@@ -1,11 +1,11 @@
 using System.Reactive.Linq;
 using ReactiveUI;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Fluent.Validation;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Models;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Fluent.Validation;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs;
 
 [NavigationMetaData(Title = "Advanced Recovery Options", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class AdvancedRecoveryOptionsViewModel : DialogViewModelBase<int?>

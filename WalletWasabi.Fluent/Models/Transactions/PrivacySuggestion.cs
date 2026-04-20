@@ -1,11 +1,11 @@
 using NBitcoin;
 using System.Collections.Generic;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Fluent.Extensions;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Fluent.Extensions;
 
-namespace WalletWasabi.Fluent.Models.Transactions;
+namespace WalletAnonTx.Fluent.Models.Transactions;
 
 // TODO: Case Types should be nested inside the base, and remove the "Suggestion" Suffix
 // Avalonia XAML currently does not support {x:Type} references to nested types (https://github.com/AvaloniaUI/Avalonia/issues/2725)

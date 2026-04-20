@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace WalletWasabi.Logging;
+namespace WalletAnonTx.Logging;
 
 public enum LogMode
 {

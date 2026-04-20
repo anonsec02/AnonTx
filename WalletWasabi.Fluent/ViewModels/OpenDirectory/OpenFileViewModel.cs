@@ -1,9 +1,9 @@
 using System.Windows.Input;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.UI;
 
-namespace WalletWasabi.Fluent.ViewModels.OpenDirectory;
+namespace WalletAnonTx.Fluent.ViewModels.OpenDirectory;
 
 public abstract class OpenFileViewModel : TriggerCommandViewModel
 {
@@ -23,7 +23,7 @@ public abstract class OpenFileViewModel : TriggerCommandViewModel
 			}
 			catch (Exception ex)
 			{
-				await ShowErrorAsync("Open", ex.ToUserFriendlyString(), "Wasabi was unable to open the file");
+				await ShowErrorAsync("Open", ex.ToUserFriendlyString(), "AnonTx was unable to open the file");
 			}
 		});
 }

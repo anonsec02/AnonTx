@@ -1,9 +1,9 @@
-using WalletWasabi.Helpers;
-using WalletWasabi.Tor.Socks5.Models.Bases;
-using WalletWasabi.Tor.Socks5.Models.Fields.ByteArrayFields;
-using WalletWasabi.Tor.Socks5.Models.Fields.OctetFields;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Tor.Socks5.Models.Bases;
+using WalletAnonTx.Tor.Socks5.Models.Fields.ByteArrayFields;
+using WalletAnonTx.Tor.Socks5.Models.Fields.OctetFields;
 
-namespace WalletWasabi.Tor.Socks5.Models.Messages;
+namespace WalletAnonTx.Tor.Socks5.Models.Messages;
 
 public class UsernamePasswordRequest : ByteArraySerializableBase
 {

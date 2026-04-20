@@ -3,13 +3,13 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Logging;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.History.Features;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.Features;
 
 [NavigationMetaData(Title = "Cancel Transaction", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class CancelTransactionDialogViewModel : RoutableViewModel
@@ -66,7 +66,7 @@ public partial class CancelTransactionDialogViewModel : RoutableViewModel
 		{
 			Logger.LogError(ex);
 			var msg = cancellingTransaction.TargetTransaction.IsConfirmed ? "The transaction is already confirmed." : ex.ToUserFriendlyString();
-			UiContext.Navigate().To().ShowErrorDialog(msg, "Cancellation Failed", "Wasabi was unable to cancel your transaction.", NavigationTarget.CompactDialogScreen);
+			UiContext.Navigate().To().ShowErrorDialog(msg, "Cancellation Failed", "AnonTx was unable to cancel your transaction.", NavigationTarget.CompactDialogScreen);
 		}
 
 		IsBusy = false;

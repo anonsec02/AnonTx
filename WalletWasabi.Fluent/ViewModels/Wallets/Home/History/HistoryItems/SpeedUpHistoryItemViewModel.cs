@@ -1,8 +1,8 @@
 using ReactiveUI;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Home.History.HistoryItems;
 
 public partial class SpeedUpHistoryItemViewModel : HistoryItemViewModelBase
 {

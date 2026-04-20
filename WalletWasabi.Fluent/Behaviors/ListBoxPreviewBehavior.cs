@@ -8,7 +8,7 @@ using Avalonia.VisualTree;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class ListBoxPreviewBehavior : DisposingBehavior<ListBox>
 {

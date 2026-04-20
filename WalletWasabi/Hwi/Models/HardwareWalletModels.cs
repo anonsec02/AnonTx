@@ -1,6 +1,6 @@
-using WalletWasabi.Models;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Hwi.Models;
+namespace WalletAnonTx.Hwi.Models;
 
 /// <summary>
 /// Source: https://github.com/bitcoin-core/HWI/pull/228

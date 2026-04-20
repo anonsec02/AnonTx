@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Socks5.Models;
+namespace WalletAnonTx.Tor.Socks5.Models;
 
 /// <seealso href="https://github.com/torproject/torspec/blob/main/proposals/304-socks5-extending-hs-error-codes.txt"/>
 /// <seealso href="https://github.com/torproject/tor/blob/ea2ada6d1459f829446b6b1e66c557d1b084e78b/src/lib/net/socks5_status.h"/>

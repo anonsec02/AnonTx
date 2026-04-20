@@ -9,12 +9,12 @@ using System.Text;
 using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
-using WalletWasabi.Tor.Control.Exceptions;
-using WalletWasabi.Tor.Control.Messages;
-using WalletWasabi.Tor.Control.Utils;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Tor.Control.Exceptions;
+using WalletAnonTx.Tor.Control.Messages;
+using WalletAnonTx.Tor.Control.Utils;
 
-namespace WalletWasabi.Tor.Control;
+namespace WalletAnonTx.Tor.Control;
 
 /// <summary>Client already authenticated to Tor Control.</summary>
 public class TorControlClient : IAsyncDisposable

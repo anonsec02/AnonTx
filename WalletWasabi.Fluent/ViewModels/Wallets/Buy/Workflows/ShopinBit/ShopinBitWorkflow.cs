@@ -3,10 +3,10 @@ using System.Reactive.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Wallets;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows.ShopinBit;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows.ShopinBit;
 
 public sealed partial class ShopinBitWorkflow : Workflow
 {

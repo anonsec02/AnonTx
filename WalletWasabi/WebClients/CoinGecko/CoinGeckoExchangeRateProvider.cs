@@ -3,12 +3,12 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Helpers;
-using WalletWasabi.Interfaces;
-using WalletWasabi.Tor.Http.Extensions;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Interfaces;
+using WalletAnonTx.Tor.Http.Extensions;
 
-namespace WalletWasabi.WebClients.CoinGecko;
+namespace WalletAnonTx.WebClients.CoinGecko;
 
 public class CoinGeckoExchangeRateProvider : IExchangeRateProvider
 {
@@ -22,7 +22,7 @@ public class CoinGeckoExchangeRateProvider : IExchangeRateProvider
 		};
 #pragma warning restore RS0030 // Do not use banned APIs
 
-		httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("WasabiWallet", Constants.ClientVersion.ToString()));
+		httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("AnonTxWallet", Constants.ClientVersion.ToString()));
 		using var response = await httpClient.GetAsync("api/v3/coins/markets?vs_currency=usd&ids=bitcoin", cancellationToken).ConfigureAwait(false);
 		using var content = response.Content;
 		var rates = await content.ReadAsJsonAsync<CoinGeckoExchangeRate[]>().ConfigureAwait(false);

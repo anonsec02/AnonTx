@@ -1,6 +1,6 @@
-using WalletWasabi.BuyAnything;
+using WalletAnonTx.BuyAnything;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
 public interface IMessageEditor
 {

@@ -4,9 +4,9 @@ using Avalonia.Media;
 using Avalonia.Skia;
 using Avalonia.Threading;
 using SkiaSharp;
-using WalletWasabi.Fluent.Controls.Rendering;
+using WalletAnonTx.Fluent.Controls.Rendering;
 
-namespace WalletWasabi.Fluent.Controls.Spectrum;
+namespace WalletAnonTx.Fluent.Controls.Spectrum;
 
 public class SpectrumDrawHandler : IDrawHandler
 {

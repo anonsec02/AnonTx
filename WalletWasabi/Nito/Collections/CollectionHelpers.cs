@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
 namespace Nito.Collections;
 

@@ -1,6 +1,6 @@
 using NBitcoin;
 
-namespace WalletWasabi.Affiliation.Models.CoinJoinNotification;
+namespace WalletAnonTx.Affiliation.Models.CoinJoinNotification;
 
 public record Output(long Amount, byte[] ScriptPubkey)
 {

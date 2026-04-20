@@ -1,9 +1,9 @@
 using System.Globalization;
 using Avalonia;
 using Avalonia.Data.Converters;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public static class EnumConverters
 {

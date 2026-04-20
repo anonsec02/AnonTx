@@ -3,23 +3,23 @@ using Nito.AsyncEx;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models.Responses;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Services;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Backend.Models.Responses;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Services;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.CoinJoin.Client;
+namespace WalletAnonTx.CoinJoin.Client;
 
 public class CoinJoinProcessor : IDisposable
 {
 	private volatile bool _disposedValue = false; // To detect redundant calls
 
-	public CoinJoinProcessor(Network network, WasabiSynchronizer synchronizer, WalletManager walletManager, IRPCClient? rpc)
+	public CoinJoinProcessor(Network network, AnonTxSynchronizer synchronizer, WalletManager walletManager, IRPCClient? rpc)
 	{
 		Synchronizer = Guard.NotNull(nameof(synchronizer), synchronizer);
 		WalletManager = Guard.NotNull(nameof(walletManager), walletManager);
@@ -29,7 +29,7 @@ public class CoinJoinProcessor : IDisposable
 		Synchronizer.ResponseArrived += Synchronizer_ResponseArrivedAsync;
 	}
 
-	public WasabiSynchronizer Synchronizer { get; }
+	public AnonTxSynchronizer Synchronizer { get; }
 	public WalletManager WalletManager { get; }
 	public Network Network { get; }
 	public IRPCClient? RpcClient { get; private set; }
@@ -49,7 +49,7 @@ public class CoinJoinProcessor : IDisposable
 
 				var txsNotKnownByAWallet = WalletManager.FilterUnknownCoinjoins(unconfirmedCoinJoinHashes);
 
-				var client = Synchronizer.HttpClientFactory.SharedWasabiClient;
+				var client = Synchronizer.HttpClientFactory.SharedAnonTxClient;
 				var unconfirmedCoinJoins = await client.GetTransactionsAsync(Network, txsNotKnownByAWallet, CancellationToken.None).ConfigureAwait(false);
 
 				foreach (var tx in unconfirmedCoinJoins.Select(x => new SmartTransaction(x, Height.Mempool)))

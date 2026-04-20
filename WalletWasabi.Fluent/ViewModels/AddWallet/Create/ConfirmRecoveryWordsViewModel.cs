@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using DynamicData;
 using DynamicData.Binding;
 using ReactiveUI;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.AddWallet.Create;
+namespace WalletAnonTx.Fluent.ViewModels.AddWallet.Create;
 
 [NavigationMetaData(Title = "Confirm Recovery Words")]
 public partial class ConfirmRecoveryWordsViewModel : RoutableViewModel

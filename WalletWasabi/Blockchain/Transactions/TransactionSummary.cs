@@ -1,8 +1,8 @@
 using NBitcoin;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Models;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Blockchain.Transactions;
+namespace WalletAnonTx.Blockchain.Transactions;
 
 public class TransactionSummary
 {

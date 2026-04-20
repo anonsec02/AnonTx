@@ -1,8 +1,8 @@
 using NBitcoin;
 using System.Diagnostics.CodeAnalysis;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.WabiSabi.Backend.Banning;
+namespace WalletAnonTx.WabiSabi.Backend.Banning;
 
 public record Innocent(
 	OutPoint Outpoint,

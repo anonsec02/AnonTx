@@ -2,10 +2,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows"
-             xmlns:helpAndSupport="clr-namespace:WalletWasabi.Fluent.Views.HelpAndSupport"
+             xmlns:vm="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows"
+             xmlns:helpAndSupport="clr-namespace:WalletAnonTx.Fluent.Views.HelpAndSupport"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Buy.UserInputValidatorView">
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Buy.UserInputValidatorView">
   <!-- x:DataType="vm:InputValidator" -->
   <!-- x:CompileBindings="True" -->
   <ContentControl Content="{Binding .}">

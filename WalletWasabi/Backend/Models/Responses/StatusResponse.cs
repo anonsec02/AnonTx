@@ -1,4 +1,4 @@
-namespace WalletWasabi.Backend.Models.Responses;
+namespace WalletAnonTx.Backend.Models.Responses;
 
 public class StatusResponse
 {

@@ -1,4 +1,4 @@
-namespace WalletWasabi.WebClients.ShopWare.Models;
+namespace WalletAnonTx.WebClients.ShopWare.Models;
 
 public record OrderGenerationResponse
 (

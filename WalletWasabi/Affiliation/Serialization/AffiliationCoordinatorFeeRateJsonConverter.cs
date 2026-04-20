@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
-using WalletWasabi.Affiliation.Models.CoinJoinNotification;
+using WalletAnonTx.Affiliation.Models.CoinJoinNotification;
 
-namespace WalletWasabi.Affiliation.Serialization;
+namespace WalletAnonTx.Affiliation.Serialization;
 
 public class AffiliationCoordinatorFeeRateJsonConverter : JsonConverter<CoordinatorFeeRate>
 {

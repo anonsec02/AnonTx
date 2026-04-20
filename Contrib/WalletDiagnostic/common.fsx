@@ -19,7 +19,7 @@ module Config =
 
   let getConfig () = Config.Load(
     Path.Combine (
-      Environment.ExpandEnvironmentVariables ("%HOME%/.walletwasabi/client/"),
+      Environment.ExpandEnvironmentVariables ("%HOME%/.walletanontx/client/"),
       "Config.json"))
 
 module Rpc =

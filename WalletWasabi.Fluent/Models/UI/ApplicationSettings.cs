@@ -6,19 +6,19 @@ using System.Net;
 using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
-using WalletWasabi.Bases;
-using WalletWasabi.Daemon;
-using WalletWasabi.Exceptions;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Userfacing;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Daemon;
+using WalletAnonTx.Exceptions;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Userfacing;
 using Unit = System.Reactive.Unit;
 
-namespace WalletWasabi.Fluent.Models.UI;
+namespace WalletAnonTx.Fluent.Models.UI;
 
 [AppLifetime]
 [AutoInterface]

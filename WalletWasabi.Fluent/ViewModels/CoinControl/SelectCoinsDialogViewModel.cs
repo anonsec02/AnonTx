@@ -4,13 +4,13 @@ using System.Reactive.Linq;
 using DynamicData;
 using DynamicData.Binding;
 using ReactiveUI;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Fluent.ViewModels.Wallets.Coins;
-using WalletWasabi.Fluent.ViewModels.Wallets.Send;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Coins;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Send;
 
-namespace WalletWasabi.Fluent.ViewModels.CoinControl;
+namespace WalletAnonTx.Fluent.ViewModels.CoinControl;
 
 [NavigationMetaData(
 	Title = "Coin Control",

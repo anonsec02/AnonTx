@@ -9,20 +9,20 @@ using DynamicData;
 using DynamicData.Binding;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Infrastructure;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Fluent.ViewModels.Navigation;
-using WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
-using WalletWasabi.Fluent.ViewModels.Wallets.Buy;
-using WalletWasabi.Fluent.ViewModels.Wallets.Home.History;
-using WalletWasabi.Fluent.ViewModels.Wallets.Home.Tiles;
-using WalletWasabi.Fluent.ViewModels.Wallets.Settings;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Infrastructure;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Buy;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Home.History;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Home.Tiles;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Settings;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets;
 
 [AppLifetime]
 public partial class WalletViewModel : RoutableViewModel, IWalletViewModel

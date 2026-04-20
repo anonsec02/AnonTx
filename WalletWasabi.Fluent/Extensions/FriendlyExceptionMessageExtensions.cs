@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Net.Http;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Helpers;
-using WalletWasabi.Hwi.Exceptions;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Hwi.Exceptions;
 
-namespace WalletWasabi.Fluent.Extensions;
+namespace WalletAnonTx.Fluent.Extensions;
 
 public static class FriendlyExceptionMessageExtensions
 {
@@ -26,7 +26,7 @@ public static class FriendlyExceptionMessageExtensions
 		{
 			HwiException hwiEx => GetFriendlyHwiExceptionMessage(hwiEx),
 			HttpRequestException => "Something went wrong. Please try again.",
-			UnauthorizedAccessException => "Wasabi was unable to perform this action due to a lack of permission.",
+			UnauthorizedAccessException => "AnonTx was unable to perform this action due to a lack of permission.",
 			_ => ex.Message
 		};
 	}

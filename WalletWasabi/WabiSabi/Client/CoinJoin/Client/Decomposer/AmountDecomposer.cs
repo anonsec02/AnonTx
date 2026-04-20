@@ -2,9 +2,9 @@ using NBitcoin;
 using System.Collections.Generic;
 using System.Linq;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.WabiSabi.Client.CoinJoin.Client.Decomposer;
+namespace WalletAnonTx.WabiSabi.Client.CoinJoin.Client.Decomposer;
 
 /// <summary>
 /// Pull requests to this file must be up to date with this simulation to ensure correctness: https://github.com/nopara73/Sake
@@ -16,7 +16,7 @@ public class AmountDecomposer
 	/// <param name="maxAllowedOutputAmount">Max output amount that's allowed to be registered.</param>
 	/// <param name="availableVsize">Available virtual size for outputs.</param>
 	/// <param name="random">Allows testing by setting a seed value for the random number generator.</param>
-	public AmountDecomposer(FeeRate feeRate, Money minAllowedOutputAmount, Money maxAllowedOutputAmount, int availableVsize, IEnumerable<ScriptType> allowedOutputTypes, WasabiRandom random)
+	public AmountDecomposer(FeeRate feeRate, Money minAllowedOutputAmount, Money maxAllowedOutputAmount, int availableVsize, IEnumerable<ScriptType> allowedOutputTypes, AnonTxRandom random)
 	{
 		FeeRate = feeRate;
 
@@ -41,7 +41,7 @@ public class AmountDecomposer
 	public IOrderedEnumerable<Output> Denominations { get; }
 	public ScriptType ChangeScriptType { get; }
 	public Money ChangeFee => FeeRate.GetFee(ChangeScriptType.EstimateOutputVsize());
-	private WasabiRandom Random { get; }
+	private AnonTxRandom Random { get; }
 
 	private IEnumerable<Output> GetFilteredDenominations(IEnumerable<Money> allInputEffectiveValues)
 	{

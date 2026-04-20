@@ -1,15 +1,15 @@
 using System.Linq;
 using System.Collections.Immutable;
 using System.Net.Http;
-using WalletWasabi.Affiliation.Models;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.Affiliation.Models;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Tor.Http;
+using WalletAnonTx.Tor.Http;
 using Microsoft.Extensions.Hosting;
-using WalletWasabi.WabiSabi.Backend;
+using WalletAnonTx.WabiSabi.Backend;
 
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public class AffiliationManager : BackgroundService
 {

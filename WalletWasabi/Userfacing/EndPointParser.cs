@@ -1,10 +1,10 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Userfacing;
+namespace WalletAnonTx.Userfacing;
 
 public static class EndPointParser
 {

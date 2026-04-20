@@ -2,7 +2,7 @@ using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 using Gma.QrCodeNet.Encoding;
 
-namespace WalletWasabi.Fluent.Models.UI;
+namespace WalletAnonTx.Fluent.Models.UI;
 
 [AutoInterface]
 public partial class QrCodeGenerator

@@ -2,14 +2,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:wallets="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets"
-             xmlns:home="using:WalletWasabi.Fluent.Views.Wallets.Home"
-             xmlns:history="using:WalletWasabi.Fluent.Views.Wallets.Home.History"
+             xmlns:wallets="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets"
+             xmlns:home="using:WalletAnonTx.Fluent.Views.Wallets.Home"
+             xmlns:history="using:WalletAnonTx.Fluent.Views.Wallets.Home.History"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="850"
              x:DataType="wallets:WalletViewModel"
              x:CompileBindings="True"
              ClipToBounds="False"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.WalletView">
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.WalletView">
   <Interaction.Behaviors>
     <ShowWalletCoinsOnKeyCombinationBehavior Wallet="{Binding}" Key1="LeftCtrl" Key2="D" Key3="C" />
   </Interaction.Behaviors>

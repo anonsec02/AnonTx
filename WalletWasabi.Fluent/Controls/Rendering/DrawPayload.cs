@@ -1,6 +1,6 @@
 using Avalonia;
 
-namespace WalletWasabi.Fluent.Controls.Rendering;
+namespace WalletAnonTx.Fluent.Controls.Rendering;
 
 internal record struct DrawPayload(
 	HandlerCommand HandlerCommand,

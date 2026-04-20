@@ -5,10 +5,10 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
-using WalletWasabi.Services.Terminate;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Services.Terminate;
 
-namespace WalletWasabi.Rpc;
+namespace WalletAnonTx.Rpc;
 
 public class JsonRpcServer : BackgroundService
 {

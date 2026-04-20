@@ -1,8 +1,8 @@
 using NBitcoin;
 using Newtonsoft.Json;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Models.Serialization;
+namespace WalletAnonTx.WabiSabi.Models.Serialization;
 
 public class WitScriptJsonConverter : JsonConverter<WitScript>
 {

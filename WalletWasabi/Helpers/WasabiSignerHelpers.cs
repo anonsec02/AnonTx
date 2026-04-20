@@ -6,20 +6,20 @@ using System.Security.Cryptography;
 using System.Threading;
 using System.Linq;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
-public class WasabiSignerHelpers
+public class AnonTxSignerHelpers
 {
-	public static async Task SignSha256SumsFileAsync(string sha256SumsAscFilePath, Key wasabiPrivateKey)
+	public static async Task SignSha256SumsFileAsync(string sha256SumsAscFilePath, Key anontxPrivateKey)
 	{
 		var computedHash = await GetShaComputedBytesOfFileAsync(sha256SumsAscFilePath).ConfigureAwait(false);
 
-		ECDSASignature signature = wasabiPrivateKey.Sign(new uint256(computedHash));
+		ECDSASignature signature = anontxPrivateKey.Sign(new uint256(computedHash));
 
 		string base64Signature = Convert.ToBase64String(signature.ToDER());
-		var wasabiSignatureFilePath = Path.ChangeExtension(sha256SumsAscFilePath, "wasabisig");
+		var anontxSignatureFilePath = Path.ChangeExtension(sha256SumsAscFilePath, "anontxsig");
 
-		await File.WriteAllTextAsync(wasabiSignatureFilePath, base64Signature).ConfigureAwait(false);
+		await File.WriteAllTextAsync(anontxSignatureFilePath, base64Signature).ConfigureAwait(false);
 	}
 
 	public static async Task VerifySha256SumsFileAsync(string sha256SumsAscFilePath)
@@ -28,8 +28,8 @@ public class WasabiSignerHelpers
 		byte[] hash = await GetShaComputedBytesOfFileAsync(sha256SumsAscFilePath).ConfigureAwait(false);
 
 		// Read the signature file
-		var wasabiSignatureFilePath = Path.ChangeExtension(sha256SumsAscFilePath, "wasabisig");
-		string signatureText = await File.ReadAllTextAsync(wasabiSignatureFilePath).ConfigureAwait(false);
+		var anontxSignatureFilePath = Path.ChangeExtension(sha256SumsAscFilePath, "anontxsig");
+		string signatureText = await File.ReadAllTextAsync(anontxSignatureFilePath).ConfigureAwait(false);
 		byte[] signatureBytes = Convert.FromBase64String(signatureText);
 
 		VerifySha256Sum(hash, signatureBytes);
@@ -37,33 +37,33 @@ public class WasabiSignerHelpers
 
 	public static void VerifySha256Sum(byte[] sha256Hash, byte[] signatureBytes)
 	{
-		ECDSASignature wasabiSignature = ECDSASignature.FromDER(signatureBytes);
+		ECDSASignature anontxSignature = ECDSASignature.FromDER(signatureBytes);
 
-		PubKey pubKey = new(Constants.WasabiPubKey);
+		PubKey pubKey = new(Constants.AnonTxPubKey);
 
-		if (!pubKey.Verify(new uint256(sha256Hash), wasabiSignature))
+		if (!pubKey.Verify(new uint256(sha256Hash), anontxSignature))
 		{
-			throw new InvalidOperationException("Invalid wasabi signature.");
+			throw new InvalidOperationException("Invalid anontx signature.");
 		}
 	}
 
-	public static async Task GeneratePrivateAndPublicKeyToFileAsync(string wasabiPrivateKeyFilePath, string wasabiPublicKeyFilePath)
+	public static async Task GeneratePrivateAndPublicKeyToFileAsync(string anontxPrivateKeyFilePath, string anontxPublicKeyFilePath)
 	{
-		if (File.Exists(wasabiPrivateKeyFilePath))
+		if (File.Exists(anontxPrivateKeyFilePath))
 		{
 			throw new ArgumentException("Private key file already exists.");
 		}
 
-		IoHelpers.EnsureContainingDirectoryExists(wasabiPrivateKeyFilePath);
+		IoHelpers.EnsureContainingDirectoryExists(anontxPrivateKeyFilePath);
 
 		using Key key = new();
-		await File.WriteAllTextAsync(wasabiPrivateKeyFilePath, key.ToString(Network.Main)).ConfigureAwait(false);
-		await File.WriteAllTextAsync(wasabiPublicKeyFilePath, key.PubKey.ToString()).ConfigureAwait(false);
+		await File.WriteAllTextAsync(anontxPrivateKeyFilePath, key.ToString(Network.Main)).ConfigureAwait(false);
+		await File.WriteAllTextAsync(anontxPublicKeyFilePath, key.PubKey.ToString()).ConfigureAwait(false);
 	}
 
-	public static async Task<Key> GetPrivateKeyFromFileAsync(string wasabiPrivateKeyFilePath)
+	public static async Task<Key> GetPrivateKeyFromFileAsync(string anontxPrivateKeyFilePath)
 	{
-		string keyFileContent = await File.ReadAllTextAsync(wasabiPrivateKeyFilePath).ConfigureAwait(false);
+		string keyFileContent = await File.ReadAllTextAsync(anontxPrivateKeyFilePath).ConfigureAwait(false);
 		BitcoinSecret secret = new(keyFileContent, Network.Main);
 		return secret.PrivateKey;
 	}
@@ -71,7 +71,7 @@ public class WasabiSignerHelpers
 	public static async Task VerifyInstallerFileHashesAsync(string[] finalFiles, string sha256SumsFilePath)
 	{
 		string[] lines = await File.ReadAllLinesAsync(sha256SumsFilePath).ConfigureAwait(false);
-		var hashWithFileNameLines = lines.Where(line => line.Contains("Wasabi-"));
+		var hashWithFileNameLines = lines.Where(line => line.Contains("AnonTx-"));
 
 		foreach (var installerFilePath in finalFiles)
 		{

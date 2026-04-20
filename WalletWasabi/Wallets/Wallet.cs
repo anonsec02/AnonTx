@@ -6,26 +6,26 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Blockchain.Analysis.FeesEstimation;
-using WalletWasabi.Blockchain.BlockFilters;
-using WalletWasabi.Blockchain.Blocks;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.TransactionOutputs;
-using WalletWasabi.Blockchain.TransactionProcessing;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Models;
-using WalletWasabi.Services;
-using WalletWasabi.Stores;
-using WalletWasabi.Userfacing;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.WabiSabi.Client.Batching;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Blockchain.Analysis.FeesEstimation;
+using WalletAnonTx.Blockchain.BlockFilters;
+using WalletAnonTx.Blockchain.Blocks;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.TransactionOutputs;
+using WalletAnonTx.Blockchain.TransactionProcessing;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Models;
+using WalletAnonTx.Services;
+using WalletAnonTx.Stores;
+using WalletAnonTx.Userfacing;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.WabiSabi.Client.Batching;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 public class Wallet : BackgroundService, IWallet
 {
@@ -36,7 +36,7 @@ public class Wallet : BackgroundService, IWallet
 		Network network,
 		KeyManager keyManager,
 		BitcoinStore bitcoinStore,
-		WasabiSynchronizer syncer,
+		AnonTxSynchronizer syncer,
 		ServiceConfiguration serviceConfiguration,
 		HybridFeeProvider feeProvider,
 		TransactionProcessor transactionProcessor,
@@ -94,7 +94,7 @@ public class Wallet : BackgroundService, IWallet
 
 	public BitcoinStore BitcoinStore { get; }
 	public KeyManager KeyManager { get; }
-	public WasabiSynchronizer Synchronizer { get; }
+	public AnonTxSynchronizer Synchronizer { get; }
 	public ServiceConfiguration ServiceConfiguration { get; }
 	public string WalletName => KeyManager.WalletName;
 
@@ -503,7 +503,7 @@ public class Wallet : BackgroundService, IWallet
 		{
 			try
 			{
-				var client = Synchronizer.HttpClientFactory.SharedWasabiClient;
+				var client = Synchronizer.HttpClientFactory.SharedAnonTxClient;
 				var compactness = 10;
 
 				var mempoolHashes = await client.GetMempoolHashesAsync(compactness).ConfigureAwait(false);

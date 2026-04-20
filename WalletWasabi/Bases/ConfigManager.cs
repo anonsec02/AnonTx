@@ -2,11 +2,11 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Text;
-using WalletWasabi.Interfaces;
-using WalletWasabi.Logging;
-using WalletWasabi.WabiSabi.Models.Serialization;
+using WalletAnonTx.Interfaces;
+using WalletAnonTx.Logging;
+using WalletAnonTx.WabiSabi.Models.Serialization;
 
-namespace WalletWasabi.Bases;
+namespace WalletAnonTx.Bases;
 
 public class ConfigManager
 {

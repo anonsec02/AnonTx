@@ -8,9 +8,9 @@ using Avalonia.Controls.Selection;
 using Avalonia.Interactivity;
 using Avalonia.Media;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.TreeDataGrid;
+namespace WalletAnonTx.Fluent.TreeDataGrid;
 
 public class TreeDataGridPrivacyTextCell : TreeDataGridCell
 {

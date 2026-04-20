@@ -1,11 +1,11 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Extensions;
-using WalletWasabi.Tor.Http.Models;
-using static WalletWasabi.Tor.Http.Constants;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Tor.Http.Models;
+using static WalletAnonTx.Tor.Http.Constants;
 
-namespace WalletWasabi.Tor.Http.Extensions;
+namespace WalletAnonTx.Tor.Http.Extensions;
 
 public static class HttpRequestMessageExtensions
 {

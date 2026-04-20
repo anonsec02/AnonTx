@@ -1,9 +1,9 @@
 using Microsoft.Win32;
 using System.IO;
 using System.Runtime.InteropServices;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class WindowsStartupHelper
 {
@@ -27,14 +27,14 @@ public static class WindowsStartupHelper
 
 		using RegistryKey key = Registry.CurrentUser.OpenSubKey(KeyPath, writable: true) ?? throw new InvalidOperationException("Registry operation failed.");
 
-		var existingPath = key.GetValue(nameof(WalletWasabi));
+		var existingPath = key.GetValue(nameof(WalletAnonTx));
 		if (existingPath is null && runOnSystemStartup)
 		{
-			key.SetValue(nameof(WalletWasabi), pathToExecWithArgs);
+			key.SetValue(nameof(WalletAnonTx), pathToExecWithArgs);
 		}
 		else if (existingPath is not null && !runOnSystemStartup)
 		{
-			key.DeleteValue(nameof(WalletWasabi), false);
+			key.DeleteValue(nameof(WalletAnonTx), false);
 		}
 	}
 }

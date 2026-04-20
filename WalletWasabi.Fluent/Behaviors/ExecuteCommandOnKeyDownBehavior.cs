@@ -7,7 +7,7 @@ using Avalonia.Interactivity;
 using Avalonia.VisualTree;
 using Avalonia.Xaml.Interactions.Custom;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class ExecuteCommandOnKeyDownBehavior : AttachedToVisualTreeBehavior<Control>
 {

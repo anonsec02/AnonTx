@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NBitcoin;
 
-namespace WalletWasabi.BitcoinCore.Rpc.Models;
+namespace WalletAnonTx.BitcoinCore.Rpc.Models;
 
 public class VerboseTransactionInfo
 {

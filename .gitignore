@@ -266,16 +266,16 @@ __pycache__/
 
 # Coverlet
 lcov.info
-/WalletWasabi.Tests/coverage.json
-/WalletWasabi.Backend/wwwroot/unversioned/*
+/WalletAnonTx.Tests/coverage.json
+/WalletAnonTx.Backend/wwwroot/unversioned/*
 
 \.DS_Store
 *.DS_Store
 /NuGet.Config
 
 # WindowsInstaller generated files
-/WalletWasabi.WindowsInstaller/ComponentsGenerated.wxs
-/WalletWasabi.WindowsInstaller/*.wixobj
+/WalletAnonTx.WindowsInstaller/ComponentsGenerated.wxs
+/WalletAnonTx.WindowsInstaller/*.wixobj
 
 # This file is created by an F# VS Code plugin
 .ionide/symbolCache.db

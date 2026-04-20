@@ -1,10 +1,10 @@
 using System.Diagnostics;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
-using WalletWasabi.Fluent.ViewModels;
-using WalletWasabi.Microservices;
+using WalletAnonTx.Fluent.ViewModels;
+using WalletAnonTx.Microservices;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 /// <summary>
 /// Helper methods for Application lifetime related functions.

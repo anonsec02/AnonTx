@@ -1,7 +1,7 @@
 using ReactiveUI;
-using WalletWasabi.BuyAnything;
+using WalletAnonTx.BuyAnything;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Messages;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Messages;
 
 public abstract partial class MessageViewModel : ReactiveObject
 {

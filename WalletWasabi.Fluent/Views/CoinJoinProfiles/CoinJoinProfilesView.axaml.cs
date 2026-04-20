@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WalletWasabi.Fluent.Views.CoinJoinProfiles;
+namespace WalletAnonTx.Fluent.Views.CoinJoinProfiles;
 
 public class CoinJoinProfilesView : UserControl
 {

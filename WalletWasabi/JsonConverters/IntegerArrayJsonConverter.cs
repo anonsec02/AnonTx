@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.JsonConverters;
+namespace WalletAnonTx.JsonConverters;
 
 public class IntegerArrayJsonConverter : JsonConverter<IEnumerable<int>>
 {

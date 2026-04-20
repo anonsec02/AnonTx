@@ -1,9 +1,9 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using WalletWasabi.Logging;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Helpers.PowerSaving;
+namespace WalletAnonTx.Helpers.PowerSaving;
 
 [SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "Windows API has its own naming style. Changes would be rather detrimental here.")]
 public class WindowsPowerAvailabilityTask : IPowerSavingInhibitorTask

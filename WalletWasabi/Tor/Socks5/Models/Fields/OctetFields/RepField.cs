@@ -1,6 +1,6 @@
-using WalletWasabi.Tor.Socks5.Models.Bases;
+using WalletAnonTx.Tor.Socks5.Models.Bases;
 
-namespace WalletWasabi.Tor.Socks5.Models.Fields.OctetFields;
+namespace WalletAnonTx.Tor.Socks5.Models.Fields.OctetFields;
 
 /// <summary>
 /// Possible values of "reply field" are:

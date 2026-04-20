@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.Fluent.State;
+namespace WalletAnonTx.Fluent.State;
 
 /// <summary>
 /// StateMachine - api based on: https://github.com/dotnet-state-machine/stateless

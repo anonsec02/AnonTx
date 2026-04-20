@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.BuyAnything;
+namespace WalletAnonTx.BuyAnything;
 
 public class ConversationTracking
 {

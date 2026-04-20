@@ -1,4 +1,4 @@
-namespace WalletWasabi.Backend.Models;
+namespace WalletAnonTx.Backend.Models;
 
 public enum FiltersResponseState
 {

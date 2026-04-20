@@ -1,10 +1,10 @@
 using System.Globalization;
 using Avalonia.Data.Converters;
 using NBitcoin;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Helpers;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Helpers;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 public static class MoneyConverters
 {

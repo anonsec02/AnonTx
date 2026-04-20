@@ -5,11 +5,11 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using Nito.AsyncEx;
-using WalletWasabi.WebClients.ShopWare;
-using WalletWasabi.WebClients.ShopWare.Models;
-using Country = WalletWasabi.BuyAnything.Country;
+using WalletAnonTx.WebClients.ShopWare;
+using WalletAnonTx.WebClients.ShopWare.Models;
+using Country = WalletAnonTx.BuyAnything.Country;
 
-namespace WalletWasabi.WebClients.BuyAnything;
+namespace WalletAnonTx.WebClients.BuyAnything;
 
 public class BuyAnythingClient
 {
@@ -32,8 +32,8 @@ public class BuyAnythingClient
 	private static readonly string SalutationIdProduction = "018b6635785b70679f479eadf50330f3";
 	private static readonly string SalutationIdTesting = "018d18f29d347170b6cfd6466cab3c71";
 
-	private static readonly string StorefrontUrlProduction = "https://wasabi.shopinbit.com";
-	private static readonly string StorefrontUrlTesting = "https://shopinbit.solution360.dev/wasabi";
+	private static readonly string StorefrontUrlProduction = "https://anontx.shopinbit.com";
+	private static readonly string StorefrontUrlTesting = "https://shopinbit.solution360.dev/anontx";
 
 	// Customer information. We need this values to update the messages
 	// we have three options:

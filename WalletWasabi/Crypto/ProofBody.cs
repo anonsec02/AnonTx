@@ -4,7 +4,7 @@ using NBitcoin.Protocol;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WalletWasabi.Crypto;
+namespace WalletAnonTx.Crypto;
 
 public class ProofBody : IBitcoinSerializable, IEquatable<ProofBody>
 {

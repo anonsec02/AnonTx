@@ -2,12 +2,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:treeDataGrid="clr-namespace:WalletWasabi.Fluent.TreeDataGrid"
-             xmlns:core="clr-namespace:WalletWasabi.Fluent.ViewModels.CoinControl.Core"
-             xmlns:behaviors="clr-namespace:WalletWasabi.Fluent.Behaviors"
-             xmlns:coins="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Coins"
+             xmlns:treeDataGrid="clr-namespace:WalletAnonTx.Fluent.TreeDataGrid"
+             xmlns:core="clr-namespace:WalletAnonTx.Fluent.ViewModels.CoinControl.Core"
+             xmlns:behaviors="clr-namespace:WalletAnonTx.Fluent.Behaviors"
+             xmlns:coins="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Coins"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Coins.CoinListView"
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Coins.CoinListView"
              x:DataType="coins:CoinListViewModel"
              x:CompileBindings="True">
   <Panel>

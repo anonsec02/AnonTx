@@ -1,9 +1,9 @@
 using ReactiveUI;
 using System.Threading.Tasks;
-using WalletWasabi.WabiSabi.Client;
-using WalletWasabi.WabiSabi.Client.CoinJoin.Client;
+using WalletAnonTx.WabiSabi.Client;
+using WalletAnonTx.WabiSabi.Client.CoinJoin.Client;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class CoinjoinModel : ReactiveObject

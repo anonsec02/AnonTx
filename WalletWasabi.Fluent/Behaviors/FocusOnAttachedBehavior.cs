@@ -4,7 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Threading;
 using Avalonia.Xaml.Interactions.Custom;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class FocusOnAttachedBehavior : AttachedToVisualTreeBehavior<Control>
 {

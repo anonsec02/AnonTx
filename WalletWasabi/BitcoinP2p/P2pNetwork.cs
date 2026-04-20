@@ -9,12 +9,12 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
 using WabiSabi.Crypto.Randomness;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Stores;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Stores;
 
-namespace WalletWasabi.BitcoinP2p;
+namespace WalletAnonTx.BitcoinP2p;
 
 public class P2pNetwork : BackgroundService
 {
@@ -68,10 +68,10 @@ public class P2pNetwork : BackgroundService
 			}
 			catch (Exception ex) when (ex is OverflowException || ex is FormatException || ex is ArgumentException || ex is EndOfStreamException)
 			{
-				// https://github.com/zkSNACKs/WalletWasabi/issues/712
-				// https://github.com/zkSNACKs/WalletWasabi/issues/880
-				// https://www.reddit.com/r/WasabiWallet/comments/qt0mgz/crashing_on_open/
-				// https://github.com/zkSNACKs/WalletWasabi/issues/5255
+				// https://github.com/zkSNACKs/WalletAnonTx/issues/712
+				// https://github.com/zkSNACKs/WalletAnonTx/issues/880
+				// https://www.reddit.com/r/AnonTxWallet/comments/qt0mgz/crashing_on_open/
+				// https://github.com/zkSNACKs/WalletAnonTx/issues/5255
 				Logger.LogInfo($"{nameof(AddressManager)} has thrown `{ex.GetType().Name}`. Attempting to autocorrect.");
 				File.Delete(AddressManagerFilePath);
 				Logger.LogTrace(ex);

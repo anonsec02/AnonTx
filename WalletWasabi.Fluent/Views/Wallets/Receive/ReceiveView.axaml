@@ -3,10 +3,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             xmlns:receive="clr-namespace:WalletWasabi.Fluent.ViewModels.Wallets.Receive"
+             xmlns:receive="clr-namespace:WalletAnonTx.Fluent.ViewModels.Wallets.Receive"
              x:DataType="receive:ReceiveViewModel"
              x:CompileBindings="True"
-             x:Class="WalletWasabi.Fluent.Views.Wallets.Receive.ReceiveView">
+             x:Class="WalletAnonTx.Fluent.Views.Wallets.Receive.ReceiveView">
   <ContentArea Title="{Binding Title}"
                  EnableNext="True" NextContent="Continue"
                  EnableCancel="{Binding EnableCancel}"

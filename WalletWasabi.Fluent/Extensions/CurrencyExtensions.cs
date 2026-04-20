@@ -1,12 +1,12 @@
 using System.Globalization;
 using System.Linq;
 using NBitcoin;
-using WalletWasabi.Blockchain.TransactionBuilding;
-using WalletWasabi.Extensions;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models;
+using WalletAnonTx.Blockchain.TransactionBuilding;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models;
 
-namespace WalletWasabi.Fluent.Extensions;
+namespace WalletAnonTx.Fluent.Extensions;
 
 public static class CurrencyExtensions
 {

@@ -7,7 +7,7 @@
 		<CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)\$(Configuration)\$(TargetFramework)\GeneratedFiles</CompilerGeneratedFilesOutputPath>
 		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
 		<DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
-		<PathMap>$(MSBuildProjectDirectory)\=WalletWasabi.Fluent</PathMap>
+		<PathMap>$(MSBuildProjectDirectory)\=WalletAnonTx.Fluent</PathMap>
 		<AvaloniaNameGeneratorIsEnabled>false</AvaloniaNameGeneratorIsEnabled>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
@@ -29,10 +29,10 @@
 		<PackageReference Include="System.Private.Uri" /> <!-- Version 4.3.0 contains a vulnerability, manually bumped to 4.3.2. -->
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\WalletWasabi.Daemon\WalletWasabi.Daemon.csproj" />
+		<ProjectReference Include="..\WalletAnonTx.Daemon\WalletAnonTx.Daemon.csproj" />
 
 		<!-- See explanation of the additional properties here: https://github.com/dotnet/roslyn/issues/60744#issuecomment-1438273464 -->
-		<ProjectReference Include="..\WalletWasabi.Fluent.Generators\WalletWasabi.Fluent.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" AdditionalProperties="IsRidAgnostic=true" />
+		<ProjectReference Include="..\WalletAnonTx.Fluent.Generators\WalletAnonTx.Fluent.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" AdditionalProperties="IsRidAgnostic=true" />
 	</ItemGroup>
 
 	<ItemGroup>

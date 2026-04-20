@@ -4,19 +4,19 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Threading;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Extensions;
-using WalletWasabi.Fluent.Models;
-using WalletWasabi.WebClients.BuyAnything;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Fluent.Models;
+using WalletAnonTx.WebClients.BuyAnything;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
 /// <summary>
 /// ShopinBit Step #1: Welcome and Select Assistant Type
 /// </summary>
 public partial class WelcomeStep : WorkflowStep<BuyAnythingClient.Product?>
 {
-	public const string ServiceDescriptionUrl = "https://wasabiwallet.io/buy-anything.html";
+	public const string ServiceDescriptionUrl = "https://anontxwallet.io/buy-anything.html";
 
 	[AutoNotify] private EnumValue<BuyAnythingClient.Product>? _product;
 

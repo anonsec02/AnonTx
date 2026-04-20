@@ -8,16 +8,16 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Crypto.Randomness;
-using WalletWasabi.Extensions;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
-using WalletWasabi.Wallets;
-using WalletWasabi.WebClients.BuyAnything;
-using WalletWasabi.WebClients.ShopWare.Models;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Crypto.Randomness;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
+using WalletAnonTx.Wallets;
+using WalletAnonTx.WebClients.BuyAnything;
+using WalletAnonTx.WebClients.ShopWare.Models;
 
-namespace WalletWasabi.BuyAnything;
+namespace WalletAnonTx.BuyAnything;
 
 // Event that is raised when we detect an update in the server
 public record ConversationUpdateEvent(Conversation Conversation, DateTimeOffset LastUpdate);
@@ -629,14 +629,14 @@ public class BuyAnythingManager : PeriodicRunner
 			{
 				// Something happened with the file.
 				var bakFilePath = $"{FilePath}.bak";
-				Logger.LogError($"Wasabi was not able to load conversations file. Resetting the conversations and backup the corrupted file to: '{bakFilePath}'. Reason: '{ex}'.");
+				Logger.LogError($"AnonTx was not able to load conversations file. Resetting the conversations and backup the corrupted file to: '{bakFilePath}'. Reason: '{ex}'.");
 				File.Move(FilePath, bakFilePath, true);
 				ConversationTracking.Load(new ConversationTracking());
 				await SaveAsync(cancellationToken).ConfigureAwait(false);
 			}
 			catch (Exception ex)
 			{
-				Logger.LogError($"Wasabi was not able to load conversations file. Reason: '{ex}'.");
+				Logger.LogError($"AnonTx was not able to load conversations file. Reason: '{ex}'.");
 			}
 		}
 

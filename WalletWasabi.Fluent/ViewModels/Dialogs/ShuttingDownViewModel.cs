@@ -2,10 +2,10 @@ using ReactiveUI;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Reactive.Concurrency;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Navigation;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Navigation;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs;
 
 [NavigationMetaData(Title = "Please wait to shut down...", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class ShuttingDownViewModel : RoutableViewModel

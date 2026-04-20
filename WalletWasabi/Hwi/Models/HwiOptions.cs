@@ -1,4 +1,4 @@
-namespace WalletWasabi.Hwi.Models;
+namespace WalletAnonTx.Hwi.Models;
 
 public enum HwiOptions
 {

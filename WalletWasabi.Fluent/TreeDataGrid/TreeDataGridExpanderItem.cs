@@ -1,4 +1,4 @@
-﻿namespace WalletWasabi.Fluent.TreeDataGrid;
+﻿namespace WalletAnonTx.Fluent.TreeDataGrid;
 
 public interface ITreeDataGridExpanderItem
 {

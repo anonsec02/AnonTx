@@ -1,11 +1,11 @@
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
-using WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows.ShopinBit;
-using WalletWasabi.Wallets;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
+using WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows.ShopinBit;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Fluent.Models.Wallets;
+namespace WalletAnonTx.Fluent.Models.Wallets;
 
 [AutoInterface]
 public partial class BuyAnythingModel(Wallet wallet)

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Settings;
-using WalletWasabi.Fluent.ViewModels.SearchBar.Sources;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Settings;
+using WalletAnonTx.Fluent.ViewModels.SearchBar.Sources;
 
-namespace WalletWasabi.Fluent.ViewModels.SearchBar.SearchItems;
+namespace WalletAnonTx.Fluent.ViewModels.SearchBar.SearchItems;
 
 public class ContentSearchItemNode
 {

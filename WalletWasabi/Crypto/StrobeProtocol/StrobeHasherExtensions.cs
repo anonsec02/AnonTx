@@ -2,9 +2,9 @@ using System.Collections.Immutable;
 using System.Linq;
 using NBitcoin;
 using WabiSabi.Crypto.StrobeProtocol;
-using WalletWasabi.WabiSabi.Models;
+using WalletAnonTx.WabiSabi.Models;
 
-namespace WalletWasabi.Crypto.StrobeProtocol;
+namespace WalletAnonTx.Crypto.StrobeProtocol;
 
 public static class StrobeHasherExtensions
 {

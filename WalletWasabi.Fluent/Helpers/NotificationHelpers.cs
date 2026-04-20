@@ -6,12 +6,12 @@ using Avalonia.Controls;
 using Avalonia.Controls.Notifications;
 using NBitcoin;
 using ReactiveUI;
-using WalletWasabi.Blockchain.TransactionProcessing;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Fluent.Models.Wallets;
-using WalletWasabi.Logging;
+using WalletAnonTx.Blockchain.TransactionProcessing;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Fluent.Models.Wallets;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.Helpers;
+namespace WalletAnonTx.Fluent.Helpers;
 
 public static class NotificationHelpers
 {

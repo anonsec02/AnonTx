@@ -6,10 +6,10 @@ using Avalonia.Controls.Documents;
 using Avalonia.Data.Converters;
 using Avalonia.Media;
 using Avalonia.Metadata;
-using WalletWasabi.Fluent.Extensions;
-using WalletWasabi.Logging;
+using WalletAnonTx.Fluent.Extensions;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Fluent.Converters;
+namespace WalletAnonTx.Fluent.Converters;
 
 /// <summary>
 /// Replaces words in a string by arbitrary content using the dictionary provided in <see cref="Dictionary"/>

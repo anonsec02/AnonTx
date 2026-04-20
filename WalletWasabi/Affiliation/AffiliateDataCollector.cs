@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Threading;
 using NBitcoin;
-using WalletWasabi.WabiSabi.Backend.Events;
-using WalletWasabi.WabiSabi.Backend.Rounds;
+using WalletAnonTx.WabiSabi.Backend.Events;
+using WalletAnonTx.WabiSabi.Backend.Rounds;
 
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public interface IRoundNotifier : IDisposable
 {

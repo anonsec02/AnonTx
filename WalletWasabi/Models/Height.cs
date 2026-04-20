@@ -1,6 +1,6 @@
-using WalletWasabi.Helpers;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Models;
+namespace WalletAnonTx.Models;
 
 public readonly struct Height : IEquatable<Height>, IEquatable<int>, IComparable<Height>, IComparable<int>
 {

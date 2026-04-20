@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Control.Messages.StreamStatus;
+namespace WalletAnonTx.Tor.Control.Messages.StreamStatus;
 
 /// <seealso href="https://gitweb.torproject.org/torspec.git/tree/tor-spec.txt">See section "6.3. Closing streams".</seealso>
 public enum Reason

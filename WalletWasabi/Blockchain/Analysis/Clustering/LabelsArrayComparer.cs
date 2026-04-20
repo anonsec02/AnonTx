@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WalletWasabi.Blockchain.Analysis.Clustering;
+namespace WalletAnonTx.Blockchain.Analysis.Clustering;
 
 public class LabelsArrayComparer : IComparer<LabelsArray>
 {

@@ -6,9 +6,9 @@ using Avalonia.Media;
 using Avalonia.Media.Immutable;
 using Avalonia.Rendering.Composition;
 using Avalonia.Skia;
-using WalletWasabi.Fluent.Controls.Rendering;
+using WalletAnonTx.Fluent.Controls.Rendering;
 
-namespace WalletWasabi.Fluent.Controls.Spectrum;
+namespace WalletAnonTx.Fluent.Controls.Spectrum;
 
 public class SpectrumControl : TemplatedControl
 {

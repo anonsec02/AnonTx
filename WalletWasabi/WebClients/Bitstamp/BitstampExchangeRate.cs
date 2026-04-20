@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace WalletWasabi.WebClients.Bitstamp;
+namespace WalletAnonTx.WebClients.Bitstamp;
 
 public class BitstampExchangeRate
 {

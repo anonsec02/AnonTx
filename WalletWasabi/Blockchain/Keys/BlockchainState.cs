@@ -1,9 +1,9 @@
 using NBitcoin;
 using Newtonsoft.Json;
-using WalletWasabi.JsonConverters;
-using WalletWasabi.Models;
+using WalletAnonTx.JsonConverters;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Blockchain.Keys;
+namespace WalletAnonTx.Blockchain.Keys;
 
 [JsonObject(MemberSerialization.OptIn)]
 public class BlockchainState

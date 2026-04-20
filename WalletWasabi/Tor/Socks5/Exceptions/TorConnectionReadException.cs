@@ -1,4 +1,4 @@
-namespace WalletWasabi.Tor.Socks5.Exceptions;
+namespace WalletAnonTx.Tor.Socks5.Exceptions;
 
 /// <summary>
 /// For any failures in receiving data from Tor SOCKS5 endpoint.

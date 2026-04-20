@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using WalletWasabi.Fluent.ViewModels.Dialogs;
+using WalletAnonTx.Fluent.ViewModels.Dialogs;
 
-namespace WalletWasabi.Fluent.ViewModels.Navigation;
+namespace WalletAnonTx.Fluent.ViewModels.Navigation;
 
 public static class NavigationExtensions
 {

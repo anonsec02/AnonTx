@@ -1,9 +1,9 @@
 using NBitcoin;
 using Newtonsoft.Json;
-using WalletWasabi.Crypto;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Crypto;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.WabiSabi.Models.Serialization;
+namespace WalletAnonTx.WabiSabi.Models.Serialization;
 
 public class OwnershipProofJsonConverter : JsonConverter<OwnershipProof>
 {

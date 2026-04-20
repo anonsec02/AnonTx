@@ -1,13 +1,13 @@
 using NBitcoin;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
-using WalletWasabi.Bases;
-using WalletWasabi.Blockchain.Keys;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Extensions;
-using WalletWasabi.Models;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Blockchain.Keys;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Extensions;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Blockchain.TransactionOutputs;
+namespace WalletAnonTx.Blockchain.TransactionOutputs;
 
 /// <summary>
 /// An UTXO that knows more.
@@ -101,7 +101,7 @@ public class SmartCoin : NotifyPropertyChangedBase, IEquatable<SmartCoin>, IDest
 	}
 
 	/// <summary>
-	/// If the backend thinks it's spent, but Wasabi does not yet know.
+	/// If the backend thinks it's spent, but AnonTx does not yet know.
 	/// </summary>
 	public bool SpentAccordingToBackend
 	{
@@ -133,7 +133,7 @@ public class SmartCoin : NotifyPropertyChangedBase, IEquatable<SmartCoin>, IDest
 	}
 
 	/// <returns>False if external, or the tx inputs are all external.</returns>
-	/// <remarks>Context: https://github.com/zkSNACKs/WalletWasabi/issues/10567</remarks>
+	/// <remarks>Context: https://github.com/zkSNACKs/WalletAnonTx/issues/10567</remarks>
 	public bool IsSufficientlyDistancedFromExternalKeys { get; set; } = true;
 
 	public bool RefreshAndGetIsBanned()

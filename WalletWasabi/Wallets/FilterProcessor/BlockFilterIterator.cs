@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Nito.AsyncEx;
-using WalletWasabi.Backend.Models;
-using WalletWasabi.Stores;
+using WalletAnonTx.Backend.Models;
+using WalletAnonTx.Stores;
 
-namespace WalletWasabi.Wallets.FilterProcessor;
+namespace WalletAnonTx.Wallets.FilterProcessor;
 
 /// <summary>
 /// Iterator that caches block filters from the index store to allow efficient iteration over block filters in ascending order.

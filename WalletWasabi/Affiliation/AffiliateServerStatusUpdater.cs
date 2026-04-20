@@ -3,10 +3,10 @@ using System.Collections.Immutable;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Bases;
-using WalletWasabi.Extensions;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Extensions;
 
-namespace WalletWasabi.Affiliation;
+namespace WalletAnonTx.Affiliation;
 
 public class AffiliateServerStatusUpdater : PeriodicRunner
 {

@@ -2,9 +2,9 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-using WalletWasabi.Tor.Socks5.Exceptions;
+using WalletAnonTx.Tor.Socks5.Exceptions;
 
-namespace WalletWasabi.Tor.Socks5;
+namespace WalletAnonTx.Tor.Socks5;
 
 public static class TcpClientSocks5Connector
 {

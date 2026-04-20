@@ -1,8 +1,8 @@
 using NBitcoin;
-using WalletWasabi.Hwi.Exceptions;
-using WalletWasabi.Wallets;
+using WalletAnonTx.Hwi.Exceptions;
+using WalletAnonTx.Wallets;
 
-namespace WalletWasabi.Hwi.Models;
+namespace WalletAnonTx.Hwi.Models;
 
 public class HwiEnumerateEntry
 {

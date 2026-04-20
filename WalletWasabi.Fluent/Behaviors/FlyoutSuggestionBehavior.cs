@@ -6,10 +6,10 @@ using Avalonia.Controls.Templates;
 using Avalonia.Input;
 using Avalonia.Xaml.Interactions.Custom;
 using ReactiveUI;
-using WalletWasabi.Fluent.Helpers;
-using WalletWasabi.Fluent.Models;
+using WalletAnonTx.Fluent.Helpers;
+using WalletAnonTx.Fluent.Models;
 
-namespace WalletWasabi.Fluent.Behaviors;
+namespace WalletAnonTx.Fluent.Behaviors;
 
 public class FlyoutSuggestionBehavior : AttachedToVisualTreeBehavior<Control>
 {

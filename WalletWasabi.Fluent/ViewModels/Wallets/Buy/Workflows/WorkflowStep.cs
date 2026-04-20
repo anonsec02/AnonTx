@@ -6,10 +6,10 @@ using System.Reactive.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using WalletWasabi.BuyAnything;
-using WalletWasabi.Fluent.Extensions;
+using WalletAnonTx.BuyAnything;
+using WalletAnonTx.Fluent.Extensions;
 
-namespace WalletWasabi.Fluent.ViewModels.Wallets.Buy.Workflows;
+namespace WalletAnonTx.Fluent.ViewModels.Wallets.Buy.Workflows;
 
 public interface IWorkflowStep
 {

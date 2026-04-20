@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
 
-namespace WalletWasabi.Tor.StatusChecker;
+namespace WalletAnonTx.Tor.StatusChecker;
 
 public class XmlIssueListParser
 {

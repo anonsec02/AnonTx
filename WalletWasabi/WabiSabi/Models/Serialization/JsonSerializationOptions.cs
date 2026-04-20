@@ -1,12 +1,12 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using WalletWasabi.JsonConverters;
-using WalletWasabi.JsonConverters.Bitcoin;
-using WalletWasabi.JsonConverters.Collections;
-using WalletWasabi.JsonConverters.Timing;
-using WalletWasabi.WabiSabi.Crypto.Serialization;
+using WalletAnonTx.JsonConverters;
+using WalletAnonTx.JsonConverters.Bitcoin;
+using WalletAnonTx.JsonConverters.Collections;
+using WalletAnonTx.JsonConverters.Timing;
+using WalletAnonTx.WabiSabi.Crypto.Serialization;
 
-namespace WalletWasabi.WabiSabi.Models.Serialization;
+namespace WalletAnonTx.WabiSabi.Models.Serialization;
 
 public class JsonSerializationOptions
 {

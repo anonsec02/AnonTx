@@ -3,10 +3,10 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using WalletWasabi.Blockchain.Transactions;
-using WalletWasabi.Helpers;
+using WalletAnonTx.Blockchain.Transactions;
+using WalletAnonTx.Helpers;
 
-namespace WalletWasabi.Blockchain.Analysis.FeesEstimation;
+namespace WalletAnonTx.Blockchain.Analysis.FeesEstimation;
 
 /// <summary>
 /// Estimates for 1w, 3d, 1d, 12h, 6h, 3h, 1h, 30m, 20m.

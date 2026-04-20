@@ -1,7 +1,7 @@
 using NBitcoin;
 using WabiSabi.CredentialRequesting;
 
-namespace WalletWasabi.WabiSabi.Models;
+namespace WalletAnonTx.WabiSabi.Models;
 
 public record OutputRegistrationRequest(
 	uint256 RoundId,

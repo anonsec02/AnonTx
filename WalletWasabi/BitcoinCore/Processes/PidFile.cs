@@ -1,9 +1,9 @@
 using System.IO;
 using System.Threading.Tasks;
-using WalletWasabi.Helpers;
-using WalletWasabi.Logging;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.BitcoinCore.Processes;
+namespace WalletAnonTx.BitcoinCore.Processes;
 
 /// <summary>
 /// This class is useful to create a PID file for a process.

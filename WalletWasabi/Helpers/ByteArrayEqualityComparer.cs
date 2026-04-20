@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using WalletWasabi.Crypto;
+using WalletAnonTx.Crypto;
 
-namespace WalletWasabi.Helpers;
+namespace WalletAnonTx.Helpers;
 
 public class ByteArrayEqualityComparer : IEqualityComparer<byte[]>
 {

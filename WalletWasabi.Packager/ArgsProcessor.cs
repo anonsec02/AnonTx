@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace WalletWasabi.Packager;
+namespace WalletAnonTx.Packager;
 
 /// <summary>
 /// Class for processing program's command line arguments.
@@ -14,8 +14,8 @@ public class ArgsProcessor
 
 	public string[] Args { get; }
 
-	/// <summary>Builds Wasabi Wallet binaries for supported platforms to be compared then with the official binaries, and terminates.</summary>
-	/// <seealso href="https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md"/>
+	/// <summary>Builds AnonTx Wallet binaries for supported platforms to be compared then with the official binaries, and terminates.</summary>
+	/// <seealso href="https://github.com/zkSNACKs/WalletAnonTx/blob/master/WalletAnonTx.Documentation/Guides/DeterministicBuildGuide.md"/>
 	public bool IsOnlyBinariesMode() => IsOneOf("onlybinaries") || Args is null || Args.Length == 0;
 
 	public bool IsContinuousDeliveryMode() => IsOneOf("cdelivery");

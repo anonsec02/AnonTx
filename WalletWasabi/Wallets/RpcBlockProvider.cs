@@ -1,10 +1,10 @@
 using System.Threading;
 using System.Threading.Tasks;
 using NBitcoin;
-using WalletWasabi.BitcoinCore.Rpc;
-using WalletWasabi.Logging;
+using WalletAnonTx.BitcoinCore.Rpc;
+using WalletAnonTx.Logging;
 
-namespace WalletWasabi.Wallets;
+namespace WalletAnonTx.Wallets;
 
 public class RpcBlockProvider : IBlockProvider
 {

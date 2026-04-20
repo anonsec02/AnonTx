@@ -2,13 +2,13 @@ using NBitcoin;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
-using WalletWasabi.Bases;
-using WalletWasabi.Blockchain.Analysis.Clustering;
-using WalletWasabi.Helpers;
-using WalletWasabi.JsonConverters;
-using WalletWasabi.Models;
+using WalletAnonTx.Bases;
+using WalletAnonTx.Blockchain.Analysis.Clustering;
+using WalletAnonTx.Helpers;
+using WalletAnonTx.JsonConverters;
+using WalletAnonTx.Models;
 
-namespace WalletWasabi.Blockchain.Keys;
+namespace WalletAnonTx.Blockchain.Keys;
 
 [JsonObject(MemberSerialization.OptIn)]
 public class HdPubKey : NotifyPropertyChangedBase, IEquatable<HdPubKey>

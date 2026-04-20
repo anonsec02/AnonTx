@@ -4,12 +4,12 @@ using NBitcoin;
 using ReactiveUI;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
-using WalletWasabi.Fluent.Models.UI;
-using WalletWasabi.Fluent.ViewModels.Dialogs.Base;
-using WalletWasabi.Userfacing;
-using WalletWasabi.Userfacing.Bip21;
+using WalletAnonTx.Fluent.Models.UI;
+using WalletAnonTx.Fluent.ViewModels.Dialogs.Base;
+using WalletAnonTx.Userfacing;
+using WalletAnonTx.Userfacing.Bip21;
 
-namespace WalletWasabi.Fluent.ViewModels.Dialogs;
+namespace WalletAnonTx.Fluent.ViewModels.Dialogs;
 
 [NavigationMetaData(Title = "Camera", NavigationTarget = NavigationTarget.CompactDialogScreen)]
 public partial class ShowQrCameraDialogViewModel : DialogViewModelBase<string?>
